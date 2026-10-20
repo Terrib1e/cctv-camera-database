@@ -1,0 +1,114 @@
+{
+  "id": "tiandy-tc-h356s-30x-i-e-plus-plus-a-v3-0",
+  "brand": "Tiandy",
+  "model": "TC-H356S 30X/I/E++/A/V3.0",
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2880,
+    "max_height": 1620,
+    "label": "5MP"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4.7-141",
+    "aperture": "F1.6-F4.3",
+    "varifocal": true
+  },
+  "field_of_view_deg": "H: 61.9-2.5, V: 35.5-1.4, D: 69.1-2.9",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 200,
+    "min_lux_color": 0.001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2880x1620",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "ptz": {
+    "autotracking": true
+  },
+  "power": {
+    "method": "AC24V±25%\\DC24V±10%; PoE:IEEE 802.3bt",
+    "consumption_w": 38,
+    "voltage": "DC 24V"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 70",
+  "dimensions_mm": "222(D)x372(H) mm",
+  "weight_g": 5300,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "5MP 30× Starlight IR POE AI PTZ Camera",
+    "WDR: 120dB",
+    "Optical zoom: 30X",
+    "IR range up to 200m",
+    "Video analytics: Human/Vehicle Classification; Tripwire; Double Tripwire; Perimeter; Object Abandon; Object Missing; Heatmap; Loitering; Running; Parking; People Counting; Crowed Detection; Safety Helmet Detection; On Duty Detection; Vid"
+  ],
+  "sources": [
+    "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/1407.html",
+    "https://web.archive.org/web/20240908213505/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/1407.html"
+  ],
+  "last_verified": "2026-10-20",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

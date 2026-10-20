@@ -1,0 +1,114 @@
+{
+  "id": "tiandy-tc-h334s-i5w-c-wifi-eu-4mm-v4-1",
+  "brand": "Tiandy",
+  "model": "TC-H334S I5W/C/WIFI/Eu/4mm/V4.1",
+  "type": "ptz",
+  "connectivity": [
+    "ethernet",
+    "wifi"
+  ],
+  "resolution": {
+    "megapixels": 3,
+    "max_width": 2304,
+    "max_height": 1296,
+    "label": "3MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "H: 87.7, V: 46.7, D: 98.6",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 50,
+    "min_lux_color": 0.02
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2304x1296",
+        "fps": 25
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "ptz": {
+    "autotracking": true
+  },
+  "power": {
+    "method": "DC12V±25%,Max. 12W",
+    "consumption_w": 12,
+    "voltage": "DC 12V"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "264(L)165(W)140(H) mm",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "3MP Fixed Color Maker Wi-Fi PT Camera",
+    "WDR: DWDR",
+    "IR range up to 50m"
+  ],
+  "sources": [
+    "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/879.html",
+    "https://web.archive.org/web/20241013052954/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/879.html"
+  ],
+  "last_verified": "2026-10-20",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}
