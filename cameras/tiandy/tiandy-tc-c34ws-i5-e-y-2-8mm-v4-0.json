@@ -1,0 +1,113 @@
+{
+  "id": "tiandy-tc-c34ws-i5-e-y-2-8mm-v4-0",
+  "brand": "Tiandy",
+  "model": "TC-C34WS I5/E/Y/2.8mm/V4.0",
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2592,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "H: 92.1",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 50,
+    "min_lux_color": 0.002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2592x1440",
+        "fps": 25
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "power": {
+    "method": "DC 12V±25%, PoE (802.3af)",
+    "consumption_w": 7,
+    "voltage": "DC 12V"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512
+  },
+  "audio": {
+    "microphone": true
+  },
+  "ip_rating": "IP67",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "160.8×68x74.5 mm",
+  "weight_g": 350,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "4MP Fixed Starlight IR Bullet Camera",
+    "WDR: 120dB",
+    "IR range up to 50m",
+    "Video analytics: Tripwire, Perimeter"
+  ],
+  "sources": [
+    "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/224.html",
+    "https://web.archive.org/web/20220812034421/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/224.html"
+  ],
+  "last_verified": "2026-10-20",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

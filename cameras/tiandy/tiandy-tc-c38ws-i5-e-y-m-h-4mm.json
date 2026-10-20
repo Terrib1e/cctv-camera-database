@@ -1,0 +1,114 @@
+{
+  "id": "tiandy-tc-c38ws-i5-e-y-m-h-4mm",
+  "brand": "Tiandy",
+  "model": "TC-C38WS I5/E/Y/M/H/4mm",
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "8MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "H: 84.8",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 50,
+    "min_lux_color": 0.003
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 20
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "power": {
+    "method": "DC12V±25%/PoE",
+    "consumption_w": 7,
+    "voltage": "DC 12V"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512
+  },
+  "audio": {
+    "microphone": true
+  },
+  "ip_rating": "IP67",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 65",
+  "dimensions_mm": "160.8×68x74.5 mm",
+  "weight_g": 500,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "8MP Starlight IR Bullet Camera",
+    "WDR: 120dB",
+    "IR range up to 50m",
+    "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Loitering, Running, Parking, Crowed, People Counting, On Duty Detection, Video Abnormal, Audio Abnormal, Heatmap, Face Capture(Face Detection)"
+  ],
+  "sources": [
+    "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/250.html",
+    "https://web.archive.org/web/20220524041241/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/250.html"
+  ],
+  "last_verified": "2026-10-20",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

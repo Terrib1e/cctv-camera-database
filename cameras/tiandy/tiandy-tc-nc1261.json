@@ -1,0 +1,116 @@
+{
+  "id": "tiandy-tc-nc1261",
+  "brand": "Tiandy",
+  "model": "TC-NC1261",
+  "type": "fisheye",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 12,
+    "max_width": 4000,
+    "max_height": 3072,
+    "label": "12MP"
+  },
+  "sensor": "1/1.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "1.98",
+    "aperture": "F2.8",
+    "varifocal": false
+  },
+  "field_of_view_deg": "H: 180",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 20,
+    "min_lux_color": 0.05
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "4000x3072",
+        "fps": 20
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "power": {
+    "method": "DC12V±10%/AC24V±25%/PoE",
+    "consumption_w": 11.7,
+    "voltage": "DC 12V"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 128
+  },
+  "audio": {
+    "microphone": true
+  },
+  "ip_rating": "IP66",
+  "ik_rating": "IK10",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-35 to 65",
+  "dimensions_mm": "Φ155×54 mm",
+  "weight_g": 750,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "12MP IR Fisheye Camera",
+    "WDR: Digital WDR",
+    "IR range up to 20m",
+    "Video analytics: Tripwire, Double Tripwire, Perimeter, Video Abnormal, Audio Abnormal, Heat Map",
+    "Early Warning: Yes"
+  ],
+  "sources": [
+    "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/58.html",
+    "https://web.archive.org/web/20220812033943/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/58.html"
+  ],
+  "last_verified": "2026-10-20",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}
