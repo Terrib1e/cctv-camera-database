@@ -68,7 +68,6 @@
     "max_microsd_gb": 512
   },
   "audio": {
-    "microphone": true,
     "speaker": true
   },
   "ip_rating": "IP66",
@@ -87,7 +86,7 @@
     "WDR: 120dB",
     "Optical zoom: 44X",
     "IR range up to 200m",
-    "Video analytics: Human/Vehicle Classification; Tripwire; Double Tripwire; Perimeter; Object Abandon; Object Missing; Heatmap; Loitering; Running; Parking; People Counting; Safety Helmet Detection; On Duty Detection; Video Abnormal; Audio"
+    "Video analytics: Human/Vehicle Classification; Tripwire; Double Tripwire; Perimeter; Object Abandon; Object Missing; Heatmap; Loitering; Running; Parking; People Counting; Safety Helmet Detection; On Duty Detection; Video Abnormal; Audio Abnormal; Crowd Detection"
   ],
   "sources": [
     "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/1538.html",

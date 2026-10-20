@@ -66,7 +66,8 @@
     "max_microsd_gb": 128
   },
   "audio": {
-    "microphone": true
+    "microphone": true,
+    "speaker": true
   },
   "ip_rating": "IP67",
   "environment": [
