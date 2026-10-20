@@ -86,15 +86,14 @@
     "https://www.matrixcomsec.com/firmware_downloads-ipvs/satatya-enterprise-nvr/SATATYA-PZCR20ML33CWP-System-Manual.pdf",
     "https://www.matrixcomsec.com/product/ptz-camera/"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-20",
   "cloud_dependency": "local",
   "configs": {
     "frigate": {
-      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/1/1",
-      "best_substream": "rtsp://{user}:{pass}@{ip}:554/1/2",
       "onvif_port": 80,
       "autotracking": false,
-      "verified": false
+      "verified": false,
+      "notes": "Matrix's system manual says the RTSP path is shown as an example in the camera's web UI; enable RTSP (and ONVIF) under Platform access first. Or add it through ONVIF, which discovers the stream URL."
     },
     "home_assistant": {
       "integration": "onvif",

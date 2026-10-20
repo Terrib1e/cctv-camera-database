@@ -114,18 +114,20 @@
   "release_notes": "Specs per official Matrix SATATYA PZCR50ML42CWP installation guide (5MP 42X optical zoom IR dome PTZ). 1/2.8\" CMOS, IR 300m, auto-tracking, IP66, IK10 (optional metal housing). NDAA Compliant.",
   "sources": [
     "https://www.matrixcomsec.com/wp-content/uploads/2025/03/SATATYA-PZCR50ML42CWP-Dome-IP-Camera-Instllation-Guide.pdf",
-    "https://www.matrixcomsec.com/product/ptz-camera/"
+    "https://www.matrixcomsec.com/product/ptz-camera/",
+    "https://matrixcomsec.com/firmware_downloads-ipvs/satatya-enterprise-nvr/SATATYA%20PZCR50ML42CWP%20System%20Manual.pdf"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-20",
   "cloud_dependency": "local",
   "configs": {
     "frigate": {
-      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/1/1",
-      "best_substream": "rtsp://{user}:{pass}@{ip}:554/1/2",
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/main",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/sub",
       "onvif_port": 80,
       "autotracking": false,
       "two_way_audio": true,
-      "verified": false
+      "verified": false,
+      "notes": "From Matrix's PZCR50ML42CWP System Manual (Table 24: /main, /sub, /third; RTSP port 554). Not yet tested by an owner."
     },
     "home_assistant": {
       "integration": "onvif",
