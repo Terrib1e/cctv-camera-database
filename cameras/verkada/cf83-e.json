@@ -13,7 +13,7 @@
     "megapixels": 12.5,
     "max_width": 3520,
     "max_height": 3520,
-    "label": "12MP"
+    "label": "12.5MP"
   },
   "sensor": "1/1.6\" progressive CMOS",
   "lens": {
@@ -33,7 +33,14 @@
       "H.265",
       "H.264"
     ],
-    "max_fps": 24
+    "max_fps": 24,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3520x3520",
+        "fps": 24
+      }
+    ]
   },
   "audio": {
     "microphone": true,
@@ -41,7 +48,7 @@
     "two_way": false
   },
   "power": {
-    "method": "PoE (802.3at Type 2; 19.5W with IR, 24.8W extended temperature)",
+    "method": "PoE+ (802.3at Type 2; 19.5W with IR, 9.5W without IR, 24.8W extended temperature)",
     "consumption_w": 19.5
   },
   "protocols": [
@@ -78,9 +85,14 @@
   ],
   "sources": [
     "https://www.verkada.com/security-cameras/fisheye/cf83-e/",
-    "https://docs.verkada.com/docs/video-security-cf83-e-datasheet.pdf"
+    "https://docs.verkada.com/docs/video-security-cf83-e-datasheet.pdf",
+    "https://help.verkada.com/verkada-cameras/video-streaming-and-sharing/live-streaming/low-latency-rtsp-streaming"
   ],
-  "last_verified": "2026-08-19",
+  "last_verified": "2026-10-20",
   "ndaa_compliant": true,
-  "cloud_dependency": "local"
+  "cloud_dependency": "local",
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  }
 }
