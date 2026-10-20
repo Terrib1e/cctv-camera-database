@@ -1,0 +1,117 @@
+{
+  "id": "reolink-e331",
+  "brand": "Reolink",
+  "ndaa_compliant": true,
+  "model": "E331",
+  "aliases": [
+    "E Series E331"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "wifi"
+  ],
+  "release_year": 2025,
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2880,
+    "max_height": 1616,
+    "label": "5MP"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4",
+    "aperture": "F1.6"
+  },
+  "field_of_view_deg": "87.5 horizontal/45.4 vertical",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 12
+  },
+  "ptz": {
+    "autotracking": true
+  },
+  "power": {
+    "method": "DC 5V/1A (USB Type-C)"
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": true
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "features": [
+    "355° pan / 50° tilt",
+    "auto tracking",
+    "person/pet detection",
+    "crying detection",
+    "privacy mode",
+    "time lapse",
+    "dual-band WiFi 6 (2.4/5 GHz)",
+    "Bluetooth",
+    "works with Reolink NVR and Home Hub",
+    "Alexa and Google Assistant"
+  ],
+  "sources": [
+    "https://reolink.com/product/e331/",
+    "https://reolink-storage.s3.us-east-1.amazonaws.com/website/shop/public/specs/e331-1784717843876.pdf",
+    "https://reolink.com/wp-json/reo-v2/download/firmware/?dlProductId=288",
+    "https://support.reolink.com/articles/900000630706-Introduction-to-RTSP/",
+    "https://www.home-assistant.io/integrations/reolink/"
+  ],
+  "last_verified": "2026-10-20",
+  "power_source": [
+    "dc"
+  ],
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Preview_01_main",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Preview_01_sub",
+      "autotracking": false,
+      "notes": "Official Reolink RTSP path (Reolink RTSP KB, port 554); the E331 spec sheet lists RTSP and ONVIF. Not yet tested on this model. The camera encodes H.264 only. Frigate autotracking is not set up for Reolink PT cameras, which use absolute ONVIF PTZ; use the camera's own auto-tracking.",
+      "verified": false,
+      "two_way_audio": true
+    },
+    "home_assistant": {
+      "integration": "reolink",
+      "notes": "Listed by the Home Assistant Reolink integration as a tested directly connected model."
+    },
+    "blue_iris": {
+      "profile": "Reolink",
+      "notes": "Select 'Reolink' profile. If not listed, use Generic/ONVIF with RTSP path /Preview_01_main."
+    }
+  },
+  "dimensions_mm": "Φ73 x 114",
+  "weight_g": 171,
+  "operating_temp_c": "-10 to 55",
+  "video": {
+    "codecs": [
+      "H.264"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2880x1616",
+        "fps": 20,
+        "codec": "H.264"
+      }
+    ]
+  },
+  "environment": [
+    "indoor"
+  ],
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "cloud-optional"
+}
