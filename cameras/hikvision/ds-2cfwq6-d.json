@@ -71,7 +71,8 @@
     "indoor"
   ],
   "ptz": {
-    "autotracking": true
+    "autotracking": true,
+    "onvif_ptz": "none"
   },
   "features": [
     "Dual-lens (2K + 2K)",

@@ -85,7 +85,8 @@
     "outdoor"
   ],
   "ptz": {
-    "autotracking": true
+    "autotracking": true,
+    "onvif_ptz": "none"
   },
   "features": [
     "Omni: two motorized 4x varifocal bullet channels (pan 0 to 190, tilt -5 to 30) + PTZ channel",

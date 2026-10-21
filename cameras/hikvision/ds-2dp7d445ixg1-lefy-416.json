@@ -92,7 +92,8 @@
     "outdoor"
   ],
   "ptz": {
-    "autotracking": true
+    "autotracking": true,
+    "onvif_ptz": "continuous"
   },
   "features": [
     "4 motorized panoramic lenses (pan/tilt/rotate) covering up to 360 degrees + 4 MP PTZ",

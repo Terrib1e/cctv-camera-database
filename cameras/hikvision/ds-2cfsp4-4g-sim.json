@@ -74,7 +74,8 @@
     "outdoor"
   ],
   "ptz": {
-    "autotracking": true
+    "autotracking": true,
+    "onvif_ptz": "none"
   },
   "features": [
     "AOV mode (24/7 recording)",
