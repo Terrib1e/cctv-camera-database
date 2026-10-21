@@ -1,0 +1,141 @@
+{
+  "id": "hikvision-ds-2sf7c442mxg1-wd-4g-26",
+  "brand": "Hikvision",
+  "model": "DS-2SF7C442MXG1-WD/4G/26",
+  "aliases": [
+    "TandemVu 7C Series Panoramic 4MP 42X Water-Level Detection Darkfighter Network Speed Dome",
+    "DS-2SF7C442MXG1-WD/4G/26(F0)"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet",
+    "4g"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "PTZ channel: 1/1.8\" Progressive Scan CMOS; panoramic channel: 1/2.5\" Progressive Scan CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "PTZ 6-252 (42x zoom) / panoramic 2.8 (fixed)",
+    "aperture": "F1.2 (PTZ) / F1.0 (panoramic)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "PTZ 59.1 to 1 horizontal / panoramic 190 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 200,
+    "min_lux_color": 0.0003
+  },
+  "ptz": {
+    "onvif_ptz": "continuous"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": false,
+    "speaker": true,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ± 25%, max. 60 W (sleep mode 0.5 W; low-power preview modes approx. 4-12 W)",
+    "consumption_w": 60,
+    "voltage": "12 VDC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "Ø243 x 424",
+  "weight_g": 7900,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "TandemVu: 190 deg panoramic 24/7 colour channel (3680x1656) + 42x optical zoom PTZ channel",
+    "Water-level gauge reading (0 to 40 m range, 1 cm scale, ±2 cm accuracy, up to 100 m distance)",
+    "4G LTE transmission (EU and LA band variants, nano SIM)",
+    "Low-power, performance and sleep modes; remote wake-up (100 Ah battery: approx. 30 days)",
+    "DarkFighter low-light imaging",
+    "PTZ channel IR up to 200 m; panoramic channel white light up to 30 m",
+    "Human body, face and vehicle detection (PTZ channel)",
+    "Wiper, demist and gyroscope; image stabilization",
+    "120 dB WDR, optical defog",
+    "7 alarm inputs, 2 alarm outputs, RS-485",
+    "TVS 6000 V lightning protection"
+  ],
+  "release_notes": "Per DS-2SF7C442MXG1-WD_4G_26F0_Datasheet_20260813.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000106589/DS-2SF7C442MXG1-WD_4G_26F0_Datasheet_20260813.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

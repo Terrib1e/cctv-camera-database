@@ -1,0 +1,144 @@
+{
+  "id": "hikvision-ds-2sk8c440mxg1-lwf-28",
+  "brand": "Hikvision",
+  "model": "DS-2SK8C440MXG1-LWF/28",
+  "aliases": [
+    "DS-2SK8C440MXG1-LWF/28(25x25x)",
+    "DeepinView Omni PTZ 8C Series 4 MP 40X DarkFighter Network Speed Dome"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "3 x 1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 3,
+    "focal_length_mm": "Channel 1: 6-240 (40x optical); channels 2/3: 6-150 (25x optical)",
+    "aperture": "F1.2 (channel 1) / F1.5 (channels 2/3)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "59.1 to 2 horizontal (channel 1) / 58.8 to 3.1 horizontal (channels 2/3)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 350,
+    "min_lux_color": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": false,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC ±25%, max. 120 W (incl. max. 22.6 W IR, max. 13 W heater)",
+    "consumption_w": 120,
+    "voltage": "36 VDC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "779 x 277 x 523",
+  "weight_g": 20800,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true
+  },
+  "features": [
+    "Three independent 4MP PTZ channels in one unit",
+    "Channel 1: 40x optical zoom, white light up to 80 m and IR up to 350 m",
+    "Channels 2/3: 25x optical zoom, IR up to 150 m",
+    "Unit base pan 0 to 280 for all channels",
+    "DarkFighter 2.0",
+    "Auto-tracking and linked tracking",
+    "Intelligent Transportation System (road incident and traffic violation detection)",
+    "Built-in 1000M fiber module (up to 20 km)",
+    "TPM 2.0 (FIPS 140-2 level 2)",
+    "Gyroscope-assisted EIS",
+    "Optical defog",
+    "Wiper and demist",
+    "7 alarm inputs / 2 alarm outputs",
+    "RS-485"
+  ],
+  "release_notes": "Per DS-2SK8C440MXG1-LWF_2825x25x_Datasheet_20260818.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000176577/DS-2SK8C440MXG1-LWF_2825x25x_Datasheet_20260818.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102"
+    },
+    "home_assistant": {
+      "integration": "generic",
+      "notes": "Datasheet lists ISAPI/SDK/ISUP but no ONVIF; use the RTSP stream (Generic Camera)."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF not listed in datasheet."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

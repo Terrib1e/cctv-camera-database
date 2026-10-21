@@ -1,0 +1,128 @@
+{
+  "id": "hikvision-ds-2dp8a845ixg-lf-432",
+  "brand": "Hikvision",
+  "model": "DS-2DP8A845IXG-LF/432(F0)",
+  "aliases": [
+    "32MP 180 Panoramic & PTZ Camera",
+    "DS-2DP8A845IXG-LF/432"
+  ],
+  "resolution": {
+    "megapixels": 32,
+    "max_width": 8160,
+    "max_height": 3616,
+    "label": "32MP"
+  },
+  "lens": {
+    "count": 5,
+    "focal_length_mm": "panoramic 2.8 (4 fixed lenses) / PTZ 7.1-320 (45x zoom)",
+    "aperture": "F1.0 (panoramic) / F1.5 (PTZ)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "panoramic 180 horizontal / PTZ 56.1 to 2.0 horizontal",
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "8160x3616",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1560x656",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "36 VDC, max. 135 W (incl. max. 12 W for IR)",
+    "consumption_w": 135,
+    "voltage": "36 VDC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "dimensions_mm": "Ø391.8 x 400.5",
+  "weight_g": 18000,
+  "features": [
+    "PanoVu: 180 deg stitched 32MP panorama (4 sensors) + 45x PTZ",
+    "45x optical / 16x digital zoom (PTZ channel)",
+    "Laser/IR supplement light up to 500 m",
+    "Panorama tracking, event tracking and patrol tracking",
+    "AR multi-dimensional arming",
+    "EIS",
+    "120 dB WDR (PTZ channel)",
+    "Built-in fiber module (1000M, up to 20 km)",
+    "7 alarm inputs, RS-485",
+    "6000V lightning protection"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000086502/DS-2DP8A845IXG-LF_432F0_Datasheet_20251204.pdf"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "night_vision": {
+    "type": "ir",
+    "range_m": 500,
+    "min_lux_color": 0.0005
+  },
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "ip_rating": "IP66",
+  "ik_rating": "IK10",
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "release_notes": "Per DS-2DP8A845IXG-LF_432F0_Datasheet_20251204.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1560,
+        "height": 656,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

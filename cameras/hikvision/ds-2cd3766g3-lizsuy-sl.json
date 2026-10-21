@@ -1,0 +1,147 @@
+{
+  "id": "hikvision-ds-2cd3766g3-lizsuy-sl",
+  "brand": "Hikvision",
+  "model": "DS-2CD3766G3-LIZSUY/SL",
+  "aliases": [
+    "6 MP Smart hybrid light with Darkfighter S Strobe Light and Audible Warning Motorized Varifocal Dome Network Camera"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3200,
+    "max_height": 1800,
+    "label": "6MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7 to 13.5 (motorized varifocal)",
+    "aperture": "Max. F1.2",
+    "varifocal": true
+  },
+  "field_of_view_deg": "112.3 to 41.2 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 40,
+    "min_lux_color": 0.001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3200x1800",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ± 25%, max. 16.2 W / PoE (802.3at, Class 4, max. 18 W)",
+    "consumption_w": 18,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø155 x 140.4",
+  "weight_g": 1250,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "Smart Hybrid Light (IR + white light, 3 supplemental lighting modes)",
+    "DarkFighter S",
+    "HikAI-ISP noise reduction",
+    "Motorized pan/tilt/rotate/zoom (PTRZ) for remote installation adjustment",
+    "Active strobe light and audible warning",
+    "130 dB WDR",
+    "Built-in arrayed dual-microphone",
+    "Audio line in/out and alarm I/O",
+    "Anti-corrosion design (NEMA 4X)",
+    "H.265+ compression"
+  ],
+  "release_notes": "Per DS-2CD3766G3-LIZSUY_SLPTRZ_Datasheet_20260902.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000176829/DS-2CD3766G3-LIZSUY_SLPTRZ_Datasheet_20260902.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

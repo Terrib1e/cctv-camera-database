@@ -1,0 +1,142 @@
+{
+  "id": "hikvision-ds-2cd3t26g2-isu-sl",
+  "brand": "Hikvision",
+  "model": "DS-2CD3T26G2-ISU/SL",
+  "aliases": [
+    "2 MP AcuSense Strobe Light and Audible Warning Fixed Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP"
+  },
+  "sensor": "1/2.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8, 4 and 6 (fixed, optional)",
+    "aperture": "F1.4",
+    "varifocal": false
+  },
+  "field_of_view_deg": "107 horizontal (2.8mm) / 86 horizontal (4mm) / 55 horizontal (6mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 60,
+    "min_lux_color": 0.002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "640x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3at, Class 4, max. 13 W) / DC 12V ±25%, 0.95 A, max. 12 W",
+    "consumption_w": 13,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "325.5 x Ø105",
+  "weight_g": 1140,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "AcuSense human/vehicle classification",
+    "Active strobe light and audible warning",
+    "Built-in two-way audio (2 W speaker)",
+    "DarkFighter low-light",
+    "120 dB true WDR",
+    "1080p up to 60 fps",
+    "2 alarm in / 2 alarm out"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000035321/DS-2CD3T26G2-ISU_SL_Datasheet_20260807.pdf"
+  ],
+  "release_notes": "Per DS-2CD3T26G2-ISU_SL_Datasheet_20260807.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 640,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

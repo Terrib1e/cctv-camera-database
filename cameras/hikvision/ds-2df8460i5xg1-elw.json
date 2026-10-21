@@ -1,0 +1,147 @@
+{
+  "id": "hikvision-ds-2df8460i5xg1-elw",
+  "brand": "Hikvision",
+  "model": "DS-2DF8460I5XG1-ELW",
+  "aliases": [
+    "DS-2DF8460I5XG1-ELWTK",
+    "DF8 Series 4MP 60X DarkFighter Laser Network Speed Dome"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "6-360 (60x optical zoom)",
+    "aperture": "F1.2",
+    "varifocal": true
+  },
+  "field_of_view_deg": "56.6 to 1.7 horizontal",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 500,
+    "min_lux_color": 0.0003
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": false,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC / Hi-PoE, max. 40 W (incl. max. 18 W IR, max. 6 W heater)",
+    "consumption_w": 40,
+    "voltage": "36 VDC / Hi-PoE"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø266 x 410",
+  "weight_g": 8000,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true
+  },
+  "features": [
+    "60x optical zoom, 16x digital zoom",
+    "Laser illumination up to 500 m",
+    "DarkFighter 2.0",
+    "150 dB WDR",
+    "120 fps at 1080p / 60 fps at 4MP (monitoring mode)",
+    "Auto-tracking 3.0",
+    "Face capture and face comparison",
+    "License plate recognition and vehicle attribute detection",
+    "Gyroscope-assisted EIS",
+    "Optical defog",
+    "Wiper, heater and demist",
+    "7 alarm inputs / 2 alarm outputs",
+    "RS-485 and analog BNC video output",
+    "Anti-corrosion (NEMA 4X)"
+  ],
+  "release_notes": "Per DS-2DF8460I5XG1-ELWTKTUR_Datasheet_20260814.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000194773/DS-2DF8460I5XG1-ELWTKTUR_Datasheet_20260814.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

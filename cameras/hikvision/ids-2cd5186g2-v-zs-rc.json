@@ -1,0 +1,137 @@
+{
+  "id": "hikvision-ids-2cd5186g2-v-zs-rc",
+  "brand": "Hikvision",
+  "model": "iDS-2CD5186G2/V-ZS/RC",
+  "aliases": [
+    "8MP DeepinViewX In-Ceiling Mount Moto Varifocal Dome Camera"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "8MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8-12 or 8-32 (motorized varifocal, optional)",
+    "aperture": "F1.4 to F2.1 (2.8-12 mm) / F1.7 (8-32 mm)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "112.0 to 47.5 horizontal (2.8-12mm) / 41.8 to 15.0 horizontal (8-32mm)",
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3at, Type 2, Class 4, max. 13.3 W) / DC 12V ±20%, 0.96 A, max. 11.5 W",
+    "consumption_w": 13.3,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø135 x 149.1",
+  "weight_g": 1080,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "DeepinViewX (Guanlan large-scale AI model)",
+    "DarkFighter 2.0 low-light",
+    "130 dB WDR",
+    "PTRZ for recessed in-ceiling mount",
+    "AI Encoding (up to 50% storage saving)",
+    "Perimeter protection with human/vehicle classification",
+    "Face capture and multi-target-type detection",
+    "Regional people counting and heat map",
+    "EIS image stabilization",
+    "RS-485, 2 alarm in / 2 alarm out",
+    "Audible warning linkage"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000181652/iDS-2CD5186G2_V-ZS_RC_Datasheet_20260630.pdf"
+  ],
+  "release_notes": "Per iDS-2CD5186G2_V-ZS_RC_Datasheet_20260630.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

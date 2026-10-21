@@ -1,0 +1,135 @@
+{
+  "id": "hikvision-ds-2cd2383g3-liy",
+  "brand": "Hikvision",
+  "model": "DS-2CD2383G3-LIY",
+  "aliases": [
+    "8 MP Acusense Smart Hybrid Light Fixed Turret Network Camera"
+  ],
+  "type": "turret",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "4K"
+  },
+  "sensor": "1/2.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 and 4 (fixed, optional)",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "108 horizontal (2.8mm) / 88 horizontal (4mm)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux_color": 0.003
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ± 25%, 0.67 A, max. 8 W,Ø 5.5 mm coaxial power plug,reverse polarity protection, PoE: IEEE 802.3af, Class 3, max. 9.5 W",
+    "consumption_w": 9.5,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "Ø 127.3 × 96.3",
+  "weight_g": 610,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "Upgraded imaging performance with Powered by DarkFighter",
+    "Smart Hybrid Light: Smart Mode & IR Mode & White Light Mode",
+    "Anti-corrosion design for stable protection (NEMA 4X)",
+    "Person and vehicle classification based on deep learning",
+    "130 dB & AI WDR, upgraded performance, with auto on/off",
+    "Crystal-clear audio with Arrayed Dual-Mic"
+  ],
+  "release_notes": "Per DS-2CD2383G3-LIY_Datasheet_20260909.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000116833/DS-2CD2383G3-LIY_Datasheet_20260909.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

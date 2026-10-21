@@ -1,0 +1,137 @@
+{
+  "id": "hikvision-ds-2sk6c425mxg1-lm-l-28",
+  "brand": "Hikvision",
+  "model": "DS-2SK6C425MXG1/LM-L/28",
+  "aliases": [
+    "Omni 6C Series 4 MP 25X DarkFighter Network Speed Dome",
+    "DS-2SK6C425MXG1/LM-L/28(C4C4)"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP x2 bullet + 4MP PTZ"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS (each channel)",
+  "lens": {
+    "count": 3,
+    "focal_length_mm": "8 to 32 (2 bullet channels) / 6 to 150 (PTZ channel)",
+    "aperture": "F1.6 (bullet) / F1.5 (PTZ)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "40.3 to 14.5 horizontal (bullet channels) / 58.8 to 3.1 horizontal (PTZ)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 200,
+    "min_lux_color": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC ±25%, max. 90 W",
+    "consumption_w": 90,
+    "voltage": "36 VDC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø429 x 344",
+  "weight_g": 9100,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true
+  },
+  "features": [
+    "Omni: two motorized 4x varifocal bullet channels (pan 0 to 190, tilt -5 to 30) + PTZ channel",
+    "25x optical zoom, 16x digital zoom (PTZ)",
+    "DarkFighter 2.0",
+    "IR up to 200 m and white light up to 30 m (PTZ); IR 80 m / white light 15 m (bullet channels)",
+    "Large-scale AI model for perimeter protection",
+    "Auto-tracking, linked tracking capture",
+    "Traffic violation, traffic flow and road incident detection",
+    "Human body, face and vehicle capture",
+    "AcuSeek (with AcuSeek NVR)",
+    "TPM 2.0 (FIPS 140-2 level 2)",
+    "Optical defog",
+    "120 dB WDR"
+  ],
+  "release_notes": "Per DS-2SK6C425MXG1_LM-L_28C4C4_Datasheet_20260827.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000170988/DS-2SK6C425MXG1_LM-L_28C4C4_Datasheet_20260827.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102"
+    },
+    "home_assistant": {
+      "integration": "generic",
+      "notes": "No ONVIF per datasheet; use the Generic Camera integration with the RTSP stream."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile; RTSP only (no ONVIF per datasheet)."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

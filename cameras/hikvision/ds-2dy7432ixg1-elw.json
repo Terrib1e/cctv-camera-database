@@ -1,0 +1,140 @@
+{
+  "id": "hikvision-ds-2dy7432ixg1-elw",
+  "brand": "Hikvision",
+  "model": "DS-2DY7432IXG1-ELW",
+  "aliases": [
+    "4MP 32X DarkFighter IR Network Positioning System"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "6 to 192",
+    "aperture": "F1.6",
+    "varifocal": true
+  },
+  "field_of_view_deg": "60.2 to 2.3 horizontal",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 300,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 256
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC ±25% / PoE (802.3bt, Type 3, Class 6), max. 55 W (incl. IR and heater)",
+    "consumption_w": 55,
+    "voltage": "36 VDC / PoE",
+    "poe_class": 6
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "253 x 181 x 408",
+  "weight_g": 7600,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "features": [
+    "32x optical zoom, 16x digital zoom",
+    "DarkFighter 2.0 low-light imaging",
+    "120 dB WDR",
+    "Digital defog",
+    "Face capture",
+    "Auto-tracking",
+    "TVS 6000 V lightning/surge protection",
+    "Heater",
+    "RS-485 (Pelco-P/D)",
+    "Audio line in/out",
+    "Alarm I/O (2 in / 1 out)"
+  ],
+  "release_notes": "Per DS-2DY7432IXG1-ELW_Datasheet_20261013.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000190398/DS-2DY7432IXG1-ELW_Datasheet_20261013.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

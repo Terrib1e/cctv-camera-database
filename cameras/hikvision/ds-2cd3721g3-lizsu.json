@@ -1,0 +1,136 @@
+{
+  "id": "hikvision-ds-2cd3721g3-lizsu",
+  "brand": "Hikvision",
+  "model": "DS-2CD3721G3-LIZSU",
+  "aliases": [
+    "2 MP Smart Hybrid Light Motion 2.0 Motorized Varifocal Dome Network Camera"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP"
+  },
+  "sensor": "1/2.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7 to 13.5 (motorized varifocal)",
+    "aperture": "F1.6",
+    "varifocal": true
+  },
+  "field_of_view_deg": "103 to 31 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux_color": 0.003
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "640x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1280x720",
+        "fps": 1,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 512
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3af, Class 3, max. 12 W) / 12 VDC ±25%, 0.8 A, max. 9.6 W",
+    "consumption_w": 12,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "Ø121.5 x 97.6",
+  "weight_g": 590,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "Smart Hybrid Light (IR + white light, 3 supplemental lighting modes)",
+    "HikAI-ISP noise reduction and color correction",
+    "Motion Detection 3.0 (human, vehicle and animal classification)",
+    "Line crossing and intrusion detection with human/vehicle/animal filtering",
+    "120 dB WDR",
+    "Audio line in/out",
+    "Alarm I/O (1 in / 1 out)"
+  ],
+  "release_notes": "Per DS-2CD3721G3-LIZSU_Datasheet_20261010.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000191325/DS-2CD3721G3-LIZSU_Datasheet_20261010.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 640,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

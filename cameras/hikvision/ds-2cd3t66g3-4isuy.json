@@ -1,0 +1,143 @@
+{
+  "id": "hikvision-ds-2cd3t66g3-4isuy",
+  "brand": "Hikvision",
+  "model": "DS-2CD3T66G3-4ISUY",
+  "aliases": [
+    "6 MP AcuSense Fixed Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3200,
+    "max_height": 1800,
+    "label": "6MP"
+  },
+  "sensor": "1/2.4\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 and 4 (fixed, optional)",
+    "aperture": "F1.2",
+    "varifocal": false
+  },
+  "field_of_view_deg": "109.5 horizontal (2.8mm) / 89.4 horizontal (4mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 90,
+    "min_lux_color": 0.0008
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3200x1800",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ± 25%, max. 10 W / PoE (802.3af, Class 3, max. 12.5 W)",
+    "consumption_w": 12.5,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "323.2 x 91.2 x 88.7",
+  "weight_g": 1200,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "AcuSense person and vehicle classification (deep learning)",
+    "HikAI-ISP noise reduction",
+    "130 dB WDR",
+    "Built-in arrayed dual-microphone",
+    "Anti-corrosion design (NEMA 4X)",
+    "H.265+ compression"
+  ],
+  "release_notes": "Per DS-2CD3T66G3-4ISUY_Datasheet_20260901.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000116158/DS-2CD3T66G3-4ISUY_Datasheet_20260901.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

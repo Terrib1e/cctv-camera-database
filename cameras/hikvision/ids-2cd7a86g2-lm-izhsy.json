@@ -1,0 +1,142 @@
+{
+  "id": "hikvision-ids-2cd7a86g2-lm-izhsy",
+  "brand": "Hikvision",
+  "model": "iDS-2CD7A86G2/LM-IZHSY",
+  "aliases": [
+    "8MP DeepinViewX Moto Varifocal Bullet Camera",
+    "iDS-2CD7A86G2/LM-IZHSY#UK"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "8MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8-12 or 8-32 (motorized varifocal, optional)",
+    "aperture": "F1.4 to F2.1 (2.8-12 mm) / F1.7 (8-32 mm)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "112.0 to 47.5 horizontal (2.8-12mm) / 41.8 to 15.0 horizontal (8-32mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 100,
+    "min_lux_color": 0.002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3at, Type 2, Class 4, max. 24.95 W) / 12 VDC ±20%, 2.08 A, max. 24.95 W / 24 VAC ±20%, max. 24.05 W",
+    "consumption_w": 24.95,
+    "voltage": "12 VDC / 24 VAC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø140 x 377.4",
+  "weight_g": 2280,
+  "operating_temp_c": "-40 to 65",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "DeepinViewX with Guanlan large-model algorithms",
+    "License plate recognition and vehicle attribute analysis",
+    "DarkFighter 2.0 low-light",
+    "140 dB WDR",
+    "IR up to 100 m (8-32 mm) / 60 m (2.8-12 mm)",
+    "Built-in heater",
+    "2 built-in microphones and 1.5 W speaker",
+    "TPM 2.0",
+    "Wiegand, RS-485, 2 alarm in / 2 alarm out",
+    "EIS",
+    "Anti-corrosion (NEMA 4X, Y variant)"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000181796/iDS-2CD7A86G2_LM-IZHSYUK_Datasheet_20251211.pdf"
+  ],
+  "release_notes": "Per iDS-2CD7A86G2_LM-IZHSYUK_Datasheet_20251211.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

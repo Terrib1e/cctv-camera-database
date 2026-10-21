@@ -1,0 +1,129 @@
+{
+  "id": "hikvision-ds-2de2c400mwg-w-kit",
+  "brand": "Hikvision",
+  "model": "DS-2DE2C400MWG/W-KIT",
+  "aliases": [
+    "4 MP Smart Hybrid Light Mini PT Network Camera"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet",
+    "wifi"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/2.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 or 4 (fixed, optional)",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "94 horizontal (2.8 mm) / 70 horizontal (4 mm)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 25,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 20,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "768x432",
+        "fps": 20,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ±25%, 0.75 A, max. 9 W",
+    "consumption_w": 9,
+    "voltage": "12 VDC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "ip_rating": "IP66",
+  "dimensions_mm": "131.9 x 163.9 x 312.6",
+  "weight_g": 600,
+  "operating_temp_c": "-30 to 40",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true
+  },
+  "features": [
+    "Wi-Fi 6 (802.11ax, 2.4 GHz) plus RJ45",
+    "Pan 0 to 345, tilt 0 to 80",
+    "Auto-tracking Lite",
+    "Smart Hybrid Light (IR + white light, 25 m)",
+    "Human detection",
+    "Two-way audio"
+  ],
+  "release_notes": "Per DS-2DE2C400MWG_W-KIT_Datasheet_20250113.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000124648/DS-2DE2C400MWG_W-KIT_Datasheet_20250113.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 768,
+        "height": 432,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}
