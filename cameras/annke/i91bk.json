@@ -85,7 +85,7 @@
   "markets": [
     "global"
   ],
-  "last_verified": "2026-07-19",
+  "last_verified": "2026-10-21",
   "power_source": [
     "poe",
     "dc"
@@ -93,13 +93,18 @@
   "configs": {
     "frigate": {
       "detect": {
-        "width": 1280,
-        "height": 720,
+        "width": 704,
+        "height": 576,
         "fps": 5
       },
       "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
       "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
-      "onvif_port": 80
+      "onvif_port": 80,
+      "verified": true,
+      "tested_by": "nikosch86 (#412)",
+      "tested_version": "0.18.2",
+      "autotracking": false,
+      "notes": "Main stream /Streaming/Channels/101 and ONVIF PTZ control on port 80 confirmed by an owner (firmware V5.7.1 build 250227). The /102 substream ran at 704x576 on that camera and was not tested in Frigate; the owner ran record and detect on the main stream (3072x1728) with detect scaled to 1920x1080. Frigate autotracking is unreliable: the camera reports MoveStatus IDLE right after a move command."
     },
     "home_assistant": {
       "integration": "onvif",
@@ -117,5 +122,23 @@
   "field_of_view_deg": "96.7-31.6 horizontal (115.1-36.3 diagonal)",
   "operating_temp_c": "-20 to 60",
   "dimensions_mm": "Ø130.7 x 101.7",
-  "weight_g": 530
+  "weight_g": 530,
+  "community_notes": [
+    {
+      "note": "After a PTZ move command, ONVIF GetStatus reports MoveStatus IDLE for about 0.1 s before switching to MOVING. A client that polls right after the command treats the move as finished, so Frigate autotracking (0.18.2) ends every move at once. Manual PTZ from Frigate works.",
+      "category": "onvif",
+      "firmware": "V5.7.1 build 250227",
+      "source": "https://github.com/ch-bas/cctv-camera-database/issues/409",
+      "reported_by": "nikosch86",
+      "date": "2026-10-21"
+    },
+    {
+      "note": "ONVIF AbsoluteMove zoom only moves in whole steps of the 4x optical zoom (1x, 2x, 3x, 4x); zoom positions between two steps cannot be reached.",
+      "category": "ptz",
+      "firmware": "V5.7.1 build 250227",
+      "source": "https://github.com/ch-bas/cctv-camera-database/issues/410",
+      "reported_by": "nikosch86",
+      "date": "2026-10-21"
+    }
+  ]
 }
