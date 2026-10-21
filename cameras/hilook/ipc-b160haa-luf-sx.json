@@ -1,0 +1,128 @@
+{
+  "id": "hilook-ipc-b160haa-luf-sx",
+  "brand": "HiLook",
+  "model": "IPC-B160HAA-LUF/SX",
+  "aliases": [
+    "HiLook 6 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3200,
+    "max_height": 1800,
+    "label": "6MP"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3200x1800",
+        "fps": 20
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 20
+      }
+    ]
+  },
+  "sensor": "1/2.4\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 / 4 (fixed)",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "105 / 79 horizontal (2.8 mm / 4 mm)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux_color": 0.003
+  },
+  "power": {
+    "method": "PoE (802.3af) / DC 12V",
+    "consumption_w": 10.5,
+    "voltage": "12 VDC ± 25%",
+    "poe_class": 3
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "ip_rating": "IP67",
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "features": [
+    "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+    "Motion Detection 3.0 (person/vehicle classification)",
+    "120 dB WDR",
+    "Live Guard: strobe light flashing (white / red-blue, configurable)",
+    "two-way audio (built-in speaker)",
+    "audible warning",
+    "ONVIF Profile S/G/T"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "69.1 x 66.9 x 179",
+  "weight_g": 320,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+    }
+  },
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ],
+  "release_notes": "Per IPC-B160HAA-LUF_SX_Datasheet_20261015.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000113445/IPC-B160HAA-LUF_SX_Datasheet_20261015.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "hilook-ptz-t4215-d3",
+  "brand": "HiLook",
+  "model": "PTZ-T4215-D3",
+  "aliases": [
+    "PTZ-T4215-D3(F)",
+    "PTZ-T4215-D3(HiLookNEU)",
+    "PTZ-T4215-D3(C)",
+    "4-inch 2 MP 15X Powered by DarkFighter Analog Speed Dome"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "5-75 (15x optical)",
+    "aperture": "F1.6-F3.5",
+    "varifocal": true
+  },
+  "field_of_view_deg": "53.8 to 4.0 horizontal (wide to tele)",
+  "night_vision": {
+    "type": "none",
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "max_fps": 30
+  },
+  "power": {
+    "method": "12 VDC",
+    "consumption_w": 12,
+    "voltage": "12 VDC"
+  },
+  "dimensions_mm": "165 (dia) x 168",
+  "weight_g": 2000,
+  "operating_temp_c": "-10 to 50",
+  "ptz": {
+    "onvif_ptz": "none"
+  },
+  "features": [
+    "15x optical / 16x digital zoom",
+    "Powered by DarkFighter",
+    "120 dB true WDR",
+    "EIS (electronic image stabilization)",
+    "256 presets, 10 patrols, 5 patterns",
+    "RS-485 (HIKVISION/Pelco-P/Pelco-D) and UTC coaxial control",
+    "switchable TVI/AHD/CVI/CVBS output",
+    "360 endless pan, -5 to 90 tilt (auto flip)",
+    "2 alarm inputs, 1 alarm output"
+  ],
+  "release_notes": "Per PTZ-T4215-D3_Datasheet_20260917.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000005837/PTZ-T4215-D3_Datasheet_20260917.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

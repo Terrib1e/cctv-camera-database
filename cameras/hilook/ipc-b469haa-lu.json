@@ -3,7 +3,8 @@
   "brand": "HiLook",
   "model": "IPC-B469HAA-LU",
   "aliases": [
-    "IPC-B469HAA-LU(F)(/SL)(/SRB)"
+    "IPC-B469HAA-LU(F)(/SL)(/SRB)",
+    "IPC-B469HAA-LUF/SRB"
   ],
   "type": "bullet",
   "connectivity": [
