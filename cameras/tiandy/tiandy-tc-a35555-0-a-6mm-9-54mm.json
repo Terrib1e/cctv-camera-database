@@ -1,0 +1,126 @@
+{
+  "id": "tiandy-tc-a35555-0-a-6mm-9-54mm",
+  "brand": "Tiandy",
+  "model": "TC-A35555 0/A/6mm/9-54mm",
+  "type": "dual-lens",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 3072,
+    "max_height": 1728,
+    "label": "5MP"
+  },
+  "sensor": "PTZ-bullet: 1/1.8\" CMOS Speed dome: 1/1.8\" CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "6 (PTZ-bullet, fixed); 9-54 (speed dome, 6x optical zoom)",
+    "aperture": "F1.0 (PTZ-bullet); F1.35-F1.55 (speed dome)"
+  },
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 100,
+    "min_lux_color": 0.0008
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3072x1728",
+        "fps": 20
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30
+      },
+      {
+        "name": "third",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "ptz": {
+    "autotracking": true
+  },
+  "power": {
+    "method": "AC24V±15%, DC24V±10%",
+    "consumption_w": 55,
+    "voltage": "DC 24V"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 70",
+  "dimensions_mm": "Φ191×344×350 mm",
+  "weight_g": 7100,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "5MP Video Structure AI Dual PTZ Camera",
+    "WDR: PTZ-bullet: 120dB; Speed Dome: 140dB",
+    "Optical zoom: Speed Dome: 6×",
+    "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Loitering, Running, Heatmap, Video Abnormal, Crowd, Audio Abnormal, Demographics(People Counting), On Duty Detection, Safety Helmet Detection, Auto tracking, Face Capture",
+    "Early Warning: Yes",
+    "Dual PTZ: 5MP PTZ-bullet (overview) + 5MP speed dome (detail)",
+    "White light up to 30m, blue/red flash LEDs",
+    "Video structure analytics: face, human body, vehicle and non-vehicle metadata",
+    "Electronic compass",
+    "Heater"
+  ],
+  "sources": [
+    "http://en.tiandy.com/index.php?s=/home/product/detail/id/321.html",
+    "https://web.archive.org/web/20201205092313/http://en.tiandy.com/index.php?s=/home/product/detail/id/321.html"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

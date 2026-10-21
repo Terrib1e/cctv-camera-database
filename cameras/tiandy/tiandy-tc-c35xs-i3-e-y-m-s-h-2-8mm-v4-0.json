@@ -1,0 +1,117 @@
+{
+  "id": "tiandy-tc-c35xs-i3-e-y-m-s-h-2-8mm-v4-0",
+  "brand": "Tiandy",
+  "model": "TC-C35XS I3/E/Y/M/S/H/2.8mm/V4.0",
+  "type": "turret",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2880,
+    "max_height": 1620,
+    "label": "5MP"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "H: 109, V: 59, D: 125.4",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 30,
+    "min_lux_color": 0.002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2880x1620",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      },
+      {
+        "name": "third",
+        "resolution": "1280x720",
+        "fps": 30
+      }
+    ]
+  },
+  "power": {
+    "method": "DC12V±25%,Max. 7W; PoE:IEEE 802.3af,Max. 8W",
+    "consumption_w": 8,
+    "voltage": "DC 12V"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512
+  },
+  "audio": {
+    "microphone": true
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 65",
+  "dimensions_mm": "117(L)117(W)96(H) mm",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "5MP Fixed Starlight IR Turret Camera",
+    "WDR: 120dB",
+    "Video analytics: Human/Vehicle Classification; Tripwire; Perimeter; Video Abnormal; Audio Abnormal",
+    "Face capture"
+  ],
+  "sources": [
+    "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/797.html",
+    "https://web.archive.org/web/20250117044352/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/797.html"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

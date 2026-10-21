@@ -1,0 +1,115 @@
+{
+  "id": "tiandy-tc-c34lp-i5-e-t-4mm",
+  "brand": "Tiandy",
+  "model": "TC-C34LP I5/E/T/4mm",
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4",
+    "aperture": "F1.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "H: 90",
+  "night_vision": {
+    "type": "color",
+    "min_lux_color": 0.0002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 25
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "power": {
+    "method": "DC12V±20%/PoE",
+    "consumption_w": 8,
+    "voltage": "DC 12V"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256
+  },
+  "audio": {
+    "microphone": true
+  },
+  "ip_rating": "IP67",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "10 to 30",
+  "dimensions_mm": "224×114×107 mm",
+  "weight_g": 1300,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "Thermal & Optical Bi-spectrum Network Bullet Camera",
+    "Thermal module: 256x192 vanadium oxide uncooled FPA, 12um pixel, 8-14um, 3.2mm lens, 51 deg H FOV, NETD <=50mK",
+    "Temperature measurement 30-45 C, accuracy +/-0.5 C (+/-0.3 C with blackbody), distance 0.5-3m",
+    "WDR: 120dB",
+    "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Loitering, Running, Parking, Video Abnormal, Audio Abnormal",
+    "Early Warning: Yes"
+  ],
+  "sources": [
+    "http://en.tiandy.com:80/index.php?s=/home/product/detail/id/191.html",
+    "https://web.archive.org/web/20200511221833/http://en.tiandy.com:80/index.php?s=/home/product/detail/id/191.html"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}
