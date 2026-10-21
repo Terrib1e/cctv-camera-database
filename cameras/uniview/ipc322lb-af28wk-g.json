@@ -12,10 +12,12 @@
   ],
   "resolution": {
     "megapixels": 2,
-    "label": "2MP"
+    "label": "2MP",
+    "max_width": 1920,
+    "max_height": 1080
   },
   "sensor": "1/2.9\" CMOS",
-  "field_of_view_deg": "101.1 horizontal, 55.0 vertical, 111.0 diagonal",
+  "field_of_view_deg": "101.1 horizontal, 55.0 vertical, 111.0 diagonal (2.8mm)",
   "lens": {
     "focal_length_mm": "2.8",
     "aperture": "F2.0",
@@ -34,7 +36,21 @@
       "H.264",
       "MJPEG"
     ],
-    "max_fps": 30
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "640x360",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
   },
   "power": {
     "method": "DC 12 V±25%",
@@ -44,7 +60,8 @@
   "storage": {
     "onboard": true,
     "max_microsd_gb": 512,
-    "nvr_compatible": true
+    "nvr_compatible": true,
+    "cloud": false
   },
   "protocols": [
     "onvif",
@@ -71,14 +88,19 @@
     "https://www.uniview.com/Products/Network_Cameras/Easy_Series/EasyBasic_Series/IPC322LB-AF28WK-G/",
     "https://ubox-eu.oss-eu-central-1.aliyuncs.com/datacenter/doc/574feeed-6a5e-45fd-bb56-35f8e01d9875/4ec38623-9841-430f-be53-f6655b5a20cf.pdf"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "configs": {
     "frigate": {
       "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/unicast/c1/s0/live",
       "best_substream": "rtsp://{user}:{pass}@{ip}:554/unicast/c1/s1/live",
       "onvif_port": 80,
       "verified": false,
-      "notes": "Main stream: /unicast/c1/s0/live, sub stream: /unicast/c1/s1/live. ONVIF on port 80."
+      "notes": "Main stream: /unicast/c1/s0/live, sub stream: /unicast/c1/s1/live. ONVIF on port 80.",
+      "detect": {
+        "height": 360,
+        "width": 640,
+        "fps": 5
+      }
     },
     "home_assistant": {
       "integration": "onvif",
@@ -90,5 +112,15 @@
     }
   },
   "ndaa_compliant": true,
-  "cloud_dependency": "local"
+  "cloud_dependency": "local",
+  "features": [
+    "Ultra 265 (U-code) smart encoding",
+    "Wi-Fi (IEEE 802.11b/g/n)",
+    "human body detection",
+    "DWDR / HLC / BLC / digital defog",
+    "2D/3D DNR"
+  ],
+  "markets": [
+    "global"
+  ]
 }

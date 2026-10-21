@@ -48,7 +48,8 @@
   "power": {
     "method": "DC 12V / IEEE 802.3at PoE",
     "consumption_w": 13,
-    "voltage": "DC 12V"
+    "voltage": "DC 12V",
+    "poe_class": 0
   },
   "protocols": [
     "onvif",
@@ -81,7 +82,15 @@
     "3D Noise Reduction",
     "Video Rotation",
     "Two-way Audio",
-    "VIVOTEK VCA Support"
+    "VIVOTEK VCA Support",
+    "WDR",
+    "Smart Stream",
+    "Smart IR Technology",
+    "P-iris Lens with Remote Focus",
+    "Video Rotation for Corridor View",
+    "Built-in IR up to 30m",
+    "PIR",
+    "Defog"
   ],
   "configs": {
     "frigate": {
@@ -101,8 +110,9 @@
     }
   },
   "sources": [
-    "https://web.archive.org/web/2id_/http://download.vivotek.com/downloadfile/downloads/datasheets/fd816b-htdatasheet_en.pdf"
+    "https://web.archive.org/web/2id_/http://download.vivotek.com/downloadfile/downloads/datasheets/fd816b-htdatasheet_en.pdf",
+    "https://web.archive.org/web/2id_/http://download.vivotek.com/downloadfile/downloads/datasheets/fd816bdatasheet_en.pdf"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "cloud_dependency": "local"
 }

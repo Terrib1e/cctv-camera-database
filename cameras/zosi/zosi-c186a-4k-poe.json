@@ -1,9 +1,9 @@
 {
   "id": "zosi-c186a-4k-poe",
   "brand": "ZOSI",
-  "model": "C186A",
+  "model": "C186A AuroraLux 4K",
   "aliases": [
-    "C186A AuroraLux 4K",
+    "C186A",
     "C186A 8MP PoE"
   ],
   "type": "bullet",
@@ -55,7 +55,7 @@
   "sources": [
     "https://zositech.com/products/c186-4k-auroralux-true-color-night-vision-poe-camera"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "status": "available",
   "markets": [
     "global"

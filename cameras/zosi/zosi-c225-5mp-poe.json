@@ -1,9 +1,9 @@
 {
   "id": "zosi-c225-5mp-poe",
   "brand": "ZOSI",
-  "model": "C225",
+  "model": "C225 5MP PoE",
   "aliases": [
-    "C225 5MP PoE"
+    "C225"
   ],
   "type": "turret",
   "connectivity": [
@@ -54,7 +54,7 @@
   "sources": [
     "https://zositech.com/products/c225-5mp-add-on-poe-camera"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "status": "available",
   "markets": [
     "global"

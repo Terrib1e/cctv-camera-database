@@ -1,9 +1,9 @@
 {
   "id": "zosi-c296b-4k-poe",
   "brand": "ZOSI",
-  "model": "C296B",
+  "model": "C296B 4K PTZ PoE",
   "aliases": [
-    "C296B 4K PTZ PoE"
+    "C296B"
   ],
   "type": "ptz",
   "connectivity": [
@@ -57,7 +57,7 @@
   "sources": [
     "https://zositech.com/products/c296b-4k-add-on-poe-ptz-camera"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "status": "available",
   "markets": [
     "global"
