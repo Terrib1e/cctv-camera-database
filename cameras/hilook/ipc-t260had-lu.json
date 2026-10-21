@@ -1,0 +1,124 @@
+{
+  "id": "hilook-ipc-t260had-lu",
+  "brand": "HiLook",
+  "model": "IPC-T260HAD-LU",
+  "aliases": [
+    "IPC-T260HAD-LUF",
+    "IPC-T260HAD-LU(F)",
+    "HiLook 6 MP Dual Lens Stitched Wide Angle Smart Hybrid Light Fixed Turret Network Camera"
+  ],
+  "type": "panoramic",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3632,
+    "max_height": 1632,
+    "label": "6MP (180 stitched)"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3632x1632",
+        "fps": 20
+      },
+      {
+        "name": "sub",
+        "resolution": "1200x536",
+        "fps": 20
+      }
+    ]
+  },
+  "sensor": "1/2.5\" Progressive Scan CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "2 x 2.8 (fixed)",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "180 horizontal / 77 vertical",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux_color": 0.005
+  },
+  "power": {
+    "method": "PoE (802.3af) / DC 12V",
+    "consumption_w": 8.5,
+    "voltage": "12 VDC ± 25%",
+    "poe_class": 3
+  },
+  "storage": {
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "ip_rating": "IP67",
+  "audio": {
+    "microphone": true
+  },
+  "features": [
+    "dual-lens stitched 180 panoramic view",
+    "Smart Hybrid Light (IR + white light)",
+    "person and vehicle detection",
+    "120 dB WDR",
+    "ONVIF Profile S/T"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "Ø130.1 x 109.1",
+  "weight_g": 580,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1200,
+        "height": 536,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+    }
+  },
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ],
+  "release_notes": "Per IPC-T260HAD-LUF_Datasheet_20260930.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000084290/IPC-T260HAD-LUF_Datasheet_20260930.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}
