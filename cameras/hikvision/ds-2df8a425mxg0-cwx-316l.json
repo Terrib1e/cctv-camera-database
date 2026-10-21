@@ -1,0 +1,136 @@
+{
+  "id": "hikvision-ds-2df8a425mxg0-cwx-316l",
+  "brand": "Hikvision",
+  "model": "DS-2DF8A425MXG0-CWX(316L)",
+  "aliases": [
+    "DS-2DF8A425MXG0-CWX",
+    "316L 4MP 25x Explosion-proof Network Speed Dome"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/2.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "5.57 to 139.25",
+    "aperture": "F1.66",
+    "varifocal": true
+  },
+  "field_of_view_deg": "60.72 to 2.2 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 100,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 512
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "100 to 240 VAC, max. 35 W",
+    "consumption_w": 35,
+    "voltage": "100-240 VAC"
+  },
+  "power_source": [
+    "ac-mains"
+  ],
+  "ip_rating": "IP68",
+  "ik_rating": "IK10",
+  "dimensions_mm": "253.2 x 216.7 x 342.8",
+  "weight_g": 13300,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "features": [
+    "Explosion-proof (ATEX/IECEx Ex db IIC T6 Gb / Ex tb IIIC T80°C Db)",
+    "Electro-polished 316L stainless steel housing",
+    "25x optical zoom, 16x digital zoom",
+    "IR up to 100 m and white light up to 30 m",
+    "Built-in fiber optical module (FC, up to 20 km)",
+    "Wiper",
+    "AI Open Platform",
+    "Face capture and vehicle attribute detection",
+    "120 dB WDR",
+    "EIS with built-in gyroscope",
+    "Auto-tracking"
+  ],
+  "release_notes": "Per DS-2DF8A425MXG0-CWX316L_Datasheet_20260929.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000094131/DS-2DF8A425MXG0-CWX316L_Datasheet_20260929.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

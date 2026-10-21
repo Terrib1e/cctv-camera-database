@@ -1,0 +1,143 @@
+{
+  "id": "hikvision-ds-2de7a632iwg1-lm-e",
+  "brand": "Hikvision",
+  "model": "DS-2DE7A632IWG1/LM-E",
+  "aliases": [
+    "6 MP 32X Powered by DarkFighter IR AcusenseX Network Speed Dome"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3200,
+    "max_height": 1800,
+    "label": "6MP"
+  },
+  "sensor": "1/2.5\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "5.5 to 176",
+    "aperture": "F1.6",
+    "varifocal": true
+  },
+  "field_of_view_deg": "60.7 to 2.2 horizontal",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 200,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3200x1800",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 512
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "Hi-PoE (802.3bt, Class 6, max. 48 W) / 36 VDC ±25%, max. 48 W (incl. max. 9 W IR, 2 W heater)",
+    "consumption_w": 48,
+    "voltage": "36 VDC / Hi-PoE",
+    "poe_class": 6
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø220 x 363.3",
+  "weight_g": 5000,
+  "operating_temp_c": "-30 to 65",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "features": [
+    "32x optical zoom, 8x digital zoom",
+    "Powered by DarkFighter",
+    "AcuSenseX human/vehicle classification",
+    "HIK AI-ISP noise reduction",
+    "Guanlan large-model algorithms (perimeter protection)",
+    "Audio-visual alarm (white flashing light + audible warning)",
+    "Built-in arrayed dual-microphone and speaker",
+    "Face capture",
+    "Regional people counting",
+    "120 dB WDR",
+    "EIS",
+    "Auto-tracking"
+  ],
+  "release_notes": "Per DS-2DE7A632IWG1_LM-E_Datasheet_20261010.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000187705/DS-2DE7A632IWG1_LM-E_Datasheet_20261010.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

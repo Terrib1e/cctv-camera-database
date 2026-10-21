@@ -1,0 +1,138 @@
+{
+  "id": "hikvision-ds-2xv6b46g0-lizhrsy",
+  "brand": "Hikvision",
+  "model": "DS-2XV6B46G0-LIZHRSY",
+  "aliases": [
+    "4 MP Gantry Crane Varifocal Anti-Corrosion Network Camera",
+    "DS-2XV6B46G0-LIZHRSY(316L)"
+  ],
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/2.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4.8 to 153 (motorized varifocal)",
+    "aperture": "F1.7",
+    "varifocal": true
+  },
+  "field_of_view_deg": "53.3 to 2.0 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 100,
+    "min_lux_color": 0.01
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 512
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 to 36 VDC, max. 25.9 W (M12 connector) / PoE (802.3at, Class 4, max. 24 W)",
+    "consumption_w": 25.9,
+    "voltage": "12-36 VDC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP68",
+  "dimensions_mm": "199.7 x 201.9 x 209.2",
+  "weight_g": 10450,
+  "operating_temp_c": "0 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "Gantry crane self-stabilization structure",
+    "316L stainless steel anti-corrosion enclosure",
+    "Built-in wiper",
+    "IR up to 100 m and white light up to 50 m",
+    "DarkFighter low-light imaging",
+    "120 dB true WDR",
+    "EIS",
+    "Low-latency decoding (as low as 100 ms)",
+    "HEOP open platform (8 TOPS)",
+    "Smart265/Smart264 encoding",
+    "RS-485 (Pelco-P/D)",
+    "Audio line in/out",
+    "Alarm I/O (1 in / 1 out)"
+  ],
+  "release_notes": "Per DS-2XV6B46G0-LIZHRSY316L_Datasheet_20261016.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000161720/DS-2XV6B46G0-LIZHRSY316L_Datasheet_20261016.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

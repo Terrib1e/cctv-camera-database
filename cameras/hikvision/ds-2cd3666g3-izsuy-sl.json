@@ -1,0 +1,143 @@
+{
+  "id": "hikvision-ds-2cd3666g3-izsuy-sl",
+  "brand": "Hikvision",
+  "model": "DS-2CD3666G3-IZSUY/SL",
+  "aliases": [
+    "DS-2CD3666G3-IZSUY/SL(7-35mm)(B)",
+    "6 MP Strobe Light and Audible Warning Motorized Varifocal Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3200,
+    "max_height": 1800,
+    "label": "6MP"
+  },
+  "sensor": "1/2.5\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7 to 13.5 or 7 to 35 (motorized, optional)",
+    "aperture": "F1.2 (2.7-13.5 mm) / F1.4 (7-35 mm)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "102.3 to 36.5 horizontal (2.7-13.5 mm) / 34.4 to 12.5 horizontal (7-35 mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 80,
+    "min_lux_color": 0.001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3200x1800",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 10
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 512
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (IEEE 802.3at, Class 4, max. 18 W) / 12 VDC ±25%, 1.21 A, max. 14.5 W",
+    "consumption_w": 18,
+    "voltage": "12 VDC / PoE+",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø140 x 333.8",
+  "weight_g": 1630,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "/SL active strobe light and audible warning",
+    "AcuSense person/vehicle classification",
+    "HIK AI-ISP noise reduction",
+    "Motorized varifocal lens",
+    "IR up to 60 m (2.7-13.5 mm) / 80 m (7-35 mm)",
+    "130 dB WDR",
+    "EIS",
+    "Built-in arrayed dual-microphone and speaker",
+    "Face capture and people counting",
+    "Anti-corrosion design (NEMA 4X)"
+  ],
+  "release_notes": "Per DS-2CD3666G3-IZSUY_SL7-35mmB_Datasheet_20260924.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000111794/DS-2CD3666G3-IZSUY_SL7-35mmB_Datasheet_20260924.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

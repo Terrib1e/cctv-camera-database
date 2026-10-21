@@ -1,0 +1,71 @@
+{
+  "id": "hikvision-ds-2cfp34-eu",
+  "brand": "Hikvision",
+  "model": "DS-2CFP34/EU",
+  "aliases": [
+    "4 MP Wireless Turret Camera Powered by PLC"
+  ],
+  "type": "turret",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/2.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 or 4 (fixed, optional)",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "116 horizontal (2.8 mm) / 91 horizontal (4 mm)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux_color": 0.01
+  },
+  "video": {
+    "codecs": [
+      "H.265"
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true
+  },
+  "power": {
+    "method": "100 to 240 VAC, 50/60 Hz, max. 12 W (Ethernet over power line / PLC)",
+    "consumption_w": 12,
+    "voltage": "100-240 VAC"
+  },
+  "power_source": [
+    "ac-mains"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "Ø138.3 x 115.4",
+  "weight_g": 1015,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "Network over the power line (PLC), mains powered",
+    "Smart Hybrid Light (IR + white light, 30 m)",
+    "Built-in microphone and speaker",
+    "Hik-Connect app"
+  ],
+  "release_notes": "Per DS-2CFP34_EU_Datasheet_20260713.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000095617/DS-2CFP34_EU_Datasheet_20260713.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "cloud-optional"
+}

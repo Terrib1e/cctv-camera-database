@@ -1,0 +1,142 @@
+{
+  "id": "hikvision-ds-2cd3346g2-p-lsu-sl",
+  "brand": "Hikvision",
+  "model": "DS-2CD3346G2/P-LSU/SL",
+  "aliases": [
+    "4 MP ANPR Fixed Turret Network Camera"
+  ],
+  "type": "turret",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/2.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 and 4 (fixed, optional)",
+    "aperture": "F1.4",
+    "varifocal": false
+  },
+  "field_of_view_deg": "103 horizontal (2.8mm) / 83 horizontal (4mm)",
+  "night_vision": {
+    "type": "color",
+    "range_m": 20
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "640x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1280x720",
+        "fps": 15,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 15,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 256
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3af, Class 3, max. 10 W) / 12 VDC ±25%, 0.7 A, max. 8.5 W",
+    "consumption_w": 10,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "Ø138.3 x 126.7",
+  "weight_g": 830,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "License plate recognition (blocklist/allowlist up to 10,000 records)",
+    "AcuSense human/vehicle classification",
+    "DarkFighter low-light imaging",
+    "120 dB true WDR",
+    "White-light supplement light",
+    "Face capture",
+    "Audio line in/out",
+    "Alarm I/O (1 in / 1 out)"
+  ],
+  "release_notes": "Per DS-2CD3346G2_P-LSU_SL_Datasheet_20231031.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000039085/DS-2CD3346G2_P-LSU_SL_Datasheet_20231031.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 640,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

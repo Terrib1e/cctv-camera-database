@@ -1,0 +1,131 @@
+{
+  "id": "hikvision-ds-2cd3t83g2p-lisu-sl",
+  "brand": "Hikvision",
+  "model": "DS-2CD3T83G2P-LISU/SL",
+  "aliases": [
+    "8 MP Panoramic Fixed Bullet Network Camera"
+  ],
+  "type": "panoramic",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 4256,
+    "max_height": 1888,
+    "label": "8MP"
+  },
+  "sensor": "1/2.4\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2 (fixed)",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "180 horizontal / 77 vertical",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "4256x1888",
+        "fps": 20,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1200x536",
+        "fps": 20,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3af, Class 3, max. 11.5 W) / DC 12V ±25%, 0.83 A, max. 10 W",
+    "consumption_w": 11.5,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "103.6 x 76 x 241.9",
+  "weight_g": 940,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "180 degree panoramic field of view",
+    "Smart Hybrid Light (IR + white light)",
+    "Active strobe light and audible warning",
+    "Person and vehicle detection",
+    "Built-in two-way audio (microphone + 97 dB speaker)",
+    "120 dB WDR",
+    "1 alarm input / 1 alarm output",
+    "Audio line in / line out"
+  ],
+  "release_notes": "Per m000176026.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/undefined/m000176026"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1200,
+        "height": 536,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

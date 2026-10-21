@@ -1,0 +1,140 @@
+{
+  "id": "hikvision-ids-2cd7046g0-s-ap",
+  "brand": "Hikvision",
+  "model": "iDS-2CD7046G0/S-AP",
+  "aliases": [
+    "4MP Box Network Camera"
+  ],
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "CS mount (lens not included)"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fifth",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3af, Type 1, Class 3, max. 11.6 W) / 12 VDC ±20%, 0.9 A, max. 10.8 W / 24 VAC ±20%, max. 10.4 W",
+    "consumption_w": 11.6,
+    "voltage": "12 VDC / 24 VAC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "dimensions_mm": "142.5 x 69.8 x 68",
+  "weight_g": 730,
+  "operating_temp_c": "-30 to 60",
+  "features": [
+    "DeepinView AI Open Platform (up to 4 models)",
+    "DarkFighter low-light",
+    "140 dB WDR",
+    "4MP@30fps, 1440p/1080p up to 60 fps",
+    "5 streams",
+    "Built-in microphone",
+    "Face capture and comparison, people counting, queue management, heat map",
+    "Hard hat detection",
+    "EIS",
+    "RS-485, 2 alarm in / 2 alarm out",
+    "Perimeter protection with human/vehicle classification"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/public/all/doc/m000049978/iDS-2CD7046G0_S-AP-C_Datasheet_20231121.pdf"
+  ],
+  "release_notes": "Per iDS-2CD7046G0_S-AP-C_Datasheet_20231121.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}
