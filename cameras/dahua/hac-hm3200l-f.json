@@ -1,0 +1,70 @@
+{
+  "id": "dahua-hac-hm3200l-f",
+  "brand": "Dahua",
+  "model": "HAC-HM3200L-F",
+  "aliases": [
+    "DH-HAC-HM3200L-F",
+    "DH-HAC-HM3200LP-F-0280B",
+    "DH-HAC-HM3200LN-F-0280B"
+  ],
+  "type": "box",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "116h",
+  "night_vision": {
+    "type": "none",
+    "min_lux_color": 0.02,
+    "min_lux": 0.002
+  },
+  "power": {
+    "method": "12 VDC ±25% vehicle power (4-pin M12 aviation connector (power + video))",
+    "voltage": "12VDC",
+    "consumption_w": 0.9
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Forward-facing in-vehicle HDCVI camera (windshield mount with 3M tape and rotation bracket)",
+    "HD/SD output switchable, HDCVI output via 4-pin M12 aviation connector (power + video)",
+    "Colour day/night, DWDR, BLC/HLC, 2D NR",
+    "Built-in mic",
+    "Shock-proof: EN50155 (EN50121-3-2, IEC61373)",
+    "CE, FCC"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "115.8 x 99.5 x 27.4",
+  "weight_g": 85,
+  "environment": [
+    "indoor"
+  ],
+  "status": "discontinued",
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/mobile-&-traffic/hac-hm3200l-f",
+    "https://materialfile.dahuasecurity.com/product/20180627/DH-HAC-HM3200L-F_Datasheet_20180626.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

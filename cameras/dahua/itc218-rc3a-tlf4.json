@@ -1,0 +1,101 @@
+{
+  "id": "dahua-itc218-rc3a-tlf4",
+  "brand": "Dahua",
+  "model": "ITC218-RC3A-TLF4",
+  "aliases": [
+    "DHI-ITC218-RC3A-TLF4"
+  ],
+  "type": "dual-lens",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 3840,
+    "max_height": 1080,
+    "label": "2x 2MP (3840x1080)"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x1080",
+        "fps": 25
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "4",
+    "varifocal": false
+  },
+  "field_of_view_deg": "87.5 H / 44.4 V / 104.9 D",
+  "power": {
+    "method": "24 VDC (9-36 VDC wide range)",
+    "consumption_w": 15
+  },
+  "ip_rating": "IP54",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-30 to 65",
+  "dimensions_mm": "152.1 x 135.6 x 933.0",
+  "weight_g": 4400,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 2
+  },
+  "features": [
+    "dual-channel (2x 2MP) ANPR pillar for roadside on-street parking spaces (vertical and inclined spaces), starlight camera with fixed 4 mm lens",
+    "parking space occupancy detection with built-in 7-color indicator light; plate number/color/type and vehicle color, logo and size recognition",
+    "detects reverse-direction parking, vehicles across multiple spaces, non-motor vehicles in motor-vehicle spaces, unlicensed vehicles and video tampering; vehicle speed 0-30 km/h",
+    "built-in software-controlled illuminator with automatic on/off and brightness; ITO glass heating defog",
+    "WDR 100 dB, 3D NR; network cascading of up to 20 devices; bracket mount"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua ANPR pillar — ONVIF not listed in the datasheet; standard Dahua /cam/realmonitor RTSP path (unverified)."
+    },
+    "home_assistant": {
+      "integration": "generic",
+      "notes": "No ONVIF listed in the datasheet; add via Generic Camera with the Dahua RTSP URL."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Dahua RTSP."
+    }
+  },
+  "sources": [
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/outdoor-parking/spot-detection-cameras/itc218-rc3a-tlf4",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/83060/datasheet/ITC218-RC3A-TLF4_datasheet_20250820.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
+}

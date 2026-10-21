@@ -1,0 +1,147 @@
+{
+  "id": "dahua-ipc-hdbw3653r-s-il",
+  "brand": "Dahua",
+  "model": "IPC-HDBW3653R-S-IL",
+  "aliases": [
+    "DH-IPC-HDBW3653R-S-IL"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3288,
+    "max_height": 1850,
+    "label": "6MP"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3288x1850",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8; 3.6",
+    "aperture": "F1.4",
+    "varifocal": false
+  },
+  "field_of_view_deg": "112 (2.8mm); 89 (3.6mm) horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 40,
+    "min_lux": 0.0004,
+    "min_lux_color": 0.0008
+  },
+  "power": {
+    "method": "12 VDC / PoE+ (802.3at)",
+    "voltage": "12 VDC",
+    "consumption_w": 17.4
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "WizSense 3",
+    "Super WDR (LOFIC)",
+    "lens options: 2.8mm, 3.6mm",
+    "150 dB WDR",
+    "40m IR",
+    "40m warm light",
+    "SMD 4.0",
+    "perimeter protection (intrusion/tripwire, human/vehicle classification)",
+    "loitering / stay detection",
+    "Xinghan Large-Scale AI Models (Vision)",
+    "face detection (full image)",
+    "AcuPick",
+    "Super AI Coding",
+    "built-in dual mic",
+    "ONVIF Profile S/G/T/M"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "94 x Ø122.0",
+  "weight_g": 560,
+  "environment": [
+    "outdoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "generation": "WizSense 3",
+  "release_notes": "6MP Super WDR Fixed-focal Dome WizSense Network Camera.",
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/network-cameras/wizsense-3-series/super-wdr/ipc-hdbw3653r-s-il",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/88556/datasheet/DH-IPC-HDBW3653R-S-IL_S0_datasheet_20261013_English.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua ONVIF (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "cloud_dependency": "local",
+  "network": {
+    "ethernet_speed_mbps": 100
+  }
+}

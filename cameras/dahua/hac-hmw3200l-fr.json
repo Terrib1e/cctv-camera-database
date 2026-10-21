@@ -1,0 +1,68 @@
+{
+  "id": "dahua-hac-hmw3200l-fr",
+  "brand": "Dahua",
+  "model": "HAC-HMW3200L-FR",
+  "aliases": [
+    "DH-HAC-HMW3200L-FR",
+    "DH-HAC-HMW3200LP-FR",
+    "DH-HAC-HMW3200LN-FR"
+  ],
+  "type": "dual-lens",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "2.8 (front) / 2.1 (rear)",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "109h (front) / 132h (rear)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 3,
+    "min_lux_color": 0.02
+  },
+  "power": {
+    "method": "12 VDC ±30% vehicle power (4-pin M12 aviation connector (power + video))",
+    "voltage": "12VDC",
+    "consumption_w": 1.9
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Double-lens in-vehicle HDCVI camera: colour forward-facing lens + IR cabin-facing lens",
+    "2-channel CVI/CVBS/AHD/TVI switchable output via aviation connector (yellow: front, black: rear)",
+    "Built-in mic",
+    "Smart IR (3 m), DWDR, BLC/HLC, 2D NR",
+    "CE, FCC"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "115.8 x 99.5 x 50.2",
+  "weight_g": 170,
+  "environment": [
+    "indoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/mobile/mobile/mobile-analog-products/mobile-cameras/hac-hmw3200l-fr=s5",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20201126/DH-HAC-HMW3200LN-FR_datasheet_20201126.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

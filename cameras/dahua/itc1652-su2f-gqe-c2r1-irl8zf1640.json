@@ -1,0 +1,121 @@
+{
+  "id": "dahua-itc1652-su2f-gqe-c2r1-irl8zf1640",
+  "brand": "Dahua",
+  "model": "ITC1652-SU2F-GQE-C2R1-IRL8ZF1640",
+  "aliases": [
+    "DHI-ITC1652-SU2F-GQE-C2R1-IRL8ZF1640"
+  ],
+  "type": "box",
+  "connectivity": [
+    "ethernet",
+    "4g"
+  ],
+  "power_source": [
+    "ac-mains"
+  ],
+  "resolution": {
+    "megapixels": 16,
+    "max_width": 5320,
+    "max_height": 3032,
+    "label": "16MP (5320x3032)"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "5320x3032",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "1600x1200",
+        "fps": 15
+      }
+    ]
+  },
+  "sensor": "1.1\" GS-CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "16-40",
+    "varifocal": true,
+    "aperture": "F1.4"
+  },
+  "field_of_view_deg": "21.4-50.6 H / 12.3-28.9 V / 24.4-58 D",
+  "power": {
+    "method": "100-240 VAC (50/60 Hz)",
+    "consumption_w": 45
+  },
+  "protocols": [
+    "onvif",
+    "http"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 65",
+  "dimensions_mm": "435.4 x 416.0 x 173.8",
+  "weight_g": 9300,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "16MP radar-assisted all-in-one AI traffic camera (Spotter Sky) with 1.1\" GS-CMOS, 5320x3032 up to 30 fps",
+    "16 x 850 nm IR illuminators (adjustable brightness), illumination distance 23-50 m",
+    "built-in 24 GHz millimeter-wave radar (24.05-24.25 GHz), speed range 5-300 km/h, accuracy +/-2 km/h",
+    "lane coverage 5 (center mount) / 4 (side mount)",
+    "built-in 4G LTE module (LTE FDD B1/3/5/7/8/20/28, TDD B38/40/41) — can operate over a single 4G card without network cabling",
+    "ANPR with vehicle type, color and logo recognition; motor vehicle and motorcycle violation capture",
+    "traffic flow statistics and event detection (illegal parking, wrong-way driving, congestion)",
+    "GPS positioning and time sync; single/double/three shutter modes; center or side mount",
+    "100-240 VAC power"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1600,
+        "height": 1200,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Dahua radar traffic camera — ONVIF + Dahua /cam/realmonitor RTSP path; enable ONVIF and set a dedicated user."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "ONVIF (Dahua)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Dahua RTSP/ONVIF."
+    }
+  },
+  "night_vision": {
+    "type": "ir",
+    "range_m": 50,
+    "min_lux": 0.001
+  },
+  "sources": [
+    "https://www.dahuasecurity.com/products/intelligent-traffic/intelligent-traffic-products/spotter-series/spotter-sky/itc1652-su2f-gqe-c2r1-irl8zf1640",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/ITC1652-SU2F-GQE-C2R1-IRL8ZF1640_datasheet_20240926.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "dahua-mptz4400-2030ulb-nt",
+  "brand": "Dahua",
+  "model": "MPTZ4400-2030ULB-NT",
+  "aliases": [
+    "DH-MPTZ4400-2030ULB-NT"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4.5-135 (30x optical zoom)",
+    "aperture": "F1.6-F4.4",
+    "varifocal": true
+  },
+  "field_of_view_deg": "67.8-2.77h",
+  "night_vision": {
+    "min_lux_color": 0.005,
+    "min_lux": 0.0005
+  },
+  "ptz": {
+    "onvif_ptz": "continuous"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 60
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 25
+      }
+    ]
+  },
+  "power": {
+    "method": "12-24 VDC wide-voltage (vehicle power)",
+    "voltage": "12-24VDC",
+    "consumption_w": 36
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "audio": {
+    "two_way": true
+  },
+  "features": [
+    "Vehicle-mount (mobile) network positioning system / PTZ",
+    "30x optical zoom, 16x digital zoom",
+    "Laser illuminator up to 500 m (angle adjusts with zoom)",
+    "360° endless pan up to 80°/s, tilt -15° to 90°; 255 presets, 6 tours, 4 patterns",
+    "Image stabilization (anti-shake), defog, WDR, HLC",
+    "Voice intercom",
+    "TVS 3000V lightning, surge and voltage-transient protection"
+  ],
+  "operating_temp_c": "-30 to 65",
+  "weight_g": 6500,
+  "environment": [
+    "outdoor"
+  ],
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration works (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "status": "discontinued",
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/mobile-&-traffic/mptz4400-2030ulb-nt",
+    "https://materialfile.dahuasecurity.com/product/20180709/MPTZ4400-2030ULB-NT.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

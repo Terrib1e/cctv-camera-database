@@ -1,0 +1,63 @@
+{
+  "id": "dahua-dae-cfm5230",
+  "brand": "Dahua",
+  "model": "DAE-CFM5230",
+  "aliases": [
+    "DHI-DAE-CFM5230",
+    "DHI-DAE-CFM5230-CYN",
+    "DHI-DAE-CFM5230-CYP"
+  ],
+  "type": "box",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "6",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "56h",
+  "night_vision": {
+    "type": "none",
+    "min_lux": 0.1
+  },
+  "power": {
+    "method": "9-16 VDC vehicle power",
+    "voltage": "9-16VDC",
+    "consumption_w": 2
+  },
+  "ip_rating": "IP54",
+  "features": [
+    "ADAS front-view monitoring camera: with a car-mount terminal gives forward collision, lane departure and headway monitoring warnings",
+    "DWDR",
+    "BLC, HLC, 3D NR, headlight glare suppression",
+    "PAL (-CYP) and NTSC (-CYN) versions; windshield mount with double-sided adhesive tape",
+    "Certifications: CE"
+  ],
+  "operating_temp_c": "-30 to 70",
+  "dimensions_mm": "85.5 x 63.0 x 35.0",
+  "weight_g": 140.4,
+  "environment": [
+    "indoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/ph/products/mobile/mobile/mobile-analog-products/mobile-cameras/dae-cfm5230",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20250117/DHI-DAE-CFM5230-CYP_ADAS_datasheet_20250113.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

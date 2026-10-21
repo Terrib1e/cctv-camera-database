@@ -1,0 +1,121 @@
+{
+  "id": "dahua-itc831-kw4f",
+  "brand": "Dahua",
+  "model": "ITC831-KW4F",
+  "aliases": [
+    "DHI-ITC831-KW4F"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "8MP (3840x2160)"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30
+      }
+    ]
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "8-32",
+    "varifocal": true,
+    "aperture": "F1.6"
+  },
+  "field_of_view_deg": "15-42 H / 8.4-22.8 V / 17.1-48.7 D",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux": 0.0001
+  },
+  "power": {
+    "method": "12 VDC / PoE",
+    "consumption_w": 17
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024
+  },
+  "ip_rating": "IP68",
+  "ik_rating": "IK10",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-30 to 65",
+  "dimensions_mm": "350 x 109 x 150",
+  "weight_g": 1880,
+  "network": {
+    "ethernet_ports": 1
+  },
+  "features": [
+    "8MP all-in-one AI enforcement camera (Spotter Nano) with 1/1.8\" starlight CMOS, 3840x2160 up to 30 fps",
+    "motorized vari-focal 8-32 mm lens (max F1.6)",
+    "Dual Light: 3 LED illuminators switchable between 850 nm IR and 3500 K warm light, illumination distance 23-30 m",
+    "lane coverage 1-3 lanes",
+    "built-in 61-62 GHz millimeter-wave speed radar, speed detection 5-180 km/h, up to 32 radar targets, detection distance up to 120 m",
+    "ANPR with vehicle type, color and logo recognition; speeding, slow driving, wrong-way and illegal lane change capture; motorcycle violation capture",
+    "WDR 140 dB, 3D NR, HLC, BLC; ITO glass heating for automatic defogging",
+    "power consumption <8 W (lights off), <12 W (IR on), <17 W (warm light on)"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Dahua enforcement camera — ONVIF + Dahua /cam/realmonitor RTSP path; enable ONVIF and set a dedicated user."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "ONVIF (Dahua)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Dahua RTSP/ONVIF."
+    }
+  },
+  "sources": [
+    "https://www.dahuasecurity.com/ph/products/intelligent-traffic/intelligent-traffic-products/spotter-series/spotter-nano/itc831-kw4f",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/84445/datasheet/DHI-ITC831-KW4F_S0_datasheet_20260204.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
+}
