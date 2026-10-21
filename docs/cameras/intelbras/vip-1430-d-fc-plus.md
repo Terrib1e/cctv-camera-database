@@ -12,7 +12,7 @@
 | Field of view | 94 horizontal° |
 | Night vision | hybrid (30m), 0.006 lux color |
 | Power | PoE (802.3af) / 12 VDC |
-| Protocols | onvif, rtsp |
+| Protocols | onvif, rtsp, rtmp, http |
 | IP rating | IP67 |
 | Two-way audio | No |
 | Operating temp | -40 to 60°C |

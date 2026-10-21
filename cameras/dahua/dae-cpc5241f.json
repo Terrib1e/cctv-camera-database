@@ -1,0 +1,138 @@
+{
+  "id": "dahua-dae-cpc5241f",
+  "brand": "Dahua",
+  "model": "DAE-CPC5241F",
+  "aliases": [
+    "DH-DAE-CPC5241FPN",
+    "DAE-CPC5241FPN"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.1 / 2.8 / 3.6",
+    "aperture": "F2.0 (2.1 mm); F1.6 (2.8/3.6 mm)",
+    "varifocal": false
+  },
+  "field_of_view_deg": "125h (2.1 mm) / 106.9h (2.8 mm) / 87.5h (3.6 mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 20,
+    "min_lux_color": 0.002,
+    "min_lux": 0.0002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "PoE (802.3af) / 12 VDC",
+    "consumption_w": 7.2
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Mobile (bus) dome network camera",
+    "AI passenger counting (with MNVR and Mobile Center platform)",
+    "Face detection with attributes",
+    "Certifications: E-mark, EN50155, EN45545, CE, FCC, UL",
+    "120 dB WDR, Smart H.265+/H.264+, defog",
+    "Built-in mic"
+  ],
+  "operating_temp_c": "-40 to 70",
+  "dimensions_mm": "64.8 x Φ111.0",
+  "weight_g": 402,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration works (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/mobile/mobile/mobile-ip-products/mobile-ip-cameras/dae-cpc5241f",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/76457/datasheet/DH-DAE-CPC5241FPN_S0_datasheet_20240204.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

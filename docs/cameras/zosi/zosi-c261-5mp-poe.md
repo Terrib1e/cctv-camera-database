@@ -1,11 +1,11 @@
-# ZOSI C261
+# ZOSI C261 5MP PoE
 
-*Also known as: C261 5MP PoE*
+*Also known as: C261*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C261 |
+| Model | C261 5MP PoE |
 | Type | bullet |
 | Connectivity | ethernet |
 | Resolution | 5MP (2880x1620) (5MP, 2880×1620) |

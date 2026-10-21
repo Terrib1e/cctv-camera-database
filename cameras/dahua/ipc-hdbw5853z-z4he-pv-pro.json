@@ -1,0 +1,166 @@
+{
+  "id": "dahua-ipc-hdbw5853z-z4he-pv-pro",
+  "brand": "Dahua",
+  "model": "IPC-HDBW5853Z-Z4HE-PV-PRO",
+  "aliases": [
+    "DH-IPC-HDBW5853Z-Z4HE-PV-PRO"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "8MP"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "8-32",
+    "aperture": "F1.6",
+    "varifocal": true
+  },
+  "field_of_view_deg": "41.4-15.6h",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 80,
+    "min_lux": 0.0003,
+    "min_lux_color": 0.0007
+  },
+  "power": {
+    "method": "12 VDC / PoE+ (802.3at) / ePoE",
+    "voltage": "12 VDC",
+    "consumption_w": 24.6
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "features": [
+    "WizMind 5",
+    "Super WDR (LOFIC)",
+    "motorized PTRZ adjustment",
+    "motorized varifocal 8-32mm",
+    "160 dB WDR",
+    "80m IR",
+    "60m warm light",
+    "light active deterrence (warm light warning)",
+    "sound active deterrence (built-in siren/speaker, 11 sound alarms + 10 custom)",
+    "SMD 4.0",
+    "perimeter protection (intrusion/tripwire, human/vehicle classification)",
+    "loitering / stay detection",
+    "Xinghan Large-Scale AI Models (Vision)",
+    "face detection with attribute extraction",
+    "video metadata (human/motor/non-motor vehicle attributes)",
+    "AcuPick",
+    "Super AI Coding",
+    "EIS",
+    "P-Iris",
+    "window heating",
+    "ePoE",
+    "RS-485",
+    "12 VDC power output",
+    "alarm 2 in / 2 out",
+    "audio 1 in / 1 out",
+    "built-in dual mic",
+    "built-in speaker",
+    "ONVIF Profile S/G/T/M"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "150 x Ø159",
+  "weight_g": 1400,
+  "environment": [
+    "outdoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "generation": "WizMind 5",
+  "release_notes": "8MP Super WDR PTRZ Dome WizMind Network Camera.",
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/network-cameras/wizmind-5-series/super-wdr/ipc-hdbw5853z-z4he-pv-pro",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/88584/datasheet/DH-IPC-HDBW5853Z-Z4HE-PV-PRO_S0_datasheet_20261014_English.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua ONVIF (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "cloud_dependency": "local",
+  "network": {
+    "ethernet_speed_mbps": 100
+  }
+}

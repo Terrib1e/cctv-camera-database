@@ -1,0 +1,124 @@
+{
+  "id": "tiandy-tc-h356q-30x-iw-a",
+  "brand": "Tiandy",
+  "model": "TC-H356Q 30X/IW/A",
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2592,
+    "max_height": 1944,
+    "label": "5MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4.7-141",
+    "aperture": "F1.5-F4.0",
+    "varifocal": true
+  },
+  "field_of_view_deg": "69.5-2.7",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 400,
+    "min_lux_color": 0.002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2592x1944",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      },
+      {
+        "name": "third",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "power": {
+    "method": "AC24V 3A",
+    "consumption_w": 38.6,
+    "voltage": "AC 24V"
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 128
+  },
+  "audio": {
+    "speaker": false
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 70",
+  "dimensions_mm": "372x222x222 mm",
+  "weight_g": 5300,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "H.265 5MP 30x Starlight AEW IR PTZ",
+    "WDR: 120dB",
+    "Optical zoom: 30x",
+    "Digital zoom: 16x",
+    "Autotracking Early Warning (AEW)",
+    "IR LED + white light + green laser",
+    "Wiper",
+    "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Early Warning, Crowd, Audio Abnormal Detection, Video Abnormal Detection, Face Detection, People Counting, On duty Detection, Auto tracking, Parking Detection, Safety Helmet Detection",
+    "Built-in speaker optional"
+  ],
+  "sources": [
+    "http://en.tiandy.com:80/index.php?s=/home/product/detail/id/66.html",
+    "https://web.archive.org/web/20190129090855/http://en.tiandy.com:80/index.php?s=/home/product/detail/id/66.html"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

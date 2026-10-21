@@ -1,0 +1,66 @@
+{
+  "id": "dahua-hac-hmw3200d-h-v",
+  "brand": "Dahua",
+  "model": "HAC-HMW3200D-H/V",
+  "aliases": [
+    "DH-HAC-HMW3200D-H/V",
+    "DH-HAC-HMW3200DP-H",
+    "DH-HAC-HMW3200DP-V",
+    "DH-HAC-HMW3200DN-H",
+    "DH-HAC-HMW3200DN-V"
+  ],
+  "type": "box",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "106h",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 20,
+    "min_lux_color": 0.02
+  },
+  "power": {
+    "method": "12 VDC ±30% vehicle power (4-pin M12 aviation connector (power + video))",
+    "voltage": "12VDC",
+    "consumption_w": 3.1
+  },
+  "ip_rating": "IP67",
+  "features": [
+    "Mobile (vehicle) HDCVI IR cube camera",
+    "CVI/CVBS/AHD/TVI switchable output via 4-pin M12 aviation connector (power + video)",
+    "Shock-proof (EN50155)",
+    "Smart IR, DWDR, BLC/HLC, 2D NR, 8 privacy masks",
+    "CE, FCC"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "80.5 x 64.9 x 59.9",
+  "weight_g": 260,
+  "environment": [
+    "outdoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/mobile/mobile/mobile-analog-products/mobile-cameras/hac-hmw3200d-h-v=s5",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20201126/DH-HAC-HMW3200DN-H_datasheet_20201126.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

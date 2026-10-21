@@ -1,0 +1,143 @@
+{
+  "id": "hikvision-ds-2cd2t44g4-lis2uy-sx",
+  "brand": "Hikvision",
+  "model": "DS-2CD2T44G4-LIS2UY/SX",
+  "aliases": [
+    "4MP Fixed Bullet Network Camera",
+    "DS-2CD2T44G4-LIS2UY/SX(Black)"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/3\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8, 4 or 6 (fixed, optional)",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "101 horizontal (2.8 mm) / 82 horizontal (4 mm) / 52 horizontal (6 mm)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 60,
+    "min_lux_color": 0.001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ±25%, 1.67 A, max. 20 W / PoE IEEE 802.3at, Class 4, max. 23.5 W",
+    "consumption_w": 23.5,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "88.7 x 91.2 x 287.2",
+  "weight_g": 1260,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "Active strobe light (white or red-blue) and audio alarm",
+    "Powered by DarkFighter",
+    "Smart Hybrid Light (smart/IR/white light modes, 60 m)",
+    "Person, vehicle and animal classification (deep learning)",
+    "130 dB WDR with AI WDR",
+    "Arrayed dual-microphone and 2 W speaker",
+    "Face capture",
+    "AcuSeek",
+    "Guanlan AI encoding",
+    "EIS",
+    "Audio and alarm I/O",
+    "Moderate anti-corrosion protection (-Y)",
+    "Black housing (/SX)"
+  ],
+  "release_notes": "Per DS-2CD2T44G4-LIS2UY_SXBlack_Datasheet_20260814.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000117918/DS-2CD2T44G4-LIS2UY_SXBlack_Datasheet_20260814.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

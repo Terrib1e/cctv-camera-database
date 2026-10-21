@@ -1,5 +1,7 @@
 # Uniview IPC324LB-SF28-A
 
+*Also known as: IPC324LB-SF40-A*
+
 | Field | Spec |
 |-------|------|
 | Brand | Uniview |
@@ -9,12 +11,13 @@
 | Resolution | 4MP (4MP, 2560×1440) |
 | Sensor | 1/3.0" CMOS |
 | Lens | 1× 2.8mm F2.1 |
-| Field of view | 97.0 horizontal° |
+| Field of view | 97.0 horizontal, 52.2 vertical, 107.5 diagonal (2.8mm)° |
 | Night vision | ir (30m), 0.01 lux color |
 | Power | PoE (IEEE 802.3af) / DC 12V |
 | Storage | NVR |
 | Protocols | onvif, rtsp, rtmp, http |
 | IP rating | IP67 |
+| IK rating | IK10 |
 | Two-way audio | No |
 | Operating temp | -30 to 60°C |
 

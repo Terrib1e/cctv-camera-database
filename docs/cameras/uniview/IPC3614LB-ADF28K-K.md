@@ -1,5 +1,7 @@
 # Uniview IPC3614LB-ADF28K-K
 
+*Also known as: IPC3614LB-ADF40K-K*
+
 | Field | Spec |
 |-------|------|
 | Brand | Uniview |
@@ -9,7 +11,7 @@
 | Resolution | 4MP (4MP, 2560×1440) |
 | Sensor | 1/3.0" CMOS |
 | Lens | 1× 2.8mm F2.0 |
-| Field of view | 101.5 horizontal° |
+| Field of view | 101.5 horizontal, 55.6 vertical, 111.6 diagonal (2.8mm)° |
 | Night vision | ir (30m), 0.01 lux color |
 | Power | PoE (IEEE 802.3af) / DC 12V |
 | Storage | microSD ≤ 512GB, NVR |

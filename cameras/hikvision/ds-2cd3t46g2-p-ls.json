@@ -1,0 +1,137 @@
+{
+  "id": "hikvision-ds-2cd3t46g2-p-ls",
+  "brand": "Hikvision",
+  "model": "DS-2CD3T46G2/P-LS",
+  "aliases": [
+    "4 MP ANPR Fixed Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/2.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8, 4 and 6 (fixed, optional)",
+    "aperture": "F1.4",
+    "varifocal": false
+  },
+  "field_of_view_deg": "103 horizontal (2.8mm) / 83 horizontal (4mm) / 53 horizontal (6mm)",
+  "night_vision": {
+    "type": "color",
+    "range_m": 40,
+    "min_lux_color": 0.003
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "640x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1280x720",
+        "fps": 15,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 15,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3af, Class 3, max. 12 W) / DC 12V ±25%, 0.92 A, max. 11 W",
+    "consumption_w": 12,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "Ø105 x 323.6",
+  "weight_g": 1070,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "ANPR: license plate recognition (entrance/exit, vehicles up to 40 km/h)",
+    "AcuSense human/vehicle classification",
+    "White light supplement up to 40 m",
+    "120 dB WDR",
+    "Wiegand output (CardID 26 bit, SHA-1 26 bit, Hik 34 bit)",
+    "1 alarm in / 1 alarm out",
+    "Face capture"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/public/all/doc/m000041908/DS-2CD3T46G2_P-LS_Datasheet_20231031.pdf"
+  ],
+  "release_notes": "Per DS-2CD3T46G2_P-LS_Datasheet_20231031.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 640,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

@@ -1,0 +1,147 @@
+{
+  "id": "dahua-ipc-hfw31659e-s-il",
+  "brand": "Dahua",
+  "model": "IPC-HFW31659E-S-IL",
+  "aliases": [
+    "DH-IPC-HFW31659E-S-IL"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 16,
+    "max_width": 5440,
+    "max_height": 3072,
+    "label": "16MP"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "5440x3072",
+        "fps": 20,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8; 3.6",
+    "aperture": "F1.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "110 (2.8mm); 90 (3.6mm) horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 40,
+    "min_lux": 0.0003,
+    "min_lux_color": 0.0006
+  },
+  "power": {
+    "method": "12 VDC / PoE (802.3at)",
+    "voltage": "12 VDC",
+    "consumption_w": 15
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "WizSense 3",
+    "Smart Dual Light",
+    "lens options: 2.8mm, 3.6mm",
+    "120 dB WDR",
+    "40m IR",
+    "40m warm light",
+    "SMD 4.0",
+    "perimeter protection (intrusion/tripwire, human/vehicle classification)",
+    "loitering / stay detection",
+    "Xinghan Large-Scale AI Models (Vision)",
+    "face detection (full image)",
+    "AcuPick",
+    "Super AI Coding",
+    "built-in dual mic",
+    "ONVIF Profile S/G/T/M",
+    "Gigabit Ethernet"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "82.20 x 82.20 x 190.70",
+  "weight_g": 620,
+  "environment": [
+    "outdoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "generation": "WizSense 3",
+  "release_notes": "16MP Smart Dual Light Fixed-focal Bullet WizSense Network Camera.",
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/network-cameras/wizsense-3-series/smart-dual-light/ipc-hfw31659e-s-il",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/88568/datasheet/DH-IPC-HFW31659E-S-IL_datasheet_20261001_English.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua ONVIF (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "cloud_dependency": "local",
+  "network": {
+    "ethernet_speed_mbps": 1000
+  }
+}

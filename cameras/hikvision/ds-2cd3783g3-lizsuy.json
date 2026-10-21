@@ -1,0 +1,143 @@
+{
+  "id": "hikvision-ds-2cd3783g3-lizsuy",
+  "brand": "Hikvision",
+  "model": "DS-2CD3783G3-LIZSUY",
+  "aliases": [
+    "8 MP Acusense Smart Hybrid Light Vari-focal Dome Network Camera"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "4K"
+  },
+  "sensor": "1/2.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7-13.5",
+    "aperture": "F1.6",
+    "varifocal": true
+  },
+  "field_of_view_deg": "107 to 32 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 40,
+    "min_lux_color": 0.003
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ± 25%, 0.9 A, max.10.8 W, Ø 5.5 mm coaxial power plug, reverse polarity protection, PoE: IEEE 802.3af, Class 3, max. 12.9 W",
+    "consumption_w": 12.9,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø 121.5 × 97.6",
+  "weight_g": 650,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "HikAI-ISP for excellent noise reduction effect",
+    "Acusense: Focus on human and vehicle classification based on deep learning",
+    "Smart Hybrid Light: Integrates IR and White lights, 3 supplemental lighting modes",
+    "Built-in arrayed dual-microphone for real-time high quality audio security",
+    "130 dB WDR, support Auto mode, clear imaging against strong back light",
+    "Motorized varifocal lens for easy installation and monitoring",
+    "Anti-corrosion design, providing reliability and longevity compared to standard (NEMA 4X)"
+  ],
+  "release_notes": "Per DS-2CD3783G3-LIZSUYBlack_Datasheet_20260909.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000117054/DS-2CD3783G3-LIZSUYBlack_Datasheet_20260909.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

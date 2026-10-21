@@ -1,0 +1,120 @@
+{
+  "id": "dahua-itc215-pw4i-irlzf27135",
+  "brand": "Dahua",
+  "model": "ITC215-PW4I-IRLZF27135",
+  "aliases": [
+    "ITC215-PW4I-IRLZF27135(Project Only)",
+    "DHI-ITC215-PW4I-IRLZF27135"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP LPR"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7-13.5 (motorized, DC auto iris)",
+    "aperture": "F1.3",
+    "varifocal": true
+  },
+  "field_of_view_deg": "119-32h",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 20,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30
+      }
+    ]
+  },
+  "power": {
+    "method": "PoE+ (802.3at) / 12 VDC"
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 64,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "features": [
+    "AI access ANPR camera, project-only model",
+    "Embedded deep-learning LPR engine; ANPR distance 3-8 m",
+    "Vehicle detection and direction; vehicle size (11 types) and colour (11 colours) recognition",
+    "Whitelist of 10,000 records in camera; relay output for barrier control",
+    "Video or loop-detector trigger",
+    "Audio 1 in / 1 out, alarm 3 in / 3 out, RS-485 x2",
+    "CE, FCC"
+  ],
+  "operating_temp_c": "-30 to 65",
+  "dimensions_mm": "297 x 124 x 108 (without bracket)",
+  "weight_g": 1900,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration works (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/dedicated-products/project-exclusive/mobile-&-traffic/itc215-pw4i-irlzf27135(project-only)",
+    "https://material.dahuasecurity.com/uploads/soft/20201123/DHI-ITC215-PW4I-IRLZF27135.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

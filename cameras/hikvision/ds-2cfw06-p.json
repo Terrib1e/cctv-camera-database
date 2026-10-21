@@ -1,0 +1,121 @@
+{
+  "id": "hikvision-ds-2cfw06-p",
+  "brand": "Hikvision",
+  "model": "DS-2CFW06-P",
+  "aliases": [
+    "6 MP Smart Hybrid Light Fixed Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet",
+    "wifi"
+  ],
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3632,
+    "max_height": 1632,
+    "label": "6MP"
+  },
+  "sensor": "1/2.5\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "180 horizontal, 77 vertical",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 30,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3632x1632",
+        "fps": 20,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "960x432",
+        "fps": 20,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ±25%, 0.91 A, max. 11 W",
+    "consumption_w": 11,
+    "voltage": "12 VDC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "103.6 x 76 x 234.4",
+  "weight_g": 650,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "180 degree panoramic field of view",
+    "Smart Hybrid Light (IR + white light, 30 m)",
+    "Person and vehicle detection",
+    "Active strobe light and audio alarm",
+    "Two-way audio",
+    "120 dB WDR",
+    "Wi-Fi (2.4 GHz) plus RJ45"
+  ],
+  "release_notes": "Per DS-2CFW06-P_Datasheet_20250410.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000165189/DS-2CFW06-P_Datasheet_20250410.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 960,
+        "height": 432,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

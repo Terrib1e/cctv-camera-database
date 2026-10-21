@@ -11,8 +11,8 @@
   ],
   "resolution": {
     "megapixels": 12.5,
-    "max_width": 3536,
-    "max_height": 3536,
+    "max_width": 3520,
+    "max_height": 3520,
     "label": "12.5MP"
   },
   "sensor": "1/1.6\" progressive CMOS",
@@ -37,9 +37,8 @@
     "streams": [
       {
         "name": "main",
-        "resolution": "3536x3536",
-        "fps": 24,
-        "codec": "H.265"
+        "resolution": "3520x3520",
+        "fps": 24
       }
     ]
   },
@@ -49,7 +48,7 @@
     "two_way": false
   },
   "power": {
-    "method": "PoE+ (802.3at Type 2; 19.5W with IR) / (9.5W without IR)",
+    "method": "PoE+ (802.3at Type 2; 19.5W with IR, 9.5W without IR, 24.8W extended temperature)",
     "consumption_w": 19.5
   },
   "protocols": [
@@ -74,7 +73,7 @@
   "dimensions_mm": "155.0 dia x 76.2",
   "weight_g": 1368,
   "features": [
-    "government-grade 360-degree fisheye (FIPS 140-2 validated, TAA and FY2019 NDAA compliant)",
+    "government-grade 180-degree fisheye (FIPS 140-2 validated, TAA and FY2019 NDAA compliant)",
     "all-cloud no NVR (Verkada Command)",
     "on-camera edge storage 512GB-3TB",
     "180-degree panoramic coverage",
@@ -89,9 +88,10 @@
   ],
   "sources": [
     "https://www.verkada.com/security-cameras/fisheye/cf83-e-f/",
-    "https://docs.verkada.com/docs/video-security-cf83-e-f-datasheet.pdf"
+    "https://docs.verkada.com/docs/video-security-cf83-e-f-datasheet.pdf",
+    "https://help.verkada.com/verkada-cameras/video-streaming-and-sharing/live-streaming/low-latency-rtsp-streaming"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-20",
   "ndaa_compliant": true,
-  "cloud_dependency": "cloud-optional"
+  "cloud_dependency": "local"
 }

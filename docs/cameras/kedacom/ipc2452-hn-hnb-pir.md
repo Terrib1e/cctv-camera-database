@@ -10,12 +10,20 @@
 | Connectivity | ethernet |
 | Resolution | 4MP (4MP, 2592×1520) |
 | Sensor | 1/3" progressive scan CMOS |
+| Lens | 1× 3.6 / 6 / 8 / 12 / 16 (fixed, M12)mm |
+| Field of view | 78.6 (3.6mm) / 53.2 (6mm) / 36.8 (8mm) / 23.7 (12mm) / 17.8 (16mm)° |
 | Night vision | ir (50m), 0.05 lux color |
 | Power | DC 12V / PoE (IEEE802.3af) |
-| Storage | microSD ≤ 128GB |
-| Protocols | onvif, rtsp |
+| Storage | microSD ≤ 128GB, NVR |
+| Protocols | onvif, rtsp, http |
 | IP rating | IP66 |
 | Operating temp | -40 to 70°C |
+
+## Streams
+
+| Stream | Resolution | FPS | Codec |
+|--------|-----------|-----|-------|
+| main | 2592x1520 | 20 | H.265 |
 
 ## Features
 

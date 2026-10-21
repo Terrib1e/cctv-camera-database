@@ -1,0 +1,144 @@
+{
+  "id": "hikvision-ds-2cd3786g3t-izsu",
+  "brand": "Hikvision",
+  "model": "DS-2CD3786G3T-IZSU",
+  "aliases": [
+    "8 MP AcuSense Varifocal Dome Network Camera"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "8MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7 to 13.5 or 7 to 35 (motorized varifocal, optional)",
+    "aperture": "Max. F1.2 (2.7-13.5mm) / Max. F1.4 (7-35mm)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "111.9 to 47.5 horizontal (2.7-13.5mm) / 41.8 to 14.9 horizontal (7-35mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 60,
+    "min_lux_color": 0.001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1280x720",
+        "fps": 10,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 1,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ± 25%, max. 16.2 W / PoE (802.3at, Class 4, max. 18 W)",
+    "consumption_w": 18,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø141 x 112",
+  "weight_g": 850,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "AcuSense person and vehicle classification (deep learning)",
+    "HikAI-ISP noise reduction",
+    "Motorized varifocal lens",
+    "130 dB WDR",
+    "Built-in arrayed dual-microphone",
+    "Audio line in/out and alarm I/O",
+    "H.265+ compression"
+  ],
+  "release_notes": "Per DS-2CD3786G3T-IZSU7-35mmB_Datasheet_20260901.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000111812/DS-2CD3786G3T-IZSU7-35mmB_Datasheet_20260901.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

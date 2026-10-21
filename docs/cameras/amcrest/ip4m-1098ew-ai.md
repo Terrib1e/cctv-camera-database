@@ -38,5 +38,13 @@
 
 - https://support.amcrest.com/hc/en-us/articles/23967384150157-Technical-Specifications-IP4M-1098EW-AI
 
+## Community notes (unverified)
+
+*Reported by users. Not from the datasheet, not verified by the project.*
+
+- With focus set to Auto, the camera refocuses after every PTZ move and ONVIF GetStatus reports MOVING until the refocus finishes, so each move appears to take several seconds and Frigate autotracking reacts slowly. Setting focus to Manual removes the delay.
+  
+  ptz · firmware 2.821.00AC002.0.R · reported by nikosch86 · 2026-10-21 · [source](https://github.com/ch-bas/cctv-camera-database/issues/411)
+
 ---
 *Auto-generated from amcrest-ip4m-1098ew-ai.json — do not edit by hand.*

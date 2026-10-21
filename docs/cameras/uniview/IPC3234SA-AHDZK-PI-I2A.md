@@ -9,12 +9,13 @@
 | Resolution | 4MP (4MP, 2688×1520) |
 | Sensor | 1/1.8" CMOS |
 | Lens | 1× 2.7-13.5mm F1.2 |
-| Field of view | 49.1-107.4 horizontal° |
+| Field of view | 107.4 to 49.1 horizontal, 56.4 to 27.9 vertical, 128.8 to 60.4 diagonal° |
 | Night vision | ir (40m), 0.0003 lux color |
 | Power | PoE (IEEE 802.3af) / DC 12V |
 | Storage | microSD ≤ 512GB, NVR |
 | Protocols | onvif, rtsp, rtmp, http |
 | IP rating | IP67 |
+| IK rating | IK10 |
 | Two-way audio | Yes |
 | Operating temp | -30 to 60°C |
 

@@ -1,6 +1,6 @@
 # HiLook IPC-B549HAA-LU
 
-*Also known as: HiLook 4 MP ColorVu 3.0 Fixed Bullet*
+*Also known as: HiLook 4 MP ColorVu 3.0 Fixed Bullet, IPC-B549HAA-LUF/SL*
 
 | Field | Spec |
 |-------|------|

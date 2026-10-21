@@ -1,0 +1,148 @@
+{
+  "id": "hikvision-ds-2sf7c825mxg1-elwy-26",
+  "brand": "Hikvision",
+  "model": "DS-2SF7C825MXG1-EL(W)(Y)/26",
+  "aliases": [
+    "DeepinView TandemVu 7C Series Panoramic 8 MP 25X DarkFighter Network Speed Dome",
+    "DS-2SF7C825MXG1-EL/26",
+    "DS-2SF7C825MXG1-ELW/26",
+    "DS-2SF7C825MXG1-ELY/26",
+    "DS-2SF7C825MXG1-ELWY/26"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "8MP"
+  },
+  "sensor": "PTZ channel: 1/1.8\" Progressive Scan CMOS; panoramic channel: 1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "PTZ 5.9-147.5 (25x zoom) / panoramic 4 (fixed)",
+    "aperture": "F1.5 (PTZ) / F1.0 (panoramic)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "PTZ 60.2 to 2.3 horizontal / panoramic 89 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 400,
+    "min_lux_color": 0.0005
+  },
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC ± 20%, max. 60 W / PoE (802.3bt, Type 4, Class 8, max. 90 W budget; device max. 60 W incl. IR and heater)",
+    "consumption_w": 60,
+    "voltage": "36 VDC / PoE (802.3bt)",
+    "poe_class": 8
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø260 x 382.9",
+  "weight_g": 8100,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "TandemVu dual-channel: 3680x1656 fixed panoramic channel (24/7 colour, 30 m white light) + 8MP PTZ channel",
+    "25x optical / 16x digital zoom (PTZ channel), IR up to 400 m",
+    "PTZ channel up to 60 fps at 4K, 120 fps at 1080p (monitoring mode)",
+    "DarkFighter 2.0 low-light imaging",
+    "Auto-tracking 3.0, linked tracking capture",
+    "Smart Pan-Tilt Correction",
+    "Panoramic channel tilt adjustable 7 to 17 deg",
+    "Face capture and face comparison libraries",
+    "License plate recognition, vehicle attributes and intelligent transportation detection",
+    "AI Open Platform custom model loading",
+    "Audio-visual alarm: white flashing light and audible warning",
+    "EIS with built-in gyroscope; wiper and demist",
+    "140 dB WDR (PTZ) / 120 dB (panoramic)",
+    "7 alarm inputs, 2 alarm outputs, audio line in/out, RS-485",
+    "Anti-corrosion NEMA 4X (-Y models)"
+  ],
+  "release_notes": "Per DS-2SF7C825MXG1-ELWY_26_Datasheet_20260812.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000108947/DS-2SF7C825MXG1-ELWY_26_Datasheet_20260812.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

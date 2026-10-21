@@ -1,0 +1,148 @@
+{
+  "id": "hikvision-ids-2cd70c5g0-e-ihsy",
+  "brand": "Hikvision",
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "sensor": "1/1.7\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "3.8-16 or 11-40 (varifocal, optional)",
+    "aperture": "F1.4",
+    "varifocal": true
+  },
+  "field_of_view_deg": "103.5 to 28.1 horizontal (3.8-16mm) / 36.9 to 11.5 horizontal (11-40mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 120,
+    "min_lux_color": 0.002
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3bt, Type 3, Class 5, 28 W) / 24 VDC ±20%, 25.4 W / 24 VAC ±20%, 26.8 W (with extra load)",
+    "consumption_w": 28,
+    "voltage": "24 VDC / 24 VAC / PoE",
+    "poe_class": 5
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP66",
+  "ik_rating": "IK10",
+  "dimensions_mm": "465.3 x 169.2 x 164.7",
+  "weight_g": 3800,
+  "operating_temp_c": "-40 to 65",
+  "environment": [
+    "outdoor"
+  ],
+  "model": "iDS-2CD70C5G0/E-IHSY",
+  "aliases": [
+    "12 MP Box Network Camera",
+    "iDS-2CD70C5G0/E-IHSY(R)",
+    "iDS-2CD70C5G0/E-IHSYR"
+  ],
+  "resolution": {
+    "megapixels": 12,
+    "max_width": 4000,
+    "max_height": 3000,
+    "label": "12MP"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "4000x3000",
+        "fps": 20,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fifth",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true
+  },
+  "features": [
+    "12MP (4000x3000 @ 20 fps; 4K @ 30 fps)",
+    "Box camera in IR housing with built-in heater",
+    "Digital WDR",
+    "5 streams plus up to 5 custom streams",
+    "Smooth streaming",
+    "IR up to 120 m (11-40 mm)",
+    "Multi-target-type detection, queue management, hard hat detection",
+    "Anti-corrosion coating (NEMA 250-2018)",
+    "RS-485, 2 alarm in / 2 alarm out"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/public/all/doc/m000019607/iDS-2CD70C5G0_E-IHSYR_Datasheet_20231127.pdf"
+  ],
+  "release_notes": "Per iDS-2CD70C5G0_E-IHSYR_Datasheet_20231127.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

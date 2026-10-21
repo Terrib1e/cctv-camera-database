@@ -1,0 +1,128 @@
+{
+  "id": "hilook-ipc-b120ha-lufc-sl",
+  "brand": "HiLook",
+  "model": "IPC-B120HA-LUFC/SL",
+  "aliases": [
+    "2 MP Smart Hybrid Light Fixed Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.9\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8/4",
+    "aperture": "F2.2",
+    "varifocal": false
+  },
+  "field_of_view_deg": "101 horizontal (2.8mm), 80 horizontal (4mm)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 20,
+    "min_lux_color": 0.01
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "640x480",
+        "fps": 30
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3af, Class 3) / 12 VDC",
+    "consumption_w": 9,
+    "voltage": "12 VDC",
+    "poe_class": 3
+  },
+  "ip_rating": "IP67",
+  "dimensions_mm": "179 x 67.4 x 69.1",
+  "weight_g": 270,
+  "operating_temp_c": "-30 to 45",
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "Smart Hybrid Light: IR up to 20 m, white light up to 15 m",
+    "human detection",
+    "Digital WDR",
+    "built-in two-way audio",
+    "white flashing light and audible warning (/SL)",
+    "ONVIF Profile S/T/G"
+  ],
+  "release_notes": "Per IPC-B120HA-LUFC_SL_Datasheet_20260409.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000119322/IPC-B120HA-LUFC_SL_Datasheet_20260409.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 640,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "two_way_audio": true
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+    }
+  }
+}

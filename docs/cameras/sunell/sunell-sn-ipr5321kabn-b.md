@@ -1,5 +1,7 @@
 # Sunell SN-IPR5321KABN-B
 
+*Also known as: 2MP IR Fixed Bullet Network Camera, Sunell SN-IPR5321KABN-B*
+
 | Field | Spec |
 |-------|------|
 | Brand | Sunell |
@@ -8,7 +10,7 @@
 | Connectivity | ethernet |
 | Resolution | 2MP (1920x1080) (2MP, 1920×1080) |
 | Sensor | 1/3” Progressive Scan CMOS |
-| Lens | 2.8mm F2.0 |
+| Lens | 1× 2.8 (4 optional)mm F2.0 |
 | Field of view | H: 96, V: 53° |
 | Night vision | ir (30m), 0.01 lux, 0.05 lux color |
 | Power | 12 VDC (-15% to +25%)/PoE (802.3af) |
@@ -23,6 +25,8 @@
 | Stream | Resolution | FPS | Codec |
 |--------|-----------|-----|-------|
 | main | 1920x1080 | 30 | — |
+| sub | 720x576 | — | — |
+| third | 640x480 | — | — |
 
 ## Features
 
@@ -32,6 +36,7 @@
 ## Sources
 
 - https://www.sunellsecurity.com/products/lite-series-ip-camera/sn-ipr5321kabn-b.shtml
+- https://www.sunellsecurity.com/resources/file/SN-IPR5321KABN-B_Datasheet_202607.pdf
 
 ---
 *Auto-generated from sunell-sn-ipr5321kabn-b.json — do not edit by hand.*

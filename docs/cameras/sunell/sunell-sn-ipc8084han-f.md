@@ -1,5 +1,7 @@
 # Sunell SN-IPC8084HAN-F
 
+*Also known as: Sunell SN-IPC8084HAN-F*
+
 | Field | Spec |
 |-------|------|
 | Brand | Sunell |
@@ -8,6 +10,7 @@
 | Connectivity | ethernet |
 | Resolution | 8MP (3840x2160) (8MP, 3840×2160) |
 | Sensor | 1/1.8” Progressive Scan CMOS |
+| Lens | C/CS mount (lens not included)mm |
 | Night vision | 0.001 lux, 0.005 lux color |
 | Power | 12 VDC / 24 VAC (-10% to +25%) / PoE (802.3af) |
 | Storage | microSD ≤ 1024GB, NVR |
@@ -29,6 +32,8 @@
 ## Sources
 
 - https://www.sunellsecurity.com/products/special-series/sn-ipc8084han-f-8mp-starlight-box-camera.shtml
+- https://www.sunellsecurity.com/
+- https://www.sunellsecurity.com/resources/file/SN-IPC8084HAN-F_Datasheet_202607.pdf
 
 ---
 *Auto-generated from sunell-sn-ipc8084han-f.json — do not edit by hand.*

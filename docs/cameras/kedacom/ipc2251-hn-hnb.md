@@ -1,6 +1,6 @@
 # Kedacom IPC2251-HN/HNB
 
-*Also known as: IPC2251-HN, IPC2251-HNB*
+*Also known as: IPC2251-HN, IPC2251-HNB, IPC2251-HN-SIR40-Z3009, IPC2251-HNB-SIR80-Z6048*
 
 | Field | Spec |
 |-------|------|
@@ -10,15 +10,21 @@
 | Connectivity | ethernet |
 | Resolution | 1080p (2MP, 1920×1080) |
 | Sensor | 1/2.8" progressive scan CMOS |
-| Lens | 1× 2.8~12mm F1.4 |
-| Field of view | 90 to 37 horizontal° |
+| Lens | 1× 2.8-12 (-SIR40-Z3009) / 6-48 (-SIR80-Z6048)mm F1.4 |
+| Field of view | 37-90 (2.8-12mm) / 7.2-65 (6-48mm)° |
 | Night vision | ir (50m), 0.0001 lux, 0.001 lux color |
 | Power | DC 12V / PoE (IEEE802.3af) |
-| Storage | microSD ≤ 128GB |
-| Protocols | onvif, rtsp |
+| Storage | microSD ≤ 128GB, NVR |
+| Protocols | onvif, rtsp, http |
 | IP rating | IP67 |
 | Two-way audio | Yes |
 | Operating temp | -40 to 70°C |
+
+## Streams
+
+| Stream | Resolution | FPS | Codec |
+|--------|-----------|-----|-------|
+| main | 1920x1080 | 30 | H.265 |
 
 ## Features
 

@@ -1,0 +1,119 @@
+{
+  "id": "dahua-itc514-ph6d-q22-f21-poe",
+  "brand": "Dahua",
+  "model": "ITC514-PH6D-Q22-F21-POE",
+  "aliases": [
+    "DHI-ITC514-PH6D-Q22-F21-POE",
+    "ITC514-PH6D-Q22-F28-POE",
+    "DHI-ITC514-PH6D-Q22-F28-POE",
+    "ITC514-PH6D-Q22-F36-POE",
+    "DHI-ITC514-PH6D-Q22-F36-POE"
+  ],
+  "type": "dual-lens",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2880,
+    "max_height": 1620,
+    "label": "5MP (2880x1620)"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 25
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 4,
+    "focal_length_mm": "2 parking-space channels 2.1, 2.8 or 3.6 (by model) + 2 lane channels 3.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "141.1 H / 74.5 V / 170.1 D (2.1 mm parking channels); 90.3 H / 47.8 V / 108.6 D (3.6 mm lane channels)",
+  "power": {
+    "method": "12-48 VDC; PoE+ (802.3at)",
+    "consumption_w": 24
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "audio": {
+    "speaker": true
+  },
+  "ip_rating": "IP54",
+  "environment": [
+    "indoor"
+  ],
+  "operating_temp_c": "-30 to 50",
+  "dimensions_mm": "200.6 x 202.4 x 131.2",
+  "weight_g": 1070,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "5MP multi-lens (4-channel) parking space detection camera; parking space mode monitors up to 12 spaces, plate mode up to 8 spaces with plates (detection rate >99.5%, European plate recognition >98%)",
+    "lens options by model: F21 = 2.1 mm, F28 = 2.8 mm, F36 = 3.6 mm parking-space lenses; lane channel(s) fixed 3.6 mm",
+    "illegal parking detection, smoke and fire detection, unauthorized occupation (non-motor vehicles, cones, carts, no-parking signs), line crossing, non-allowlist occupancy",
+    "built-in 7-color indicator and speaker for sound and light alarms with customizable voice broadcast; RS-485 for external indicators",
+    "WDR 100 dB, 3D NR; lens angle manually adjustable in three axes; ceiling or bracket mount; PoE+ or 12-48 VDC"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Dahua parking space detector — ONVIF + Dahua /cam/realmonitor RTSP path; enable ONVIF and set a dedicated user."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "ONVIF (Dahua)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Dahua RTSP/ONVIF."
+    }
+  },
+  "sources": [
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/indoor-parking/itc514-series-spot-detection-camera/itc514-ph6d-q22-f21-poe",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DHI-ITC514-PH6D-Q22-F21-POE_datasheet_20250605.pdf",
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/indoor-parking/itc514-series-spot-detection-camera/itc514-ph6d-q22-f28-poe",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DHI-ITC514-PH6D-Q22-F28-POE_datasheet_20250605.pdf",
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/indoor-parking/itc514-series-spot-detection-camera/itc514-ph6d-q22-f36-poe",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DHI-ITC514-PH6D-Q22-F36-POE_datasheet_20250605.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
+}

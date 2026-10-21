@@ -1,0 +1,146 @@
+{
+  "id": "hikvision-ds-2sf7c425mxg1-elwy-14",
+  "brand": "Hikvision",
+  "model": "DS-2SF7C425MXG1-ELWY/14",
+  "aliases": [
+    "DeepinView TandemVu 7C Series 4 MP 25X DarkFighter Network Speed Dome",
+    "DS-2SF7C425MXG1-EL/14",
+    "DS-2SF7C425MXG1-ELW/14",
+    "DS-2SF7C425MXG1-ELY/14"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "4 (bullet channel) / 5.9 to 147.5 (PTZ channel)",
+    "aperture": "F1.0 (bullet) / F1.5 (PTZ)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "89 horizontal (bullet channel) / 60.2 to 2.3 horizontal (PTZ channel)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 400,
+    "min_lux_color": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC ±20%, max. 60 W / PoE 802.3bt Type 4, Class 8 (max. 90 W)",
+    "consumption_w": 60,
+    "voltage": "36 VDC / PoE",
+    "poe_class": 8
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø260 x 382.9",
+  "weight_g": 8100,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "features": [
+    "TandemVu: 4 MP fixed bullet channel + PTZ channel in one unit",
+    "25x optical zoom, 16x digital zoom",
+    "DarkFighter 2.0",
+    "Bullet channel 24/7 color with 30 m white light; PTZ channel IR up to 400 m",
+    "Auto-tracking 3.0",
+    "Face capture and comparison",
+    "License plate recognition and vehicle attribute detection",
+    "Traffic violation and road incident detection",
+    "AI Open Platform",
+    "WDR 150 dB (PTZ channel), 120 dB (bullet channel)",
+    "Audible warning and white-light flashing alarm",
+    "Wiper and demist",
+    "EIS with built-in gyroscope",
+    "NEMA 4X anti-corrosion (-Y models)"
+  ],
+  "release_notes": "Per DS-2SF7C425MXG1-ELWY_14_Datasheet_20260812.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000108927/DS-2SF7C425MXG1-ELWY_14_Datasheet_20260812.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

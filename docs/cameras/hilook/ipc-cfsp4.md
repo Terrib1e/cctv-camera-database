@@ -1,6 +1,6 @@
 # HiLook IPC-CFSP4
 
-*Also known as: IPC-CFSP4/4G, IPC-CFSP4/4G-SIM#EU, HiLook 4 MP Solar 4G PT Camera*
+*Also known as: IPC-CFSP4/4G, IPC-CFSP4/4G-SIM#EU, HiLook 4 MP Solar 4G PT Camera, IPC-CFSP4/4G-SIM(Cold Proof)#EU*
 
 | Field | Spec |
 |-------|------|

@@ -12,10 +12,12 @@
   ],
   "resolution": {
     "megapixels": 8,
-    "label": "8MP"
+    "label": "8MP",
+    "max_width": 3840,
+    "max_height": 2160
   },
   "sensor": "1/2.7\" CMOS",
-  "field_of_view_deg": "100.8 horizontal, 55.8 vertical, 105.7 diagonal",
+  "field_of_view_deg": "100.8 horizontal, 55.8 vertical, 105.7 diagonal (2.8mm)",
   "lens": {
     "focal_length_mm": "2.8",
     "aperture": "F1.6",
@@ -34,7 +36,7 @@
       "H.264",
       "MJPEG"
     ],
-    "max_fps": 30,
+    "max_fps": 20,
     "streams": [
       {
         "name": "main",
@@ -56,7 +58,8 @@
   "storage": {
     "onboard": true,
     "max_microsd_gb": 512,
-    "nvr_compatible": true
+    "nvr_compatible": true,
+    "cloud": false
   },
   "protocols": [
     "onvif",
@@ -86,14 +89,19 @@
     "https://www.uniview.com/Products/Network_Cameras/Easy_Series/EasyBasic_Series/IPC2128LB-ADF28K-DL/",
     "https://ubox-eu.oss-eu-central-1.aliyuncs.com/datacenter/doc/f72d7c67-4bf9-4380-b0ca-4fe6eccbe234/06401fb7-19b9-4114-8c66-0f0370ceae15.pdf"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "configs": {
     "frigate": {
       "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/unicast/c1/s0/live",
       "best_substream": "rtsp://{user}:{pass}@{ip}:554/unicast/c1/s1/live",
       "onvif_port": 80,
       "verified": false,
-      "notes": "Main stream: /unicast/c1/s0/live, sub stream: /unicast/c1/s1/live. ONVIF on port 80."
+      "notes": "Main stream: /unicast/c1/s0/live, sub stream: /unicast/c1/s1/live. ONVIF on port 80.",
+      "detect": {
+        "height": 360,
+        "width": 640,
+        "fps": 5
+      }
     },
     "home_assistant": {
       "integration": "onvif",
@@ -105,5 +113,11 @@
     }
   },
   "ndaa_compliant": true,
-  "cloud_dependency": "local"
+  "cloud_dependency": "local",
+  "aliases": [
+    "IPC2128LB-ADF40K-DL"
+  ],
+  "markets": [
+    "global"
+  ]
 }

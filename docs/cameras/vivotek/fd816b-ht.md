@@ -36,10 +36,19 @@
 - Video Rotation
 - Two-way Audio
 - VIVOTEK VCA Support
+- WDR
+- Smart Stream
+- Smart IR Technology
+- P-iris Lens with Remote Focus
+- Video Rotation for Corridor View
+- Built-in IR up to 30m
+- PIR
+- Defog
 
 ## Sources
 
 - https://web.archive.org/web/2id_/http://download.vivotek.com/downloadfile/downloads/datasheets/fd816b-htdatasheet_en.pdf
+- https://web.archive.org/web/2id_/http://download.vivotek.com/downloadfile/downloads/datasheets/fd816bdatasheet_en.pdf
 
 ---
 *Auto-generated from vivotek-fd816b-ht.json — do not edit by hand.*

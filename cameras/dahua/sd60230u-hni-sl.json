@@ -1,0 +1,144 @@
+{
+  "id": "dahua-sd60230u-hni-sl",
+  "brand": "Dahua",
+  "model": "SD60230U-HNI-SL",
+  "aliases": [
+    "DH-SD60230U-HNI-SL",
+    "DH-SD60230UN-HNI-SL"
+  ],
+  "type": "ptz",
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "ac-mains",
+    "poe"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.8\" STARVIS CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4.5-135",
+    "aperture": "F1.6-F4.4",
+    "varifocal": true
+  },
+  "field_of_view_deg": "H: 67.8-2.4",
+  "night_vision": {
+    "type": "none",
+    "min_lux_color": 0.005,
+    "min_lux": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub2",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "AC 24V/3A / PoE+ (802.3at)",
+    "voltage": "24 VAC",
+    "consumption_w": 20
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp"
+  ],
+  "ip_rating": "IP68",
+  "ik_rating": "IK10",
+  "operating_temp_c": "-40 to 70",
+  "dimensions_mm": "222 (diameter) x 292",
+  "weight_g": 5900,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "discontinued",
+    "anti-corrosion 2MP 30x Starlight PTZ (All-environment series)",
+    "316L stainless steel housing",
+    "NEMA 4X",
+    "30x optical zoom (4.5-135 mm), 16x digital zoom",
+    "no IR illuminator (Starlight)",
+    "auto tracking",
+    "IVS (tripwire, intrusion, abandoned/missing), face detection, heat map",
+    "120 dB true WDR",
+    "pan 0-360 endless, tilt -20 to +90 with auto flip 180; 300 presets, 8 tours, 5 patterns",
+    "ONVIF Profile S/G; DH-SD and Pelco-P/D PTZ protocols",
+    "analog BNC video output; audio 1 in / 1 out; alarm 7 in / 2 out; RS-485",
+    "13 W, 20 W with heater on",
+    "6 kV lightning protection"
+  ],
+  "status": "discontinued",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/explosion-proof-&-anti-corrosion/sd60230u-hni-sl",
+    "https://materialfile.dahuasecurity.com/product/20180718/SD60230U-HNI-SL_Datasheet_20180717.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local"
+}

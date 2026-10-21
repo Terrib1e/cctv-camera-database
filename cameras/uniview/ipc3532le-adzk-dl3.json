@@ -12,7 +12,9 @@
   ],
   "resolution": {
     "megapixels": 2,
-    "label": "2MP"
+    "label": "2MP",
+    "max_width": 1920,
+    "max_height": 1080
   },
   "sensor": "1/2.8\" CMOS",
   "field_of_view_deg": "104.5 to 34.9 horizontal, 56.0 to 20.0 vertical, 124.5 to 40.1 diagonal",
@@ -74,7 +76,7 @@
     "https://www.uniview.com/Products/Network_Cameras/Easy_Series/EasyStar_Series/IPC3532LE-ADZK-DL3/",
     "https://ubox-eu.oss-eu-central-1.aliyuncs.com/datacenter/doc/5a9fea54-51a2-4c6b-9539-0e942d30ac36/496d9aee-dacc-4446-99ec-0610a794f116.pdf"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "configs": {
     "frigate": {
       "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/unicast/c1/s0/live",
@@ -93,5 +95,9 @@
     }
   },
   "ndaa_compliant": true,
-  "cloud_dependency": "local"
+  "cloud_dependency": "local",
+  "release_year": 2026,
+  "markets": [
+    "global"
+  ]
 }

@@ -1,9 +1,9 @@
 {
   "id": "zosi-c261-5mp-poe",
   "brand": "ZOSI",
-  "model": "C261",
+  "model": "C261 5MP PoE",
   "aliases": [
-    "C261 5MP PoE"
+    "C261"
   ],
   "type": "bullet",
   "connectivity": [
@@ -42,7 +42,7 @@
   "sources": [
     "https://zositech.com/products/5mp-poe-ip-camera-add-on-camera"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "status": "available",
   "markets": [
     "global"

@@ -1,11 +1,11 @@
-# ZOSI C225
+# ZOSI C225 5MP PoE
 
-*Also known as: C225 5MP PoE*
+*Also known as: C225*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C225 |
+| Model | C225 5MP PoE |
 | Type | turret |
 | Connectivity | ethernet |
 | Resolution | 5MP (2880x1620) (5MP, 2880×1620) |

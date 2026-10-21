@@ -1,0 +1,147 @@
+{
+  "id": "dahua-tpc-pt8641d-ac",
+  "brand": "Dahua",
+  "model": "TPC-PT8641D-AC",
+  "aliases": [
+    "DHI-TPC-PT8641D-AC",
+    "DHI-TPC-PT8641D-B50Z56L-BM-AC-DC48-S23",
+    "DHI-TPC-PT8641D-BM75Z56L2-BM-AC-DC48-S23",
+    "DHI-TPC-PT8641D-BM100Z56L2-BM-AC-DC48-S23"
+  ],
+  "type": "ptz",
+  "ptz": {
+    "onvif_ptz": "continuous"
+  },
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 0.33,
+    "max_width": 640,
+    "max_height": 512,
+    "label": "640x512 (thermal)"
+  },
+  "sensor": "Thermal: vanadium oxide uncooled focal plane detector, 640x512, 17 um pixel pitch, 8-14 um, NETD <= 35 mK; optical: 1/1.8in 4MP CMOS",
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "thermal main",
+        "resolution": "1280x1024",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "thermal sub",
+        "resolution": "640x512",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "50, 75 or 100 (thermal, per variant); 6-336 (visible, 56x)",
+    "aperture": "F1.0 / F1.0 / F1.1 (thermal); F1.5-F5.3 (visible)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "Thermal 50 mm H: 12.4, V: 9.9; 75 mm H: 8.3, V: 6.6; 100 mm H: 6.2, V: 5.0; visible H: 64.4-1.28, V: 38.37-0.72",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 150,
+    "min_lux_color": 0.005,
+    "min_lux": 0.0005
+  },
+  "power": {
+    "method": "Wide input voltage 24-57 VDC",
+    "voltage": "24-57 VDC",
+    "consumption_w": 89
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256
+  },
+  "ip_rating": "IP66",
+  "operating_temp_c": "-40 to 70",
+  "audio": {
+    "two_way": true
+  },
+  "environment": [
+    "outdoor"
+  ],
+  "protocols": [
+    "onvif",
+    "rtsp"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "anti-corrosion multi-spectral pan and tilt (640x512 thermal + 4MP visible); anti-corrosion coating for coasts, ports and coastal cities",
+    "NEMA 4X; CE, FCC",
+    "vanadium oxide uncooled thermal detector, NETD <= 35 mK; thermal lens 50 / 75 / 100 mm (per ordering variant)",
+    "visible 56x optical zoom (6-336 mm); IR illumination 150 m",
+    "laser illumination per variant: 800 m (50 mm model) or 2 km (75/100 mm models)",
+    "optical image stabilization, optical defog, auto rain-sensing wiper",
+    "AI: heat detection, smoke detection, tripwire, intrusion, boat detection, human/vehicle classification, cold/hot spot trace",
+    "heat detection distance up to 3,000 / 4,500 / 6,000 m (50 / 75 / 100 mm)",
+    "pan 0-360 endless, tilt -45 to +90, positioning accuracy +/-0.1; 300 presets",
+    "alarm 7 in / 2 out; audio 1 in / 1 out; RS-485; CVBS output"
+  ],
+  "dimensions_mm": "520 x 266 x 427",
+  "weight_g": 22000,
+  "release_notes": "Anti-corrosion variant of the TPC-PT8641D multi-spectral pan-tilt (640x512 VOx thermal + 4MP 56x visible) with optional laser illumination.",
+  "status": "available",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 640,
+        "height": 512,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=2&subtype=0",
+      "notes": "Dahua RTSP convention; channel 1 = visible, channel 2 = thermal. Not verified against a live unit.",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration (default port 80). Thermal and visible exposed as separate channels."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/thermal-products/thermal-cameras/anti-corrosion-series/tpc-pt8641d-ac",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/115777/datasheet/TPC-PT8641D-AC_datasheet_20230223.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local"
+}

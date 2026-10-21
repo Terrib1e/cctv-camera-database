@@ -110,13 +110,12 @@
   "sources": [
     "https://www.matrixcomsec.com/product/satatya-ip-bullet-camera/"
   ],
-  "last_verified": "2026-09-08",
+  "last_verified": "2026-10-20",
   "configs": {
     "frigate": {
-      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/1/1",
-      "best_substream": "rtsp://{user}:{pass}@{ip}:554/1/2",
       "onvif_port": 80,
-      "verified": false
+      "verified": false,
+      "notes": "Matrix does not publish an RTSP path for this camera (none in its installation guides, system manuals or wiki). Add it through ONVIF, which discovers the stream URL, or read the stream URL from the camera's web UI."
     },
     "home_assistant": {
       "integration": "onvif",
@@ -124,7 +123,7 @@
     },
     "blue_iris": {
       "profile": "Generic/ONVIF",
-      "notes": "Use generic ONVIF profile. RTSP main rtsp://{user}:{pass}@{ip}:554/1/1, sub /1/2."
+      "notes": "Use the generic ONVIF profile; find/inspect fills in the stream URL."
     }
   },
   "cloud_dependency": "local",

@@ -1,0 +1,126 @@
+{
+  "id": "tiandy-tc-h3169m-44x-lw-p-a",
+  "brand": "Tiandy",
+  "model": "TC-H3169M 44X/LW/P/A",
+  "type": "panoramic",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 16,
+    "max_width": 4096,
+    "max_height": 1800,
+    "label": "16MP"
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "focal_length_mm": "6-264 (PTZ, 44x optical zoom); 5 (panoramic, fixed)",
+    "aperture": "F1.5-F4.8 (PTZ); F2.2 (panoramic)",
+    "varifocal": true
+  },
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 500,
+    "min_lux_color": 0.0008
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "4096x1800",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x320",
+        "fps": 30
+      },
+      {
+        "name": "third",
+        "resolution": "1280x560",
+        "fps": 30
+      },
+      {
+        "name": "ptz-main",
+        "resolution": "1920x1080",
+        "fps": 60
+      },
+      {
+        "name": "ptz-sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "ptz": {
+    "autotracking": true
+  },
+  "power": {
+    "method": "AC24V±15%",
+    "consumption_w": 119,
+    "voltage": "AC 24V"
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 128
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-30 to 65",
+  "dimensions_mm": "Φ358x568 mm",
+  "weight_g": 17000,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "16MP 44x Super Starlight Laser AEW Panoramic PTZ Camera",
+    "WDR: 140dB",
+    "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Loitering, Running, Parking, Face Detection, People Counting, Crowed, On Duty Detection, Video Abnormal, Audio Abnormal, Heatmap",
+    "Early Warning: Yes",
+    "Panoramic: 2×4096×1800@30fps, 360°×74°",
+    "PTZ module: 1920×1080@60fps, 44× optical zoom",
+    "Laser illuminator up to 500m, 4 white LEDs",
+    "Auto-tracking"
+  ],
+  "sources": [
+    "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/68.html",
+    "https://web.archive.org/web/20220524035548/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/68.html"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

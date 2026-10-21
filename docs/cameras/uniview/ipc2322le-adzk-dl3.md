@@ -6,7 +6,7 @@
 | Model | IPC2322LE-ADZK-DL3 |
 | Type | bullet |
 | Connectivity | ethernet |
-| Resolution | 2MP (2MP) |
+| Resolution | 2MP (2MP, 1920×1080) |
 | Sensor | 1/2.8" CMOS |
 | Lens | 1× 2.8-12mm F1.6 |
 | Field of view | 104.5 to 34.9 horizontal, 56.0 to 20.0 vertical, 124.5 to 40.1 diagonal° |

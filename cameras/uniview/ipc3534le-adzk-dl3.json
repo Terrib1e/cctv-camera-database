@@ -12,7 +12,9 @@
   ],
   "resolution": {
     "megapixels": 4,
-    "label": "4MP"
+    "label": "4MP",
+    "max_width": 2688,
+    "max_height": 1520
   },
   "sensor": "1/3.0\" CMOS",
   "field_of_view_deg": "95.6 to 30.9 horizontal, 52.0 to 17.6 vertical, 112.2 to 33.7 diagonal",
@@ -74,7 +76,7 @@
     "https://www.uniview.com/Products/Network_Cameras/Easy_Series/EasyStar_Series/IPC3534LE-ADZK-DL3/",
     "https://ubox-eu.oss-eu-central-1.aliyuncs.com/datacenter/doc/1496038d-7665-4f37-90a8-a7fe434528a7/2198a2c9-c995-436a-9f19-3e0606554ac9.pdf"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "configs": {
     "frigate": {
       "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/unicast/c1/s0/live",
@@ -93,5 +95,9 @@
     }
   },
   "ndaa_compliant": true,
-  "cloud_dependency": "local"
+  "cloud_dependency": "local",
+  "release_year": 2026,
+  "markets": [
+    "global"
+  ]
 }

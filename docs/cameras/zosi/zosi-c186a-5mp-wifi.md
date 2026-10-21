@@ -1,11 +1,11 @@
-# ZOSI C186A
+# ZOSI C186A AuroraLux WiFi 5MP
 
-*Also known as: C186A AuroraLux WiFi 5MP*
+*Also known as: C186A*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C186A |
+| Model | C186A AuroraLux WiFi 5MP |
 | Type | bullet |
 | Connectivity | wifi |
 | Resolution | 5MP / 3K (2880x1620) (5MP, 2880×1620) |

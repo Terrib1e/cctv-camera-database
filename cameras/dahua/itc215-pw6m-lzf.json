@@ -1,0 +1,119 @@
+{
+  "id": "dahua-itc215-pw6m-lzf",
+  "brand": "Dahua",
+  "model": "ITC215-PW6M-LZF",
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP LPR"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "3.2-10.5 (motorized)",
+    "aperture": "F1.6-F3.3",
+    "varifocal": true
+  },
+  "field_of_view_deg": "108.1-30.3h",
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30
+      }
+    ]
+  },
+  "power": {
+    "method": "PoE+ / 12 VDC / 24 VAC",
+    "consumption_w": 20
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 128,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "operating_temp_c": "-30 to 65",
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      }
+    },
+    "home_assistant": {
+      "integration": "generic",
+      "notes": "Dahua; use the Generic Camera integration with the RTSP URL."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "aliases": [
+    "ITC215-PW6M-LZF(Project only)",
+    "DHI-ITC215-PW6M-LZF"
+  ],
+  "night_vision": {
+    "type": "color",
+    "range_m": 12,
+    "min_lux": 0.002
+  },
+  "features": [
+    "2MP short-range access ANPR camera, project-only model",
+    "Built-in white-light illuminator (6 LEDs, 12 m)",
+    "Deep-learning recognition of plate, vehicle type, logo, series and colour, vehicles without plates, driver/front-passenger features; capture rate ≥99%, recognition rate ≥95%",
+    "Capture range 3-6 m, lane width 3-4 m; max. detected speed 120 km/h",
+    "Trigger: video detection and/or I/O loop",
+    "96 dB WDR, 3D NR",
+    "Analog output, RS-485 x2, RS-232, alarm 3 in / 3 out (relay for barrier), audio 1 in / 1 out (RCA)",
+    "CE, FCC, RoHS"
+  ],
+  "dimensions_mm": "296.5 x 124.3 x 107.7",
+  "weight_g": 1700,
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/dedicated-products/project-exclusive/mobile-&-traffic/itc215-pw6m-lzf(project-only)",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20201127/DHI-ITC215-PW6M-LZF_datasheet_2020102.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

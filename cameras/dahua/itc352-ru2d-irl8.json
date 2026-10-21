@@ -1,0 +1,116 @@
+{
+  "id": "dahua-itc352-ru2d-irl8",
+  "brand": "Dahua",
+  "model": "ITC352-RU2D-IRL8",
+  "aliases": [
+    "ITC352-RU2D-IRL8(only for project)",
+    "DHI-ITC352-RU2D-IRL8"
+  ],
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "ac-mains"
+  ],
+  "resolution": {
+    "megapixels": 3,
+    "max_width": 2048,
+    "max_height": 1536,
+    "label": "3MP"
+  },
+  "sensor": "1/1.8\" global shutter CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "10-40 (motorized, P-iris, DH-PFL1040-K9PE included)",
+    "varifocal": true
+  },
+  "night_vision": {
+    "type": "ir"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2048x1536",
+        "fps": 25
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "power": {
+    "method": "100-240 VAC",
+    "voltage": "100-240VAC",
+    "consumption_w": 22
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": false,
+    "cloud": false
+  },
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "features": [
+    "3MP AI traffic enforcement camera with built-in 850 nm IR light, project-only model",
+    "License plate recognition (Indian plates in baseline; other regions by customization)",
+    "ANPR mode: overspeed, underspeed, unfastened seat belt, calling while driving; e-police mode: red-light running, overspeed",
+    "Speed measurement (radar recommended); non-motor-vehicle helmet detection; driver/passenger face detection",
+    "Vehicle type, colour, logo and series recognition; per-lane traffic flow statistics",
+    "Video or radar trigger; GPS/BeiDou; gyroscope attitude-anomaly alarm",
+    "C-mount; IK10 without wiper",
+    "2x 10/100/1000M Ethernet, 2x USB 3.0, BNC analog output, RS-485 x2, RS-232 x4, 4 I/O, 2 alarm out, audio in/out",
+    "UL, BIS, CE, FCC"
+  ],
+  "operating_temp_c": "-40 to 65",
+  "dimensions_mm": "544.0 x 195.5 x 171.5",
+  "weight_g": 8000,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 2
+  },
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      }
+    },
+    "home_assistant": {
+      "integration": "generic",
+      "notes": "Dahua; use the Generic Camera integration with the RTSP URL."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/dedicated-products/project-exclusive/mobile-&-traffic/itc352-ru2d-irl8(only-for-project)",
+    "https://material.dahuasecurity.com/uploads/soft/20200506/DHI-ITC352-RU2D-IRL8only-for-project.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

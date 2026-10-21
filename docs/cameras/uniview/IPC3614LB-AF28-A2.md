@@ -1,5 +1,7 @@
 # Uniview IPC3614LB-AF28-A2
 
+*Also known as: IPC3614LB-AF40-A2*
+
 | Field | Spec |
 |-------|------|
 | Brand | Uniview |
@@ -9,7 +11,7 @@
 | Resolution | 4MP (4MP, 2560×1440) |
 | Sensor | 1/3.0" CMOS |
 | Lens | 1× 2.8mm F2.0 |
-| Field of view | 94.3 horizontal° |
+| Field of view | 94.3 horizontal, 52.2 vertical, 99.6 diagonal (2.8mm)° |
 | Night vision | ir (30m), 0.01 lux color |
 | Power | PoE (IEEE 802.3af) / DC 12V |
 | Storage | NVR |
@@ -22,8 +24,8 @@
 
 | Stream | Resolution | FPS | Codec |
 |--------|-----------|-----|-------|
-| main | 2560x1440 | 25 | — |
-| sub | 640x360 | 30 | — |
+| main | 2560x1440 | 25 | H.265 |
+| sub | 640x360 | 30 | H.265 |
 
 ## Features
 

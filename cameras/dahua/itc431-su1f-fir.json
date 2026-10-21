@@ -1,0 +1,111 @@
+{
+  "id": "dahua-itc431-su1f-fir",
+  "brand": "Dahua",
+  "model": "ITC431-SU1F-FIR",
+  "aliases": [
+    "DHI-ITC431-SU1F-FIR"
+  ],
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP (2688x1520)"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "1600x1200",
+        "fps": 30
+      }
+    ]
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "12",
+    "varifocal": false
+  },
+  "field_of_view_deg": "37.24 H / 20.75 V / 42.96 D",
+  "night_vision": {
+    "min_lux": 0.001
+  },
+  "power": {
+    "method": "12 VDC, 24 VAC, 36 VDC",
+    "consumption_w": 20
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 65",
+  "dimensions_mm": "201.7 x 148 x 440.5",
+  "weight_g": 3400,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 2
+  },
+  "features": [
+    "4MP smart vehicle detector with 1/1.8\" CMOS (2688x1520) and high-performance AI processor",
+    "built-in 80 GHz millimeter-wave radar: detection region up to 250 m, speed range 1-250 km/h (+/-5 km/h), tracks up to 128 targets",
+    "fixed 12 mm lens (M16 mount)",
+    "ICR day/night switching (polarizing filter by day, IR-transmitting filter at night)",
+    "radar-video fusion for all-weather traffic flow statistics, event detection and road security warnings (wrong-way, congestion, speeding, illegal parking, pedestrians)",
+    "plate number/color, vehicle color and type recognition",
+    "GPS positioning, built-in electronic gyroscope (abnormal attitude alarm)",
+    "WDR 120 dB, 3D NR, HLC; 2x RS-485, RS-232, I/O; 36 VDC adapter included (also 12 VDC / 24 VAC)"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1600,
+        "height": 1200,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua radar vehicle detector — ONVIF not listed in the datasheet; standard Dahua /cam/realmonitor RTSP path (unverified)."
+    },
+    "home_assistant": {
+      "integration": "generic",
+      "notes": "No ONVIF listed in the datasheet; add via Generic Camera with the Dahua RTSP URL."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Dahua RTSP."
+    }
+  },
+  "sources": [
+    "https://www.dahuasecurity.com/products/intelligent-traffic/intelligent-traffic-products/itc/4mp/itc431-su1f-fir",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/81996/datasheet/ITC431-SU1F-FIR_S0_datasheet_20260205.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
+}

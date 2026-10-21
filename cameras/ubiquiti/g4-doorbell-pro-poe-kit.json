@@ -1,0 +1,94 @@
+{
+  "id": "ubiquiti-g4-doorbell-pro-poe-kit",
+  "brand": "Ubiquiti",
+  "model": "UniFi Protect G4 Doorbell Pro PoE Kit",
+  "aliases": [
+    "UVC-G4-Doorbell-Pro-PoE-Kit"
+  ],
+  "type": "doorbell",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1600,
+    "max_height": 1200,
+    "label": "2MP (main camera; separate 2MP package camera)"
+  },
+  "sensor": "5MP CMOS (main camera); 8MP CMOS (package camera)",
+  "lens": {
+    "count": 2,
+    "varifocal": false
+  },
+  "field_of_view_deg": "H: 138, V: 114, D: 155 (main camera, LDC on); H: 160, V: 117, D: 160 (main camera, LDC off); H: 97.5, V: 79.4, D: 118.2 (package camera)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 6
+  },
+  "video": {
+    "max_fps": 30
+  },
+  "power": {
+    "method": "PoE (37-57V DC), 7W max",
+    "consumption_w": 7,
+    "voltage": "37-57V DC"
+  },
+  "power_source": [
+    "poe"
+  ],
+  "protocols": [
+    "rtsp"
+  ],
+  "storage": {
+    "onboard": false,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "ip_rating": "IPX4",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-30 to 40",
+  "dimensions_mm": "160.6 x 51.7 x 35.1",
+  "weight_g": 264,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "PoE-powered G4 Doorbell Pro kit with included PoE chime",
+    "dual-camera design: main camera + dedicated package camera",
+    "smart detections (people, vehicles, animals)",
+    "NFC card & keyfob access, two-way intercom & doorbell access",
+    "GbE RJ45 port",
+    "quad-core Arm Cortex-A53 based chip",
+    "UniFi Protect ecosystem"
+  ],
+  "sources": [
+    "https://techspecs.ui.com/unifi/physical-security/uvc-g4-doorbell-pro-poe-kit"
+  ],
+  "last_verified": "2026-10-20",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsps://{ip}:7441/{camera_id}?enableSrtp",
+      "two_way_audio": true
+    },
+    "home_assistant": {
+      "integration": "unifiprotect",
+      "notes": "Native UniFi Protect integration. Requires UniFi Protect console."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "Use Generic/RTSP profile with RTSPS URL from UniFi Protect. Requires Protect RTSP stream enabled per camera."
+    }
+  }
+}

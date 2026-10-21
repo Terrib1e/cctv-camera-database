@@ -1,0 +1,151 @@
+{
+  "id": "hikvision-ds-2sf7c842mxg0-elw-2c",
+  "brand": "Hikvision",
+  "model": "DS-2SF7C842MXG0-ELW/2C",
+  "aliases": [
+    "TandemVu 7C Series Panoramic 12 MP 42X DarkFighter Network Speed Dome"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 12,
+    "max_width": 5344,
+    "max_height": 2256,
+    "label": "12MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS (panoramic bullet channel and PTZ channel)",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "2.8 (panoramic) / 5.9 to 247.8 (PTZ, motorized)",
+    "aperture": "F1.0 (panoramic) / F1.3 (PTZ)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "190 horizontal (panoramic) / 61.0 to 2.1 horizontal (PTZ wide-tele)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 250,
+    "min_lux_color": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main (panoramic)",
+        "resolution": "5344x2256",
+        "fps": 25,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub (panoramic)",
+        "resolution": "1336x564",
+        "fps": 25,
+        "codec": "H.265"
+      },
+      {
+        "name": "main (PTZ)",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub (PTZ)",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third (PTZ)",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC ± 25%, max. 60 W",
+    "consumption_w": 60,
+    "voltage": "36 VDC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "dimensions_mm": "Ø260 x 382.69",
+  "weight_g": 7100,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "TandemVu: 12 MP 190 degree panoramic bullet channel + 4 MP PTZ channel in one unit",
+    "42x optical zoom, 16x digital zoom (PTZ channel)",
+    "DarkFighter low-light imaging (24/7 color on panoramic channel)",
+    "White light up to 30 m and IR up to 250 m",
+    "Smart tracking (PTZ channel)",
+    "Human, face and vehicle detection and capture (PTZ channel, deep learning)",
+    "300 presets, 8 patrols, 4 pattern scans",
+    "WDR (120 dB, PTZ channel)",
+    "Optical defog, EIS",
+    "Wiper and demist",
+    "Alarm I/O: 7 inputs, 2 outputs; RS-485",
+    "TVS 6000 V lightning protection"
+  ],
+  "release_notes": "Per DS-2SF7C842MXG0-ELW_2C_Datasheet_20260810.pdf. Panoramic channel main stream listed as 5344x2256 @25 fps (50 Hz); the 60 Hz line only gives 24 fps at 3840x1080.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000090066/DS-2SF7C842MXG0-ELW_2C_Datasheet_20260810.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1336,
+        "height": 564,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

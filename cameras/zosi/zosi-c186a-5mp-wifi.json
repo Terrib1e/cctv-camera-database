@@ -1,9 +1,9 @@
 {
   "id": "zosi-c186a-5mp-wifi",
   "brand": "ZOSI",
-  "model": "C186A",
+  "model": "C186A AuroraLux WiFi 5MP",
   "aliases": [
-    "C186A AuroraLux WiFi 5MP"
+    "C186A"
   ],
   "type": "bullet",
   "connectivity": [
@@ -50,7 +50,7 @@
   "sources": [
     "https://zositech.com/products/c186a-5mp-aurora-lux-full-color-wifi-camera-copy"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "status": "available",
   "markets": [
     "global"

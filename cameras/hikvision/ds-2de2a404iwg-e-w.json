@@ -1,0 +1,132 @@
+{
+  "id": "hikvision-ds-2de2a404iwg-e-w",
+  "brand": "Hikvision",
+  "model": "DS-2DE2A404IWG-E/W",
+  "aliases": [
+    "4 MP 4x IR Mini PTZ Dome Outdoor WIFI Network Camera"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet",
+    "wifi"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/2.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8-12",
+    "aperture": "F1.8",
+    "varifocal": true
+  },
+  "field_of_view_deg": "99.4 to 32.8 horizontal",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 20,
+    "min_lux_color": 0.005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC, Max. 11.2 W; PoE (802.3af)",
+    "consumption_w": 11.2,
+    "voltage": "12 VDC / PoE"
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP66",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø 130.7 × 103.6",
+  "weight_g": 560,
+  "operating_temp_c": "-20 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "4x optical zoom, 16x digital zoom",
+    "Powered by DarkFighter low-light imaging",
+    "Human and vehicle classification based on deep learning",
+    "Built-in microphone and speaker",
+    "120 dB WDR",
+    "Digital defog",
+    "300 presets, 3D positioning",
+    "Wi-Fi (802.11b/g/n, 2.4 GHz)"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "release_notes": "Per DS-2DE2A404IWG-E_W_Datasheet_20260917.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000160147/DS-2DE2A404IWG-E_W_Datasheet_20260917.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

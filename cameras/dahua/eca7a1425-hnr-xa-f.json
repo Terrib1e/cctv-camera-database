@@ -1,0 +1,137 @@
+{
+  "id": "dahua-eca7a1425-hnr-xa-f",
+  "brand": "Dahua",
+  "model": "ECA7A1425-HNR-XA-F",
+  "aliases": [
+    "DH-ECA7A1425-HNR-XA-F"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "ac-mains"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "5.4-135",
+    "aperture": "F1.6-F4.0",
+    "varifocal": true
+  },
+  "field_of_view_deg": "H: 59.8-2.8; V: 33.7-1.9; D: 63.3-4",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 100,
+    "min_lux_color": 0.001,
+    "min_lux": 0.0001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub2",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "100-240 VAC, 50/60 Hz",
+    "voltage": "100-240 VAC",
+    "consumption_w": 18.5
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "rtmp"
+  ],
+  "ip_rating": "IP68",
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "458.7 x 161.0 x 265.1",
+  "weight_g": 11000,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "explosion-proof WizMind 4MP 25x Starlight IR zoom camera",
+    "ATEX (EN 60079-0/-1/-28/-31) and IECEx (IEC 60079-0/-1/-28/-31) certified",
+    "stainless steel housing",
+    "25x optical zoom (5.4-135 mm), 16x digital zoom; 300 presets",
+    "100 m IR (4 IR LEDs)",
+    "140 dB WDR",
+    "IVS perimeter protection, face detection, video metadata, SMD",
+    "100 M single-fiber optical port (1310 nm TX / 1550 nm RX, 20 km)",
+    "ONVIF Profile S/G/T",
+    "audio 1 in / 1 out (line); alarm 2 in / 1 out; RS-485",
+    "TVS 6000 V lightning proof, surge and voltage transient protection"
+  ],
+  "status": "available",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/explosion-proof/optical-series/eca7a1425-hnr-xa-f=s2",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/ECA7A1425-HNR-XA-F_S2_datasheet_20240611.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local"
+}

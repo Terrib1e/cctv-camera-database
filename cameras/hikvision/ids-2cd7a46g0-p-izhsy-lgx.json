@@ -1,0 +1,147 @@
+{
+  "id": "hikvision-ids-2cd7a46g0-p-izhsy-lgx",
+  "brand": "Hikvision",
+  "model": "iDS-2CD7A46G0/P-IZHSY/LGX",
+  "aliases": [
+    "4 MP ANPR IR Varifocal Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 to 12 or 8 to 32 (motorized varifocal, optional)",
+    "aperture": "F1.2 to F2.5 (2.8-12 mm) / F1.7 to F1.73 (8-32 mm)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "114.5 to 41.8 horizontal (2.8-12 mm) / 42.5 to 15.1 horizontal (8-32 mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 100,
+    "min_lux_color": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": false,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "12 VDC ±20%, 1.19 A, max. 14.28 W / PoE 802.3at, Type 2, Class 4, max. 16.8 W",
+    "consumption_w": 16.8,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø140 x 351",
+  "weight_g": 1950,
+  "operating_temp_c": "-40 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "ANPR / license plate recognition (deep learning)",
+    "Blocklist and allowlist up to 10,000 records",
+    "Vehicle attribute detection (type, color, brand)",
+    "DarkFighter",
+    "140 dB WDR",
+    "IR up to 50 m (2.8-12 mm) / 100 m (8-32 mm)",
+    "P-iris",
+    "5 streams",
+    "Wiegand output",
+    "NEMA 4X anti-corrosion (-Y)",
+    "EN50121-4 railway approval"
+  ],
+  "release_notes": "Per iDS-2CD7A46G0_P-IZHSY_LGX.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000069282/iDS-2CD7A46G0_P-IZHSY_LGX.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}
