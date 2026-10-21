@@ -1,0 +1,65 @@
+{
+  "id": "dahua-hac-hum1220g-m",
+  "brand": "Dahua",
+  "model": "HAC-HUM1220G-M",
+  "aliases": [
+    "DH-HAC-HUM1220G-M",
+    "DH-HAC-HUM1220GP-M",
+    "DH-HAC-HUM1220GN-M"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.9\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 (3.6 optional)",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "109.4h (92h with 3.6 mm)",
+  "night_vision": {
+    "type": "none",
+    "min_lux_color": 0.02,
+    "min_lux": 0.002
+  },
+  "power": {
+    "method": "12 VDC ±25% vehicle power (4-pin M12 aviation connector (power + video))",
+    "voltage": "12VDC",
+    "consumption_w": 0.6
+  },
+  "ip_rating": "IP67",
+  "features": [
+    "Mobile (vehicle) micro HDCVI bullet camera",
+    "HDCVI output via 4-pin M12 aviation connector (power + video)",
+    "Shock-proof: EN50155 (EN50121-3-2, IEC61373), IP6K9K",
+    "DWDR, BLC/HLC, 2D NR",
+    "CE, FCC"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "Φ30 x 68.2",
+  "weight_g": 70,
+  "environment": [
+    "outdoor"
+  ],
+  "status": "discontinued",
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/mobile-&-traffic/hac-hum1220g-m",
+    "https://materialfile.dahuasecurity.com/product/20180627/DH-HAC-HUM1220G-M_Datasheet_20180626.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

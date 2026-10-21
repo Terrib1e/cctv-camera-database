@@ -1,0 +1,71 @@
+{
+  "id": "dahua-hac-hmw3100l-fr",
+  "brand": "Dahua",
+  "model": "HAC-HMW3100L-FR",
+  "aliases": [
+    "DH-HAC-HMW3100L-FR",
+    "DH-HAC-HMW3100LP-FR-0210B",
+    "DH-HAC-HMW3100LN-FR-0210B"
+  ],
+  "type": "dual-lens",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 1,
+    "max_width": 1280,
+    "max_height": 720,
+    "label": "720p"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "2.8 (front) / 2.1 (rear)",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "116h (front) / 139h (rear)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 3,
+    "min_lux_color": 0.02
+  },
+  "power": {
+    "method": "12 VDC ±25% vehicle power (4-pin M12 aviation connector (power + video))",
+    "voltage": "12VDC",
+    "consumption_w": 2.4
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Double-lens in-vehicle HDCVI camera: colour forward-facing lens + IR cabin-facing lens",
+    "2-channel HDCVI output via aviation connector (yellow: front, black: rear)",
+    "HD/SD output switchable",
+    "Built-in mic (audio on both video channels)",
+    "Smart IR (internal, 3 m), DWDR, 2D NR",
+    "Shock-proof: EN50155 (EN50121-3-2, IEC61373)",
+    "CE, FCC, UL"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "115.8 x 99.5 x 50.2",
+  "weight_g": 130,
+  "environment": [
+    "indoor"
+  ],
+  "status": "discontinued",
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/mobile-&-traffic/hac-hmw3100l-fr",
+    "https://materialfile.dahuasecurity.com/download/DH-HAC-HMW3100L-FR_Datasheet_20171128.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

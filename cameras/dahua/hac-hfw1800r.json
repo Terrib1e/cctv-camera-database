@@ -1,0 +1,66 @@
+{
+  "id": "dahua-hac-hfw1800r",
+  "brand": "Dahua",
+  "model": "HAC-HFW1800R",
+  "aliases": [
+    "HAC-HFW1800R(only for Jordan)",
+    "DH-HAC-HFW1800R",
+    "DH-HAC-HFW1800RP",
+    "DH-HAC-HFW1800RN"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "4K"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 / 3.6 / 6",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "105h (2.8 mm) / 87h (3.6 mm) / 54.7h (6 mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 20,
+    "min_lux_color": 0.03
+  },
+  "power": {
+    "method": "12 VDC ±30%",
+    "voltage": "12VDC",
+    "consumption_w": 3.56
+  },
+  "ip_rating": "IP67",
+  "features": [
+    "Lite series 4K HDCVI IR bullet camera",
+    "Project-exclusive model (product page: only for Jordan)",
+    "CVI/TVI/AHD/CVBS switchable output on one BNC port",
+    "CVI: 4K@15fps, 5MP@20fps, 4MP@25/30fps",
+    "Smart IR, DWDR, BLC/HLC, 2D NR, 8 privacy masks",
+    "CE, FCC, UL"
+  ],
+  "operating_temp_c": "-40 to 55",
+  "dimensions_mm": "154.3 x 69.8 x 69.8",
+  "weight_g": 150,
+  "environment": [
+    "outdoor"
+  ],
+  "markets": [
+    "JO"
+  ],
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/dedicated-products/project-exclusive/hdcvi-cameras/hac-hfw1800r(only-for-jordan)",
+    "https://material.dahuasecurity.com/uploads/soft/20210430/DH-HAC-HFW1800R_Datasheet.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

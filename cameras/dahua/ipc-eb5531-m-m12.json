@@ -1,0 +1,131 @@
+{
+  "id": "dahua-ipc-eb5531-m-m12",
+  "brand": "Dahua",
+  "model": "IPC-EB5531-M/M12",
+  "aliases": [
+    "DH-IPC-EB5531-M/M12",
+    "DH-IPC-EB5531P",
+    "DH-IPC-EB5531N"
+  ],
+  "type": "fisheye",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2592,
+    "max_height": 1944,
+    "label": "5MP"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "1.4",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "180h x 180v",
+  "night_vision": {
+    "type": "none",
+    "min_lux_color": 0.02,
+    "min_lux": 0.05
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264"
+    ],
+    "max_fps": 25,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2592x1944",
+        "fps": 25
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "power": {
+    "method": "PoE (802.3af, Class 0) / 12 VDC (-M version)",
+    "consumption_w": 3.4
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 128,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK08",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Mobile (vehicle) 5MP panoramic fisheye network camera",
+    "Network port: RJ-45 or M12 D-coding connector",
+    "Triple-stream H.265/H.264 encoding",
+    "IVS: tripwire, intrusion, heat map",
+    "120 dB WDR, 3D DNR, 16x digital zoom",
+    "Built-in mic",
+    "CE, FCC, UL"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "Φ110 x 56",
+  "weight_g": 380,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration works (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "status": "discontinued",
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/mobile-&-traffic/ipc-eb5531-m/m12",
+    "https://materialfile.dahuasecurity.com/download/DH-IPC-EB5531-M_M12_Datasheet_201711231.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

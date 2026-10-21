@@ -1,0 +1,144 @@
+{
+  "id": "dahua-sd52c232mb-hnr",
+  "brand": "Dahua",
+  "model": "SD52C232MB-HNR",
+  "aliases": [
+    "DH-SD52C232MB-HNR"
+  ],
+  "type": "ptz",
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "dc",
+    "poe"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "4.8-154",
+    "aperture": "F1.6-F4.0",
+    "varifocal": true
+  },
+  "field_of_view_deg": "H: 58.4-3.0; V: 33.4-1.7; D: 66.4-3.4",
+  "night_vision": {
+    "type": "none",
+    "min_lux_color": 0.005,
+    "min_lux": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub2",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "24 VDC / PoE+ (802.3at)",
+    "voltage": "24 VDC",
+    "consumption_w": 16
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "rtmp"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "186 (diameter) x 253",
+  "weight_g": 2200,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "WizSense 2MP 32x Starlight network PTZ (no supplementary light)",
+    "32x optical zoom (4.8-154 mm), 16x digital zoom",
+    "WizTracking auto tracking (Xinghan large-scale AI model)",
+    "IVS perimeter protection (tripwire, intrusion, fence climbing, loitering, abandoned/missing object, fast moving, parking, people gathering) with human/vehicle classification",
+    "face detection (6 attributes, 8 expressions)",
+    "video metadata (motor/non-motor vehicles, faces, human bodies)",
+    "people counting",
+    "SMD 4.0",
+    "AcuPick",
+    "auto patrol",
+    "pan 0-360 endless, tilt 0 to +90 with auto flip 180; 300 presets, 8 tours, 5 patterns, 5 scans",
+    "120 dB WDR",
+    "electronic image stabilization (EIS)",
+    "ONVIF S/G/T",
+    "audio 1 in / 1 out (line, bare wire); alarm 2 in / 1 out",
+    "TVS 6000 V lightning proof, surge and voltage transient protection",
+    "P2P"
+  ],
+  "status": "available",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ik_rating": "IK10",
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/ptz-cameras/wizsense-series/sd5/sd52c232mb-hnr",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/88285/datasheet/DH-SD52C232MB-HNR_S0_datasheet_20260908_English.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local"
+}

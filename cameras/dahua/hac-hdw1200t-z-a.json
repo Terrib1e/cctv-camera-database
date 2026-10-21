@@ -1,0 +1,74 @@
+{
+  "id": "dahua-hac-hdw1200t-z-a",
+  "brand": "Dahua",
+  "model": "HAC-HDW1200T-Z-A",
+  "aliases": [
+    "DH-HAC-HDW1200T-Z-A",
+    "DH-HAC-HDW1200TP-Z-A",
+    "DH-HAC-HDW1200TN-Z-A"
+  ],
+  "type": "turret",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7-12",
+    "aperture": "F1.8",
+    "varifocal": true
+  },
+  "field_of_view_deg": "H: 105.9-33.4",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 60,
+    "min_lux": 0.02
+  },
+  "power": {
+    "method": "12 VDC +/-30%",
+    "voltage": "12 VDC",
+    "consumption_w": 8.2
+  },
+  "audio": {
+    "microphone": true
+  },
+  "ip_rating": "IP67",
+  "features": [
+    "discontinued",
+    "Lite-series 1080p HDCVI IR eyeball (1200-S4 series)",
+    "4-in-1 HDCVI/AHD/TVI/CVBS switchable output",
+    "motorized varifocal 2.7-12 mm lens",
+    "Smart IR up to 60 m",
+    "DWDR, BLC/HLC",
+    "built-in mic",
+    "aluminium casing",
+    "multi-language OSD",
+    "4 kV lightning protection"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "122 (diameter) x 104",
+  "weight_g": 570,
+  "environment": [
+    "outdoor"
+  ],
+  "status": "discontinued",
+  "release_notes": "Discontinued 2MP Lite-series HDCVI IR eyeball with 2.7-12 mm motorized lens, built-in mic, Smart IR to 60 m and switchable 4-in-1 output.",
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/hdcvi-cameras/hac-hdw1200t-z-a=s4",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20191114/DH-HAC-HDW1200T-Z-A_Datasheet_20191012.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ]
+}

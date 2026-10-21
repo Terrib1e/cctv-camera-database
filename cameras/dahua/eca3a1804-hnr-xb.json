@@ -1,0 +1,140 @@
+{
+  "id": "dahua-eca3a1804-hnr-xb",
+  "brand": "Dahua",
+  "model": "ECA3A1804-HNR-XB",
+  "aliases": [
+    "DH-ECA3A1804-HNR-XB"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "dc",
+    "poe"
+  ],
+  "resolution": {
+    "megapixels": 8,
+    "max_width": 3840,
+    "max_height": 2160,
+    "label": "4K"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7-13.5",
+    "aperture": "F1.5",
+    "varifocal": true
+  },
+  "field_of_view_deg": "H: 109-30; V: 56-17; D: 131-35",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 50,
+    "min_lux_color": 0.007,
+    "min_lux": 0.0007
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3840x2160",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "12 VDC / PoE",
+    "voltage": "12 VDC",
+    "consumption_w": 11.5
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "rtmp",
+    "p2p"
+  ],
+  "ip_rating": "IP68",
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "215 x 142 x 151",
+  "weight_g": 5000,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "explosion-proof WizMind IR bullet for hazardous areas (oil, petrochemical, chemical, coal)",
+    "ATEX: II 2 G Ex db IIC T6 Gb, II 2 D Ex tb IIIC T80 °C Db",
+    "IECEx: Ex db IIC T6 Gb, Ex tb IIIC T80 °C Db",
+    "SUS304 stainless steel housing (SUS316L optional), 2 m cable",
+    "motorized varifocal 2.7-13.5 mm lens",
+    "50 m IR (3 IR LEDs)",
+    "face detection, IVS perimeter protection (tripwire, intrusion, fast moving) with human/vehicle classification, people counting, heat map, SMD 4.0",
+    "120 dB WDR",
+    "electronic image stabilization (EIS)",
+    "ONVIF Profile S/G/T; Milestone, Genetec",
+    "audio 1 in / 1 out (RCA); alarm 1 in / 1 out; RS-485",
+    "TVS 2000 V lightning proof, surge and voltage transient protection"
+  ],
+  "status": "available",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/explosion-proof/optical-series/eca3a1804-hnr-xb",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/ECA3A1804-HNR-XB_datasheet_20240314.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local"
+}

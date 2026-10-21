@@ -1,0 +1,132 @@
+{
+  "id": "dahua-ipc-hmw3230-m-m12",
+  "brand": "Dahua",
+  "model": "IPC-HMW3230-M/M12",
+  "aliases": [
+    "DH-IPC-HMW3230-M/M12"
+  ],
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 / 6",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "115h (2.8 mm) / 55h (6 mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 30,
+    "min_lux_color": 0.01,
+    "min_lux": 0.001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 14
+      }
+    ]
+  },
+  "power": {
+    "method": "PoE (802.3af) / 12 VDC",
+    "consumption_w": 2.4
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 128,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Mobile (vehicle) square network camera",
+    "Network port: RJ-45 or 4-pin M12 aviation connector",
+    "Certifications: E-mark, R118, EN50155, CE, FCC",
+    "IVS: tripwire, intrusion",
+    "DWDR, 3D NR, Smart IR, ±30% wide-voltage input",
+    "Built-in mic"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "107.0 x 82.0 x 68",
+  "weight_g": 395,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration works (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/mobile/mobile/mobile-ip-products/mobile-ip-cameras/ipc-hmw3230-m/m12",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/68017/datasheet/IPC-HMW3230-M_M12_datasheet_20241103.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}
