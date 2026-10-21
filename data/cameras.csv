@@ -1656,7 +1656,7 @@ amcrest-ip4m-1083ew-ai,Amcrest,IP4M-1083EW-AI,ptz,4MP,4,"1/2.8"" 4MP Sony Starvi
 amcrest-ip4m-1083ew-ai-v2,Amcrest,IP4M-1083EW-AI-V2,ptz,4MP,4,"1/2.8"" STARVIS CMOS",2.1-61.6,ir,IP67,IK10,,,0
 amcrest-ip4m-1093ew-ai,Amcrest,IP4M-1093EW-AI,ptz,4MP,4,"1/2.8"" Starvis CMOS",3.3-63.7,hybrid,IP66,,true,,0
 amcrest-ip4m-1093ew-ai-v2,Amcrest,IP4M-1093EW-AI-V2,ptz,4MP,4,"1/2.8"" CMOS",51.9 to 3 horizontal,hybrid,IP66,,true,,0
-amcrest-ip4m-1098ew-ai,Amcrest,IP4M-1098EW-AI,ptz,4MP,4,"1/2.8"" Starvis CMOS",34.6-112.3,hybrid,IP66,,true,,0
+amcrest-ip4m-1098ew-ai,Amcrest,IP4M-1098EW-AI,ptz,4MP,4,"1/2.8"" Starvis CMOS",34.6-112.3,hybrid,IP66,,true,,1
 amcrest-ip4m-pb181ew-ai,Amcrest,IP4M-PB181EW-AI,panoramic,4MP,4,"1/3"" CMOS",180,ir,IP67,,,,0
 amcrest-ip4m-pd183ew-ai,Amcrest,IP4M-PD183EW-AI,dome,4MP UltraHD,4,"1/2.7"" CMOS",H: 180; V: 78; D: 180 (LDC off),ir,IP67,,false,,0
 amcrest-ip4m-s2112ew-ai,Amcrest,IP4M-S2112EW-AI,ptz,4MP,4,"1/3"" 4MP CMOS",32-107.6,ir,IP66,,,,0
@@ -1928,7 +1928,7 @@ annke-i81slwb,Annke,I81SLWB,turret,8MP,8,,,hybrid,IP67,,true,,0
 annke-i81ytwb,Annke,I81YTWB,fisheye,6MP,6,"1/1.8"" CMOS",180 x 180,ir,IP67,IK10,true,,0
 annke-i91bh,Annke,I91BH,panoramic,5120x1440 panoramic,8,"2x 1/1.8"" Progressive Scan CMOS",,color,IP67,,true,,0
 annke-i91bi,Annke,I91BI,panoramic,5120x1440 panoramic,8,"2x 1/1.8"" Progressive Scan CMOS",,color,IP67,,true,,0
-annke-i91bk,Annke,I91BK,ptz,3K (3072x1728),5,"1/2.8"" Progressive Scan CMOS",96.7-31.6 horizontal (115.1-36.3 diagonal),ir,IP66,IK10,false,,0
+annke-i91bk,Annke,I91BK,ptz,3K (3072x1728),5,"1/2.8"" Progressive Scan CMOS",96.7-31.6 horizontal (115.1-36.3 diagonal),ir,IP66,IK10,false,,2
 annke-i91bq,Annke,I91BQ,bullet,4K,8,"1/1.2"" Progressive Scan CMOS",102 x 52,color,IP67,,false,,0
 annke-i91bu,Annke,I91BU,bullet,4K,8,"1/1.2"" Progressive Scan CMOS",101.6 x 52.4,color,IP67,,false,,0
 annke-i91bv,Annke,I91BV,turret,4K UHD,8,"1/1.2"" Progressive Scan CMOS",,hybrid,IP67,,false,,0
@@ -5537,6 +5537,12 @@ dahua-c2k-p,Dahua,C2K-P,box,2MP,2,"1/2.7"" CMOS",101 horizontal (2.8mm); 82 hori
 dahua-c3a,Dahua,C3A,box,3MP,3,"1/3.2"" CMOS","99 horizontal (55 vertical, 117 diagonal)",ir,,,true,2024,0
 dahua-c4k-p,Dahua,C4K-P,box,4MP,4,"1/3"" CMOS",92 horizontal (2.8mm); 75 horizontal (3.6mm),ir,,,true,2024,0
 dahua-c5a,Dahua,C5A,box,5MP,5,"1/2.7"" CMOS","90 horizontal (49 vertical, 106 diagonal)",ir,,,true,2023,0
+dahua-dae-cbs5210-h-v-cy,Dahua,DAE-CBS5210-H/V-CY,box,1080p,2,"1/2.8"" CMOS",143.2h,ir,IP67,IK08,,,0
+dahua-dae-cdm5110,Dahua,DAE-CDM5110,box,720p,1,"1/4"" CMOS",61.8h,ir,IP54,,,,0
+dahua-dae-cdm5130,Dahua,DAE-CDM5130,box,720p,1,"1/4"" CMOS",61.8h,ir,IP54,,,,0
+dahua-dae-cfm5210,Dahua,DAE-CFM5210,box,1080p,2,"1/2.8"" CMOS",56h,none,IP54,,,,0
+dahua-dae-cfm5230,Dahua,DAE-CFM5230,box,1080p,2,"1/2.8"" CMOS",56h,none,IP54,,,,0
+dahua-dae-cpc5241f,Dahua,DAE-CPC5241F,dome,2MP,2,"1/2.8"" CMOS",125h (2.1 mm) / 106.9h (2.8 mm) / 87.5h (3.6 mm),ir,IP67,IK10,false,,0
 dahua-db41ab,Dahua,DB41AB,doorbell,4MP,4,"1/3"" CMOS","120 horizontal, 66 vertical, 143 diagonal",ir,IP65,,true,2025,0
 dahua-db43bb-btr,Dahua,DB43BB-BTR,doorbell,4MP,4,"1/3.11"" CMOS","180 horizontal, 180 vertical (fisheye)",ir,IP65,,true,2026,0
 dahua-db6i-usa,Dahua,DB6I-USA,doorbell,5MP,5,"1/2.7"" CMOS",124 horizontal,hybrid,IP65,,true,2023,0
@@ -5898,12 +5904,18 @@ dahua-dh-tpc-sd8641b-c54,Dahua,DH-TPC-SD8641B-C54,ptz,4MP (2560x1440),4,"1/1.8""
 dahua-dh-tpc-sda8441,Dahua,DH-TPC-SDA8441,ptz,4MP (visible channel),4,"1/1.8"" CMOS",,ir,IP66,,,,0
 dahua-eca2a1400-hn,Dahua,ECA2A1400-HN,bullet,,4,"1/2.8"" CMOS",H: 49; V: 37; D: 61;H: 81; V: 59; D: 106,ir,IP68,,,,0
 dahua-eca3a1404-hnr-xb,Dahua,ECA3A1404-HNR-XB,bullet,,4,"1/2.8"" CMOS",H: 99.4–29; V: 52.7–16; D: 118.5–34,ir,IP68,,,,0
+dahua-eca3a1804-hnr-xb,Dahua,ECA3A1804-HNR-XB,bullet,4K,8,"1/2.8"" CMOS",H: 109-30; V: 56-17; D: 131-35,ir,IP68,,,,0
+dahua-eca7a1425-hnr-xa-f,Dahua,ECA7A1425-HNR-XA-F,bullet,4MP,4,"1/1.8"" CMOS",H: 59.8-2.8; V: 33.7-1.9; D: 63.3-4,ir,IP68,,,,0
 dahua-eca7b1231-hnp-xa-f,Dahua,ECA7B1231-HNP-XA-F,bullet,,2,"1/1.8"" CMOS",H: 59.8–2.8; V: 33.7–1.9; D: 63.3–4,ir,IP68,,,,0
 dahua-epc230u,Dahua,EPC230U,bullet,2MP,2,"1/2.8"" STARVIS CMOS",67.8-2.4 (wide-tele),ir,IP68,,true,,0
 dahua-epc230u-ptz,Dahua,EPC230U-PTZ,ptz,2MP,2,"1/2.8"" STARVIS CMOS",67.8-2.4 (wide-tele),,IP68,,true,,0
 dahua-epc230u-ptz-ir,Dahua,EPC230U-PTZ-IR,ptz,2MP,2,"1/2.8"" STARVIS CMOS",67.8-2.4 (wide-tele),ir,IP68,,true,,0
 dahua-epc245u-ptz,Dahua,EPC245U-PTZ,ptz,2MP,2,"1/2.8"" STARVIS CMOS",70.3-1.8 (wide-tele),,IP68,,true,,0
 dahua-epc245u-ptz-ir,Dahua,EPC245U-PTZ-IR,ptz,2MP,2,"1/2.8"" STARVIS CMOS",70.3-1.8 (wide-tele),ir,IP68,,true,,0
+dahua-ept9a1445-hnr-f,Dahua,EPT9A1445-HNR-F,ptz,4MP,4,"1/2.8"" STARVIS CMOS",H: 65.7-1.9; V: 39.4-1.1; D: 73.1-2.1,ir,IP66/IP68,,,,0
+dahua-ept9a1825-hnr-f,Dahua,EPT9A1825-HNR-F,ptz,4K,8,"1/1.8"" STARVIS CMOS",H: 61.6-3.6; V: 35.7-2; D: 66.6-4,ir,IP66/IP68,,,,0
+dahua-esd41a415-hnr,Dahua,ESD41A415-HNR,ptz,4MP,4,"1/2.8"" STARVIS CMOS",H: 60.4-4.3; V: 34.5-2.4; D: 68.5-5,,IP68,,,,0
+dahua-esd8a1425-hnr-f,Dahua,ESD8A1425-HNR-F,ptz,4MP,4,"1/1.8"" STARVIS CMOS",H: 59.8-2.8; V: 33.7-1.9; D: 63.3-4,ir,IP66/IP68,,,,0
 dahua-f2c-led,Dahua,F2C-LED,bullet,1080p,2,"1/3"" CMOS",98 horizontal (2.8mm) / 78 horizontal (3.6mm),color,IP67,,true,2026,0
 dahua-f2c-pv,Dahua,F2C-PV,bullet,2MP,2,"1/3"" CMOS",98 horizontal (2.8mm); 78 horizontal (3.6mm),hybrid,IP67,,true,,0
 dahua-f3d-il,Dahua,F3D-IL,bullet,3MP,3,"1/2.8"" CMOS",103 horizontal (2.8mm) / 85 horizontal (3.6mm),hybrid,IP67,,false,2025,0
@@ -5946,6 +5958,8 @@ dahua-hac-d3a51-vf,Dahua,HAC-D3A51-VF,dome,5MP,5,"1/2.7"" CMOS",93-30h,ir,IP67,,
 dahua-hac-d3a51-z,Dahua,HAC-D3A51-Z,dome,5MP,5,"1/2.7"" CMOS",34-107h,ir,IP67,,,,0
 dahua-hac-ebw3802,Dahua,HAC-EBW3802,fisheye,4K,8,"1/1.8"" 8MP CMOS","180h, 100v",ir,IP67,IK10,,,0
 dahua-hac-ew2501,Dahua,HAC-EW2501,fisheye,5MP,5,"1/2.8"" CMOS",180 H / 180 V,ir,,,,2017,0
+dahua-hac-hdb2241f-m-a,Dahua,HAC-HDB2241F-M-A,dome,1080p,2,"1/2.8"" CMOS",133h,none,IP67,IK10,false,,0
+dahua-hac-hdb3200f-m,Dahua,HAC-HDB3200F-M,dome,1080p,2,"1/2.7"" CMOS",133h,none,IP67,IK10,false,,0
 dahua-hac-hdbw1200ea-a,Dahua,HAC-HDBW1200EA(-A),dome,1080p,2,2 MP CMOS,2.8 mm: 102 H / 60 V / 129 D; 3.6 mm: 83 H / 48 V / 105 D,ir,IP67,IK10,,,0
 dahua-hac-hdbw1200r-z,Dahua,HAC-HDBW1200R-Z,dome,1080p,2,"1/2.7"" CMOS",105.9-33.4h,ir,IP67,IK10,,2020,0
 dahua-hac-hdbw1200r-z-poc,Dahua,HAC-HDBW1200R-Z-POC,dome,1080p,2,2MP CMOS,33-102h,ir,IP67,IK10,,,0
@@ -5979,6 +5993,7 @@ dahua-hac-hdbw2231r-z-poc,Dahua,HAC-HDBW2231R-Z-POC,dome,1080p,2,"1/2.8"" CMOS",
 dahua-hac-hdbw2241e,Dahua,HAC-HDBW2241E,dome,1080p,2,"1/2.8"" CMOS",3.6 mm: H 86.9 (2.8 mm: H 110),ir,IP67,IK10,,2018,0
 dahua-hac-hdbw2241ea-a,Dahua,HAC-HDBW2241EA-A,dome,1080p,2,2MP CMOS,109h,ir,IP67,IK10,,,0
 dahua-hac-hdbw2241f-a,Dahua,HAC-HDBW2241F-A,dome,1080p,2,"1/2.8"" CMOS",3.6 mm: H 86.9 (2.8 mm: H 110),ir,IP67,IK10,,2018,0
+dahua-hac-hdbw2241f-m-a,Dahua,HAC-HDBW2241F-M-A,dome,1080p,2,"1/2.8"" CMOS",86.9h (110h with 2.8 mm),ir,IP67,IK10,false,,0
 dahua-hac-hdbw2241r-z,Dahua,HAC-HDBW2241R-Z,dome,2MP,2,"1/2.8"" CMOS",108.7-28.7,ir,IP67,IK10,,,0
 dahua-hac-hdbw2241r-z-dp,Dahua,HAC-HDBW2241R-Z-DP,dome,2MP,2,"1/2.8"" CMOS",108.7-28.7,ir,IP67,IK10,,,0
 dahua-hac-hdbw2241r-z-poc,Dahua,HAC-HDBW2241R-Z-POC,dome,2MP (1080p),2,"1/2.8"" CMOS",108.7-28.7 H,ir,IP67,IK10,,,0
@@ -6019,6 +6034,7 @@ dahua-hac-hdw1200eq,Dahua,DH-HAC-HDW1200EQ,turret,2MP (1920x1080),2,,,ir,IP67,,,
 dahua-hac-hdw1200l,Dahua,HAC-HDW1200L,turret,1080p,2,"1/2.7"" CMOS",139h,ir,,,,2017,0
 dahua-hac-hdw1200t-il-a,Dahua,HAC-HDW1200T-IL-A,turret,1080p,2,2 MP CMOS,83h,hybrid,IP67,,,,0
 dahua-hac-hdw1200t-z,Dahua,HAC-HDW1200T-Z,turret,1080p,2,"1/2.7"" CMOS",105.9-33.4h,ir,IP67,,,2019,0
+dahua-hac-hdw1200t-z-a,Dahua,HAC-HDW1200T-Z-A,turret,1080p,2,"1/2.7"" CMOS",H: 105.9-33.4,ir,IP67,,,,0
 dahua-hac-hdw1200t-z-a-dp,Dahua,HAC-HDW1200T-Z-A-DP,turret,1080p,2,2 MP CMOS,28.3 to 98.2h,ir,IP67,,,,0
 dahua-hac-hdw1200t-z-a-poc,Dahua,HAC-HDW1200T-Z-A-POC,turret,1080p,2,2MP CMOS,33-102h,ir,IP67,,,,0
 dahua-hac-hdw1200t-z-il-a,Dahua,HAC-HDW1200T-Z-IL-A,turret,1080p,2,2 MP CMOS,30 to 99h,hybrid,IP67,,,,0
@@ -6038,6 +6054,7 @@ dahua-hac-hdw1200tq-il-t,Dahua,HAC-HDW1200TQ-IL-T,turret,1080p,2,2MP CMOS,89-111
 dahua-hac-hdw1200trq,Dahua,HAC-HDW1200TRQ,turret,1080p,2,2 MP CMOS,102h,ir,IP50,,,,0
 dahua-hac-hdw1200trq-il-t,Dahua,HAC-HDW1200TRQ-IL-T,turret,1080p,2,2MP CMOS,111.3h,hybrid,IP67,,true,,0
 dahua-hac-hdw1220em,Dahua,HAC-HDW1220EM,turret,2MP,2,"1/2.7"" CMOS",87h,ir,IP67,,,2019,0
+dahua-hac-hdw1220g-m,Dahua,HAC-HDW1220G-M,turret,1080p,2,"1/2.9"" CMOS","82.8 (96 with 2.8 mm, 51 with 6 mm)",ir,IP67,,false,,0
 dahua-hac-hdw1220sl,Dahua,HAC-HDW1220SL,turret,2MP,2,"1/2.7"" CMOS",87h,ir,IP67,,,2019,0
 dahua-hac-hdw1230em-a,Dahua,HAC-HDW1230EM-A,turret,1080p,2,"1/2.8"" CMOS",86.9h,ir,IP67,,,2018,0
 dahua-hac-hdw1230em-a-poc,Dahua,HAC-HDW1230EM-A-POC,turret,1080p,2,"1/2.8"" CMOS",86.9h,ir,IP67,,,2019,0
@@ -6371,6 +6388,7 @@ dahua-hac-hfw1549x-a-pro,Dahua,HAC-HFW1549X-A-PRO,bullet,5MP,5,5MP CMOS,109.6h (
 dahua-hac-hfw1549x-il-a-pro,Dahua,HAC-HFW1549X-IL-A-PRO,bullet,5MP,5,5 MP CMOS,111h; 58.5v; 136.3d (2.8 mm); 91.1h; 48.7v; 107.9d (3.6 mm),hybrid,IP67,,,,0
 dahua-hac-hfw1549xm-a-pro,Dahua,HAC-HFW1549XM-A-PRO,bullet,5MP,5,5MP CMOS,88.2-109.6h,color,IP67,,,,0
 dahua-hac-hfw1549xm-il-a-pro,Dahua,HAC-HFW1549XM-IL-A-PRO,bullet,5MP,5,5MP CMOS,91.1-111h,hybrid,IP67,,,,0
+dahua-hac-hfw1800r,Dahua,HAC-HFW1800R,bullet,4K,8,"1/2.7"" CMOS",105h (2.8 mm) / 87h (3.6 mm) / 54.7h (6 mm),ir,IP67,,,,0
 dahua-hac-hfw1800t,Dahua,HAC-HFW1800T,bullet,4K,8,"1/2.7"" CMOS","6 mm: H 54.7, V 31.3, D 62.4",ir,IP67,,,,0
 dahua-hac-hfw1800th-i4,Dahua,HAC-HFW1800TH-I4,bullet,4K,8,"1/2.7"" CMOS",2.8 mm: 105 H / 56 V / 125 D; 3.6 mm: 87 H / 47 V / 104 D; 6 mm: 54.7 H / 31.3 V / 62.4 D,ir,IP67,,,2024,0
 dahua-hac-hfw1800th-i8,Dahua,HAC-HFW1800TH-I8,bullet,4K,8,"1/2.7"" CMOS",3.6 mm: 87 H / 47 V / 104 D; 6 mm: 54.7 H / 31.3 V / 62.4 D,ir,IP67,,,2024,0
@@ -6457,11 +6475,19 @@ dahua-hac-hfw3231e-zh,Dahua,HAC-HFW3231E-ZH,bullet,1080p,2,"1/2.8"" CMOS",95-36h
 dahua-hac-hfw3231e-zt,Dahua,HAC-HFW3231E-ZT,bullet,1080p,2,"1/2.8"" CMOS",36-95h,ir,IP67,IK10,,,0
 dahua-hac-hfw3802e-z-vp,Dahua,HAC-HFW3802E-Z-VP,bullet,4K,8,"1/1.8"" CMOS",112-46h,ir,IP67,IK10,,,0
 dahua-hac-hfwd2a0r-z,Dahua,HAC-HFWD2A0R-Z,bullet,1080p,2,"1/2.7"" CMOS",105.9-33.4,ir,IP67,,,,0
+dahua-hac-hm3100l-f,Dahua,HAC-HM3100L-F,box,720p,1,"1/2.7"" CMOS",116h,none,,,false,,0
+dahua-hac-hm3200l-f,Dahua,HAC-HM3200L-F,box,1080p,2,"1/2.7"" CMOS",116h,none,,,false,,0
+dahua-hac-hmw3100,Dahua,HAC-HMW3100,box,720p,1,"1/3"" CMOS",113h,ir,IP67,,false,,0
+dahua-hac-hmw3100l-fr,Dahua,HAC-HMW3100L-FR,dual-lens,720p,1,"1/2.7"" CMOS",116h (front) / 139h (rear),ir,,,false,,0
 dahua-hac-hmw3200,Dahua,HAC-HMW3200,box,1080p,2,"1/2.7"" CMOS",133 H / 77 V / 153 D,ir,IP67,,,,0
+dahua-hac-hmw3200d-h-v,Dahua,HAC-HMW3200D-H/V,box,1080p,2,"1/2.7"" CMOS",106h,ir,IP67,,,,0
 dahua-hac-hmw3200l,Dahua,HAC-HMW3200L,box,2MP (1080p),2,"1/2.7"" CMOS",132 H / 69 V / 164 D,ir,,,,,0
+dahua-hac-hmw3200l-fr,Dahua,HAC-HMW3200L-FR,dual-lens,1080p,2,"1/2.7"" CMOS",109h (front) / 132h (rear),ir,,,false,,0
+dahua-hac-hmw3200l-fr-bus,Dahua,HAC-HMW3200L-FR-BUS,dual-lens,1080p,2,"1/2.7"" CMOS",109h (front) / 132h (rear),ir,,,false,,0
 dahua-hac-hum1220g,Dahua,HAC-HUM1220G,bullet,1080p,2,"1/2.9"" CMOS",109.4h (92h with 3.6 mm),none,IP67,,,,0
 dahua-hac-hum1220g-b,Dahua,HAC-HUM1220G-B,box,1080p,2,"1/2.9"" CMOS",109.4h,,IP67,,,2018,0
 dahua-hac-hum1220g-b-p,Dahua,HAC-HUM1220G-B-P,covert,1080p,2,"1/2.9"" CMOS",100.5h,,,,,2018,0
+dahua-hac-hum1220g-m,Dahua,HAC-HUM1220G-M,bullet,1080p,2,"1/2.9"" CMOS",109.4h (92h with 3.6 mm),none,IP67,,,,0
 dahua-hac-hum3200a,Dahua,HAC-HUM3200A,box,1080p,2,2MP CMOS,105,ir,,,,,0
 dahua-hac-hum3200g,Dahua,HAC-HUM3200G,bullet,2MP 1080p,2,"1/2.7"" CMOS",,,IP67,,,,0
 dahua-hac-hum3200g-b,Dahua,HAC-HUM3200G-B,bullet,2MP 1080p,2,"1/2.7"" CMOS",,,IP67,,,,0
@@ -6586,6 +6612,7 @@ dahua-ipc-d2b40,Dahua,IPC-D2B40,dome,4MP,4,"1/3"" 4 MP progressive-scan CMOS",,i
 dahua-ipc-d2b40-zs,Dahua,IPC-D2B40-ZS,dome,4MP,4,"1/3"" CMOS",97-31h,ir,IP67,,false,,0
 dahua-ipc-db41ap-0210b-white,Dahua,DH-IPC-DB41AP-0210B-White,doorbell,4MP (2560x1440),4,"1/3"" CMOS",120 H / 66 V / 143 D,ir,IP65,,true,2025,0
 dahua-ipc-eb5531,Dahua,IPC-EB5531,fisheye,5MP (2592x1944),5,"1/2.7"" CMOS",180 H / 180 V,,IP67,IK08,,,0
+dahua-ipc-eb5531-m-m12,Dahua,IPC-EB5531-M/M12,fisheye,5MP,5,"1/2.7"" CMOS",180h x 180v,none,IP67,IK08,false,,0
 dahua-ipc-eb5541-as,Dahua,IPC-EB5541-AS,fisheye,5MP,5,"1/2.7"" CMOS",180h,none,IP67,IK10,,,0
 dahua-ipc-eb5541-m-as,Dahua,IPC-EB5541-M-AS,fisheye,5MP (2592x1944),5,"1/2.7"" CMOS",180 H / 180 V / 180 D,,IP67,IK10,,,0
 dahua-ipc-eb5541-m12-sa,Dahua,IPC-EB5541-M12-SA,fisheye,5MP (2592x1944),5,"1/2.7"" CMOS",180 H / 180 V / 180 D,,IP67,IK10,,,0
@@ -6626,8 +6653,10 @@ dahua-ipc-hdbw2449r-zas-il,Dahua,IPC-HDBW2449R-ZAS-IL,dome,4MP (2560x1440),4,"1/
 dahua-ipc-hdbw2541e-s,Dahua,IPC-HDBW2541E-S,dome,5MP,5,"1/2.7"" CMOS",111,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw2541r-zas,Dahua,IPC-HDBW2541R-ZAS,dome,5MP,5,"1/2.7"" CMOS",113-31,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw2541r-zs,Dahua,IPC-HDBW2541R-ZS,dome,5MP,5,"1/2.7"" CMOS",113-31,ir,IP67,IK10,false,,0
+dahua-ipc-hdbw2541r-zs-k,Dahua,IPC-HDBW2541R-ZS-K,dome,5MP,5,"1/2.7"" CMOS",113-31h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw2549e-s-il,Dahua,IPC-HDBW2549E-S-IL,dome,5MP,5,"1/2.7"" CMOS",,hybrid,IP67,IK10,false,,0
 dahua-ipc-hdbw2649e-s-il,Dahua,IPC-HDBW2649E-S-IL,dome,6MP,6,"1/2.7"" CMOS",112,hybrid,IP67,IK10,false,,0
+dahua-ipc-hdbw2649e-s-il-k,Dahua,IPC-HDBW2649E-S-IL-K,dome,6MP,6,"1/2.7"" CMOS",112h (2.8 mm) / 91h (3.6 mm),hybrid,IP67,IK10,false,,0
 dahua-ipc-hdbw2649r-zas-il,Dahua,IPC-HDBW2649R-ZAS-IL,dome,6MP (3288x1850),6,"1/2.7"" CMOS",113-33 H / 58-18 V / 135-37 D,hybrid,IP67,IK10,,,0
 dahua-ipc-hdbw2831e-s-s2,Dahua,IPC-HDBW2831E-S-S2,dome,4K UHD,8,"1/2.7"" CMOS",105 (2.8mm) / 87 (3.6mm),ir,IP67,IK10,false,,0
 dahua-ipc-hdbw2841e-s,Dahua,IPC-HDBW2841E-S,dome,4K,8,"1/2.7"" CMOS",106 (2.8mm) / 88 (3.6mm),ir,IP67,IK10,false,,0
@@ -6635,6 +6664,10 @@ dahua-ipc-hdbw2841r-zas,Dahua,IPC-HDBW2841R-ZAS,dome,4K,8,"1/2.7"" CMOS",31-113,
 dahua-ipc-hdbw2841r-zs,Dahua,IPC-HDBW2841R-ZS,dome,4K,8,"1/2.7"" CMOS",113-31,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw2849e-s-il,Dahua,IPC-HDBW2849E-S-IL,dome,4K UHD,8,"1/2.7"" CMOS",113 horizontal,hybrid,IP67,IK10,false,2024,0
 dahua-ipc-hdbw2849r-zas-il,Dahua,IPC-HDBW2849R-ZAS-IL,dome,8MP (3840x2160),8,"1/2.7"" CMOS",114-32 H / 58-17 V / 138-36 D,hybrid,IP67,IK10,,,0
+dahua-ipc-hdbw31659r-as-il,Dahua,IPC-HDBW31659R-AS-IL,dome,16MP,16,"1/1.8"" CMOS",110 (2.8mm); 90 (3.6mm) horizontal,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw31659r-s-il,Dahua,IPC-HDBW31659R-S-IL,dome,16MP,16,"1/1.8"" CMOS",110 (2.8mm); 90 (3.6mm) horizontal,hybrid,IP67,IK10,false,,0
+dahua-ipc-hdbw31659r-zas-il,Dahua,IPC-HDBW31659R-ZAS-IL,dome,16MP,16,"1/1.8"" CMOS",111-46h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw31659r-zs-il,Dahua,IPC-HDBW31659R-ZS-IL,dome,16MP,16,"1/1.8"" CMOS",111-46h,hybrid,IP67,IK10,false,,0
 dahua-ipc-hdbw3231f-m,Dahua,IPC-HDBW3231F-M,dome,1080p (1920x1080),2,"1/2.8"" CMOS",110 H / 58 V,ir,IP67,IK10,,,0
 dahua-ipc-hdbw3241e-as-s2,Dahua,IPC-HDBW3241E-AS-S2,dome,2MP,2,"1/2.8"" CMOS",107h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw3241e-s,Dahua,IPC-HDBW3241E-S,dome,1080p HD,2,"1/2.8"" CMOS",106h,ir,IP67,IK10,false,2022,0
@@ -6683,6 +6716,10 @@ dahua-ipc-hdbw3649r-zas-il,Dahua,IPC-HDBW3649R-ZAS-IL,dome,6MP,6,"1/2.7"" CMOS",
 dahua-ipc-hdbw3649r-zs-il,Dahua,IPC-HDBW3649R-ZS-IL,dome,6MP,6,"1/2.7"" CMOS",114-32,hybrid,IP67,IK10,false,2025,0
 dahua-ipc-hdbw3649r1-zas-pv-pro,Dahua,IPC-HDBW3649R1-ZAS-PV-PRO,dome,6MP,6,"1/1.8"" CMOS",112-48h,hybrid,IP67,IK10,true,,0
 dahua-ipc-hdbw3649r1-zas-pv-pro-atc,Dahua,IPC-HDBW3649R1-ZAS-PV-PRO-ATC,dome,6MP,6,"1/1.8"" CMOS",112-48,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw3653r-as-il,Dahua,IPC-HDBW3653R-AS-IL,dome,6MP,6,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw3653r-s-il,Dahua,IPC-HDBW3653R-S-IL,dome,6MP,6,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,IK10,false,,0
+dahua-ipc-hdbw3653r-zas-il,Dahua,IPC-HDBW3653R-ZAS-IL,dome,6MP,6,"1/1.8"" CMOS",115-47h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw3653r-zs-il,Dahua,IPC-HDBW3653R-ZS-IL,dome,6MP,6,"1/1.8"" CMOS",115-47h,hybrid,IP67,IK10,false,,0
 dahua-ipc-hdbw3841e-as-s2,Dahua,IPC-HDBW3841E-AS-S2,dome,8MP,8,"1/2.8"" CMOS",107h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw3841e-s-s2,Dahua,IPC-HDBW3841E-S-S2,dome,8MP,8,"1/2.8"" CMOS",107h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw3841r-zas-s2,Dahua,IPC-HDBW3841R-ZAS-S2,dome,8MP,8,"1/2.8"" CMOS",109-30,ir,IP67,IK10,false,,0
@@ -6695,14 +6732,21 @@ dahua-ipc-hdbw3849r-zs-il,Dahua,IPC-HDBW3849R-ZS-IL,dome,8MP,8,"1/2.7"" CMOS",11
 dahua-ipc-hdbw3849r1-zas-pv,Dahua,IPC-HDBW3849R1-ZAS-PV,dome,4K UHD,8,"1/2.8"" CMOS",108,hybrid,IP67,IK10,true,2025,0
 dahua-ipc-hdbw3849r1-zas-pv-pro,Dahua,IPC-HDBW3849R1-ZAS-PV-PRO,dome,4K,8,"1/1.8"" CMOS",112-48h,hybrid,IP67,IK10,true,,0
 dahua-ipc-hdbw3849r1-zas-pv-pro-atc,Dahua,IPC-HDBW3849R1-ZAS-PV-PRO-ATC,dome,4K,8,"1/1.8"" CMOS",112-48,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw3853r-as-il,Dahua,IPC-HDBW3853R-AS-IL,dome,8MP,8,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw3853r-s-il,Dahua,IPC-HDBW3853R-S-IL,dome,8MP,8,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,IK10,false,,0
+dahua-ipc-hdbw3853r-zas-il,Dahua,IPC-HDBW3853R-ZAS-IL,dome,8MP,8,"1/1.8"" CMOS",115-47h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw3853r-zs-il,Dahua,IPC-HDBW3853R-ZS-IL,dome,8MP,8,"1/1.8"" CMOS",115-47h,hybrid,IP67,IK10,false,,0
 dahua-ipc-hdbw3866ep-as,Dahua,IPC-HDBW3866EP-AS,dome,4K/8MP,8,"1/2.8"" CMOS",107,ir,IP67,IK10,true,,0
 dahua-ipc-hdbw3866rp-zas,Dahua,IPC-HDBW3866RP-ZAS,dome,4K,8,"1/2.8"" CMOS",109,ir,IP67,IK10,true,,0
 dahua-ipc-hdbw3867e-as-il,Dahua,IPC-HDBW3867E-AS-IL,dome,4K,8,"1/2.7"" CMOS",110,hybrid,IP67,IK10,true,,0
 dahua-ipc-hdbw3867r-zas-il,Dahua,IPC-HDBW3867R-ZAS-IL,dome,4K,8,"1/2.7"" CMOS",114-32,hybrid,IP67,IK10,false,,0
 dahua-ipc-hdbw4231e-ase,Dahua,IPC-HDBW4231E-ASE,dome,,2,1/2.8” 2Megapixel progressive scan CMOS,"H: 110 (87, 52), V:58 (46, 30)",ir,IP67,IK10,,,0
 dahua-ipc-hdbw4231f-e2-m,Dahua,IPC-HDBW4231F-E2-M,dome,1080p (1920x1080),2,"Two 1/2.8"" CMOS",110 H / 60 V,ir,IP67,IK10,,,0
+dahua-ipc-hdbw4231f-m-m12,Dahua,IPC-HDBW4231F-M/M12,dome,2MP,2,"1/2.8"" CMOS (STARVIS)","110h (87h with 3.6 mm, 51h with 6 mm)",ir,IP67,IK10,false,,0
 dahua-ipc-hdbw4239r-ase,Dahua,IPC-HDBW4239R-ASE,dome,1080p,2,"1/2.8"" CMOS",87h,color,IP67,IK10,false,,0
 dahua-ipc-hdbw4431e-ase,Dahua,IPC-HDBW4431E-ASE,dome,,4,1/3”4Megapixel progressive scan CMOS,"H: 104 (83, 55), V: 55 (45, 31)",ir,IP67,IK10,,,0
+dahua-ipc-hdbw4431f-m-m12,Dahua,IPC-HDBW4431F-M/M12,dome,4MP,4,"1/3"" CMOS","104h (87h with 3.6 mm, 55h with 6 mm)",ir,IP67,IK10,false,,0
+dahua-ipc-hdbw4441r-zas,Dahua,IPC-HDBW4441R-ZAS,dome,4MP,4,"1/3"" CMOS",104-29h,ir,IP67,IK10,true,,0
 dahua-ipc-hdbw4631e-ase,Dahua,IPC-HDBW4631E-ASE,dome,,6,1/2.9” 6Megapixel progressive scan CMOS,"H: 98 (69), V: 67 (48)",ir,IP67,IK10,,,0
 dahua-ipc-hdbw4831e-ase,Dahua,IPC-HDBW4831E-ASE,dome,8MP,8,"1/2.5"" 8MP STARVIS CMOS",112,ir,IP67,IK10,true,,0
 dahua-ipc-hdbw5231e-z5e,Dahua,IPC-HDBW5231E-Z5E,dome,1080p (1920x1080),2,"1/2.8"" CMOS",35-12 H / 19-7 V,ir,IP67,IK10,,,0
@@ -6731,6 +6775,7 @@ dahua-ipc-hdbw5442e-ze,Dahua,IPC-HDBW5442E-ZE,dome,4MP,4,"1/1.8"" CMOS",115-47h,
 dahua-ipc-hdbw5442e-zhe,Dahua,IPC-HDBW5442E-ZHE,dome,4MP,4,"1/1.8"" CMOS",115-47h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw5442h-z4he,Dahua,IPC-HDBW5442H-Z4HE,dome,4MP,4,"1/1.8"" CMOS",43-15h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw5442h-zhe,Dahua,IPC-HDBW5442H-ZHE,dome,4MP,4,"1/1.8"" CMOS",114-48h,ir,IP67,IK10,false,,0
+dahua-ipc-hdbw5442hp-zh-sl,Dahua,IPC-HDBW5442HP-ZH-SL,dome,4MP,4,"1/1.8"" CMOS",107-44h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw5442r-ase,Dahua,IPC-HDBW5442R-ASE,dome,4MP,4,"1/1.8"" CMOS",112h,ir,IP67,IK10,true,,0
 dahua-ipc-hdbw5442r-ase-ni,Dahua,IPC-HDBW5442R-ASE-NI,dome,4MP,4,"1/1.8"" Progressive Scan CMOS",93,color,IP67,IK10,false,,0
 dahua-ipc-hdbw5442r-ze,Dahua,IPC-HDBW5442R-ZE,dome,4MP,4,"1/1.8"" CMOS",110-30h,ir,IP67,IK10,false,2023,0
@@ -6803,6 +6848,10 @@ dahua-ipc-hdbw5842ep-ze-s3,Dahua,IPC-HDBW5842EP-ZE-S3,dome,4K,8,"1/1.8"" CMOS",1
 dahua-ipc-hdbw5842h-z4he,Dahua,IPC-HDBW5842H-Z4HE,dome,8MP,8,"1/1.8"" CMOS",42-15h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw5842h-zhe,Dahua,IPC-HDBW5842H-ZHE,dome,8MP,8,"1/1.8"" CMOS",114-48h,ir,IP67,IK10,false,,0
 dahua-ipc-hdbw5842r-ase,Dahua,IPC-HDBW5842R-ASE,dome,8MP,8,"1/1.8"" CMOS",110h,ir,IP67,IK10,true,,0
+dahua-ipc-hdbw5853z-z4he-pv-pro,Dahua,IPC-HDBW5853Z-Z4HE-PV-PRO,dome,8MP,8,"1/1.8"" CMOS",41.4-15.6h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw5853z-z4he-pv-pro-atc,Dahua,IPC-HDBW5853Z-Z4HE-PV-PRO-ATC,dome,8MP,8,"1/1.8"" CMOS",41.4-15.6h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw5853z-zhe-pv-pro,Dahua,IPC-HDBW5853Z-ZHE-PV-PRO,dome,8MP,8,"1/1.8"" CMOS",114-48h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hdbw5853z-zhe-pv-pro-atc,Dahua,IPC-HDBW5853Z-ZHE-PV-PRO-ATC,dome,8MP,8,"1/1.8"" CMOS",114-48h,hybrid,IP67,IK10,true,,0
 dahua-ipc-hdbw5859e1-z4e-il,Dahua,IPC-HDBW5859E1-Z4E-IL,dome,8MP,8,"1/1.8"" CMOS",41,hybrid,IP67,IK10,false,2026,0
 dahua-ipc-hdbw5859e1-z4e-il-atc,Dahua,IPC-HDBW5859E1-Z4E-IL-ATC,dome,8MP,8,"1/1.8"" CMOS",41-9 horizontal (8-32mm),hybrid,IP67,IK10,false,2026,0
 dahua-ipc-hdbw5859e1-z4e-il-atc-le,Dahua,IPC-HDBW5859E1-Z4E-IL-ATC-LE,dome,8MP (4K),8,"1/1.8"" CMOS",41-9,hybrid,IP67,IK10,,2026,0
@@ -6929,6 +6978,7 @@ dahua-ipc-hdw2549tm-s-il,Dahua,IPC-HDW2549TM-S-IL,turret,5MP,5,"1/2.7"" CMOS",11
 dahua-ipc-hdw2649t-s-il,Dahua,IPC-HDW2649T-S-IL,turret,6MP,6,"1/2.7"" CMOS",112,hybrid,IP67,,false,,0
 dahua-ipc-hdw2649t-s-pro,Dahua,IPC-HDW2649T-S-PRO,turret,6MP,6,"1/1.8"" CMOS",92,color,IP67,,false,,0
 dahua-ipc-hdw2649t-zs-il,Dahua,IPC-HDW2649T-ZS-IL,turret,6MP,6,"1/2.7"" CMOS",114-32h,hybrid,IP67,,false,,0
+dahua-ipc-hdw2649t-zs-il-k,Dahua,IPC-HDW2649T-ZS-IL-K,turret,6MP,6,"1/2.7"" CMOS",114-32h,hybrid,IP67,,false,,0
 dahua-ipc-hdw2649tm-s-il,Dahua,IPC-HDW2649TM-S-IL,turret,6MP,6,"1/2.7"" CMOS",112h,hybrid,IP67,,false,,0
 dahua-ipc-hdw2649tm-s-t-pv,Dahua,IPC-HDW2649TM-S-T-PV,turret,6MP (3288x1850),6,"1/2.7"" CMOS",91 H / 46 V / 110 D,hybrid,IP67,,true,2025,0
 dahua-ipc-hdw2831t-as-s2,Dahua,IPC-HDW2831T-AS-S2,turret,4K UHD,8,"1/2.7"" CMOS",105 (2.8mm) / 87 (3.6mm),ir,IP67,IK10,false,2020,0
@@ -6941,6 +6991,8 @@ dahua-ipc-hdw2849t-s-pro,Dahua,IPC-HDW2849T-S-PRO,turret,4K UHD,8,"1/1.8"" CMOS"
 dahua-ipc-hdw2849t-zs-il,Dahua,IPC-HDW2849T-ZS-IL,turret,4K,8,"1/2.7"" CMOS",114-32h,hybrid,IP67,,false,,0
 dahua-ipc-hdw2849tm-s-il,Dahua,IPC-HDW2849TM-S-IL,turret,4K UHD,8,"1/2.7"" CMOS",111 (2.8mm) / 87 (3.6mm),hybrid,IP67,,false,,0
 dahua-ipc-hdw2849tm-s-t-pv,Dahua,IPC-HDW2849TM-S-T-PV,turret,,8,"1/2.7"" CMOS",,hybrid,IP67,,true,,0
+dahua-ipc-hdw31659h-zs-il,Dahua,IPC-HDW31659H-ZS-IL,turret,16MP,16,"1/1.8"" CMOS",106.4-46h,hybrid,IP67,,false,,0
+dahua-ipc-hdw31659td-s-il,Dahua,IPC-HDW31659TD-S-IL,turret,16MP,16,"1/1.8"" CMOS",110 (2.8mm); 90 (3.6mm) horizontal,hybrid,IP67,,false,,0
 dahua-ipc-hdw3241em-s-s2,Dahua,IPC-HDW3241EM-S-S2,turret,2MP,2,"1/2.8"" CMOS",107h,ir,IP67,,false,,0
 dahua-ipc-hdw3241t-zs-s2,Dahua,IPC-HDW3241T-ZS-S2,turret,2MP,2,"1/2.8"" CMOS",109-30h,ir,IP67,,false,,0
 dahua-ipc-hdw3249h-as-pv,Dahua,IPC-HDW3249H-AS-PV,turret,1080p,2,"1/2.8"" CMOS",107h,color,IP67,,true,,0
@@ -6973,6 +7025,8 @@ dahua-ipc-hdw3649h-zas-pv-pro,Dahua,IPC-HDW3649H-ZAS-PV-PRO,turret,6MP,6,"1/1.8"
 dahua-ipc-hdw3649h-zas-pv-pro-atc,Dahua,IPC-HDW3649H-ZAS-PV-PRO-ATC,turret,6MP,6,"1/1.8"" CMOS",112-48,hybrid,IP67,,true,,0
 dahua-ipc-hdw3649qm-s-il,Dahua,IPC-HDW3649QM-S-IL,turret,6MP,6,"1/2.7"" CMOS",110 (2.8mm); 86 (3.6mm) horizontal,hybrid,IP67,,false,2025,0
 dahua-ipc-hdw3649t-zs-il,Dahua,IPC-HDW3649T-ZS-IL,turret,6MP,6,"1/2.7"" CMOS",114-32,hybrid,IP67,,false,2026,0
+dahua-ipc-hdw3653h-zs-il,Dahua,IPC-HDW3653H-ZS-IL,turret,6MP,6,"1/1.8"" CMOS",115-47h,hybrid,IP67,,false,,0
+dahua-ipc-hdw3653td-s-il,Dahua,IPC-HDW3653TD-S-IL,turret,6MP,6,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,,false,,0
 dahua-ipc-hdw3841em-s-s2,Dahua,IPC-HDW3841EM-S-S2,turret,8MP,8,"1/2.8"" CMOS",107h,ir,IP67,,false,,0
 dahua-ipc-hdw3841t-zs-s2,Dahua,IPC-HDW3841T-ZS-S2,turret,4K,8,"1/2.8"" CMOS",109-30 (horizontal),ir,IP67,,false,,0
 dahua-ipc-hdw3841tp-zas,Dahua,IPC-HDW3841TP-ZAS,turret,4K,8,"1/2.8"" CMOS",113,ir,IP67,,false,,0
@@ -6984,6 +7038,8 @@ dahua-ipc-hdw3849h-zas-pv-pro,Dahua,IPC-HDW3849H-ZAS-PV-PRO,turret,4K,8,"1/1.8""
 dahua-ipc-hdw3849h-zas-pv-pro-atc,Dahua,IPC-HDW3849H-ZAS-PV-PRO-ATC,turret,8MP,8,"1/1.8"" CMOS",112-48,hybrid,IP67,,true,,0
 dahua-ipc-hdw3849qm-s-il,Dahua,IPC-HDW3849QM-S-IL,turret,8MP,8,"1/2.7"" CMOS",110 (2.8mm); 86 (3.6mm) horizontal,hybrid,IP67,,false,2025,0
 dahua-ipc-hdw3849t-zs-il,Dahua,IPC-HDW3849T-ZS-IL,turret,4K,8,"1/2.7"" CMOS",114-32h,hybrid,IP67,,false,,0
+dahua-ipc-hdw3853h-zs-il,Dahua,IPC-HDW3853H-ZS-IL,turret,8MP,8,"1/1.8"" CMOS",115-47h,hybrid,IP67,,false,,0
+dahua-ipc-hdw3853td-s-il,Dahua,IPC-HDW3853TD-S-IL,turret,8MP,8,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,,false,,0
 dahua-ipc-hdw3866emp-s,Dahua,IPC-HDW3866EMP-S,turret,4K/8MP,8,"1/2.8"" CMOS",110,ir,IP67,,false,,0
 dahua-ipc-hdw3866tp-zs,Dahua,IPC-HDW3866TP-ZS,turret,4K/8MP,8,"1/2.8"" CMOS",109,ir,IP67,,false,,0
 dahua-ipc-hdw3867em-s-il,Dahua,IPC-HDW3867EM-S-IL,turret,4K/8MP,8,"1/2.7"" CMOS",105,hybrid,IP67,,false,,0
@@ -7160,8 +7216,10 @@ dahua-ipc-hfw2549t-zas-il,Dahua,IPC-HFW2549T-ZAS-IL,bullet,5MP,5,"1/2.7"" CMOS",
 dahua-ipc-hfw2549tl-s-pv,Dahua,IPC-HFW2549TL-S-PV,bullet,5MP,5,"1/2.7"" CMOS",111.0,hybrid,IP67,,true,,0
 dahua-ipc-hfw2649m-s-b-pro,Dahua,IPC-HFW2649M-S-B-PRO,bullet,6MP,6,"1/1.8"" CMOS",78,color,IP67,,false,,0
 dahua-ipc-hfw2649s-s-il,Dahua,IPC-HFW2649S-S-IL,bullet,6MP,6,"1/2.7"" CMOS",112,hybrid,IP67,,false,,0
+dahua-ipc-hfw2649s-s-il-k,Dahua,IPC-HFW2649S-S-IL-K,bullet,6MP,6,"1/2.7"" CMOS",112h (2.8 mm) / 91h (3.6 mm),hybrid,IP67,,false,,0
 dahua-ipc-hfw2649t-as-il,Dahua,IPC-HFW2649T-AS-IL,bullet,6MP,6,"1/2.7"" CMOS",91h,hybrid,IP67,IK10,false,,0
 dahua-ipc-hfw2649t-zas-il,Dahua,IPC-HFW2649T-ZAS-IL,bullet,6MP,6,"1/2.7"" CMOS",114-32h,hybrid,IP67,IK10,false,,0
+dahua-ipc-hfw2649t-zs-il-k,Dahua,IPC-HFW2649T-ZS-IL-K,bullet,6MP,6,"1/2.7"" CMOS",114-32h,hybrid,IP67,,false,,0
 dahua-ipc-hfw2649tl-s-pro,Dahua,IPC-HFW2649TL-S-PRO,bullet,6MP,6,"1/1.8"" CMOS",92,color,IP67,,false,,0
 dahua-ipc-hfw2649tl-s-t-pv,Dahua,DH-IPC-HFW2649TL-S-T-PV,bullet,6MP (3288x1850),6,"1/2.7"" CMOS",91 H / 46 V / 110 D,hybrid,IP67,,true,,0
 dahua-ipc-hfw2831sp-s-s2,Dahua,IPC-HFW2831SP-S-S2,bullet,4K,8,"1/2.7"" CMOS",105,ir,IP67,IK10,false,,0
@@ -7175,17 +7233,25 @@ dahua-ipc-hfw2841t-zas-s2,Dahua,IPC-HFW2841T-ZAS-S2,bullet,4K UHD,8,"1/2.7"" CMO
 dahua-ipc-hfw2841t-zs,Dahua,IPC-HFW2841T-ZS,bullet,4K,8,"1/2.7"" CMOS",31-113,ir,IP67,IK10,false,,0
 dahua-ipc-hfw2849m-s-b-pro,Dahua,IPC-HFW2849M-S-B-PRO,bullet,4K,8,"1/1.8"" CMOS",93 (3.6mm) / 57 (6mm),color,IP67,,false,,0
 dahua-ipc-hfw2849s-s-il,Dahua,IPC-HFW2849S-S-IL,bullet,4K UHD,8,"1/2.7"" CMOS",111 (2.8mm) / 87 (3.6mm),hybrid,IP67,,false,,0
+dahua-ipc-hfw2849s-s-il-k,Dahua,IPC-HFW2849S-S-IL-K,bullet,4K,8,"1/2.7"" CMOS",111h (2.8 mm) / 87h (3.6 mm),hybrid,IP67,,false,,0
 dahua-ipc-hfw2849s-s-il-s2,Dahua,IPC-HFW2849S-S-IL-S2,bullet,4K UHD,8,"1/2.7"" CMOS",106h,hybrid,IP67,,false,2023,0
 dahua-ipc-hfw2849t-as-il,Dahua,IPC-HFW2849T-AS-IL,bullet,4K,8,"1/2.7"" CMOS",87h,hybrid,IP67,IK10,false,,0
 dahua-ipc-hfw2849t-zas-il,Dahua,IPC-HFW2849T-ZAS-IL,bullet,4K,8,"1/2.7"" CMOS",114-32h,hybrid,IP67,IK10,false,,0
 dahua-ipc-hfw2849th-s-prox,Dahua,IPC-HFW2849TH-S-PROX,bullet,4K,8,"1/1.2"" CMOS",105,color,IP67,,false,,0
 dahua-ipc-hfw2849tl-s-pro,Dahua,IPC-HFW2849TL-S-PRO,bullet,4K,8,"1/1.8"" CMOS",110 (2.8mm),color,IP67,,false,,0
 dahua-ipc-hfw2849tl-s-t-pv,Dahua,IPC-HFW2849TL-S-T-PV,bullet,,8,"1/2.7"" CMOS",,hybrid,IP67,,true,,0
+dahua-ipc-hfw31659e-as-il,Dahua,IPC-HFW31659E-AS-IL,bullet,16MP,16,"1/1.8"" CMOS",110 (2.8mm); 90 (3.6mm) horizontal,hybrid,IP67,,true,,0
+dahua-ipc-hfw31659e-s-il,Dahua,IPC-HFW31659E-S-IL,bullet,16MP,16,"1/1.8"" CMOS",110 (2.8mm); 90 (3.6mm) horizontal,hybrid,IP67,,false,,0
+dahua-ipc-hfw31659th-as-il,Dahua,IPC-HFW31659TH-AS-IL,bullet,16MP,16,"1/1.8"" CMOS",110 (2.8mm); 90 (3.6mm) horizontal,hybrid,IP67,,true,,0
+dahua-ipc-hfw31659th-s-il,Dahua,IPC-HFW31659TH-S-IL,bullet,16MP,16,"1/1.8"" CMOS",110 (2.8mm); 90 (3.6mm) horizontal,hybrid,IP67,,false,,0
+dahua-ipc-hfw31659th-zas-il,Dahua,IPC-HFW31659TH-ZAS-IL,bullet,16MP,16,"1/1.8"" CMOS",111-46h,hybrid,IP67,,true,,0
+dahua-ipc-hfw31659th-zs-il,Dahua,IPC-HFW31659TH-ZS-IL,bullet,16MP,16,"1/1.8"" CMOS",111-46h,hybrid,IP67,,false,,0
 dahua-ipc-hfw3241df-as-4g,Dahua,IPC-HFW3241DF-AS-4G,bullet,1080p,2,"1/2.8"" CMOS",107h,ir,IP67,,,,0
 dahua-ipc-hfw3241e-as-s2,Dahua,IPC-HFW3241E-AS-S2,bullet,2MP,2,"1/2.8"" CMOS",107h,ir,IP67,,false,,0
 dahua-ipc-hfw3241e-s,Dahua,IPC-HFW3241E-S,bullet,1080p HD,2,"1/2.8"" CMOS",106h,ir,IP67,,false,2022,0
 dahua-ipc-hfw3241e-s-s2,Dahua,IPC-HFW3241E-S-S2,bullet,2MP,2,"1/2.8"" CMOS",107h,ir,IP67,,false,,0
 dahua-ipc-hfw3241e-z,Dahua,IPC-HFW3241E-Z,bullet,2MP,2,"1/2.8"" CMOS",110-31,ir,IP67,IK10,true,2018,0
+dahua-ipc-hfw3241t-zas,Dahua,IPC-HFW3241T-ZAS,bullet,2MP,2,"1/2.8"" CMOS",108-28h,ir,IP67,,,,0
 dahua-ipc-hfw3241t-zas-s2,Dahua,IPC-HFW3241T-ZAS-S2,bullet,2MP,2,"1/2.8"" CMOS",109-30h,ir,IP67,IK10,false,,0
 dahua-ipc-hfw3241t-zs-s2,Dahua,IPC-HFW3241T-ZS-S2,bullet,2MP,2,"1/2.8"" CMOS",109-30h,ir,IP67,IK10,false,,0
 dahua-ipc-hfw3249e-as-il,Dahua,IPC-HFW3249E-AS-IL,bullet,2MP,2,"1/2.9"" CMOS",100,hybrid,IP67,,false,,0
@@ -7234,6 +7300,12 @@ dahua-ipc-hfw3649t1-as-pv-pro-atc,Dahua,IPC-HFW3649T1-AS-PV-PRO-ATC,bullet,6MP,6
 dahua-ipc-hfw3649t1-as-pv-s2,Dahua,IPC-HFW3649T1-AS-PV-S2,bullet,6MP,6,"1/2.7"" CMOS",97 (2.8mm) / 78 (3.6mm),hybrid,IP67,,true,2024,0
 dahua-ipc-hfw3649t1-zas-pv-pro,Dahua,IPC-HFW3649T1-ZAS-PV-PRO,bullet,6MP,6,"1/1.8"" CMOS",112-48,hybrid,IP67,,true,2025,0
 dahua-ipc-hfw3649t1-zas-pv-pro-atc,Dahua,IPC-HFW3649T1-ZAS-PV-PRO-ATC,bullet,6MP,6,"1/1.8"" CMOS",112-48,hybrid,IP67,,true,,0
+dahua-ipc-hfw3653e-as-il,Dahua,IPC-HFW3653E-AS-IL,bullet,6MP,6,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,,true,,0
+dahua-ipc-hfw3653e-s-il,Dahua,IPC-HFW3653E-S-IL,bullet,6MP,6,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,,false,,0
+dahua-ipc-hfw3653th-as-il,Dahua,IPC-HFW3653TH-AS-IL,bullet,6MP,6,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm); 61 (6mm); 38 (8mm) horizontal,hybrid,IP67,,true,,0
+dahua-ipc-hfw3653th-s-il,Dahua,IPC-HFW3653TH-S-IL,bullet,6MP,6,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm); 61 (6mm); 38 (8mm) horizontal,hybrid,IP67,,false,,0
+dahua-ipc-hfw3653th-zas-il,Dahua,IPC-HFW3653TH-ZAS-IL,bullet,6MP,6,"1/1.8"" CMOS",115-47h,hybrid,IP67,,true,,0
+dahua-ipc-hfw3653th-zs-il,Dahua,IPC-HFW3653TH-ZS-IL,bullet,6MP,6,"1/1.8"" CMOS",115-47h,hybrid,IP67,,false,,0
 dahua-ipc-hfw3667e-as-il,Dahua,IPC-HFW3667E-AS-IL,bullet,6MP,6,"1/2.7"" CMOS",110,hybrid,IP67,,false,,0
 dahua-ipc-hfw3667t-zas-il,Dahua,IPC-HFW3667T-ZAS-IL,bullet,6MP,6,"1/2.7"" CMOS",114-32,hybrid,IP67,,false,,0
 dahua-ipc-hfw3841e-as-s2,Dahua,IPC-HFW3841E-AS-S2,bullet,8MP,8,"1/2.8"" CMOS",107h,ir,IP67,,true,,0
@@ -7252,6 +7324,12 @@ dahua-ipc-hfw3849t1-as-pv-s3,Dahua,IPC-HFW3849T1-AS-PV-S3,bullet,4K (8MP),8,"1/2
 dahua-ipc-hfw3849t1-zas-pv,Dahua,IPC-HFW3849T1-ZAS-PV,bullet,4K UHD,8,"1/2.8"" CMOS",108,hybrid,IP67,,true,,0
 dahua-ipc-hfw3849t1-zas-pv-pro,Dahua,IPC-HFW3849T1-ZAS-PV-PRO,bullet,4K,8,"1/2.8"" CMOS",112-48h,hybrid,IP67,,true,,0
 dahua-ipc-hfw3849t1-zas-pv-pro-atc,Dahua,IPC-HFW3849T1-ZAS-PV-PRO-ATC,bullet,8MP,8,"1/1.8"" CMOS",112-48,hybrid,IP67,,true,,0
+dahua-ipc-hfw3853e-as-il,Dahua,IPC-HFW3853E-AS-IL,bullet,8MP,8,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,,true,,0
+dahua-ipc-hfw3853e-s-il,Dahua,IPC-HFW3853E-S-IL,bullet,8MP,8,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm) horizontal,hybrid,IP67,,false,,0
+dahua-ipc-hfw3853th-as-il,Dahua,IPC-HFW3853TH-AS-IL,bullet,8MP,8,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm); 61 (6mm); 38 (8mm) horizontal,hybrid,IP67,,true,,0
+dahua-ipc-hfw3853th-s-il,Dahua,IPC-HFW3853TH-S-IL,bullet,8MP,8,"1/1.8"" CMOS",112 (2.8mm); 89 (3.6mm); 61 (6mm); 38 (8mm) horizontal,hybrid,IP67,,false,,0
+dahua-ipc-hfw3853th-zas-il,Dahua,IPC-HFW3853TH-ZAS-IL,bullet,8MP,8,"1/1.8"" CMOS",115-47h,hybrid,IP67,,true,,0
+dahua-ipc-hfw3853th-zs-il,Dahua,IPC-HFW3853TH-ZS-IL,bullet,8MP,8,"1/1.8"" CMOS",115-47h,hybrid,IP67,,false,,0
 dahua-ipc-hfw3866ep-as,Dahua,IPC-HFW3866EP-AS,bullet,4K,8,"1/2.8"" CMOS",107 (2.8mm) / 84 (3.6mm),ir,IP67,,true,,0
 dahua-ipc-hfw3866tp-zas,Dahua,IPC-HFW3866TP-ZAS,bullet,4K,8,"1/2.8"" CMOS",109,ir,IP67,IK10,false,,0
 dahua-ipc-hfw3867e-as-il,Dahua,IPC-HFW3867E-AS-IL,bullet,4K,8,"1/2.7"" CMOS",110,hybrid,IP67,,false,,0
@@ -7262,6 +7340,8 @@ dahua-ipc-hfw4231t-ase,Dahua,IPC-HFW4231T-ASE,bullet,,2,1/2.8” 2Megapixel prog
 dahua-ipc-hfw4239t-ase,Dahua,IPC-HFW4239T-ASE,bullet,1080p,2,"1/2.8"" CMOS",,color,IP67,IK10,false,,0
 dahua-ipc-hfw4431e-se,Dahua,IPC-HFW4431E-SE,bullet,,4,1/3” 4Megapixel progressive scan CMOS,"H: 83 (55), V: 45 (31)",ir,IP67,IK10,,,0
 dahua-ipc-hfw4431t-ase,Dahua,IPC-HFW4431T-ASE,bullet,4MP (2688x1520),4,"1/3"" CMOS",83 H / 45 V,ir,IP67,IK10,,,0
+dahua-ipc-hfw4441t-zas,Dahua,IPC-HFW4441T-ZAS,bullet,4MP,4,"1/2.9"" CMOS",104-29h,ir,IP67,,true,,0
+dahua-ipc-hfw4541t-zas,Dahua,IPC-HFW4541T-ZAS,bullet,5MP,5,"1/2.7"" CMOS",99-28h,ir,IP67,,true,,0
 dahua-ipc-hfw4631e-se,Dahua,IPC-HFW4631E-SE,bullet,,6,1/2.9” 6Megapixel progressive scan CMOS,"H: 98 (69), V: 67 (48)",ir,IP67,IK10,,,0
 dahua-ipc-hfw4631t-ase,Dahua,IPC-HFW4631T-ASE,bullet,6MP (3072x2048),6,"1/2.9"" CMOS",98 H / 67 V,ir,IP67,IK10,,,0
 dahua-ipc-hfw4831e-se,Dahua,IPC-HFW4831E-SE,bullet,8MP,8,"1/2.5"" 8MP STARVIS CMOS",112,ir,IP67,,,,0
@@ -7292,6 +7372,7 @@ dahua-ipc-hfw5442e-ze-s3,Dahua,IPC-HFW5442E-ZE-S3,bullet,4MP,4,"1/1.8"" CMOS",11
 dahua-ipc-hfw5442e-zhe,Dahua,IPC-HFW5442E-ZHE,bullet,4MP,4,"1/1.8"" CMOS",115-47h,ir,IP67,IK10,false,,0
 dahua-ipc-hfw5442h-z4he,Dahua,IPC-HFW5442H-Z4HE,bullet,4MP,4,"1/1.8"" CMOS",43-15h,ir,IP67,IK10,false,,0
 dahua-ipc-hfw5442h-zhe,Dahua,IPC-HFW5442H-ZHE,bullet,4MP,4,"1/1.8"" CMOS",114-48h,ir,IP67,IK10,false,,0
+dahua-ipc-hfw5442hp-zh-sl,Dahua,IPC-HFW5442HP-ZH-SL,bullet,4MP,4,"1/1.8"" CMOS",107-44h,ir,IP67,IK10,false,,0
 dahua-ipc-hfw5442t-as-led,Dahua,IPC-HFW5442T-AS-LED,bullet,4MP,4,"1/1.8"" Progressive Scan CMOS",113,color,IP67,IK10,false,,0
 dahua-ipc-hfw5442t-ase,Dahua,IPC-HFW5442T-ASE,bullet,4MP,4,"1/1.8"" CMOS",112h,ir,IP67,IK10,true,,0
 dahua-ipc-hfw5442t-ase-ni,Dahua,IPC-HFW5442T-ASE-NI,bullet,4MP,4,"1/1.8"" Progressive Scan CMOS",93,color,IP67,,false,,0
@@ -7322,6 +7403,7 @@ dahua-ipc-hfw5459t1-ase-pv-pro-atc-le,Dahua,IPC-HFW5459T1-ASE-PV-PRO-ATC-LE,bull
 dahua-ipc-hfw5459t1-ase-pv-pro-le,Dahua,IPC-HFW5459T1-ASE-PV-PRO-LE,bullet,4MP,4,"1/1.8"" CMOS",111,hybrid,IP67,IK10,true,,0
 dahua-ipc-hfw5459z-z4he-pv-pro,Dahua,IPC-HFW5459Z-Z4HE-PV-PRO,bullet,4MP,4,"1/1.8"" CMOS",41-16,hybrid,IP67,IK10,true,2026,0
 dahua-ipc-hfw5459z-z4he-pv-pro-atc,Dahua,IPC-HFW5459Z-Z4HE-PV-PRO-ATC,bullet,4MP,4,"1/1.8"" CMOS",41-16,hybrid,IP67,IK10,true,2026,0
+dahua-ipc-hfw5459z-z4he-pv-pro-atc-le,Dahua,IPC-HFW5459Z-Z4HE-PV-PRO-ATC-LE,bullet,4MP,4,"1/1.8"" CMOS",41-16h,hybrid,IP67,IK10,true,,0
 dahua-ipc-hfw5459z-z4he-pv-pro-le,Dahua,IPC-HFW5459Z-Z4HE-PV-PRO-LE,bullet,4MP,4,"1/1.8"" CMOS",41-16,hybrid,IP67,IK10,true,,0
 dahua-ipc-hfw5459z-zhe-pv-pro,Dahua,IPC-HFW5459Z-ZHE-PV-PRO,bullet,4MP,4,"1/1.8"" CMOS",98,hybrid,IP67,IK10,true,2026,0
 dahua-ipc-hfw5459z-zhe-pv-pro-atc,Dahua,IPC-HFW5459Z-ZHE-PV-PRO-ATC,bullet,4MP,4,"1/1.8"" CMOS",98-48,hybrid,IP67,IK10,true,2026,0
@@ -7369,6 +7451,10 @@ dahua-ipc-hfw5842h-zhe,Dahua,IPC-HFW5842H-ZHE,bullet,8MP,8,"1/1.8"" CMOS",112-48
 dahua-ipc-hfw5842t-ase,Dahua,IPC-HFW5842T-ASE,bullet,8MP,8,"1/1.8"" CMOS",87h,ir,IP67,IK10,true,,0
 dahua-ipc-hfw5842t-se,Dahua,IPC-HFW5842T-SE,bullet,8MP,8,"1/1.8"" CMOS",110h,ir,IP67,IK10,false,,0
 dahua-ipc-hfw5849t1-ase-led,Dahua,IPC-HFW5849T1-ASE-LED,bullet,4K UHD,8,"1/1.2"" CMOS",113 (2.8mm),color,IP67,IK10,true,2023,0
+dahua-ipc-hfw5853z-z4he-pv-pro,Dahua,IPC-HFW5853Z-Z4HE-PV-PRO,bullet,8MP,8,"1/1.8"" CMOS",41.4-15.6h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hfw5853z-z4he-pv-pro-atc,Dahua,IPC-HFW5853Z-Z4HE-PV-PRO-ATC,bullet,8MP,8,"1/1.8"" CMOS",41.4-15.6h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hfw5853z-zhe-pv-pro,Dahua,IPC-HFW5853Z-ZHE-PV-PRO,bullet,8MP,8,"1/1.8"" CMOS",103.8-48h,hybrid,IP67,IK10,true,,0
+dahua-ipc-hfw5853z-zhe-pv-pro-atc,Dahua,IPC-HFW5853Z-ZHE-PV-PRO-ATC,bullet,8MP,8,"1/1.8"" CMOS",103.8-48h,hybrid,IP67,IK10,true,,0
 dahua-ipc-hfw5859e-ase-il,Dahua,IPC-HFW5859E-ASE-IL,bullet,8MP,8,"1/1.8"" CMOS",110,hybrid,IP67,,false,2026,0
 dahua-ipc-hfw5859e1-z4e-il,Dahua,IPC-HFW5859E1-Z4E-IL,bullet,8MP,8,"1/1.8"" CMOS",41,hybrid,IP67,IK10,false,2026,0
 dahua-ipc-hfw5859e1-z4e-il-atc,Dahua,IPC-HFW5859E1-Z4E-IL-ATC,bullet,8MP,8,"1/1.8"" CMOS",41-9,hybrid,IP67,IK10,false,2026,0
@@ -7436,6 +7522,7 @@ dahua-ipc-hfw8242e-z20fr-ira-led,Dahua,IPC-HFW8242E-Z20FR-IRA-LED,bullet,1080p,2
 dahua-ipc-hfw8242e-z4fd-ira-led,Dahua,IPC-HFW8242E-Z4FD-IRA-LED,bullet,1080p,2,"1/1.8"" CMOS",,ir,IP67,IK10,false,,0
 dahua-ipc-hfw8242e-z4fr-ira-led,Dahua,IPC-HFW8242E-Z4FR-IRA-LED,bullet,1080p,2,"1/1.8"" CMOS",,ir,IP67,IK10,false,,0
 dahua-ipc-hfw8449j-z-sc,Dahua,IPC-HFW8449J-Z-SC,bullet,,4,"1/1.8"" CMOS",92.6-48 horizontal (wide-tele),hybrid,IP67,,true,2025,0
+dahua-ipc-hfw8449j-z-sc-atc,Dahua,IPC-HFW8449J-Z-SC-ATC,bullet,4MP,4,"1/1.8"" CMOS",92.6-48h,hybrid,IP67,,true,,0
 dahua-ipc-hfw8630e-ze,Dahua,IPC-HFW8630E-ZE,bullet,6MP,6,"1/1.8"" CMOS",,ir,IP67,IK10,false,,0
 dahua-ipc-hfw9442h-z-mn,Dahua,IPC-HFW9442H-Z-MN,bullet,4MP,4,"1/1.8"" 4MP progressive CMOS",114-47 horizontal,ir,IP67,IK10,,,0
 dahua-ipc-hfw9442h-zfr-mn,Dahua,IPC-HFW9442H-ZFR-MN,bullet,4MP,4,"1/1.8"" 4MP progressive CMOS",114-47,ir,IP67,IK10,true,2021,0
@@ -7443,6 +7530,8 @@ dahua-ipc-hfw9842h-z-mn,Dahua,IPC-HFW9842H-Z-MN,bullet,4K,8,"1/1.8"" 8MP progres
 dahua-ipc-hfwd2a1t-a,Dahua,IPC-HFWD2A1T-A,bullet,2MP,2,"1/2.8"" CMOS",108-30,ir,IP67,IK10,true,,0
 dahua-ipc-hfwd5a1t-az,Dahua,IPC-HFWD5A1T-AZ,bullet,5MP,5,"1/2.7"" 5MP progressive CMOS",,ir,IP67,,true,,0
 dahua-ipc-hfwd8a1t-az,Dahua,IPC-HFWD8A1T-AZ,bullet,4K,8,"1/1.8"" 8MP progressive CMOS",,ir,IP67,,true,,0
+dahua-ipc-hmw3230-m-m12,Dahua,IPC-HMW3230-M/M12,box,2MP,2,"1/2.7"" CMOS",115h (2.8 mm) / 55h (6 mm),ir,IP67,,false,,0
+dahua-ipc-hmw8441x-m-m12,Dahua,IPC-HMW8441X-M/M12,dual-lens,4MP,4,"1/2.8"" CMOS",122h,ir,IP67,IK08,,,0
 dahua-ipc-hpt1339dd-stw-3e2,Dahua,IPC-HPT1339DD-STW-3E2,dual-lens,3+3MP dual-lens (2304x1296 each),3,"1/3.2"" CMOS (dual)","79 horizontal (43 vertical, 94 diagonal) per lens",hybrid,,,true,,0
 dahua-ipc-hpt1539dd-stw-5e2,Dahua,IPC-HPT1539DD-STW-5E2,dual-lens,5MP + 5MP dual-lens,5,"1/3"" CMOS (dual)","86 horizontal (46 vertical, 104 diagonal)",hybrid,,,true,2024,0
 dahua-ipc-hum4231-s2,Dahua,IPC-HUM4231-S2,covert,1080p,2,"1/2.8"" CMOS",108 H / 59 V / 118 D,none,,,true,,0
@@ -7485,6 +7574,7 @@ dahua-ipc-mbw4231-as,Dahua,IPC-MBW4231-AS,bullet,2MP (1920x1080),2,"1/2.8"" 2MP 
 dahua-ipc-mbw4431-as,Dahua,IPC-MBW4431-AS,bullet,4MP (2688x1520),4,"1/3"" 4MP progressive scan CMOS",104 H / 55 V / 125 D,ir,IP67,IK10,,,0
 dahua-ipc-mdw4330-m12,Dahua,IPC-MDW4330-M12,dome,3MP (2048x1536),3,"1/3"" 3MP progressive scan CMOS",121 H / 87 V,ir,,,,,0
 dahua-ipc-mfw5241t2-e3-ase,Dahua,IPC-MFW5241T2-E3-ASE,panoramic,3 x 2MP (1920x1080 per channel),6,"3 x 1/2.8"" CMOS",85.9 / 25.7 / 13,ir,IP67,IK10,,2024,0
+dahua-ipc-mfw5241t2-e3-ase-atc,Dahua,IPC-MFW5241T2-E3-ASE-ATC,panoramic,3 x 2MP (1920x1080 per channel),6,"3 x 1/2.8"" CMOS",85.9 / 25.7 / 13,ir,IP67,IK10,true,,0
 dahua-ipc-mfw7442k1-z4-t40,Dahua,IPC-MFW7442K1-Z4-T40,dual-lens,4+4MP Dual-Sight,8,"Channel 1: 1/1.7"" CMOS; Channel 2: 1/2.7"" CMOS",43-15,hybrid,IP67,,true,2024,0
 dahua-ipc-mfw7442k1-z7-t40,Dahua,IPC-MFW7442K1-Z7-T40,dual-lens,4+4MP Dual-Sight,8,"Channel 1: 1/1.7"" CMOS; Channel 2: 1/2.7"" CMOS",40-9,hybrid,IP67,,true,2024,0
 dahua-ipc-mfw7449y-z7-t44,Dahua,IPC-MFW7449Y-Z7-T44,dual-lens,4+4MP Dual-Sight,8,"Dual 1/1.8"" CMOS",41-9,hybrid,IP67,,false,2024,0
@@ -7546,19 +7636,75 @@ dahua-ipc-t2b40-zs,Dahua,IPC-T2B40-ZS,turret,4MP,4,"1/3"" CMOS",97-31h,ir,IP67,,
 dahua-ipc-wl46a,Dahua,IPC-WL46A,floodlight,4MP,4,"1/3"" CMOS","98 horizontal (55 vertical, 115 diagonal)",hybrid,IP65,,true,2023,0
 dahua-ipc-wpt1339dd-sw-3e2-pv,Dahua,IPC-WPT1339DD-SW-3E2-PV,dual-lens,3+3MP dual-lens (2304x1296 each),3,"1/2.8"" CMOS (dual)",95 horizontal (fixed lens); 53 horizontal (PT lens),hybrid,IP66,,true,,0
 dahua-ipc-wpt1539dd-sw-5e2-pv,Dahua,IPC-WPT1539DD-SW-5E2-PV,dual-lens,5+5MP dual-lens (2880x1620 each),5,"1/3"" CMOS (dual)",95 horizontal (fixed lens); 49 horizontal (PT lens),hybrid,IP66,,true,,0
+dahua-itc1652-au5f-glzf55,Dahua,ITC1652-AU5F-GLZF55,bullet,16MP (5320x3032),16,"1.1"" GS-CMOS",15.1 H / 8.6 V / 17.3 D,color,IP66,IK10,,,0
+dahua-itc1652-au5f-irl7zf1640,Dahua,ITC1652-AU5F-IRL7ZF1640,bullet,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,ir,IP66,IK10,,,0
+dahua-itc1652-au5f-irl8zf1640,Dahua,ITC1652-AU5F-IRL8ZF1640,bullet,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,ir,IP66,IK10,,,0
+dahua-itc1652-au5f-irl8zf1640-p,Dahua,ITC1652-AU5F-IRL8ZF1640-P,bullet,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,ir,IP66,IK10,,,0
+dahua-itc1652-au5f-lzf1640,Dahua,ITC1652-AU5F-LZF1640,bullet,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,,IP67,IK10,,,0
+dahua-itc1652-su2f-gqe-c2r1-irl8zf1640,Dahua,ITC1652-SU2F-GQE-C2R1-IRL8ZF1640,box,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,ir,IP66,,,,0
+dahua-itc1652-su2f-gqe-c2r1-irl8zf1640-p,Dahua,ITC1652-SU2F-GQE-C2R1-IRL8ZF1640-P,box,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,ir,IP66,,,,0
+dahua-itc1652-su2f-gqe-c2r1-lzf1640,Dahua,ITC1652-SU2F-GQE-C2R1-LZF1640,box,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,color,IP66,,,,0
+dahua-itc1652-su2f-pqe-c2r1-irl8zf1640-p,Dahua,ITC1652-SU2F-PQE-C2R1-IRL8ZF1640-P,box,16MP (5320x3032),16,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,ir,IP66,,,,0
 dahua-itc214-ph3a,Dahua,ITC214-PH3A,box,2MP (1920x1080),2,"1/2.8"" CMOS",,,IP50,,,,0
+dahua-itc214-ph5b-f3,Dahua,ITC214-PH5B-F3,box,1080p (1920x1080),2,"1/2.8"" CMOS",,,IP54,,,,0
+dahua-itc215-pw4i-irlzf27135,Dahua,ITC215-PW4I-IRLZF27135,bullet,2MP LPR,2,"1/2.8"" CMOS",119-32h,ir,IP67,IK10,,,0
+dahua-itc215-pw6m-irlzf,Dahua,ITC215-PW6M-IRLZF,bullet,2MP LPR,2,"1/2.8"" CMOS",108.1-30.3h,ir,IP67,IK10,,,0
+dahua-itc215-pw6m-irlzf-o,Dahua,ITC215-PW6M-IRLZF-O,bullet,2MP LPR,2,"1/2.8"" CMOS",108.1-30.3h,ir,IP67,IK10,,,0
+dahua-itc215-pw6m-lzf,Dahua,ITC215-PW6M-LZF,bullet,2MP LPR,2,"1/2.8"" CMOS",108.1-30.3h,color,IP67,IK10,,,0
+dahua-itc218-rc3a-lf4,Dahua,ITC218-RC3A-LF4,box,1080p (1920x1080),2,"1/2.8"" CMOS",87.5 H / 44.4 V / 104.9 D,,IP54,,,,0
+dahua-itc218-rc3a-tlf4,Dahua,ITC218-RC3A-TLF4,dual-lens,2x 2MP (3840x1080),4,"1/2.8"" CMOS",87.5 H / 44.4 V / 104.9 D,,IP54,,,,0
 dahua-itc237-pw1b-irz-lr,Dahua,ITC237-PW1B-IRZ-LR,bullet,2MP LPR,2,"1/2.8"" CMOS",101-36 horizontal,ir,IP67,IK10,false,2023,0
 dahua-itc314-ph3a-f,Dahua,ITC314-PH3A-F,box,2MP (1920x1080),2,"1/3"" CMOS",,,IP50,,,,0
 dahua-itc314-ph3a-tf,Dahua,ITC314-PH3A-TF,box,2MP (1920x1080),2,"1/3"" CMOS",,,IP50,,,,0
+dahua-itc352-au3f-irl7zf1640,Dahua,ITC352-AU3F-IRL7ZF1640,bullet,3MP (2048x1536),3,"2/3"" GS-CMOS",12.8-30.28 H / 7.2-16.96 V / 13.2-30.9 D,ir,IP66,IK10,,,0
 dahua-itc352-au3f-irl8zf1640,Dahua,ITC352-AU3F-IRL8ZF1640,box,3MP (2048x1536),3,"2/3"" GS-CMOS",12.8-30.28 H / 7.2-16.96 V / 13.2-30.9 D,ir,IP66,IK10,,,0
+dahua-itc352-au3f-lzf1640,Dahua,ITC352-AU3F-LZF1640,bullet,3MP (2048x1536),3,"2/3"" GS-CMOS",12.8-30.28 H / 7.2-16.96 V / 13.2-30.9 D,color,IP66,IK10,,,0
+dahua-itc352-ru2d-irl8,Dahua,ITC352-RU2D-IRL8,box,3MP,3,"1/1.8"" global shutter CMOS",,ir,IP67,IK10,,,0
 dahua-itc413-pw4d,Dahua,ITC413-PW4D,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",Z1/IZ1 (2.7-12mm): 92-46.1 H / 49-26 V / 109-52.8 D; Z3/IZ3 (8-32mm): 39.9-15.1 H / 21.8-8.5 V / 46.6-17.4 D,ir,IP67,IK10,true,,0
+dahua-itc414-ph5b-f2,Dahua,ITC414-PH5B-F2,box,4MP (2688x1520),4,"1/3"" CMOS",101.9 H / 54.1 V / 121 D (2.8 mm); 83.7 H / 45.7 V / 99.1 D (3.6 mm),,IP54,,,,0
 dahua-itc414-ph5b-tf2,Dahua,ITC414-PH5B-TF2,box,4MP (2688x1520),4,"1/3"" CMOS",101.9 H / 54.1 V / 121 D,,IP54,,,,0
+dahua-itc414-ph5b-tf2-poe,Dahua,ITC414-PH5B-TF2-POE,box,4MP (2688x1520),4,"1/3"" CMOS",101.9 H / 54.1 V / 121 D,,IP54,,,,0
 dahua-itc414-ph5b-tf3,Dahua,ITC414-PH5B-TF3,box,4MP (2688x1520),4,"1/3"" CMOS",83.7 H / 45.7 V / 99.1 D,,IP54,,,,0
+dahua-itc414-ph5b-tf3-poe,Dahua,ITC414-PH5B-TF3-POE,box,4MP (2688x1520),4,"1/3"" CMOS",83.7 H / 45.7 V / 99.1 D,,IP54,,,,0
 dahua-itc416-pl8i-iz,Dahua,ITC416-PL8I-IZ,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",115-47 H / 62-27 V / 137-54 D,ir,IP54,,,,0
+dahua-itc431-kw4f,Dahua,ITC431-KW4F,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",15.2-42.5 H / 8.6-23.4 V / 17.3-49.4 D,hybrid,IP68,IK10,,,0
+dahua-itc431-kw4f-g,Dahua,ITC431-KW4F-G,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",15.2-42.5 H / 8.6-23.4 V / 17.3-49.4 D,hybrid,IP68,IK10,,,0
 dahua-itc431-rw1f-irl8,Dahua,ITC431-RW1F-IRL8,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",9.4-40.8 H / 5.4-22.9 V / 10.7-46.9 D,ir,IP67,IK10,,,0
+dahua-itc431-rw1f-l,Dahua,ITC431-RW1F-L,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",9.4-40.8 H / 5.4-22.9 V / 10.7-46.9 D,color,IP67,IK10,,,0
+dahua-itc431-rw4f,Dahua,ITC431-RW4F,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",15.2-42.5 H / 8.6-23.4 V / 17.3-49.4 D,hybrid,IP68,IK10,,,0
+dahua-itc431-rw4f-g,Dahua,ITC431-RW4F-G,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",15.2-42.5 H / 8.6-23.4 V / 17.3-49.4 D,hybrid,IP68,IK10,,,0
+dahua-itc431-su1f-f,Dahua,ITC431-SU1F-F,box,4MP (2688x1520),4,"1/1.8"" CMOS",37.24 H / 20.75 V / 42.96 D,,IP66,,,,0
+dahua-itc431-su1f-fir,Dahua,ITC431-SU1F-FIR,box,4MP (2688x1520),4,"1/1.8"" CMOS",37.24 H / 20.75 V / 42.96 D,,IP66,,,,0
+dahua-itc431-su1f-gf,Dahua,ITC431-SU1F-GF,box,4MP (2688x1520),4,"1/1.8"" CMOS",37.24 H / 20.75 V / 42.96 D,,IP66,,,,0
+dahua-itc431-su1f-gfir,Dahua,ITC431-SU1F-GFIR,box,4MP (2688x1520),4,"1/1.8"" CMOS",37.24 H / 20.75 V / 42.96 D,,IP66,,,,0
+dahua-itc436-pw9h,Dahua,ITC436-PW9H,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",46.1-98.1 H / 26.0-54.0 V / 52.8-114.6 D,hybrid,IP66,,,,0
+dahua-itc439-pw1h-z,Dahua,ITC439-PW1H-Z,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",48.3-114.6 H / 27.1-59.0 V / 55.5-141.6 D,color,IP67,,,,0
+dahua-itc439-pw1h-z1050,Dahua,ITC439-PW1H-Z1050,bullet,4MP (2688x1520),4,"1/1.8"" CMOS",9.33-40.55 H / 5.3-22.7 V / 10.63-46.6 D,color,IP67,,,,0
+dahua-itc514-ph6d-q20-f21-poe,Dahua,ITC514-PH6D-Q20-F21-POE,dual-lens,5MP (2880x1620),5,"1/2.7"" CMOS",141.1 H / 74.5 V / 170.1 D (2.1 mm); 108.4 H / 60 V / 127.1 D (2.8 mm); 90.3 H / 47.8 V / 108.6 D (3.6 mm),,IP54,,,,0
+dahua-itc514-ph6d-q21-f21-poe,Dahua,ITC514-PH6D-Q21-F21-POE,dual-lens,5MP (2880x1620),5,"1/2.7"" CMOS",141.1 H / 74.5 V / 170.1 D (2.1 mm parking channels); 90.3 H / 47.8 V / 108.6 D (3.6 mm lane channel),,IP54,,,,0
+dahua-itc514-ph6d-q22-f21-poe,Dahua,ITC514-PH6D-Q22-F21-POE,dual-lens,5MP (2880x1620),5,"1/2.7"" CMOS",141.1 H / 74.5 V / 170.1 D (2.1 mm parking channels); 90.3 H / 47.8 V / 108.6 D (3.6 mm lane channels),,IP54,,,,0
+dahua-itc831-kw4f,Dahua,ITC831-KW4F,bullet,8MP (3840x2160),8,"1/1.8"" CMOS",15-42 H / 8.4-22.8 V / 17.1-48.7 D,hybrid,IP68,IK10,,,0
+dahua-itc831-kw4f-g,Dahua,ITC831-KW4F-G,bullet,8MP (3840x2160),8,"1/1.8"" CMOS",15-42 H / 8.4-22.8 V / 17.1-48.7 D,hybrid,IP68,IK10,,,0
+dahua-itc831-rw4f,Dahua,ITC831-RW4F,bullet,8MP (3840x2160),8,"1/1.8"" CMOS",15-42 H / 8.4-22.8 V / 17.1-48.7 D,hybrid,IP68,IK10,,,0
+dahua-itc831-rw4f-g,Dahua,ITC831-RW4F-G,bullet,8MP (3840x2160),8,"1/1.8"" CMOS",15-42 H / 8.4-22.8 V / 17.1-48.7 D,hybrid,IP68,IK10,,,0
+dahua-itc952-au3f-irl7zf1640,Dahua,ITC952-AU3F-IRL7ZF1640,bullet,9MP (4096x2336),9,"1.1"" GS-CMOS",22-53 H / 14-32 V / 26-62 D,ir,IP67,IK10,,,0
 dahua-itc952-au3f-irl8zf1640,Dahua,ITC952-AU3F-IRL8ZF1640,bullet,9MP (4096x2336),9,"1.1"" GS-CMOS",22.3-53.0 H / 13.8-32.3 V / 26.0-61.9 D,ir,IP66,IK10,,,0
+dahua-itc952-au3f-lzf1640,Dahua,ITC952-AU3F-LZF1640,bullet,9MP (4096x2336),9,"1.1"" GS-CMOS",22-53 H / 14-32 V / 26-62 D,,IP67,IK10,,,0
+dahua-itc952-au5f-glzf55,Dahua,ITC952-AU5F-GLZF55,bullet,9MP (4096x2336),9,"1.1"" GS-CMOS",15.97 H / 9.73 V / 18.7 D,,IP66,,,,0
+dahua-itc952-au5f-irl8zf1640-p,Dahua,ITC952-AU5F-IRL8ZF1640-P,bullet,9MP (4096x2336),9,"1.1"" GS-CMOS",22-53 H / 14-32 V / 26-62 D,ir,IP67,IK10,,,0
+dahua-itc952-gl,Dahua,ITC952-GL,box,9MP,9,"1.1"" global shutter CMOS",,,,,,,0
+dahua-itc952-ru2d-ir-l,Dahua,ITC952-RU2D-(IR)L,box,9MP,9,"1"" global shutter CMOS",,,IP67,,,,0
+dahua-itc952-ru2d-irl8,Dahua,ITC952-RU2D-IRL8,box,9MP,9,"1"" global shutter CMOS",,ir,IP67,,,,0
+dahua-itc952-su2f-gqe-c2r1-irl8zf1640,Dahua,ITC952-SU2F-GQE-C2R1-IRL8ZF1640,box,9MP (4096x2336),9,"1.1"" GS-CMOS",22.3-53.0 H / 13.8-32.3 V / 26.0-61.9 D,ir,IP66,,,,0
+dahua-itc952-su2f-gqe-c2r1-irl8zf1640-p,Dahua,ITC952-SU2F-GQE-C2R1-IRL8ZF1640-P,dual-lens,9MP (4096x2336),9,"1.1"" GS-CMOS",22.3-53.0 H / 13.8-32.3 V / 26.0-61.9 D (16-40 mm lens),ir,IP66,,,,0
+dahua-itc952-su2f-gqe-c2r1-lzf1640,Dahua,ITC952-SU2F-GQE-C2R1-LZF1640,box,9MP (4096x2336),9,"1.1"" GS-CMOS",22.3-53.0 H / 13.8-32.3 V / 26.0-61.9 D,color,IP66,,,,0
+dahua-itc952-su2f-gqe-c2r1-lzf55-gl,Dahua,ITC952-SU2F-GQE-C2R1-LZF55-GL,box,9MP (4096x2336),9,"1.1"" GS-CMOS",15.9 H / 9.73 V / 18.7 D,color,IP66,,,,0
+dahua-itc952-su2f-pqe-c2r1-irl8zf1640-p,Dahua,ITC952-SU2F-PQE-C2R1-IRL8ZF1640-P,box,9MP (4096x2336),9,"1.1"" GS-CMOS",21.4-50.6 H / 12.3-28.9 V / 24.4-58 D,ir,IP66,,,,0
+dahua-itc952-su2f-pqe-c2r1-lzf1640,Dahua,ITC952-SU2F-PQE-C2R1-LZF1640,box,9MP (4096x2336),9,"1.1"" GS-CMOS",22.3-53.0 H / 13.8-32.3 V / 26.0-61.9 D,color,IP66,,,,0
+dahua-itc952-su2f-pqe-c2r1-lzf55-gl,Dahua,ITC952-SU2F-PQE-C2R1-LZF55-GL,box,9MP (4096x2336),9,"1.1"" GS-CMOS",15.9 H / 9.73 V / 18.7 D,color,IP66,,,,0
 dahua-mptz1100-2030ra,Dahua,MPTZ1100-2030RA,ptz,1080p,2.42,"1/2.8"" CMOS",2.77-67.8,ir,IP66,,true,,0
 dahua-mptz3300-2030ura-nt,Dahua,MPTZ3300-2030URA-NT,ptz,2MP (1920x1080),2,"1/2.8"" Exmor CMOS",67.8-2.77 H,ir,IP66,,,,0
+dahua-mptz4400-2030ulb-nt,Dahua,MPTZ4400-2030ULB-NT,ptz,2MP,2,"1/2.8"" CMOS",67.8-2.77h,,IP67,,true,,0
 dahua-p3ae-pv-4g,Dahua,P3AE-PV-4G,ptz,3MP,3,"1/2.8"" CMOS","73.85 horizontal (43.43 vertical, 86.56 diagonal)",hybrid,IP66,,true,2024,0
 dahua-p3as-pv,Dahua,P3AS-PV,ptz,3MP,3,"1/2.8"" CMOS","83 horizontal (45 vertical, 98 diagonal)",hybrid,IP66,,true,2025,0
 dahua-p3b-pv,Dahua,P3B-PV,ptz,3MP,3,"1/2.7"" CMOS","87 horizontal (44 vertical, 105 diagonal)",hybrid,IP66,,true,,0
@@ -7759,9 +7905,11 @@ dahua-sd50230i-hc,Dahua,SD50230I-HC,ptz,2MP,2,"1/2.8"" STARVIS CMOS",H: 67.8-2.4
 dahua-sd50230u-hni,Dahua,SD50230U-HNI,ptz,2MP,2,"1/2.8"" STARVIS CMOS",H: 67.8-2.4,,IP67,IK10,true,,0
 dahua-sd50232-hc-la,Dahua,SD50232-HC-LA,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 60.14-2.75,,IP67,IK10,,,0
 dahua-sd50232gb-hnr,Dahua,SD50232GB-HNR,ptz,2MP,2,"1/2.8"" STARVIS CMOS","H: 58.4-3.0, V: 33.4-1.7",none,IP67,IK10,true,,0
+dahua-sd50232mb-hnr,Dahua,SD50232MB-HNR,ptz,2MP,2,"1/2.8"" CMOS",H: 55.8-2.3; V: 31.9-1.3; D: 63.7-2.7,none,IP67,IK10,,,0
 dahua-sd50232xa-hnr,Dahua,SD50232XA-HNR,ptz,2MP (1920x1080),2,"1/2.8"" STARVIS CMOS",62.8-2.2 H / 36.7-1.3 V / 69.2-2.6 D,ir,IP67,IK10,true,,0
 dahua-sd50430u-hni,Dahua,SD50430U-HNI,ptz,4MP,4,"1/3"" CMOS",H: 60-2.2,,IP67,IK10,true,,0
 dahua-sd50432gb-hnr,Dahua,SD50432GB-HNR,ptz,4MP,4,"1/2.8"" CMOS",55.8-2.3,ir,IP67,IK10,false,,0
+dahua-sd50432mb-hnr,Dahua,SD50432MB-HNR,ptz,4MP,4,"1/2.8"" CMOS",H: 55.8-2.3; V: 31.9-1.3; D: 63.7-2.7,,IP67,IK10,,,0
 dahua-sd50432xa-hnr,Dahua,SD50432XA-HNR,ptz,4MP (2560x1440),4,"1/2.8"" STARVIS CMOS",61.6-2.1 H / 35.1-1.3 V / 68.2-2.5 D,ir,IP67,IK10,true,,0
 dahua-sd52c225-hc-la,Dahua,SD52C225-HC-LA,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 58.5-2.8,,IP67,IK10,,,0
 dahua-sd52c225db-hc,Dahua,SD52C225DB-HC,ptz,2MP,2,"1/2.8"" CMOS",59.7-3.5 horizontal,color,,IK10,,2025,0
@@ -7770,9 +7918,11 @@ dahua-sd52c225u-hni,Dahua,SD52C225U-HNI,ptz,2MP,2,"1/2.8"" STARVIS CMOS",H: 62.8
 dahua-sd52c230u-hni,Dahua,SD52C230U-HNI,ptz,1080P,2,"1/2.8"" STARVIS CMOS",67.8-2.4 horizontal,hybrid,,IK10,,,0
 dahua-sd52c232-hc-la,Dahua,SD52C232-HC-LA,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 60.14-2.75,,IP67,IK10,,,0
 dahua-sd52c232gb-hnr,Dahua,SD52C232GB-HNR,ptz,1080p,2,"1/2.8"" STARVIS CMOS",58.4-3.0 (H),,,IK10,false,,0
+dahua-sd52c232mb-hnr,Dahua,SD52C232MB-HNR,ptz,2MP,2,"1/2.8"" CMOS",H: 58.4-3.0; V: 33.4-1.7; D: 66.4-3.4,none,,IK10,,,0
 dahua-sd52c430i-hc,Dahua,SD52C430I-HC,ptz,4MP,4,"1/3"" CMOS",H: 60-2.2,,,IK10,,,0
 dahua-sd52c430u-hni,Dahua,SD52C430U-HNI,ptz,4MP,4,"1/3"" CMOS",H: 60-2.2,,,IK10,true,,0
 dahua-sd52c432gb-hnr,Dahua,SD52C432GB-HNR,ptz,4MP,4,"1/2.8"" CMOS",55.8-2.3 horizontal,none,,IK10,false,,0
+dahua-sd52c432mb-hnr,Dahua,SD52C432MB-HNR,ptz,4MP,4,"1/2.8"" CMOS",H: 55.8-2.3; V: 31.9-1.3; D: 63.7-2.7,none,,IK10,,,0
 dahua-sd59131i-hc,Dahua,SD59131I-HC,ptz,720p,1,"1/2.8"" STARVIS CMOS",H: 58.3-1.9,ir,IP66,,,,0
 dahua-sd59225-hc-la,Dahua,SD59225-HC-LA,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 61-2.8,ir,IP66,,,,0
 dahua-sd59225db-hc,Dahua,SD59225DB-HC,ptz,2MP,2,"1/2.8"" CMOS",60.6-3.2 horizontal,ir,IP66,,,2025,0
@@ -7806,6 +7956,7 @@ dahua-sd60225i-hc,Dahua,SD60225I-HC,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 62.8-2
 dahua-sd60225u-hni,Dahua,SD60225U-HNI,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 62.8-2.6,,IP67,IK10,true,,0
 dahua-sd60230i-hc,Dahua,SD60230I-HC,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 67.8-2.4,,IP67,IK10,,,0
 dahua-sd60230u-hni,Dahua,SD60230U-HNI,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 67.8-2.4,,IP67,IK10,true,,0
+dahua-sd60230u-hni-sl,Dahua,SD60230U-HNI-SL,ptz,1080p,2,"1/2.8"" STARVIS CMOS",H: 67.8-2.4,none,IP68,IK10,,,0
 dahua-sd60430i-hc,Dahua,SD60430I-HC,ptz,4MP,4,"1/3"" CMOS",H: 60-2.2,,IP67,IK10,,2018,0
 dahua-sd60430u-hni,Dahua,SD60430U-HNI,ptz,4MP,4,"1/3"" CMOS",H: 60-2.2,,IP67,IK10,true,,0
 dahua-sd60432db-hny,Dahua,SD60432DB-HNY,ptz,4MP,4,"1/2.8"" CMOS",H: 55.8-2.3; V: 31.9-1.3,color,IP67,IK10,false,,0
@@ -7904,6 +8055,7 @@ dahua-sdt4e425-4f-mb-agq-pv1,Dahua,SDT4E425-4F-MB-AGQ-PV1,ptz,4MP,4,"1/1.8"" CMO
 dahua-sdt4e425-4f-mb-agq-pv1-eau,Dahua,SDT4E425-4F-MB-AGQ-PV1-EAU,ptz,4MP,4,"1/1.8"" CMOS (overview) + 1/2.8"" CMOS (detail)","Overview H: 95, V: 52.5; Detail H: 51.9-3.0, V: 39.7-2.2",hybrid,IP67,,true,,0
 dahua-sdt4e425-8p-gb-a-pv1-sl,Dahua,SDT4E425-8P-GB-A-PV1-SL,ptz,8MP panorama + 4MP 25x PTZ,12,"1/2.7"" 8MP panorama + 1/2.8"" 4MP PTZ CMOS",180 (panorama) / detail 25x zoom,hybrid,IP66,,true,,0
 dahua-sdt4e425-8p-gb-apv1,Dahua,SDT4E425-8P-GB-APV1,ptz,8MP panoramic + 4MP PTZ,8,STARVIS CMOS,180,hybrid,IP66,,true,,0
+dahua-sdt4e425-8p-mb-a-pv1,Dahua,SDT4E425-8P-MB-A-PV1,ptz,8MP panorama + 4MP 25x PTZ,12,"1/2.7"" CMOS (panorama) + 1/2.8"" CMOS (PTZ)","Panorama H: 180, V: 86 (tilt 10-28 manual); PTZ H: 51.9-3.0; V: 39.7-2.2; D: 63.1-3.7",hybrid,IP66,,true,,0
 dahua-sdt5x225-2f-qa-0600,Dahua,SDT5X225-2F-QA-0600,ptz,2MP,2,"1/2.8"" STARVIS CMOS",59.6-4.8 horizontal (detail); 53.7 horizontal (panoramic),ir,IP67,,,2022,0
 dahua-sdt5x2425-4z4-fa,Dahua,SDT5X2425-4Z4-FA,ptz,Dual 4MP (4x overview + 4MP 25x PTZ),8,"Dual 1/1.8"" CMOS",overview 4x zoom / detail 25x zoom,hybrid,IP67,IK10,false,,0
 dahua-sdt5x405-4f-fa-0600,Dahua,SDT5X405-4F-FA-0600,ptz,Dual 4MP (4MP panorama 2688x1520 + 4MP 5x PTZ detail 2688x1520),4,"Dual 1/1.8"" CMOS (panorama + detail)",57 (panorama H) / 45-10 (detail H),hybrid,IP67,IK10,true,,0
@@ -7920,7 +8072,9 @@ dahua-sdt5x425-4z4-wajg-0832,Dahua,SDT5X425-4Z4-WAJG-0832,ptz,4MP dual-PTZ,4,"1/
 dahua-sdt6c425-4p-gb-apv-0280,Dahua,SDT6C425-4P-GB-APV-0280,ptz,4MP,4,"1/2.8"" CMOS (dual channel: panorama + detail)",panorama H: 180; detail H: 53.4-3.4,hybrid,IP66,,true,,0
 dahua-sdt6c432-4p-gb-apv-0280,Dahua,SDT6C432-4P-GB-APV-0280,ptz,4MP,4,"1/2.8"" CMOS (dual channel: panorama + detail)",panorama H: 180; detail H: 55.8-2.3,hybrid,IP66,,true,,0
 dahua-sdt6e425-8p-mb-a-pv1,Dahua,SDT6E425-8P-MB-A-PV1,ptz,8MP panorama + 4MP 25x PTZ,12,"1/2.7"" panorama + 1/2.8"" PTZ CMOS",180 horizontal (panoramic) / 51.9-3.0 (PTZ),hybrid,IP67,IK10,false,,0
+dahua-sdt6e425-8p-mb-a-pv1-s2,Dahua,SDT6E425-8P-MB-A-PV1-S2,ptz,8MP panorama + 4MP 25x PTZ,12,"1/2.7"" CMOS (panorama) + 1/2.8"" CMOS (PTZ)","Panorama H: 180, V: 86 (tilt 10-28 manual); PTZ H: 51.9-3.0; V: 39.7-2.2; D: 63.1-3.7",hybrid,IP67,IK10,true,,0
 dahua-sdt6e432-8p-mb-a-pv1,Dahua,SDT6E432-8P-MB-A-PV1,ptz,8MP panorama + 4MP 32x PTZ,12,"1/2.7"" 8MP panorama + 1/2.8"" 4MP PTZ CMOS",180 (panorama) / 55.8-2.3 (detail),hybrid,IP67,IK10,true,,0
+dahua-sdt6e432-8p-mb-a-pv1-s2,Dahua,SDT6E432-8P-MB-A-PV1-S2,ptz,8MP panorama + 4MP 32x PTZ,12,"1/2.7"" CMOS (panorama) + 1/2.8"" CMOS (PTZ)","Panorama H: 180, V: 86 (tilt 10-28 manual); PTZ H: 55.8-2.3; V: 31.9-1.3; D: 63.7-2.7",hybrid,IP67,IK10,true,,0
 dahua-sdt7c424-4f-zbzj-apv-0400,Dahua,SDT7C424-4F-ZBZJ-APV-0400,ptz,Dual 4MP (4MP panorama 2560x1440 + 4MP 24x PTZ detail 2560x1440),4,"1/1.8"" CMOS (panorama) + 1/2.8"" CMOS (detail)",95 (panorama H) / 53.1-3.4 (detail H),hybrid,IP66,,true,,0
 dahua-sdt8c442-4p-ga-apv-0280,Dahua,SDT8C442-4P-GA-APV-0280,ptz,4MP,4,"1/1.8"" CMOS (dual channel: panorama + detail)",panorama H: 200; detail H: 61.8-2.2,hybrid,IP67,,true,,0
 dahua-sdt8c842-8p-fa-apv-0280,Dahua,SDT8C842-8P-FA-APV-0280,ptz,Dual 8MP (panorama + 4K detail),16,"Dual 1/1.8"" CMOS",200 (panorama) / 61.8-2.2 (detail),hybrid,IP67,,false,,0
@@ -8010,6 +8164,7 @@ dahua-tpc-pt8641b,Dahua,TPC-PT8641B,ptz,640x512 (thermal),0.33,"Thermal: uncoole
 dahua-tpc-pt8641c,Dahua,TPC-PT8641C,ptz,640x512 (thermal),0.33,"Thermal: uncooled VOx, 640x512, 17 um pixel pitch, 8-14 um, NETD <=35 mK; optical: 1/1.8in 4MP CMOS","6.2 to 31.6 (thermal, lens dependent)",ir,IP66,,true,,0
 dahua-tpc-pt8641c-ac,Dahua,TPC-PT8641C-AC,ptz,640x512 (thermal),0.33,"Thermal: uncooled VOx, 640x512, 17 um pixel pitch, 8-14 um, NETD <=35 mK; optical: 1/1.8in 4MP CMOS",,ir,IP66,,true,,0
 dahua-tpc-pt8641d,Dahua,TPC-PT8641D,ptz,640x512 (thermal),0.33,"Thermal: vanadium oxide uncooled focal plane detector, 640x512, 17 um pixel pitch, 8-14 um, NETD <= 35 mK; optical: 1/1.8in 4MP progressive-scan CMOS",,ir,IP66,,true,,0
+dahua-tpc-pt8641d-ac,Dahua,TPC-PT8641D-AC,ptz,640x512 (thermal),0.33,"Thermal: vanadium oxide uncooled focal plane detector, 640x512, 17 um pixel pitch, 8-14 um, NETD <= 35 mK; optical: 1/1.8in 4MP CMOS","Thermal 50 mm H: 12.4, V: 9.9; 75 mm H: 8.3, V: 6.6; 100 mm H: 6.2, V: 5.0; visible H: 64.4-1.28, V: 38.37-0.72",ir,IP66,,true,,0
 dahua-tpc-pt8641g,Dahua,TPC-PT8641G,ptz,640x512 (thermal),0.33,"Thermal: uncooled VOx, 640x512, 12 um pixel pitch, 8-14 um, NETD <=20 mK; optical: 1/1.8in 4MP CMOS",,ir,IP66,,true,,0
 dahua-tpc-pt8641ma,Dahua,TPC-PT8641MA,ptz,640x512 (thermal),0.33,"Thermal: vanadium oxide uncooled focal plane detector, 640x512, 12 um pixel pitch, 8-14 um, NETD <= 35 mK; optical: 1/1.8in 4MP progressive-scan CMOS",,ir,IP66,,true,,0
 dahua-tpc-pt8641ma-t,Dahua,TPC-PT8641MA-T,ptz,640x512 (thermal),0.33,"Thermal: vanadium oxide uncooled focal plane detector, 640x512, 12 um pixel pitch, 8-14 um, NETD <= 35 mK; optical: 1/1.8in 4MP progressive-scan CMOS",,ir,IP66,,true,,0
@@ -8022,10 +8177,12 @@ dahua-tpc-sd5441,Dahua,TPC-SD5441,ptz,400x300 (thermal),0.12,"Thermal: uncooled 
 dahua-tpc-sd5441-ac,Dahua,TPC-SD5441-AC,ptz,400x300 (thermal),0.12,"Thermal: uncooled VOx, 400x300, 17 um pixel pitch, 8-14 um, NETD <50 mK; optical: 4MP CMOS",,ir,IP66,,true,,0
 dahua-tpc-sd5441-ac-v1,Dahua,TPC-SD5441-AC-V1,ptz,400x300 (thermal),0.12,"Thermal: uncooled VOx, 400x300, 12 um pixel pitch, 8-14 um, NETD <35 mK; optical: 4MP CMOS",,ir,IP66,,true,,0
 dahua-tpc-sd5441-t,Dahua,TPC-SD5441-T,ptz,400x300 (thermal),0.12,"Thermal: uncooled VOx, 400x300, 17 um pixel pitch, 8-14 um, NETD <=35 mK; optical: 1/2.8in CMOS 4MP",,ir,IP66,,true,,0
+dahua-tpc-sd5441-v1,Dahua,TPC-SD5441-V1,ptz,400x300 (thermal),0.12,"Thermal: vanadium oxide uncooled focal plane detector, 400x300, 12 um pixel pitch, 8-14 um, NETD < 35 mK; optical: 1/2.8in 4MP CMOS","Thermal 13 mm H: 21.24, V: 15.94; 19 mm H: 14.5, V: 10.9; 25 mm H: 11, V: 8.2; 35 mm H: 7.85, V: 5.89; 50 mm H: 5.5, V: 4.12",ir,IP66,,true,,0
 dahua-tpc-sd5641,Dahua,TPC-SD5641,ptz,640x512 (thermal),0.33,"Thermal: uncooled VOx, 640x512, 12 um pixel pitch, 8-14 um, NETD <=35 mK; optical: 1/2.8in 4MP CMOS",,ir,IP66,,true,,0
 dahua-tpc-sd5641-ac,Dahua,TPC-SD5641-AC,ptz,640x512 (thermal),0.33,"Thermal: uncooled VOx, 640x512, 12 um pixel pitch, 8-14 um, NETD <=50 mK; optical: 1/2.8in 4MP CMOS",,ir,IP66,,true,,0
 dahua-tpc-sd5641-ac-v1,Dahua,TPC-SD5641-AC-V1,ptz,640x512 (thermal),0.33,"Thermal: uncooled VOx, 640x512, 12 um pixel pitch, 8-14 um, NETD <=50 mK; optical: 1/2.8in 4MP CMOS",,ir,IP66,,true,,0
 dahua-tpc-sd5641-t,Dahua,TPC-SD5641-T,ptz,640x512 (thermal),0.33,"Thermal: uncooled VOx, 640x512, 12 um pixel pitch, 8-14 um, NETD <=35 mK; optical: 1/2.8in CMOS 4MP",,ir,IP66,,true,,0
+dahua-tpc-sd5641-v1,Dahua,TPC-SD5641-V1,ptz,640x512 (thermal),0.33,"Thermal: vanadium oxide uncooled focal plane detector, 640x512, 12 um pixel pitch, 8-14 um, NETD <= 35 mK; optical: 1/2.8in 4MP CMOS","Thermal 19 mm H: 23.3, V: 18.6; 25 mm H: 18.6, V: 14.8; 35 mm H: 12.6, V: 10.1; 50 mm H: 9.2, V: 7.3; visible H: 67.5-1.9, V: 39.4-1.1",ir,IP66,,true,,0
 dahua-tpc-sd8420-tb,Dahua,TPC-SD8420-TB,ptz,400x300 (thermal),0.12,"Thermal: uncooled VOx microbolometer, 400x300, 17 um pixel pitch, 7-14 um, NETD <40 mK; optical: 1/1.9in Sony CMOS 2MP (1944x1092)",,ir,IP66,,true,,0
 dahua-tpc-sd8421,Dahua,TPC-SD8421,ptz,400x300 (thermal),0.12,"Thermal: uncooled VOx, 400x300, 17 um pixel pitch, 8-14 um, NETD <40 mK; optical: 1/2.8in CMOS 2MP",15.5,ir,IP66,,,,0
 dahua-tpc-sd8421-t,Dahua,TPC-SD8421-T,ptz,400x300 (thermal),0.12,"Thermal: uncooled VOx, 400x300, 17 um pixel pitch, 8-14 um, NETD <=40 mK; optical: 1/2.8in CMOS 2MP",,ir,IP66,,,,0
@@ -22481,6 +22638,7 @@ reolink-e1-outdoor-se-poe,Reolink,E1 Outdoor SE PoE,ptz,4K UHD,8,"1/2.7"" CMOS",
 reolink-e1-outdoor-wifi,Reolink,E1 Outdoor,ptz,5MP,5,"1/2.7"" CMOS",90-50 horizontal/53-30 vertical,hybrid,IP65,,true,2020,0
 reolink-e1-pro,Reolink,E1 Pro,ptz,5MP Super HD,5,"1/2.7"" CMOS",82 horizontal/43 vertical,ir,,,true,2020,0
 reolink-e1-zoom,Reolink,E1 Zoom,ptz,4K,8,"1/2.8"" CMOS",,ir,IP20,,true,2020,1
+reolink-e331,Reolink,E331,ptz,5MP,5,"1/2.7"" CMOS",87.5 horizontal/45.4 vertical,ir,,,true,2025,0
 reolink-elite-floodlight-wifi,Reolink,Elite Floodlight WiFi,dual-lens,4K+4MP dual-lens,8,"1/2.7"" CMOS","180 horizontal, 59 vertical",hybrid,IP66,,true,2025,0
 reolink-elite-pro-floodlight-poe,Reolink,Elite Pro Floodlight PoE,dual-lens,16MP dual-lens,16,"Dual 1/2.7"" CMOS (8MP each)","180 horizontal, 55 vertical",hybrid,IP66,,true,2026,0
 reolink-elite-pro-wifi,Reolink,Elite Pro WiFi,dual-lens,16MP,16,"1/2.7"" CMOS","180 horizontal, 55 vertical",hybrid,IP67,,true,,0
@@ -24981,6 +25139,8 @@ tenda-tc2,Tenda,TC2,turret,1080p,2,"1/3"" Progressive Scan CMOS sensor",98.3,hyb
 tenda-tc3b24c,Tenda,TC3B24C,bullet,4MP 2K,4,"1/3"" Progressive Scan CMOS sensor",79.1,hybrid,IP67,,,,0
 tenda-tc3t24c,Tenda,TC3T24C,turret,4MP 2K,4,"1/3"" Progressive Scan CMOS sensor",79.1,hybrid,IP67,,,,0
 tenda-tc5,Tenda,TC5,turret,5MP,5,"1/3"" Progressive Scan CMOS sensor",101.8,hybrid,,,,,0
+tiandy-tc-a32l4-1-a-e-2-8-12mm,Tiandy,TC-A32L4 1/A/E/2.8-12mm,bullet,2MP,2,"1/2.8"" CMOS",H: 95.7-35.5,hybrid,IP67,,,,0
+tiandy-tc-a32m4-1-a-e-2-8-12mm,Tiandy,TC-A32M4 1/A/E/2.8-12mm,dome,2MP,2,"1/2.8"" CMOS",H: 100-35.5,color,IP66,,,,0
 tiandy-tc-a35555-0-a-2-8-12mm-9-54mm-v2-0,Tiandy,TC-A35555 0/A/2.8-12mm/9-54mm/V2.0,ptz,5MP (dual-sensor),5,"Panorama 1/1.8"" CMOS + Detail 1/1.8"" CMOS","Panorama H: 114.2-47.94, V: 59.36-27.07; Detail H: 41-9.1, V: 23.4-5.2",hybrid,IP66,,,,0
 tiandy-tc-c320n-1anb-28,Tiandy,TC-C320N 1ANB-28,turret,2MP,2,"1/3"" CMOS","H: 90.7, V: 50.9, D: 102.7",hybrid,,,,,0
 tiandy-tc-c320n-1cnb-28,Tiandy,TC-C320N 1CNB-28,turret,2MP,2,"1/3"" CMOS","H: 93, V: 53, D: 104.8",ir,,,,,0
@@ -24996,18 +25156,35 @@ tiandy-tc-c321n-i3-e-y-2-8mm,Tiandy,TC-C321N I3/E/Y/2.8mm,bullet,2MP,2,"1/2.9"" 
 tiandy-tc-c321n-i3-e-y-4mm,Tiandy,TC-C321N I3/E/Y/4mm,bullet,2MP,2,"1/2.9"" CMOS","H: 78.6, V: 43.2, D: 89.7",ir,IP67,,,,0
 tiandy-tc-c324s-2eta-28,Tiandy,TC-C324S 2ETA-28,bullet,2MP,2,"1/2.9"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,,,,0
 tiandy-tc-c324s-2eta-4,Tiandy,TC-C324S 2ETA-4,bullet,2MP,2,"1/2.9"" CMOS","H: 84.8, V: 44, D: 99.7",hybrid,IP67,,,,0
+tiandy-tc-c32bg-i5w-e-4mm,Tiandy,TC-C32BG I5W/E/4mm,bullet,2MP,2,"1/2.8"" CMOS",H: 88.4,hybrid,IP67,,,,0
 tiandy-tc-c32cn-i3w-u-wifi-2-8mm-v4-0,Tiandy,TC-C32CN I3W/U/WIFI/2.8mm/V4.0,bullet,2MP,2,"1/2.9"" CMOS","H: 103.8, V: 56.8, D: 120.4",hybrid,IP65,,true,,0
 tiandy-tc-c32gn,Tiandy,TC-C32GN,bullet,1080p,2,"1/2.8"" CMOS",84 horizontal,ir,IP66,,false,2021,0
 tiandy-tc-c32gp,Tiandy,TC-C32GP,bullet,1080p,2,"1/2.8"" Starlight CMOS",108 horizontal,ir,IP67,,false,2022,0
+tiandy-tc-c32gs-i5-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C32GS I5/E/Y/C/SD/2.8mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1",ir,IP67,,,,0
+tiandy-tc-c32gs-i5-e-y-c-sd-4mm-v4-2,Tiandy,TC-C32GS I5/E/Y/C/SD/4mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 83.3, V: 46.8",ir,IP67,,,,0
+tiandy-tc-c32hn-i3-e-y-c-sd-2-8mm-v4-1,Tiandy,TC-C32HN I3/E/Y/C/SD/2.8mm/V4.1,turret,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP66,,,,0
+tiandy-tc-c32hs-i3-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C32HS I3/E/Y/C/SD/2.8mm/V4.2,turret,2MP,2,"1/2.8"" CMOS",H: 99.7,ir,IP66,,,,0
 tiandy-tc-c32kn-3era-28,Tiandy,TC-C32KN 3ERA-28,dome,2MP,2,"1/2.7"" CMOS","H: 102.4, V: 57.2, D: 117.3",hybrid,IP67,IK10,,,0
+tiandy-tc-c32kn-i3-a-e-y-2-8-12mm-v4-2,Tiandy,TC-C32KN I3/A/E/Y/2.8-12mm/V4.2,dome,2MP,2,"1/2.8"" CMOS","H: 105.6-29, V: 58.8-16.6, D: 120.9-33.4",ir,IP66,,,,0
+tiandy-tc-c32kn-i3-e-2-8mm-v2-0,Tiandy,TC-C32KN I3/E/2.8mm/V2.0,dome,2MP,2,"1/2.9"" CMOS",H: 97.4,ir,IP66,IK10,,,0
 tiandy-tc-c32kn-i3-e-y-2-8mm-v4-1,Tiandy,TC-C32KN I3/E/Y/2.8mm/V4.1,dome,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP66,IK10,,,0
+tiandy-tc-c32kn-i3-e-y-c-sd-2-8mm-v4-3,Tiandy,TC-C32KN I3/E/Y/C/SD/2.8mm/V4.3,dome,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP66,,,,0
+tiandy-tc-c32kn-i3-e-y-wifi-2-8mm-v4-0,Tiandy,TC-C32KN I3/E/Y/WIFI/2.8mm/V4.0,dome,2MP,2,"1/2.8"" CMOS","H: 98.5, V: 55.7",ir,IP67,IK10,,,0
 tiandy-tc-c32ks-2ata-28,Tiandy,TC-C32KS 2ATA-28,dome,2MP,2,"1/2.9"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,IK08,,,0
 tiandy-tc-c32ks-2ctb-2812,Tiandy,TC-C32KS 2CTB-2812,dome,2MP,2,"1/2.9"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",ir,IP67,IK08,,,0
+tiandy-tc-c32ks-i3-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C32KS I3/E/Y/C/SD/2.8mm/V4.2,dome,2MP,2,"1/2.8"" CMOS",H: 99.7,ir,IP66,IK10,,,0
 tiandy-tc-c32ks-i3-e-y-m-2-8mm-v4-1,Tiandy,TC-C32KS I3/E/Y/M/2.8mm/V4.1,dome,2MP,2,"1/2.8"" CMOS","H: 104.9, V: 56.5, D: 119.2",ir,IP66,IK10,,,0
+tiandy-tc-c32ks-i3-e-y-m-h-2-8mm-v4-0,Tiandy,TC-C32KS I3/E/Y/M/H/2.8mm/V4.0,dome,2MP,2,"1/2.8"" CMOS",H: 101.3,ir,IP67,IK10,,,0
 tiandy-tc-c32ks-i3-e-y-s-2-8mm-v5-0,Tiandy,TC-C32KS I3/E/Y/S/2.8mm/V5.0,dome,2MP,2,"1/2.8"" CMOS","H: 104.9, V: 56.5, D: 119.2",ir,IP66,IK10,,,0
+tiandy-tc-c32lg-i8w-e-a-2-8-12mm,Tiandy,TC-C32LG I8W/E/A/2.8-12mm,bullet,2MP,2,"1/2.8"" CMOS",H: 95.7-35.5,hybrid,IP67,,,,0
+tiandy-tc-c32mn-i3-a-e-y-m-2-8-12mm-v4-0,Tiandy,TC-C32MN I3/A/E/Y/M/2.8-12mm/V4.0,dome,2MP,2,"1/2.8"" CMOS",H: 105.6-29,ir,IP67,IK10,,,0
+tiandy-tc-c32mp-i3-e-2-8-12mm,Tiandy,TC-C32MP I3/E/2.8-12mm,dome,2MP,2,"1/2.8"" CMOS",H: 103.3-37.5,ir,IP66,IK10,,,0
+tiandy-tc-c32mp-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C32MP I5/A/E/Y/M/H/2.7-13.5mm/V4.0,dome,2MP,2,"1/2.8"" CMOS",H: 103.9-35.3,ir,IP67,IK10,,,0
 tiandy-tc-c32ms,Tiandy,TC-C32MS,dome,1080p,2,"1/2.8"" Super Starlight CMOS",108 horizontal,hybrid,IP67,,true,2022,0
 tiandy-tc-c32ms-3lha-27135,Tiandy,TC-C32MS 3LHA-27135,dome,2MP,2,"1/2.8"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",hybrid,IP67,IK10,true,,0
 tiandy-tc-c32ms-i3-a-e-y-m-c-h-2-7-13-5mm-v4-0,Tiandy,TC-C32MS I3/A/E/Y/M/C/H/2.7-13.5mm/V4.0,dome,2MP,2,"1/2.8"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",ir,IP66,IK10,,,0
+tiandy-tc-c32ms-i3-a-e-y-m-s-h-2-7-13-5mm-v4-0,Tiandy,TC-C32MS I3/A/E/Y/M/S/H/2.7-13.5mm/V4.0,dome,2MP,2,"1/2.8"" CMOS","H: 96.4-31.4, V: 53.5-17.7",ir,IP66,IK10,,,0
+tiandy-tc-c32ms-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C32MS I5/A/E/Y/M/H/2.7-13.5mm/V4.0,dome,2MP,2,"1/2.8"" CMOS",H: 102.8-31.3,ir,IP67,IK10,,,0
 tiandy-tc-c32qn,Tiandy,TC-C32QN,bullet,1080p,2,"1/2.8"" CMOS",108-30 horizontal,ir,IP66,IK10,false,2021,0
 tiandy-tc-c32qn-2ena-28,Tiandy,TC-C32QN 2ENA-28,bullet,2MP,2,"1/3"" CMOS","H: 90.7, V: 50.9, D: 102.7",hybrid,IP67,,,,0
 tiandy-tc-c32qn-2ena-4,Tiandy,TC-C32QN 2ENA-4,bullet,2MP,2,"1/3"" CMOS","H: 75.3, V: 39.9, D: 87.1",hybrid,IP67,,,,0
@@ -25019,30 +25196,64 @@ tiandy-tc-c32qv-2fna-28,Tiandy,TC-C32QV 2FNA-28,bullet,2MP,2,"1/2.9"" CMOS","H: 
 tiandy-tc-c32qv-2fna-4,Tiandy,TC-C32QV 2FNA-4,bullet,2MP,2,"1/2.9"" CMOS","H: 77.6, V: 42.9, D: 89.9",color,IP67,,,,0
 tiandy-tc-c32rn-i5-e-y-qx-2-8mm-v4-2,Tiandy,TC-C32RN I5/E/Y/QX/2.8mm/V4.2,panoramic,2MP,2,"1/3"" CMOS","H: 92.8, V: 52.2, D: 106.5",ir,IP67,,,,0
 tiandy-tc-c32rn-i5-e-y-qx-4mm-v4-2,Tiandy,TC-C32RN I5/E/Y/QX/4mm/V4.2,panoramic,2MP,2,"1/3"" CMOS","H: 78.3, V: 44.1, D: 89.3",ir,IP67,,,,0
+tiandy-tc-c32sn-i3-a-e-y-m-2-8-12mm-v4-0,Tiandy,TC-C32SN I3/A/E/Y/M/2.8-12mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 105.6-29,ir,IP67,,,,0
+tiandy-tc-c32sp-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C32SP I5/A/E/Y/M/H/2.7-13.5mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 103.9-35.3,ir,IP67,,,,0
 tiandy-tc-c32ss-i3-a-e-y-m-c-h-2-7-13-5mm-v4-0,Tiandy,TC-C32SS I3/A/E/Y/M/C/H/2.7-13.5mm/V4.0,turret,2MP,2,"1/2.8"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",ir,IP66,,,,0
+tiandy-tc-c32ss-i3-a-e-y-m-s-h-2-7-13-5mm-v4-0,Tiandy,TC-C32SS I3/A/E/Y/M/S/H/2.7-13.5mm/V4.0,turret,2MP,2,"1/2.8"" CMOS","H: 96.4-31.4, V: 53.5-17.7",ir,IP66,,,,0
+tiandy-tc-c32ss-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C32SS I5/A/E/Y/M/H/2.7-13.5mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 102.8-31.3,ir,IP67,,,,0
+tiandy-tc-c32tp-i8-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C32TP I8/A/E/Y/M/H/2.7-13.5mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 103.9-35.3,ir,IP67,IK10,,,0
+tiandy-tc-c32ts-i8-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C32TS I8/A/E/Y/M/H/2.7-13.5mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 102.8-31.3,ir,IP67,,,,0
 tiandy-tc-c32un-i8-a-e-y-m-2-8-12mm-v4-0,Tiandy,TC-C32UN I8/A/E/Y/M/2.8-12mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS","H: 105.6-29, V: 58.8-16.6, D: 120.9-33.4",ir,IP67,,,,0
+tiandy-tc-c32up-w-e-y-m-h-4mm,Tiandy,TC-C32UP W/E/Y/M/H/4mm,bullet,2MP,2,"1/2.8"" CMOS",H: 78.6,color,IP67,,,,0
 tiandy-tc-c32us-2gtb-2812,Tiandy,TC-C32US 2GTB-2812,bullet,2MP,2,"1/2.9"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",ir,IP67,,,,0
 tiandy-tc-c32us-3lha-27135,Tiandy,TC-C32US 3LHA-27135,bullet,2MP,2,"1/2.8"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",hybrid,IP67,,true,,0
 tiandy-tc-c32us-i8-a-e-y-m-c-h-2-7-13-5mm-v4-0,Tiandy,TC-C32US I8/A/E/Y/M/C/H/2.7-13.5mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",ir,IP67,,,,0
+tiandy-tc-c32us-i8-a-e-y-m-s-h-2-7-13-5mm-v4-0,Tiandy,TC-C32US I8/A/E/Y/M/S/H/2.7-13.5mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS","H: 96.4-31.4, V: 53.5-17.7",ir,IP67,,,,0
 tiandy-tc-c32wn-3era-28,Tiandy,TC-C32WN 3ERA-28,bullet,2MP,2,"1/2.7"" CMOS","H: 102.4, V: 57.2, D: 117.3",hybrid,IP67,,,,0
 tiandy-tc-c32wn-3era-4,Tiandy,TC-C32WN 3ERA-4,bullet,2MP,2,"1/2.7"" CMOS","H: 80.2, V: 43.9, D: 93.1",hybrid,IP67,,,,0
 tiandy-tc-c32wn-i5-e-y-2-8mm-v4-1,Tiandy,TC-C32WN I5/E/Y/2.8mm/V4.1,bullet,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP67,,,,0
 tiandy-tc-c32wn-i5-e-y-4mm-v4-1,Tiandy,TC-C32WN I5/E/Y/4mm/V4.1,bullet,2MP,2,"1/2.8"" CMOS","H: 87.7, V: 46.8, D: 98.6",ir,IP67,,,,0
 tiandy-tc-c32wn-i5-e-y-m-2-8mm-v4-1,Tiandy,TC-C32WN I5/E/Y/M/2.8mm/V4.1,bullet,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP67,,,,0
 tiandy-tc-c32wn-i5-e-y-m-4mm-v4-1,Tiandy,TC-C32WN I5/E/Y/M/4mm/V4.1,bullet,2MP,2,"1/2.8"" CMOS","H: 87.7, V: 46.8, D: 98.6",ir,IP67,,,,0
+tiandy-tc-c32wn-i5-e-y-wifi-4mm,Tiandy,TC-C32WN I5/E/Y/WIFI/4mm,bullet,2MP,2,"1/2.9"" CMOS","H: 80.9, V: 44.1",ir,IP67,,,,0
+tiandy-tc-c32wp-i5-e-y-2-8mm,Tiandy,TC-C32WP I5/E/Y/2.8mm,bullet,2MP,2,"1/2.8"" CMOS",H: 107,ir,IP67,,,,0
+tiandy-tc-c32wp-i5-e-y-4mm,Tiandy,TC-C32WP I5/E/Y/4mm,bullet,2MP,2,"1/2.8"" CMOS",H: 87.6,ir,IP67,,,,0
+tiandy-tc-c32wp-i5-e-y-m-2-8mm,Tiandy,TC-C32WP I5/E/Y/M/2.8mm,bullet,2MP,2,"1/2.8"" CMOS",H: 107,ir,IP67,,,,0
+tiandy-tc-c32wp-i5-e-y-m-4mm,Tiandy,TC-C32WP I5/E/Y/M/4mm,bullet,2MP,2,"1/2.8"" CMOS",H: 87.6,ir,IP67,,,,0
+tiandy-tc-c32wp-i5w-e-y-2-8mm-v4-2,Tiandy,TC-C32WP I5W/E/Y/2.8mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 100.6, V: 56.5",hybrid,IP67,,,,0
+tiandy-tc-c32wp-i5w-e-y-4mm-v4-2,Tiandy,TC-C32WP I5W/E/Y/4mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 83.3, V: 46.8",hybrid,IP67,,,,0
+tiandy-tc-c32wp-w-e-y-2-8mm-v4-0,Tiandy,TC-C32WP W/E/Y/2.8mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 99.7,color,IP67,,,,0
+tiandy-tc-c32wp-w-e-y-4mm-v4-0,Tiandy,TC-C32WP W/E/Y/4mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 83.3,color,IP67,,,,0
+tiandy-tc-c32wp-w-e-y-m-2-8mm-v4-0,Tiandy,TC-C32WP W/E/Y/M/2.8mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 99.7,color,IP67,,,,0
+tiandy-tc-c32wp-w-e-y-m-4mm-v4-0,Tiandy,TC-C32WP W/E/Y/M/4mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 83.3,color,IP67,,,,0
 tiandy-tc-c32ws-3era-28,Tiandy,TC-C32WS 3ERA-28,bullet,2MP,2,"1/2.8"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,,,,0
 tiandy-tc-c32ws-3era-4,Tiandy,TC-C32WS 3ERA-4,bullet,2MP,2,"1/2.8"" CMOS","H: 84.8, V: 44, D: 99.7",hybrid,IP67,,,,0
 tiandy-tc-c32ws-3lra-28,Tiandy,TC-C32WS 3LRA-28,bullet,2MP,2,"1/2.7"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,,,,0
 tiandy-tc-c32ws-3lra-4,Tiandy,TC-C32WS 3LRA-4,bullet,2MP,2,"1/2.7"" CMOS","H: 84.8, V: 44, D: 99.7",hybrid,IP67,,,,0
+tiandy-tc-c32ws-i5-e-y-m-2-8mm-v4-0,Tiandy,TC-C32WS I5/E/Y/M/2.8mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 101.3,ir,IP67,,,,0
+tiandy-tc-c32ws-i5-e-y-m-4mm-v4-0,Tiandy,TC-C32WS I5/E/Y/M/4mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 85.1,ir,IP67,,,,0
+tiandy-tc-c32ws-i5-e-y-m-h-2-8mm-v4-0,Tiandy,TC-C32WS I5/E/Y/M/H/2.8mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 101.3,ir,IP67,,,,0
+tiandy-tc-c32ws-i5-e-y-m-h-4mm-v4-0,Tiandy,TC-C32WS I5/E/Y/M/H/4mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS",H: 85.1,ir,IP67,,,,0
+tiandy-tc-c32ws-i5-e-y-m-s-h-2-8mm-v4-0,Tiandy,TC-C32WS I5/E/Y/M/S/H/2.8mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS","H: 101.7, V: 57.4, D: 116.8",ir,IP67,,,,0
+tiandy-tc-c32ws-i5-e-y-m-s-h-4mm-v4-0,Tiandy,TC-C32WS I5/E/Y/M/S/H/4mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS","H: 85.2, V: 44.9, D: 96.3",ir,IP67,,,,0
+tiandy-tc-c32ws-i5-e-y-s-h-2-8mm-v4-0,Tiandy,TC-C32WS I5/E/Y/S/H/2.8mm/V4.0,bullet,2MP,2,"1/2.8"" CMOS","H: 101.7, V: 57.4",ir,IP67,,,,0
 tiandy-tc-c32ws-i5w-e-y-s-2-8mm-v5-0,Tiandy,TC-C32WS I5W/E/Y/S/2.8mm/V5.0,bullet,2MP,2,"1/2.8"" CMOS","H: 104.9, V: 56.5, D: 119.2",ir,IP67,,,,0
 tiandy-tc-c32ws-i5w-e-y-s-4mm-v5-0,Tiandy,TC-C32WS I5W/E/Y/S/4mm/V5.0,bullet,2MP,2,"1/2.8"" CMOS","H: 85.2, V: 44.9, D: 95.5",ir,IP67,,,,0
 tiandy-tc-c32xn-2ena-28,Tiandy,TC-C32XN 2ENA-28,turret,2MP,2,"1/3"" CMOS","H: 90.7, V: 50.9, D: 102.7",hybrid,,,,,0
 tiandy-tc-c32xn-3era-28,Tiandy,TC-C32XN 3ERA-28,turret,2MP,2,"1/2.7"" CMOS","H: 102.4, V: 57.2, D: 117.3",hybrid,IP67,,,,0
 tiandy-tc-c32xn-i3-e-y-2-8mm-v4-1,Tiandy,TC-C32XN I3/E/Y/2.8mm/V4.1,turret,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP66,,,,0
 tiandy-tc-c32xn-i3-e-y-m-2-8mm-v4-1,Tiandy,TC-C32XN I3/E/Y/M/2.8mm/V4.1,turret,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP66,,,,0
+tiandy-tc-c32xp-i3-e-y-2-8mm-v4-0,Tiandy,TC-C32XP I3/E/Y/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 99.7,ir,IP67,,,,0
+tiandy-tc-c32xp-i3-e-y-m-2-8mm-v4-0,Tiandy,TC-C32XP I3/E/Y/M/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 99.7,ir,IP67,,,,0
+tiandy-tc-c32xp-i3w-e-y-2-8mm-v4-2,Tiandy,TC-C32XP I3W/E/Y/2.8mm/V4.2,turret,2MP,2,"1/2.8"" CMOS","H: 100.6, V: 56.5",hybrid,IP66,,,,0
+tiandy-tc-c32xp-w-e-y-2-8mm-v4-0,Tiandy,TC-C32XP W/E/Y/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 99.7,color,IP66,,,,0
+tiandy-tc-c32xp-w-e-y-m-2-8mm-v4-0,Tiandy,TC-C32XP W/E/Y/M/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 99.7,color,IP66,,,,0
 tiandy-tc-c32xs-2eta-28,Tiandy,TC-C32XS 2ETA-28,turret,2MP,2,"1/2.9"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,,,,0
 tiandy-tc-c32xs-3era-28,Tiandy,TC-C32XS 3ERA-28,turret,2MP,2,"1/2.8"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,,,,0
 tiandy-tc-c32xs-3lra-28,Tiandy,TC-C32XS 3LRA-28,turret,2MP,2,"1/2.7"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,,,,0
+tiandy-tc-c32xs-i3-e-y-m-2-8mm-v4-0,Tiandy,TC-C32XS I3/E/Y/M/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 101.3,ir,IP67,,,,0
+tiandy-tc-c32xs-i3-e-y-m-h-2-8mm-v4-0,Tiandy,TC-C32XS I3/E/Y/M/H/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 101.3,ir,IP67,,,,0
+tiandy-tc-c32xs-i3-e-y-m-s-h-2-8mm-v4-0,Tiandy,TC-C32XS I3/E/Y/M/S/H/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS","H: 101.7, V: 57.4, D: 116.8",hybrid,IP66,,,,0
 tiandy-tc-c32xs-i3w-e-y-s-2-8mm-v5-0,Tiandy,TC-C32XS I3W/E/Y/S/2.8mm/V5.0,turret,2MP,2,"1/2.8"" CMOS","H: 104.9, V: 56.5, D: 119.2",ir,IP66,,,,0
 tiandy-tc-c32xv-2fna-28,Tiandy,TC-C32XV 2FNA-28,turret,2MP,2,"1/2.9"" CMOS","H: 99, V: 53.4, D: 116.3",color,IP66,,,,0
 tiandy-tc-c340n-1ana-28,Tiandy,TC-C340N 1ANA-28,turret,,4,,,,,,,,0
@@ -25053,11 +25264,19 @@ tiandy-tc-c344s-2eta-4,Tiandy,TC-C344S 2ETA-4,bullet,4MP,4,"1/3"" CMOS","H: 84.8
 tiandy-tc-c345n-2ana-28,Tiandy,TC-C345N 2ANA-28,panoramic,2MP,2,"1/3"" CMOS","H: 94.9, V: 51.8, D: 110",hybrid,IP67,,,,0
 tiandy-tc-c34cn-9ata-28,Tiandy,TC-C34CN 9ATA-28,bullet,4MP,4,"1/2.8"" CMOS","H: 103.8, V: 56.8, D: 120.4",hybrid,IP65,,true,,0
 tiandy-tc-c34gs,Tiandy,TC-C34GS,bullet,4MP QHD,4,"1/2.7"" Starlight CMOS",102 horizontal,ir,IP67,,false,2022,0
+tiandy-tc-c34gs-i5-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C34GS I5/E/Y/C/SD/2.8mm/V4.2,bullet,4MP,4,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP67,,,,0
+tiandy-tc-c34gs-i5-e-y-c-sd-4mm-v4-2,Tiandy,TC-C34GS I5/E/Y/C/SD/4mm/V4.2,bullet,4MP,4,"1/2.7"" CMOS","H: 91, V: 46.4, D: 107",ir,IP67,,,,0
 tiandy-tc-c34hn,Tiandy,TC-C34HN,turret,4MP QHD,4,"1/2.7"" Starlight CMOS",102 horizontal,ir,IP66,IK10,false,2022,0
+tiandy-tc-c34hs-i3-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C34HS I3/E/Y/C/SD/2.8mm/V4.2,turret,4MP,4,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP66,,,,0
+tiandy-tc-c34kn-i3-a-e-y-2-8-12mm-v4-2,Tiandy,TC-C34KN I3/A/E/Y/2.8-12mm/V4.2,dome,4MP,4,"1/2.9"" CMOS","H: 104.7-30.3, V: 56.5-17.2, D: 120.9-34.8",ir,IP66,,,,0
+tiandy-tc-c34kn-i3-e-y-c-sd-2-8mm-v4-3,Tiandy,TC-C34KN I3/E/Y/C/SD/2.8mm/V4.3,dome,4MP,4,"1/2.9"" CMOS","H: 100.1, V: 54.3, D: 113.9",ir,IP66,,,,0
 tiandy-tc-c34ks-2ata-28,Tiandy,TC-C34KS 2ATA-28,dome,4MP,4,"1/3"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,IK08,,,0
 tiandy-tc-c34ks-2ctb-2812,Tiandy,TC-C34KS 2CTB-2812,dome,4MP,4,"1/3"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",ir,IP67,IK08,,,0
+tiandy-tc-c34ks-i3-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C34KS I3/E/Y/C/SD/2.8mm/V4.2,dome,4MP,4,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP66,IK10,,,0
+tiandy-tc-c34lp-i8-a-e-y-m-h-2-7-13-5mm,Tiandy,TC-C34LP I8/A/E/Y/M/H/2.7-13.5mm,bullet,4MP,4,"1/1.8"" CMOS",H: 114-49,hybrid,IP67,,,,0
 tiandy-tc-c34lq-lk-i3w-a-e-y-m-s-h-lpr-2-8-12mm,Tiandy,TC-C34LQ LK/I3W/A/E/Y/M/S/H/LPR/2.8-12mm,bullet,4MP,4,"1/1.8"" CMOS","H: 49.4-105.1, V: 27.9-59.2, D: 56.6-117.9",hybrid,IP67,,true,,0
 tiandy-tc-c34lq-lk-i3w-a-e-y-m-s-h-lpr-8-32mm,Tiandy,TC-C34LQ LK/I3W/A/E/Y/M/S/H/LPR/8-32mm,bullet,4MP,4,"1/1.8"" CMOS","H: 15.4-42.8, V: 8.8-23.7, D: 17.6-49.6",hybrid,IP67,,true,,0
+tiandy-tc-c34mp-i5-a-e-y-m-h-2-7-13-5mm,Tiandy,TC-C34MP I5/A/E/Y/M/H/2.7-13.5mm,dome,4MP,4,"1/1.8"" CMOS",H: 112-47.5,hybrid,IP67,IK10,,,0
 tiandy-tc-c34qn-2ena-28,Tiandy,TC-C34QN 2ENA-28,bullet,4MP,4,"1/3"" CMOS","H: 91.5, V: 51.2, D: 103.6",hybrid,IP67,,,,0
 tiandy-tc-c34qn-2ena-4,Tiandy,TC-C34QN 2ENA-4,bullet,4MP,4,"1/3"" CMOS","H: 79, V: 42.2, D: 91",hybrid,IP67,,,,0
 tiandy-tc-c34qn-2gna-28,Tiandy,TC-C34QN 2GNA-28,bullet,4MP,4,"1/3"" CMOS","H: 91.5, V: 51.2, D: 103.6",ir,IP67,,,,0
@@ -25067,28 +25286,52 @@ tiandy-tc-c34qn-i3-e-y-4mm-v5-0,Tiandy,TC-C34QN I3/E/Y/4mm/V5.0,bullet,4MP,4,"1/
 tiandy-tc-c34qn-i5w-wifi-eu-2-8mm-v4-0,Tiandy,TC-C34QN I5W/WIFI/Eu/2.8mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS","H: 101.3, V: 56.8, D: 113.9",hybrid,IP67,,true,,0
 tiandy-tc-c34qn-i5w-wifi-eu-4mm-v4-0,Tiandy,TC-C34QN I5W/WIFI/Eu/4mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS","H: 86, V: 45.2, D: 99.1",hybrid,IP67,,true,,0
 tiandy-tc-c34sp,Tiandy,TC-C34SP,turret,4MP QHD,4,"1/2.7"" Super Starlight CMOS",102-30 horizontal,hybrid,IP67,,true,2023,0
+tiandy-tc-c34sp-w-e-y-m-2-8mm,Tiandy,TC-C34SP W/E/Y/M/2.8mm,turret,4MP,4,"1/1.8"" CMOS",H: 105.6,color,IP67,,,,0
 tiandy-tc-c34sv-4mra-28,Tiandy,TC-C34SV 4MRA-28,turret,4MP,4,"1/1.8"" CMOS","H: 100.9, V: 56.7, D: 113.7",color,IP67,,,,0
 tiandy-tc-c34un-i8-a-e-2-8-12mm-vjo4-2,Tiandy,TC-C34UN Spec:I8/A/E/2.8-12mm/VJO4.2,bullet,4MP,4,"1/2.9"" CMOS","H: 104.7-30.3, V: 56.5-17.2, D: 120.9-34.8",ir,IP67,,,,0
+tiandy-tc-c34up-w-e-y-m-4mm,Tiandy,TC-C34UP W/E/Y/M/4mm,bullet,4MP,4,"1/1.8"" CMOS",H: 90.7,color,IP67,,,,0
 tiandy-tc-c34us-2gtb-2812,Tiandy,TC-C34US 2GTB-2812,bullet,4MP,4,"1/3"" CMOS","H: 102.9-31.4, V: 55-17.9, D: 116.7-36.1",ir,IP67,,,,0
 tiandy-tc-c34uv-w-e-y-m-s-4mm,Tiandy,TC-C34UV W/E/Y/M/S/4mm,bullet,4MP,4,"1/1.8"" CMOS","H: 94.5, V: 50.2, D: 110.2",color,IP67,,,,0
 tiandy-tc-c34wp-w-e-y-2-8mm-v4-0,Tiandy,TC-C34WP W/E/Y/2.8mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS","H: 100.1, V: 57.8, D: 115.6",color,IP67,,,,0
 tiandy-tc-c34wp-w-e-y-4mm-v4-0,Tiandy,TC-C34WP W/E/Y/4mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS","H: 84.6, V: 46, D: 100",color,IP67,,,,0
+tiandy-tc-c34wp-w-e-y-m-2-8mm-v4-0,Tiandy,TC-C34WP W/E/Y/M/2.8mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS",H: 93.8,color,IP67,,,,0
+tiandy-tc-c34wp-w-e-y-m-4mm-v4-0,Tiandy,TC-C34WP W/E/Y/M/4mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS",H: 78,color,IP67,,,,0
+tiandy-tc-c34ws-i5-e-y-2-8mm-v4-0,Tiandy,TC-C34WS I5/E/Y/2.8mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS",H: 92.1,ir,IP67,,,,0
+tiandy-tc-c34ws-i5-e-y-4mm-v4-0,Tiandy,TC-C34WS I5/E/Y/4mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS",H: 76.7,ir,IP67,,,,0
+tiandy-tc-c34ws-i5-e-y-m-2-8mm-v4-0,Tiandy,TC-C34WS I5/E/Y/M/2.8mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS",H: 92.1,ir,IP67,,,,0
+tiandy-tc-c34ws-i5-e-y-m-4mm-v4-0,Tiandy,TC-C34WS I5/E/Y/M/4mm/V4.0,bullet,4MP,4,"1/2.8"" CMOS",H: 76.7,ir,IP67,,,,0
+tiandy-tc-c34ws-i5w-e-y-2-8mm-v4-2,Tiandy,TC-C34WS I5W/E/Y/2.8mm/V4.2,bullet,4MP,4,"1/2.8"" CMOS","H: 93.5, V: 52.5",hybrid,IP67,,,,0
+tiandy-tc-c34ws-i5w-e-y-4mm-v4-2,Tiandy,TC-C34WS I5W/E/Y/4mm/V4.2,bullet,4MP,4,"1/2.8"" CMOS","H: 76.7, V: 40.5",hybrid,IP67,,,,0
 tiandy-tc-c34xn-2ena-28,Tiandy,TC-C34XN 2ENA-28,turret,4MP,4,"1/3"" CMOS","H: 91.5, V: 51.2, D: 103.6",hybrid,IP66,,,,0
 tiandy-tc-c34xn-2gna-28,Tiandy,TC-C34XN 2GNA-28,turret,4MP,4,"1/3"" CMOS","H: 91.5, V: 51.2, D: 103.6",ir,,,,,0
 tiandy-tc-c34xn-i3-e-y-2-8mm-v5-0,Tiandy,TC-C34XN I3/E/Y/2.8mm/V5.0,turret,4MP,4,"1/3"" CMOS","H: 92.8, V: 52.2, D: 106.5",ir,,,,,0
 tiandy-tc-c34xp-w-e-y-2-8mm-v4-0,Tiandy,TC-C34XP W/E/Y/2.8mm/V4.0,turret,4MP,4,"1/2.8"" CMOS","H: 100.1, V: 57.8, D: 115.6",color,IP66,,,,0
+tiandy-tc-c34xp-w-e-y-m-2-8mm-v4-0,Tiandy,TC-C34XP W/E/Y/M/2.8mm/V4.0,turret,4MP,4,"1/2.8"" CMOS",H: 93.8,color,IP67,,,,0
 tiandy-tc-c34xs-2eta-28,Tiandy,TC-C34XS 2ETA-28,turret,4MP,4,"1/3"" CMOS","H: 100.3, V: 54.5, D: 116.1",hybrid,IP67,,,,0
+tiandy-tc-c34xs-i3-e-y-2-8mm-v4-0,Tiandy,TC-C34XS I3/E/Y/2.8mm/V4.0,turret,4MP,4,"1/2.8"" CMOS",H: 92.1,ir,IP67,,,,0
+tiandy-tc-c34xs-i3-e-y-m-2-8mm-v4-0,Tiandy,TC-C34XS I3/E/Y/M/2.8mm/V4.0,turret,4MP,4,"1/2.8"" CMOS",H: 92.1,ir,IP67,,,,0
+tiandy-tc-c34xs-i3w-e-y-2-8mm-v4-2,Tiandy,TC-C34XS I3W/E/Y/2.8mm/V4.2,turret,4MP,4,"1/2.8"" CMOS","H: 93.5, V: 52.5",hybrid,IP66,,,,0
+tiandy-tc-c35bq-i5w-e-4mm,Tiandy,TC-C35BQ I5W/E/4mm,bullet,5MP,5,"1/2.8"" CMOS",H: 81,hybrid,IP67,,,,0
 tiandy-tc-c35ks-3era-28-vjo,Tiandy,TC-C35KS 3ERA-28-VJO,dome,5MP,5,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",hybrid,IP67,IK10,,,0
 tiandy-tc-c35ks-i3-e-y-2-8mm-v4-0,Tiandy,TC-C35KS I3/E/Y/2.8mm/V4.0,dome,5MP,5,"1/2.8"" CMOS","H: 94.7, V: 52.5, D: 118.5",ir,IP66,IK10,,,0
 tiandy-tc-c35ks-i3-e-y-c-h-2-8mm-v4-0,Tiandy,TC-C35KS I3/E/Y/C/H/2.8mm/V4.0,dome,5MP,5,"1/2.8"" CMOS","H: 94.7, V: 52.5, D: 118.5",ir,IP66,IK10,,,0
+tiandy-tc-c35ks-i3-e-y-m-h-2-8mm-v4-0,Tiandy,TC-C35KS I3/E/Y/M/H/2.8mm/V4.0,dome,5MP,5,"1/2.8"" CMOS",H: 95.6,ir,IP67,IK10,,,0
 tiandy-tc-c35ks-i3-e-y-s-2-8mm-v5-0,Tiandy,TC-C35KS I3/E/Y/S/2.8mm/V5.0,dome,5MP,5,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP66,IK10,,,0
+tiandy-tc-c35lp-i8w-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C35LP I8W/A/E/Y/M/H/2.7-13.5mm/V4.0,bullet,5MP,5,"1/1.8"" CMOS",H: 106.9-48.7,hybrid,IP67,,,,0
 tiandy-tc-c35lq-i5w-e-y-t-4mm-v4-2,Tiandy,TC-C35LQ I5W/E/Y/T/4mm/V4.2,bullet,5MP,5,"1/2.7"" CMOS","H: 88.7, V: 46.8, D: 100.3",hybrid,IP67,,true,,0
 tiandy-tc-c35lq-i5w-e-y-t-6mm-v4-2,Tiandy,TC-C35LQ I5W/E/Y/T/6mm/V4.2,bullet,5MP,5,"1/2.7"" CMOS","H: 53.8, V: 29.3, D: 61.3",hybrid,IP67,,true,,0
+tiandy-tc-c35mp-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C35MP I5/A/E/Y/M/H/2.7-13.5mm/V4.0,dome,5MP,5,"1/2.8"" CMOS",H: 101.6-34.4,ir,IP67,IK10,,,0
+tiandy-tc-c35mp-i5w-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C35MP I5W/A/E/Y/M/H/2.7-13.5mm/V4.0,dome,5MP,5,"1/1.8"" CMOS",H: 106.9-48.7,hybrid,IP67,IK10,,,0
 tiandy-tc-c35ms,Tiandy,TC-C35MS,dome,5MP,5,"1/2.7"" Super Starlight CMOS",102 horizontal,hybrid,IP67,,true,2022,0
+tiandy-tc-c35ms-i3-a-e-y-m-2-8-12mm,Tiandy,TC-C35MS I3/A/E/Y/M/2.8-12mm,dome,5MP,5,"1/2.8"" CMOS",H: 100.4-26.8,ir,IP67,IK10,,,0
 tiandy-tc-c35ms-i3-a-e-y-m-c-h-2-7-13-5mm-v4-0,Tiandy,TC-C35MS I3/A/E/Y/M/C/H/2.7-13.5mm/V4.0,dome,5MP,5,"1/2.8"" CMOS","H: 96.2-29.2, V: 70.3-22, D: 119.1-36.6",ir,IP66,IK10,,,0
 tiandy-tc-c35ms-i5-a-e-y-m-h-2-7-13-5mm-v4-1,Tiandy,TC-C35MS I5/A/E/Y/M/H/2.7-13.5mm/V4.1,dome,5MP,5,"1/2.7"" CMOS","H: 98.3-32.2, V: 54.9-18.2, D: 125.6-37",ir,IP66,IK10,,,0
 tiandy-tc-c35ps-i3-e-y-m-h-2-8mm-v4-2,Tiandy,TC-C35PS I3/E/Y/M/H/2.8mm/V4.2,dome,5MP,5,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP66,IK08,,,0
+tiandy-tc-c35sp-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C35SP I5/A/E/Y/M/H/2.7-13.5mm/V4.0,turret,5MP,5,"1/2.8"" CMOS",H: 101.6-34.4,ir,IP67,,,,0
+tiandy-tc-c35ss-i3-a-e-y-m-2-8-12mm,Tiandy,TC-C35SS I3/A/E/Y/M/2.8-12mm,turret,5MP,5,"1/2.8"" CMOS",H: 100.4-26.8,ir,IP67,,,,0
 tiandy-tc-c35ss-i3-a-e-y-m-c-h-2-7-13-5mm-v4-0,Tiandy,TC-C35SS I3/A/E/Y/M/C/H/2.7-13.5mm/V4.0,turret,5MP,5,"1/2.8"" CMOS","H: 96.2-29.2, V: 70.3-22, D: 119.1-36.6",ir,IP66,,,,0
+tiandy-tc-c35ss-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C35SS I5/A/E/Y/M/H/2.7-13.5mm/V4.0,turret,5MP,5,"1/2.8"" CMOS",H: 94.2-29.3,ir,IP67,,,,0
+tiandy-tc-c35tp-i8-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C35TP I8/A/E/Y/M/H/2.7-13.5mm/V4.0,bullet,5MP,5,"1/2.8"" CMOS",H: 101.6-34.4,ir,IP67,,,,0
 tiandy-tc-c35ts,Tiandy,TC-C35TS,bullet,5MP,5,"1/2.7"" CMOS","H: 98.3-32.2, V: 54.9-18.2, D: 125.6-37",ir,IP67,,,,0
 tiandy-tc-c35ts-i8-a-e-y-m-h-2-7-13-5mm-v4-1,Tiandy,TC-C35TS I8/A/E/Y/M/H/2.7-13.5mm/V4.1,bullet,5MP,5,"1/2.7"" CMOS","H: 98.3-32.2, V: 54.9-18.2, D: 125.6-37",ir,IP67,,,,0
 tiandy-tc-c35us-i8-a-e-y-m-2-8-12mm-v4-0,Tiandy,TC-C35US I8/A/E/Y/M/2.8-12mm/V4.0,bullet,5MP,5,"1/2.8"" CMOS","H: 96.8-32.7, V: 71.3-24.5, D: 120.2-40.9",ir,IP67,,,,0
@@ -25105,18 +25348,24 @@ tiandy-tc-c35ws-i5-e-y-c-h-2-8mm-v4-0,Tiandy,TC-C35WS I5/E/Y/C/H/2.8mm/V4.0,bull
 tiandy-tc-c35ws-i5-e-y-c-h-4mm-v4-0,Tiandy,TC-C35WS I5/E/Y/C/H/4mm/V4.0,bullet,5MP,5,"1/2.8"" CMOS","H: 80, V: 58.1, D: 98.9",ir,IP67,,,,0
 tiandy-tc-c35ws-i5-e-y-m-2-8mm-v4-0,Tiandy,TC-C35WS I5/E/Y/M/2.8mm/V4.0,bullet,5MP,5,"1/2.8"" CMOS","H: 94.7, V: 52.5, D: 118.5",ir,IP67,,,,0
 tiandy-tc-c35ws-i5-e-y-m-4mm-v4-0,Tiandy,TC-C35WS I5/E/Y/M/4mm/V4.0,bullet,5MP,5,"1/2.8"" CMOS","H: 80, V: 58.1, D: 98.9",ir,IP67,,,,0
+tiandy-tc-c35ws-i5-e-y-m-h-2-8mm-v4-0,Tiandy,TC-C35WS I5/E/Y/M/H/2.8mm/V4.0,bullet,5MP,5,"1/2.8"" CMOS",H: 95.6,ir,IP67,,,,0
+tiandy-tc-c35ws-i5-e-y-m-h-4mm-v4-0,Tiandy,TC-C35WS I5/E/Y/M/H/4mm/V4.0,bullet,5MP,5,"1/2.8"" CMOS",H: 77.9,ir,IP67,,,,0
+tiandy-tc-c35ws-i5-e-y-m-s-h-2-8mm-v4-0,Tiandy,TC-C35WS I5/E/Y/M/S/H/2.8mm/V4.0,bullet,5MP,5,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP67,,,,0
+tiandy-tc-c35ws-i5-e-y-m-s-h-4mm-v4-0,Tiandy,TC-C35WS I5/E/Y/M/S/H/4mm/V4.0,bullet,5MP,5,"1/2.7"" CMOS","H: 91, V: 46.4, D: 107",ir,IP67,,,,0
 tiandy-tc-c35ws-i5w-e-y-s-2-8mm-v5-0,Tiandy,TC-C35WS I5W/E/Y/S/2.8mm/V5.0,bullet,5MP,5,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP67,,,,0
 tiandy-tc-c35ws-i5w-e-y-s-4mm-v5-0,Tiandy,TC-C35WS I5W/E/Y/S/4mm/V5.0,bullet,5MP,5,"1/2.7"" CMOS","H: 91, V: 46.4, D: 107",ir,IP67,,,,0
 tiandy-tc-c35xs-3era-28-vjo,Tiandy,TC-C35XS 3ERA-28-VJO,turret,5MP,5,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",hybrid,IP67,,,,0
 tiandy-tc-c35xs-i3-e-y-2-8mm-v4-0,Tiandy,TC-C35XS I3/E/Y/2.8mm/V4.0,turret,5MP,5,"1/2.8"" CMOS","H: 94.7, V: 52.5, D: 118.5",ir,IP66,,,,0
 tiandy-tc-c35xs-i3-e-y-c-h-2-8mm-v4-0,Tiandy,TC-C35XS I3/E/Y/C/H/2.8mm/V4.0,turret,5MP,5,"1/2.8"" CMOS","H: 94.7, V: 52.5, D: 118.5",ir,IP66,,,,0
 tiandy-tc-c35xs-i3-e-y-m-2-8mm-v4-0,Tiandy,TC-C35XS I3/E/Y/M/2.8mm/V4.0,turret,5MP,5,"1/2.8"" CMOS","H: 94.7, V: 52.5, D: 118.5",ir,IP66,,,,0
+tiandy-tc-c35xs-i3-e-y-m-h-2-8mm-v4-0,Tiandy,TC-C35XS I3/E/Y/M/H/2.8mm/V4.0,turret,5MP,5,"1/2.8"" CMOS",H: 95.6,ir,IP67,,,,0
 tiandy-tc-c35xs-i3w-e-y-s-2-8mm-v5-0,Tiandy,TC-C35XS I3W/E/Y/S/2.8mm/V5.0,turret,5MP,5,"1/2.7"" CMOS","H: 109, V: 59, D: 125.4",ir,IP66,,,,0
 tiandy-tc-c382v-w-e-y-s-h-2-8mm,Tiandy,TC-C382V W/E/Y/S/H/2.8mm,panoramic,8MP,8,"Dual 1/2.7"" CMOS","H: 180, V: 65",color,IP67,,true,,0
 tiandy-tc-c385n-2ana-28,Tiandy,TC-C385N 2ANA-28,panoramic,4MP,4,"1/3"" CMOS","H: 94.5, V: 52.0, D: 108.9",hybrid,IP67,,,,0
 tiandy-tc-c386v-4lha-28,Tiandy,TC-C386V 4LHA-28,panoramic,8MP,8,"Dual 1/2.7"" CMOS","H: 180, V: 65, D: 191",hybrid,IP67,,true,,0
 tiandy-tc-c38ks-3era-28,Tiandy,TC-C38KS 3ERA-28,dome,8MP,8,"1/2.8"" CMOS","H: 100.5, V: 56.5, D: 113.0",hybrid,IP67,IK10,,,0
 tiandy-tc-c38ks-i3-e-y-2-8mm-v4-0,Tiandy,TC-C38KS I3/E/Y/2.8mm/V4.0,dome,8MP,8,"1/2.8"" CMOS","H: 104.9, V: 56.5, D: 119.2",ir,IP66,IK10,,,0
+tiandy-tc-c38ks-i3-e-y-m-h-2-8mm,Tiandy,TC-C38KS I3/E/Y/M/H/2.8mm,dome,8MP,8,"1/2.8"" CMOS",H: 96,ir,IP67,IK10,,,0
 tiandy-tc-c38ls,Tiandy,TC-C38LS,bullet,4K UHD,8,"1/1.8"" Super Starlight CMOS",107-30 horizontal,hybrid,IP67,,true,2023,0
 tiandy-tc-c38ms-3lha-27135,Tiandy,TC-C38MS 3LHA-27135,dome,8MP,8,"1/2.8"" CMOS","H: 106.7-31.5, V: 57.3-17.8, D: 130.9-34.8",hybrid,IP67,IK10,true,,0
 tiandy-tc-c38ms-i5-a-e-y-m-h-2-7-13-5mm-v4-0,Tiandy,TC-C38MS I5/A/E/Y/M/H/2.7-13.5mm/V4.0,dome,8MP,8,"1/2.8"" CMOS","H: 106.7-31.5, V: 57.3-17.8, D: 130.9-34.8",ir,IP66,IK10,,,0
@@ -25135,12 +25384,16 @@ tiandy-tc-c38ws-3lra-28,Tiandy,TC-C38WS 3LRA-28,bullet,8MP,8,"1/2.8"" CMOS","H: 
 tiandy-tc-c38ws-3lra-4,Tiandy,TC-C38WS 3LRA-4,bullet,8MP,8,"1/2.8"" CMOS","H: 87.3, V: 44.8, D: 102.9",hybrid,IP67,,,,0
 tiandy-tc-c38ws-i5-e-y-m-2-8mm-v4-0,Tiandy,TC-C38WS I5/E/Y/M/2.8mm/V4.0,bullet,8MP,8,"1/2.8"" CMOS","H: 105.3, V: 56.9, D: 119.7",ir,IP67,,,,0
 tiandy-tc-c38ws-i5-e-y-m-4mm-v4-0,Tiandy,TC-C38WS I5/E/Y/M/4mm/V4.0,bullet,8MP,8,"1/2.8"" CMOS","H: 87.8, V: 45.1, D: 98.7",ir,IP67,,,,0
+tiandy-tc-c38ws-i5-e-y-m-h-2-8mm,Tiandy,TC-C38WS I5/E/Y/M/H/2.8mm,bullet,8MP,8,"1/2.8"" CMOS",H: 96,ir,IP67,,,,0
+tiandy-tc-c38ws-i5-e-y-m-h-4mm,Tiandy,TC-C38WS I5/E/Y/M/H/4mm,bullet,8MP,8,"1/2.8"" CMOS",H: 84.8,ir,IP67,,,,0
 tiandy-tc-c38xq-i3w-e-y-2-8mm-v4-2,Tiandy,TC-C38XQ I3W/E/Y/2.8mm/V4.2,turret,8MP,8,"1/2.8"" CMOS","H: 105.3, V: 56.9, D: 119.7",hybrid,IP66,,true,,0
 tiandy-tc-c38xs-3lra-28,Tiandy,TC-C38XS 3LRA-28,turret,8MP,8,"1/2.8"" CMOS","H: 100.5, V: 56.5, D: 113.0",hybrid,IP67,,,,0
 tiandy-tc-c38xs-i3-e-y-m-2-8mm-v4-0,Tiandy,TC-C38XS I3/E/Y/M/2.8mm/V4.0,turret,8MP,8,"1/2.8"" CMOS","H: 104.9, V: 56.5, D: 119.2",ir,IP66,,,,0
+tiandy-tc-c38xs-i3-e-y-m-h-2-8mm,Tiandy,TC-C38XS I3/E/Y/M/H/2.8mm,turret,8MP,8,"1/2.8"" CMOS",H: 96,ir,IP67,,,,0
 tiandy-tc-h3169m-63x-lw-p-a-ar,Tiandy,TC-H3169M 63X/LW/P/A/AR,ptz,16MP (dual: panorama 5520x2400 + detail 2560x1440),16,"Panorama 1/1.8"" CMOS + Detail 1/1.8"" CMOS","Panorama H: 180 +/-10, V: 90 +/-10; Detail H: 60-1.5",hybrid,IP66,,,,0
 tiandy-tc-h322a-9da-4,Tiandy,TC-H322A 9DA-4,ptz,2MP,2,"1/3"" CMOS","H: 76.5, V: 41.9, D: 89",hybrid,,,true,,0
 tiandy-tc-h322n-9db-4,Tiandy,TC-H322N 9DB-4,ptz,2MP,2,"1/3"" CMOS","H: 76.5, V: 41.9, D: 89",hybrid,,,true,,0
+tiandy-tc-h324s-25x-i-e-a-v-v3-0,Tiandy,TC-H324S 25X/I/E/A/V/V3.0,ptz,2MP,2,"1/2.8"" CMOS","H: 58.5-2.8, V: 33.2-1.5, D: 65.2-3.3",ir,IP66,,,,0
 tiandy-tc-h324s-323ia,Tiandy,TC-H324S 323IA,ptz,,2,,,ir,IP66,,,,0
 tiandy-tc-h326m,Tiandy,TC-H326M,ptz,1080p,2,"1/2.8"" Starlight CMOS",57.6-2.5 horizontal,ir,IP66,,false,2022,0
 tiandy-tc-h332a-9da-4,Tiandy,TC-H332A 9DA-4,ptz,3MP,3,"1/2.8"" CMOS","H: 84.6, V: 46.3, D: 98.1",hybrid,,,true,,0
@@ -25148,13 +25401,17 @@ tiandy-tc-h332n-9db-4,Tiandy,TC-H332N 9DB-4,ptz,3MP,3,"1/2.8"" CMOS","H: 84.6, V
 tiandy-tc-h333d-9db-4,Tiandy,TC-H333D 9DB-4,ptz,3MP,3,"1/2.8"" CMOS","H: 84.6, V: 46.3, D: 98.1",hybrid,IP66,,true,,0
 tiandy-tc-h333k-8da-4,Tiandy,TC-H333K 8DA-4,ptz,3MP,3,"1/3"" CMOS","H: 79.6, V: 42.5, D: 91.7",hybrid,IP65,,true,,0
 tiandy-tc-h333n-i5w-c-wifi-eu-4mm-v4-2,Tiandy,TC-H333N I5W/C/WIFI/Eu/4mm/V4.2,ptz,3MP,3,"1/2.9"" CMOS","H: 81.6, V: 43.1, D: 94.2",hybrid,IP66,,true,,0
+tiandy-tc-h334s-i5w-c-wifi-eu-4mm-v4-1,Tiandy,TC-H334S I5W/C/WIFI/Eu/4mm/V4.1,ptz,3MP,3,"1/2.8"" CMOS","H: 87.7, V: 46.7, D: 98.6",hybrid,IP66,,,,0
 tiandy-tc-h342a-i2w-wifi-eu-4mm,Tiandy,TC-H342A I2W/WIFI/Eu/4mm,ptz,4MP,4,"1/2.8"" CMOS","H: 78.9, V: 41, D: 92.9",hybrid,,,true,,0
 tiandy-tc-h342n-9da-4,Tiandy,TC-H342N 9DA-4,ptz,4MP,4,"1/2.8"" CMOS","H: 78.9, V: 41, D: 92.9",hybrid,,,true,,0
 tiandy-tc-h343k-8da-4,Tiandy,TC-H343K 8DA-4,ptz,4MP,4,"1/3"" CMOS","H: 77.3, V: 41.2, D: 89.3",hybrid,IP65,,true,,0
+tiandy-tc-h344s-25x-i-e-plus-a-v3-0,Tiandy,TC-H344S 25X/I/E+/A/V3.0,ptz,4MP,4,"1/2.7"" CMOS","H: 58-2.8, V: 33.9-1.7, D: 64.8-3.3",ir,IP66,,,,0
 tiandy-tc-h348m-63x-il-e-a,Tiandy,TC-H348M 63X/IL/E++/A,ptz,4MP,4,"1/1.8"" CMOS","H: 60-1.5, V: 35.5-0.87, D: 67.5-1.77",hybrid,IP66,,,,0
 tiandy-tc-h354s-423ia,Tiandy,TC-H354S 423IA,ptz,,5,,,ir,IP66,,,,0
+tiandy-tc-h356s-30x-i-e-plus-plus-a-v3-0,Tiandy,TC-H356S 30X/I/E++/A/V3.0,ptz,5MP,5,"1/2.7"" CMOS","H: 61.9-2.5, V: 35.5-1.4, D: 69.1-2.9",ir,IP66,,,,0
 tiandy-tc-h356s-430ia,Tiandy,TC-H356S 430IA,ptz,,5,,,ir,,,,,0
 tiandy-tc-h356v-444da,Tiandy,TC-H356V 444DA,ptz,5MP,5,"1/1.8"" CMOS","H: 59.2-2.5, V: 34.6-1.4, D: 66.7-2.9",hybrid,IP66,,,,0
+tiandy-tc-h356v-44x-iw-e-a,Tiandy,TC-H356V 44X/IW/E/A,ptz,5MP,5,"1/1.8"" CMOS","H: 59.2-2.5, V: 34.6-1.4, D: 66.7-2.9",hybrid,IP66,,,,0
 tiandy-tc-h358m-44x-it-a,Tiandy,TC-H358M 44X/IT/A,ptz,5MP optical (+ 384x288 thermal),5,"1/1.8"" CMOS (optical) + 384x288 thermal detector",Optical H: 61.8-2.3; Thermal H: 7.5,hybrid,IP66,,,,0
 tiandy-tc-h363n-8da-4,Tiandy,TC-H363N 8DA-4,ptz,6MP (dual 3MP),6,"Dual 1/2.9"" CMOS","H: 79.6, V: 42.5, D: 91.7 (per lens)",hybrid,IP65,,true,,0
 tiandy-tc-h363n-8db-4,Tiandy,TC-H363N 8DB-4,ptz,6MP (dual 3MP),6,"Dual 1/2.9"" CMOS","H: 79.6, V: 42.5, D: 91.7 (per lens)",hybrid,IP65,,true,,0
@@ -25163,6 +25420,7 @@ tiandy-tc-h363u-8da-4,Tiandy,TC-H363U 8DA-4,ptz,6MP (dual 3MP),6,"Dual 1/2.9"" C
 tiandy-tc-h366v-425da,Tiandy,TC-H366V 425DA,ptz,6MP (dual: panorama 3840x1568 + detail 2560x1440),6,"Panorama 1/1.8"" CMOS + Detail 1/2.7"" CMOS","Panorama H: 190 +/-10, V: 75 +/-10; Detail H: 58-2.8, V: 33.9-1.7",hybrid,IP66,,,,0
 tiandy-tc-h388m,Tiandy,TC-H388M,ptz,4K UHD,8,"1/1.8"" Starlight CMOS",54-2.1 horizontal,ir,IP66,,false,2023,0
 tiandy-tc-h388m-44x-il-e-a,Tiandy,TC-H388M 44X/IL/E++/A,ptz,8MP 4K,8,"1/1.8"" CMOS","H: 60-2.31, V: 35.5-1.3, D: 67.5-2.65",hybrid,IP66,,,,0
+tiandy-tc-nc1261,Tiandy,TC-NC1261,fisheye,12MP,12,"1/1.7"" CMOS",H: 180,hybrid,IP66,IK10,,,0
 tiandy-td-c659v-i2-wifi-se-u-4mm-v5-0,Tiandy,TD-C659V I2/WIFI/SE/U/4mm/V5.0,box,4MP,4,"1/3"" CMOS","H: 86.4, V: 48.6, D: 98",ir,,,true,,0
 tiandy-td-c65cn-i3w-wifi-u-2-8mm-et-v4-0,Tiandy,TD-C65CN I3W/WIFI/U/2.8mm/ET/V4.0,bullet,4MP,4,"1/2.8"" CMOS","H: 103.8, V: 56.8, D: 120.4",hybrid,IP65,,true,,0
 tiandy-td-c697n-i5w-wifi-sel-u-2-8mm-v5-0,Tiandy,TD-C697N I5W/WIFI/SEL/U/2.8mm/V5.0,bullet,4MP,4,"1/3"" CMOS","H: 94.5, V: 52.0, D: 108.9",hybrid,IP65,,true,,0
@@ -26138,6 +26396,7 @@ ubiquiti-g4-bullet,Ubiquiti,UniFi Protect G4 Bullet,bullet,2K,4,"1/2.7"" CMOS",8
 ubiquiti-g4-dome,Ubiquiti,UniFi Protect G4 Dome,dome,2K,4,5MP CMOS,102.4 horizontal / 71.4 vertical / 134.3 diagonal,ir,IPX4,IK08,true,2023,0
 ubiquiti-g4-doorbell,Ubiquiti,UniFi Protect G4 Doorbell,doorbell,2MP,2,5MP CMOS,138 horizontal / 114 vertical / 155 diagonal,ir,IPX4,,true,2022,0
 ubiquiti-g4-doorbell-pro,Ubiquiti,UniFi Protect G4 Doorbell Pro,doorbell,2MP (main camera; separate 2MP package camera),2,5MP CMOS (main camera); 8MP CMOS (package camera),138 horizontal / 114 vertical / 155 diagonal (main camera); 97.5 horizontal / 79.4 vertical / 118.2 diagonal (package camera),ir,IPX4,,true,2022,0
+ubiquiti-g4-doorbell-pro-poe-kit,Ubiquiti,UniFi Protect G4 Doorbell Pro PoE Kit,doorbell,2MP (main camera; separate 2MP package camera),2,5MP CMOS (main camera); 8MP CMOS (package camera),"H: 138, V: 114, D: 155 (main camera, LDC on); H: 160, V: 117, D: 160 (main camera, LDC off); H: 97.5, V: 79.4, D: 118.2 (package camera)",ir,IPX4,,true,,0
 ubiquiti-g4-instant,Ubiquiti,UniFi Protect G4 Instant,dome,2K,4,5MP CMOS,102.4 horizontal / 54.9 vertical / 120.6 diagonal,ir,IPX5,IK04,true,2021,0
 ubiquiti-g4-pro,Ubiquiti,UniFi Protect G4 Pro,bullet,4K UHD,8,"1/2"" CMOS",109.9 horizontal / 60 vertical / 127.7 diagonal (wide); 35 horizontal / 19.8 vertical / 40 diagonal (zoom),ir,IP67,,false,2022,0
 ubiquiti-g4-ptz,Ubiquiti,UniFi Protect G4 PTZ,ptz,4K UHD,8,"1/1.8"" 8MP CMOS",64 horizontal / 37 vertical (wide); 2 horizontal / 37 vertical (tele),ir,IP66,,true,2022,0
@@ -27063,7 +27322,7 @@ verkada-cd63,Verkada,CD63,dome,4K,8.3,"1/1.2"" progressive CMOS",109 to 49 H,ir,
 verkada-cd63-e,Verkada,CD63-E,dome,4K,8.3,"1/1.2"" progressive CMOS",109 to 49 H,ir,IP67,IK10,false,2024,0
 verkada-cd63-e-f,Verkada,CD63-E-F,dome,4K,8.3,"1/1.2"" progressive CMOS",109 to 49 H,ir,IP67,IK10,false,,0
 verkada-cd63-f,Verkada,CD63-F,dome,4K,8.3,"1/1.2"" progressive CMOS",109 to 49 H,ir,,IK08,false,,0
-verkada-cf83-e,Verkada,CF83-E,fisheye,12MP,12.5,"1/1.6"" progressive CMOS",180 hemispheric fisheye,ir,IP67,IK10,false,,0
+verkada-cf83-e,Verkada,CF83-E,fisheye,12.5MP,12.5,"1/1.6"" progressive CMOS",180 hemispheric fisheye,ir,IP67,IK10,false,,0
 verkada-cf83-e-f,Verkada,CF83-E-F,fisheye,12.5MP,12.5,"1/1.6"" progressive CMOS",180 H / 180 V / 180 D,ir,IP67,IK10,false,,0
 verkada-ch52-e,Verkada,CH52-E,panoramic,4 x 5MP (20MP),5,"4 x 1/2.8"" progressive CMOS",89 to 37 H,ir,IP66,IK10,false,,0
 verkada-ch52-e-f,Verkada,CH52-E-F,panoramic,4 x 5MP (20MP),5,"4 x 1/2.8"" progressive CMOS",89 to 37 H (per sensor); up to 328 combined,ir,IP66,IK10,false,,0
