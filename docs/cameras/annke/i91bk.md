@@ -43,5 +43,16 @@
 - https://cdn.shopify.com/s/files/1/0110/6385/3156/files/I91BK-en.pdf
 - https://www.annkecctv.com/products/i91bk
 
+## Community notes (unverified)
+
+*Reported by users. Not from the datasheet, not verified by the project.*
+
+- After a PTZ move command, ONVIF GetStatus reports MoveStatus IDLE for about 0.1 s before switching to MOVING. A client that polls right after the command treats the move as finished, so Frigate autotracking (0.18.2) ends every move at once. Manual PTZ from Frigate works.
+  
+  onvif · firmware V5.7.1 build 250227 · reported by nikosch86 · 2026-10-21 · [source](https://github.com/ch-bas/cctv-camera-database/issues/409)
+- ONVIF AbsoluteMove zoom only moves in whole steps of the 4x optical zoom (1x, 2x, 3x, 4x); zoom positions between two steps cannot be reached.
+  
+  ptz · firmware V5.7.1 build 250227 · reported by nikosch86 · 2026-10-21 · [source](https://github.com/ch-bas/cctv-camera-database/issues/410)
+
 ---
 *Auto-generated from annke-i91bk.json — do not edit by hand.*

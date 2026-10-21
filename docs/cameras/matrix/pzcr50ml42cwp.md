@@ -49,6 +49,7 @@
 
 - https://www.matrixcomsec.com/wp-content/uploads/2025/03/SATATYA-PZCR50ML42CWP-Dome-IP-Camera-Instllation-Guide.pdf
 - https://www.matrixcomsec.com/product/ptz-camera/
+- https://matrixcomsec.com/firmware_downloads-ipvs/satatya-enterprise-nvr/SATATYA%20PZCR50ML42CWP%20System%20Manual.pdf
 
 ---
 *Auto-generated from matrix-pzcr50ml42cwp.json — do not edit by hand.*

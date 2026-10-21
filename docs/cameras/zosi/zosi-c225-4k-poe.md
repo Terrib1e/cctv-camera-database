@@ -1,11 +1,11 @@
-# ZOSI C225
+# ZOSI C225 4K PoE
 
-*Also known as: C225 4K PoE*
+*Also known as: C225*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C225 |
+| Model | C225 4K PoE |
 | Type | turret |
 | Connectivity | ethernet |
 | Resolution | 4K (3840x2160) (8MP, 3840×2160) |

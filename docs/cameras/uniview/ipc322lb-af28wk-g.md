@@ -6,10 +6,10 @@
 | Model | IPC322LB-AF28WK-G |
 | Type | dome |
 | Connectivity | wifi, ethernet |
-| Resolution | 2MP (2MP) |
+| Resolution | 2MP (2MP, 1920×1080) |
 | Sensor | 1/2.9" CMOS |
 | Lens | 1× 2.8mm F2.0 |
-| Field of view | 101.1 horizontal, 55.0 vertical, 111.0 diagonal° |
+| Field of view | 101.1 horizontal, 55.0 vertical, 111.0 diagonal (2.8mm)° |
 | Night vision | ir (30m), 0.01 lux color |
 | Power | DC 12 V±25% |
 | Storage | microSD ≤ 512GB, NVR |
@@ -18,6 +18,21 @@
 | IK rating | IK10 |
 | Two-way audio | No |
 | Operating temp | -30 to 60°C |
+
+## Streams
+
+| Stream | Resolution | FPS | Codec |
+|--------|-----------|-----|-------|
+| main | 1920x1080 | 30 | H.265 |
+| sub | 640x360 | 30 | H.265 |
+
+## Features
+
+- Ultra 265 (U-code) smart encoding
+- Wi-Fi (IEEE 802.11b/g/n)
+- human body detection
+- DWDR / HLC / BLC / digital defog
+- 2D/3D DNR
 
 ## Sources
 

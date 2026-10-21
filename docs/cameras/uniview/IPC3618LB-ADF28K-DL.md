@@ -9,7 +9,7 @@
 | Resolution | 4K (8MP, 3840×2160) |
 | Sensor | 1/2.7" CMOS |
 | Lens | 1× 2.8mm F1.6 |
-| Field of view | 100.8 horizontal° |
+| Field of view | 100.8 horizontal, 55.8 vertical, 105.7 diagonal (2.8mm)° |
 | Night vision | hybrid (30m), 0.005 lux color |
 | Power | PoE (IEEE 802.3af) / DC 12V |
 | Storage | microSD ≤ 512GB, NVR |
@@ -22,8 +22,8 @@
 
 | Stream | Resolution | FPS | Codec |
 |--------|-----------|-----|-------|
-| main | 3840x2160 | 20 | — |
-| sub | 1920x1080 | 30 | — |
+| main | 3840x2160 | 20 | H.265 |
+| sub | 1920x1080 | 30 | H.265 |
 
 ## Features
 

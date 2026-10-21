@@ -1,11 +1,11 @@
-# ZOSI C296B
+# ZOSI C296B 5MP PTZ PoE
 
-*Also known as: C296B 5MP PTZ PoE*
+*Also known as: C296B*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C296B |
+| Model | C296B 5MP PTZ PoE |
 | Type | ptz |
 | Connectivity | ethernet |
 | Resolution | 5MP (2880x1620) (5MP, 2880×1620) |

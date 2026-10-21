@@ -1,11 +1,11 @@
-# ZOSI C186
+# ZOSI C186 5MP PoE
 
-*Also known as: C186 AuroraLux 5MP, C186 5MP PoE*
+*Also known as: C186, C186 AuroraLux 5MP*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C186 |
+| Model | C186 5MP PoE |
 | Type | bullet |
 | Connectivity | ethernet |
 | Resolution | 5MP / 3K (2880x1620) (5MP, 2880×1620) |

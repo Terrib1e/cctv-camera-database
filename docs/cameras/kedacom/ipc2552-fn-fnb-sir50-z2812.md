@@ -10,16 +10,22 @@
 | Connectivity | ethernet |
 | Resolution | 5MP (5MP, 3072×1728) |
 | Sensor | 1/2.8" progressive scan CMOS |
-| Lens | 1× 2.8~12mm F1.6 |
-| Field of view | 107 to 30.3 horizontal° |
+| Lens | 1× 2.8~12mm F1.6-F3.3 |
+| Field of view | 30.3-107 horizontal / 17-56.1 vertical° |
 | Night vision | ir (70m), 0.005 lux color |
 | Power | 12V DC / PoE (IEEE802.3af) |
-| Storage | microSD ≤ 256GB |
-| Protocols | onvif, rtsp |
+| Storage | microSD ≤ 256GB, NVR |
+| Protocols | onvif, rtsp, http |
 | IP rating | IP67 |
 | IK rating | IK10 |
 | Two-way audio | Yes |
 | Operating temp | -40 to 70°C |
+
+## Streams
+
+| Stream | Resolution | FPS | Codec |
+|--------|-----------|-----|-------|
+| main | 3072x1728 | 30 | H.265 |
 
 ## Features
 

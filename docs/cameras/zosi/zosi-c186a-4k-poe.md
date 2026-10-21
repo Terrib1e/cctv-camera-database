@@ -1,11 +1,11 @@
-# ZOSI C186A
+# ZOSI C186A AuroraLux 4K
 
-*Also known as: C186A AuroraLux 4K, C186A 8MP PoE*
+*Also known as: C186A, C186A 8MP PoE*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C186A |
+| Model | C186A AuroraLux 4K |
 | Type | bullet |
 | Connectivity | ethernet |
 | Resolution | 4K (3840x2160) (8MP, 3840×2160) |
