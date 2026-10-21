@@ -14997,8 +14997,10 @@ hilook-ipc-b120ha-lu,HiLook,IPC-B120HA-LU,bullet,2 MP,2,"1/2.9"" Progressive Sca
 hilook-ipc-b120ha-luc,HiLook,IPC-B120HA-LUC,bullet,2 MP,2,"1/2.9"" Progressive Scan CMOS",101 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b120ha-luf,HiLook,IPC-B120HA-LUF,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",103 horizontal (2.8 mm) / 83 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b120ha-lufc,HiLook,IPC-B120HA-LUFC,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",101 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-b120ha-lufc-sl,HiLook,IPC-B120HA-LUFC/SL,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS","101 horizontal (2.8mm), 80 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-b120ha-uc,HiLook,IPC-B120HA-UC,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",94 horizontal (2.8 mm) / 80 horizontal (4 mm),ir,IP67,,false,,0
 hilook-ipc-b120haa-lu,HiLook,IPC-B120HAA-LU,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 84 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-b120haa-luf-sx,HiLook,IPC-B120HAA-LUF/SX,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",103 / 82 horizontal (2.8 mm / 4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b120hae-luc,HiLook,IPC-B120HAE-LUC,bullet,1080p,2,"1/3"" Progressive Scan CMOS",97 horizontal (2.8 mm) / 76 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b121h-c,HiLook,IPC-B121H-C,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",94 horizontal (2.8 mm) / 80 horizontal (4 mm),ir,IP67,,false,,0
 hilook-ipc-b121he-luc,HiLook,IPC-B121HE-LUC,bullet,1080p,2,"1/3"" Progressive Scan CMOS",97 horizontal (2.8 mm) / 76 horizontal (4 mm),color,IP67,,false,,0
@@ -15020,9 +15022,13 @@ hilook-ipc-b140ha-ld,HiLook,IPC-B140HA-LD,bullet,4 MP,4,"1/3"" Progressive Scan 
 hilook-ipc-b140ha-lduf,HiLook,IPC-B140HA-LDUF,bullet,4 MP,4,"1/2.7"" Progressive Scan CMOS",112 horizontal (2.8 mm) / 89 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b140ha-lu,HiLook,IPC-B140HA-LU,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b140ha-luc,HiLook,IPC-B140HA-LUC,bullet,4 MP,4,"1/2.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 82 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-b140ha-luf-sl,HiLook,IPC-B140HA-LUF/SL,bullet,4MP,4,"1/3"" Progressive Scan CMOS","98 horizontal (2.8mm), 78 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-b140ha-lufc,HiLook,IPC-B140HA-LUFC,bullet,4 MP,4,"1/2.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 82 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-b140ha-lufc-sl,HiLook,IPC-B140HA-LUFC/SL,bullet,4MP,4,"1/2.8"" Progressive Scan CMOS","104 horizontal (2.8mm), 82 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-b140haa-lu,HiLook,IPC-B140HAA-LU,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 79 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-b140haa-luf-sx,HiLook,IPC-B140HAA-LUF/SX,bullet,4MP,4,"1/3"" Progressive Scan CMOS",103 / 83 horizontal (2.8 mm / 4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b140hae-uc,HiLook,IPC-B140HAE-UC,bullet,4 MP,4,"1/2.7"" Progressive Scan CMOS",112 horizontal (2.8 mm) / 89 horizontal (4 mm),ir,IP67,,false,,0
+hilook-ipc-b140hap-luf-sl,HiLook,IPC-B140HAP-LUF/SL,bullet,4MP,4,"1/3"" Progressive Scan CMOS","98 horizontal (2.8mm), 78 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-b141h-c,HiLook,IPC-B141H-C,bullet,4 MP,4,"1/2.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 82 horizontal (4 mm),ir,IP67,,false,,0
 hilook-ipc-b141he-luc,HiLook,IPC-B141HE-LUC,bullet,4 MP,4,"1/2.7"" Progressive Scan CMOS",112 horizontal (2.8 mm) / 89 horizontal (4 mm),color,IP67,,false,,0
 hilook-ipc-b141he-uc,HiLook,IPC-B141HE-UC,bullet,4 MP,4,"1/2.7"" Progressive Scan CMOS",112 horizontal (2.8 mm) / 89 horizontal (4 mm),ir,IP67,,false,,0
@@ -15040,6 +15046,7 @@ hilook-ipc-b159h,HiLook,IPC-B159H,bullet,5MP,5,"1/2.7"" Progressive Scan CMOS",9
 hilook-ipc-b159h-c,HiLook,IPC-B159H-C,bullet,5 MP,5,"1/2.7"" Progressive Scan CMOS",95 horizontal (2.8 mm) / 76 horizontal (4 mm),color,IP67,,false,,0
 hilook-ipc-b160ha-lu,HiLook,IPC-B160HA-LU,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",105 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b160ha-luf,HiLook,IPC-B160HA-LUF,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",105 horizontal (2.8 mm),hybrid,IP67,,false,,0
+hilook-ipc-b160haa-luf-sx,HiLook,IPC-B160HAA-LUF/SX,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",105 / 79 horizontal (2.8 mm / 4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b160hap-luf,HiLook,IPC-B160HAP-LUF,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",105 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b169ha,HiLook,IPC-B169HA,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",117 horizontal (2.8 mm) / 82 horizontal (4 mm),color,IP67,,,,0
 hilook-ipc-b169ha-lu,HiLook,IPC-B169HA-LU,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",96 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,false,,0
@@ -15048,12 +15055,14 @@ hilook-ipc-b169haa-lu,HiLook,IPC-B169HAA-LU,bullet,6 MP,6,"1/2.4"" Progressive S
 hilook-ipc-b169haa-luf,HiLook,IPC-B169HAA-LUF,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",109 horizontal (2.8 mm) / 89 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b180ha-lu,HiLook,IPC-B180HA-LU,bullet,4K UHD,8,"1/2.7"" CMOS",107 horizontal,hybrid,IP67,,false,2023,0
 hilook-ipc-b180ha-luf,HiLook,IPC-B180HA-LUF,bullet,8MP,8,"1/2.7"" Progressive Scan CMOS",113 horizontal,hybrid,IP67,,false,,0
+hilook-ipc-b180haa-luf-sx,HiLook,IPC-B180HAA-LUF/SX,bullet,4K UHD,8,"1/2.7"" Progressive Scan CMOS",112 / 89 horizontal (2.8 mm / 4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b189h-mu,HiLook,IPC-B189H-MU,bullet,8MP,8,"1/1.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 93 horizontal (4 mm),color,IP67,,false,,0
 hilook-ipc-b261h-mu,HiLook,IPC-B261H-MU,bullet,6MP,6,"1/2.8"" Progressive Scan CMOS",107 horizontal,ir,IP67,,false,,0
 hilook-ipc-b420ha,HiLook,IPC-B420HA,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",81 horizontal (4 mm) / 51 horizontal (6 mm),ir,IP67,,false,,0
 hilook-ipc-b420ha-lu,HiLook,IPC-B420HA-LU,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",83 horizontal (4 mm) / 51 horizontal (6 mm),hybrid,IP67,,false,,0
 hilook-ipc-b420ha-luf,HiLook,IPC-B420HA-LUF,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",83 horizontal (4 mm) / 51 horizontal (6 mm),hybrid,IP67,,true,,0
 hilook-ipc-b420haa-lu,HiLook,IPC-B420HAA-LU,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 84 horizontal (4 mm) / 52 horizontal (6 mm),hybrid,IP67,,false,,0
+hilook-ipc-b420haa-luf-sx,HiLook,IPC-B420HAA-LUF/SX,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",103 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b429h,HiLook,IPC-B429H,bullet,1080p,2,"1/2.8"" Progressive Scan CMOS",105.2 horizontal (2.8 mm) / 83.6 horizontal (4 mm),color,IP67,,false,,0
 hilook-ipc-b429h-c,HiLook,IPC-B429H-C,bullet,2 MP,2,"1/2.8"" Progressive Scan CMOS",105.2 horizontal (2.8 mm) / 83.6 horizontal (4 mm),color,IP67,,false,,0
 hilook-ipc-b429ha,HiLook,IPC-B429HA,bullet,1080p,2,"1/2.8"" Progressive Scan CMOS",83 horizontal (4 mm) / 54 horizontal (6 mm),color,IP67,,false,,0
@@ -15062,29 +15071,36 @@ hilook-ipc-b429ha-luf,HiLook,IPC-B429HA-LUF,bullet,1080p,2,"1/2.8"" Progressive 
 hilook-ipc-b429haa-lu,HiLook,IPC-B429HAA-LU,bullet,1080p,2,"1/2.8"" Progressive Scan CMOS",106 horizontal (2.8 mm) / 88 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b440ha,HiLook,IPC-B440HA,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",76 horizontal (4 mm) / 49 horizontal (6 mm),ir,IP67,,false,,0
 hilook-ipc-b440ha-lu,HiLook,IPC-B440HA-LU,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",78 horizontal (4 mm) / 49 horizontal (6 mm),hybrid,IP67,,false,,0
+hilook-ipc-b440ha-luf-sl,HiLook,IPC-B440HA-LUF/SL,bullet,4MP,4,"1/3"" Progressive Scan CMOS","78 horizontal (4mm), 49 horizontal (6mm)",hybrid,IP67,,true,,0
 hilook-ipc-b440haa-lu,HiLook,IPC-B440HAA-LU,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 79 horizontal (4 mm) / 49 horizontal (6 mm),hybrid,IP67,,false,,0
+hilook-ipc-b440haa-luf-sx,HiLook,IPC-B440HAA-LUF/SX,bullet,4MP,4,"1/3"" Progressive Scan CMOS",103 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b449h,HiLook,IPC-B449H,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",96.5 horizontal (2.8 mm) / 75.8 horizontal (4 mm),color,IP67,,,,0
 hilook-ipc-b449h-c,HiLook,IPC-B449H-C,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",96.5 horizontal (2.8 mm) / 75.8 horizontal (4 mm),color,IP67,,false,,0
 hilook-ipc-b449ha,HiLook,IPC-B449HA,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",75 horizontal (4 mm) / 49 horizontal (6 mm),color,IP67,,,,0
 hilook-ipc-b449ha-lu,HiLook,IPC-B449HA-LU,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",96 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b449ha-luf,HiLook,IPC-B449HA-LUF,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",96 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,true,,0
+hilook-ipc-b449ha-luf-srb,HiLook,IPC-B449HA-LUF/SRB,bullet,4MP,4,"1/3"" Progressive Scan CMOS","96 horizontal (2.8mm), 80 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-b449haa-lu,HiLook,IPC-B449HAA-LU,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",101.5 horizontal (2.8 mm) / 84.1 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b449haah-lu,HiLook,IPC-B449HAAH-LU,bullet,4 MP,4,"1/1.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 89.3 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b459h,HiLook,IPC-B459H,bullet,5 MP,5,"1/2.7"" Progressive Scan CMOS",76 horizontal (4 mm) / 50 horizontal (6 mm),color,IP67,,,,0
 hilook-ipc-b459h-c,HiLook,IPC-B459H-C,bullet,5 MP,5,"1/2.7"" Progressive Scan CMOS",76 horizontal (4 mm) / 50 horizontal (6 mm),color,IP67,,false,,0
 hilook-ipc-b460ha-lu,HiLook,IPC-B460HA-LU,bullet,6 MP,6,"1/2.4"" Progressive Scan CMOS",78 horizontal (4 mm) / 49 horizontal (6 mm),hybrid,IP67,,false,,0
 hilook-ipc-b460ha-luf,HiLook,IPC-B460HA-LUF,bullet,6 MP,6,"1/2.4"" Progressive Scan CMOS",78 horizontal (4 mm) / 49 horizontal (6 mm),hybrid,IP67,,true,,0
+hilook-ipc-b460haa-luf-sx,HiLook,IPC-B460HAA-LUF/SX,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",105 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b460had-lu,HiLook,IPC-B460HAD-LU,bullet,6MP,6,"1/2.5"" Progressive Scan CMOS",180 horizontal (2.8 mm),hybrid,IP67,,false,,0
 hilook-ipc-b460had-luf,HiLook,IPC-B460HAD-LUF,bullet,6MP,6,"1/2.5"" Progressive Scan CMOS",180 horizontal (2.8 mm),hybrid,IP67,,true,,0
+hilook-ipc-b460had-luf-srb,HiLook,IPC-B460HAD-LUF/SRB,bullet,6MP,6,"1/2.5"" Progressive Scan CMOS",180 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b469ha,HiLook,IPC-B469HA,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",117 (2.8mm) / 82 (4mm) horizontal,color,IP67,,,,0
 hilook-ipc-b469ha-lu,HiLook,IPC-B469HA-LU,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",115 (2.8mm) / 94 (4mm) horizontal,hybrid,IP67,,false,,0
 hilook-ipc-b469ha-luf,HiLook,IPC-B469HA-LUF,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",115 (2.8mm) / 94 (4mm) horizontal,hybrid,IP67,,true,,0
+hilook-ipc-b469ha-luf-srb,HiLook,IPC-B469HA-LUF/SRB,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS","115 horizontal (2.8mm), 94 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-b469haa-lu,HiLook,IPC-B469HAA-LU,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",109 (2.8mm) / 89 (4mm) horizontal,hybrid,IP67,,false,,0
 hilook-ipc-b469had-lu,HiLook,IPC-B469HAD-LU,dome,6MP,6,"1/2.5"" Progressive Scan CMOS",180 horizontal (2.8 mm),hybrid,IP67,,false,,0
 hilook-ipc-b469had-luf,HiLook,IPC-B469HAD-LUF,bullet,6 MP,6,"1/2.5"" Progressive Scan CMOS",180 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b480h,HiLook,IPC-B480H,bullet,4K UHD,8,"1/2.7"" CMOS",103 horizontal (4mm),ir,IP67,,false,2022,0
 hilook-ipc-b480ha-lu,HiLook,IPC-B480HA-LU,bullet,8MP,8,"1/2.7"" Progressive Scan CMOS",90 (4mm) / 56 (6mm) horizontal,hybrid,IP67,,false,,0
 hilook-ipc-b480ha-luf,HiLook,IPC-B480HA-LUF,bullet,8MP,8,"1/2.7"" Progressive Scan CMOS",90 (4mm) / 56 (6mm) horizontal,hybrid,IP67,,true,,0
+hilook-ipc-b480haa-luf-sx,HiLook,IPC-B480HAA-LUF/SX,bullet,4K UHD,8,"1/2.7"" Progressive Scan CMOS",112 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b480had-lu,HiLook,IPC-B480HAD-LU,bullet,8MP,8,"1/2.4"" Progressive Scan CMOS",180 horizontal (2 mm),hybrid,IP67,,false,,0
 hilook-ipc-b480had-luf,HiLook,IPC-B480HAD-LUF,bullet,8MP,8,"1/2.4"" Progressive Scan CMOS",180 horizontal (2 mm),hybrid,IP67,,true,,0
 hilook-ipc-b520ha-lu,HiLook,IPC-B520HA-LU,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",104 (2.8mm) / 83 (4mm) / 52 (6mm),hybrid,IP67,,false,,0
@@ -15096,21 +15112,29 @@ hilook-ipc-b529haa-lu,HiLook,IPC-B529HAA-LU,bullet,1080p,2,"1/2.8"" Progressive 
 hilook-ipc-b540ha-lu,HiLook,IPC-B540HA-LU,bullet,4MP,4,"1/3"" Progressive Scan CMOS",98 (2.8mm) / 78 (4mm) / 49 (6mm),hybrid,IP67,,false,,0
 hilook-ipc-b540ha-luf,HiLook,IPC-B540HA-LUF,bullet,4MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 78 horizontal (4 mm) / 49 horizontal (6 mm),hybrid,IP67,,true,,0
 hilook-ipc-b540haa-lu,HiLook,IPC-B540HAA-LU,bullet,4MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 79 horizontal (4 mm) / 49 horizontal (6 mm),hybrid,IP67,,false,,0
+hilook-ipc-b540haa-luf-sx,HiLook,IPC-B540HAA-LUF/SX,bullet,4MP,4,"1/3"" Progressive Scan CMOS",103 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b549ha-lu,HiLook,IPC-B549HA-LU,bullet,4MP,4,"1/3"" Progressive Scan CMOS",96 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b549ha-luf,HiLook,IPC-B549HA-LUF,bullet,4MP,4,"1/3"" Progressive Scan CMOS",96 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-b549haa-lu,HiLook,IPC-B549HAA-LU,bullet,4MP,4,"1/3"" Progressive Scan CMOS",101.5 horizontal (2.8 mm) / 84.1 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-b549haah-lu,HiLook,IPC-B549HAAH-LU,bullet,4MP,4,"1/1.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 89.3 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-b560haa-luf-sx,HiLook,IPC-B560HAA-LUF/SX,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",105 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b569haa-lu,HiLook,IPC-B569HAA-LU,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",109.5 horizontal (2.8 mm) / 89.4 horizontal (4 mm),hybrid,IP67,,true,,0
+hilook-ipc-b580haa-luf-sx,HiLook,IPC-B580HAA-LUF/SX,bullet,4K UHD,8,"1/2.7"" Progressive Scan CMOS",112 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b620ha-lzu,HiLook,IPC-B620HA-LZU,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",102.4 to 31.2 horizontal,hybrid,IP67,,false,,0
+hilook-ipc-b620ha-lzu-sl,HiLook,IPC-B620HA-LZU/SL,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",102.4 to 31.2 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b620ha-z,HiLook,IPC-B620HA-Z,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",102.4 to 31.2 horizontal,ir,IP67,,false,,0
 hilook-ipc-b620haa-lzu,HiLook,IPC-B620HAA-LZU,bullet,1080p,2,"1/2.9"" Progressive Scan CMOS",99 to 30 horizontal,hybrid,IP67,,false,,0
 hilook-ipc-b640h-z,HiLook,IPC-B640H-Z,bullet,4MP,4,"1/3"" Progressive Scan CMOS",102 to 31 horizontal,ir,IP67,,,,0
 hilook-ipc-b640ha-lzu,HiLook,IPC-B640HA-LZU,bullet,4 MP,4,"1/3"" Progressive Scan CMOS",96.7 to 29.7 horizontal,hybrid,IP67,,false,,0
+hilook-ipc-b640ha-lzu-sl,HiLook,IPC-B640HA-LZU/SL,bullet,4MP,4,"1/3"" Progressive Scan CMOS",95.9 to 29.2 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b640ha-z,HiLook,IPC-B640HA-Z,bullet,4MP,4,"1/3"" Progressive Scan CMOS",95.9 to 29.2 horizontal,ir,IP67,,false,,0
+hilook-ipc-b640haa-lzsu-sx,HiLook,IPC-B640HAA-LZSU/SX,bullet,4MP,4,"1/3"" Progressive Scan CMOS",99 to 30 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b640haa-lzu,HiLook,IPC-B640HAA-LZU,bullet,4MP,4,"1/3"" Progressive Scan CMOS",93 to 28 horizontal,hybrid,IP67,,false,,0
 hilook-ipc-b660ha-lzu,HiLook,IPC-B660HA-LZU,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",106 to 35.6 horizontal,hybrid,IP67,,true,,0
+hilook-ipc-b660haa-lzsu-sx,HiLook,IPC-B660HAA-LZSU/SX,bullet,6MP,6,"1/2.4"" Progressive Scan CMOS",93 to 28 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-b680h-mz,HiLook,IPC-B680H-MZ,bullet,8MP,8,"1/2.8"" Progressive Scan CMOS",108 to 30 horizontal,ir,IP67,IK10,true,,0
 hilook-ipc-b680h-z,HiLook,IPC-B680H-Z,bullet,8MP,8,"1/2.5"" Progressive Scan CMOS",105 to 34.5 horizontal,ir,IP67,,,,0
+hilook-ipc-b680haa-lzsu-sx,HiLook,IPC-B680HAA-LZSU/SX,bullet,4K UHD,8,"1/2.7"" Progressive Scan CMOS",107 to 32 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-c320ha-d,HiLook,IPC-C320HA-D,box,1080p,2,"1/3"" Progressive Scan CMOS",92 horizontal (2.8 mm) / 75 horizontal (4 mm),ir,,,true,,0
 hilook-ipc-c340ha-dw,HiLook,IPC-C340HA-D/W,box,4MP,4,CMOS,107 horizontal,ir,IP67,,true,2024,0
 hilook-ipc-cfsp4,HiLook,IPC-CFSP4,ptz,4MP,4,"1/3"" Progressive Scan CMOS",95.7 horizontal,hybrid,IP66,,true,,0
@@ -15126,6 +15150,7 @@ hilook-ipc-d120ha-c,HiLook,IPC-D120HA-C,dome,1080p,2,"1/2.9"" Progressive Scan C
 hilook-ipc-d120ha-d,HiLook,IPC-D120HA-D/W,dome,1080p,2,"1/2.8"" Progressive Scan CMOS",92 horizontal (2.8 mm) / 75 horizontal (4 mm),ir,IP66,,true,,0
 hilook-ipc-d120ha-lu,HiLook,IPC-D120HA-LU,dome,1080p,2,"1/2.9"" Progressive Scan CMOS",103 (2.8mm) / 83 (4mm),hybrid,IP67,IK08,false,,0
 hilook-ipc-d120ha-lufc,HiLook,IPC-D120HA-LUFC,dome,1080p,2,"1/2.9"" Progressive Scan CMOS",101 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,,,false,,0
+hilook-ipc-d120haa-lu,HiLook,IPC-D120HAA-LU,dome,1080p,2,"1/2.9"" Progressive Scan CMOS",103 / 82 horizontal (2.8 mm / 4 mm),hybrid,IP67,IK10,false,,0
 hilook-ipc-d120haa-luf,HiLook,IPC-D120HAA-LUF,dome,1080p,2,"1/2.9"" Progressive Scan CMOS",108 (2.8mm) / 87 (4mm),hybrid,IP67,,false,,0
 hilook-ipc-d120hae-c,HiLook,IPC-D120HAE-C,dome,1080p,2,"1/3"" Progressive Scan CMOS",97 (2.8mm) / 76 (4mm),ir,,,false,,0
 hilook-ipc-d121h-m,HiLook,IPC-D121H-M,dome,1080p,2,"1/2.7"" CMOS",112.1 (2.8mm) / 90.2 (4mm),ir,IP67,IK10,false,,0
@@ -15154,11 +15179,13 @@ hilook-ipc-d150h-m,HiLook,IPC-D150H-M,dome,5MP,5,"1/2.7"" CMOS",,ir,IP67,IK10,fa
 hilook-ipc-d150h-mu,HiLook,IPC-D150H-MU,dome,5MP,5,"1/2.7"" Progressive Scan CMOS",98 (2.8mm) / 75.3 (4mm),ir,IP67,IK10,false,,0
 hilook-ipc-d159h,HiLook,IPC-D159H,dome,5MP,5,"1/2.7"" Progressive Scan CMOS",95 (2.8mm) / 76 (4mm),color,IP67,IK08,false,,0
 hilook-ipc-d160ha-lu,HiLook,IPC-D160HA-LU,dome,6 MP,6,"1/2.4"" Progressive Scan CMOS",113 horizontal (2.8 mm) / 90 horizontal (4 mm),hybrid,IP67,IK08,false,,0
+hilook-ipc-d160haa-lu-sx,HiLook,IPC-D160HAA-LU/SX,dome,6MP,6,"1/2.4"" Progressive Scan CMOS",105 / 79 horizontal (2.8 mm / 4 mm),hybrid,IP67,IK10,true,,0
 hilook-ipc-d169ha,HiLook,IPC-D169HA,dome,6MP,6,"1/2.4"" Progressive Scan CMOS",117 (2.8mm) / 82 (4mm),color,IP67,IK08,false,,0
 hilook-ipc-d169ha-lu,HiLook,IPC-D169HA-LU,dome,6 MP,6,"1/2.4"" Progressive Scan CMOS",115 horizontal (2.8 mm) / 94 horizontal (4 mm),hybrid,IP67,IK08,false,,0
 hilook-ipc-d169haa-lu,HiLook,IPC-D169HAA-LU,dome,6 MP,6,"1/2.4"" Progressive Scan CMOS",109 horizontal (2.8 mm) / 89 horizontal (4 mm),hybrid,IP67,IK08,false,,0
 hilook-ipc-d180h,HiLook,IPC-D180H,dome,4K UHD,8,"1/2.7"" CMOS",107 horizontal,ir,IP67,IK10,false,2022,0
 hilook-ipc-d180ha-lu,HiLook,IPC-D180HA-LU,dome,8 MP,8,"1/2.7"" Progressive Scan CMOS",105 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,IK08,false,,0
+hilook-ipc-d180haa-lu-sx,HiLook,IPC-D180HAA-LU/SX,dome,4K UHD,8,"1/2.7"" Progressive Scan CMOS",112 / 89 horizontal (2.8 mm / 4 mm),hybrid,IP67,IK10,true,,0
 hilook-ipc-d261h-mu,HiLook,IPC-D261H-MU,turret,6 MP,6,"1/2.8"" Progressive Scan CMOS",107 horizontal (2.8 mm),ir,IP67,IK10,false,,0
 hilook-ipc-d281h-mu,HiLook,IPC-D281H-MU,turret,8 MP,8,"1/2.8"" Progressive Scan CMOS",107 horizontal (2.8 mm),ir,IP67,IK10,false,,0
 hilook-ipc-d620ha-lzu,HiLook,IPC-D620HA-LZU,dome,1080p,2,"1/2.9"" Progressive Scan CMOS",102.4 to 31.2 horizontal,hybrid,IP67,IK08,false,,0
@@ -15169,7 +15196,9 @@ hilook-ipc-d640ha-lzu,HiLook,IPC-D640HA-LZU,dome,4MP,4,"1/3"" Progressive Scan C
 hilook-ipc-d640ha-z,HiLook,IPC-D640HA-Z,dome,4MP,4,"1/3"" Progressive Scan CMOS",95.9 to 29.2 horizontal,ir,IP67,IK10,false,,0
 hilook-ipc-d640haa-lzu,HiLook,IPC-D640HAA-LZU,dome,4 MP,4,"1/3"" Progressive Scan CMOS",93 to 28 horizontal (2.8 to 12 mm),hybrid,IP67,,false,,0
 hilook-ipc-d660ha-lzu,HiLook,IPC-D660HA-LZU,dome,6 MP,6,"1/2.4"" Progressive Scan CMOS",106 to 35.6 horizontal,hybrid,IP67,IK08,false,,0
+hilook-ipc-d660haa-lzsu-sx,HiLook,IPC-D660HAA-LZSU/SX,dome,6MP,6,"1/2.4"" Progressive Scan CMOS",101 to 35 horizontal,hybrid,IP67,IK10,true,,0
 hilook-ipc-d680h-mz,HiLook,IPC-D680H-MZ,dome,8 MP,8,"1/2.8"" Progressive Scan CMOS",108 to 30 horizontal (2.8 to 12 mm),ir,IP67,IK10,false,,0
+hilook-ipc-d680haa-lzsu-sx,HiLook,IPC-D680HAA-LZSU/SX,dome,4K UHD,8,"1/2.7"" Progressive Scan CMOS",107 to 32 horizontal,hybrid,IP67,IK10,true,,0
 hilook-ipc-p220-d,HiLook,IPC-P220-D,box,1080p,2,"1/3"" Progressive Scan CMOS",75 horizontal (4 mm),ir,,,true,,0
 hilook-ipc-t140h,HiLook,IPC-T140H,turret,4MP,4,"1/2.8"" CMOS",103 horizontal,ir,IP67,IK10,false,2021,0
 hilook-ipc-t2120hap-luf,HiLook,IPC-T2120HAP-LUF,turret,12 MP,12,"1/1.8"" Progressive Scan CMOS",94.2 horizontal (2.8 mm),hybrid,IP67,,true,,0
@@ -15177,7 +15206,9 @@ hilook-ipc-t220ha,HiLook,IPC-T220HA,turret,2 MP,2,"1/2.9"" Progressive Scan CMOS
 hilook-ipc-t220ha-lu,HiLook,IPC-T220HA-LU,turret,2 MP,2,"1/2.9"" Progressive Scan CMOS",103 horizontal (2.8 mm) / 83 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-t220ha-luf,HiLook,IPC-T220HA-LUF,turret,2 MP,2,"1/2.9"" Progressive Scan CMOS",103 horizontal (2.8 mm) / 83 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-t220ha-lufc,HiLook,IPC-T220HA-LUFC,turret,2 MP,2,"1/2.9"" Progressive Scan CMOS",101 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-t220ha-lufc-sl,HiLook,IPC-T220HA-LUFC/SL,turret,1080p,2,"1/2.9"" Progressive Scan CMOS","101 horizontal (2.8mm), 80 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-t220ha-uc,HiLook,IPC-T220HA-UC,turret,2 MP,2,"1/2.9"" Progressive Scan CMOS",94 horizontal (2.8 mm) / 80 horizontal (4 mm),ir,IP67,,false,,0
+hilook-ipc-t220haa-lu,HiLook,IPC-T220HAA-LU,turret,1080p,2,"1/2.9"" Progressive Scan CMOS",103 / 82 horizontal (2.8 mm / 4 mm),hybrid,IP67,,false,,0
 hilook-ipc-t220haa-luf,HiLook,IPC-T220HAA-LUF,turret,2 MP,2,"1/2.9"" Progressive Scan CMOS",108 horizontal (2.8 mm) / 87 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-t220hae-uc,HiLook,IPC-T220HAE-UC,turret,2 MP,2,"1/3"" Progressive Scan CMOS",97 horizontal (2.8 mm) / 76 horizontal (4 mm),ir,IP67,,false,,0
 hilook-ipc-t221h,HiLook,IPC-T221H,turret,2 MP,2,"1/2.7"" Progressive Scan CMOS",105 horizontal (2.8 mm) / 81 horizontal (4 mm),ir,IP67,,false,,0
@@ -15197,6 +15228,7 @@ hilook-ipc-t240ha,HiLook,IPC-T240HA,turret,4 MP,4,"1/3"" Progressive Scan CMOS",
 hilook-ipc-t240ha-lu,HiLook,IPC-T240HA-LU,turret,4 MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-t240ha-luf,HiLook,IPC-T240HA-LUF/SL,turret,4 MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-t240ha-lufc,HiLook,IPC-T240HA-LUFC,turret,4 MP,4,"1/2.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 82 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-t240ha-lufc-sl,HiLook,IPC-T240HA-LUFC/SL,turret,4MP,4,"1/2.8"" Progressive Scan CMOS","104 horizontal (2.8mm), 82 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-t240haa-luf,HiLook,IPC-T240HAA-LUF,turret,4 MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 79 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-t240hae-uc,HiLook,IPC-T240HAE-UC,turret,4 MP,4,"1/2.7"" Progressive Scan CMOS",112 horizontal (2.8 mm) / 89 horizontal (4 mm),ir,IP67,,false,,0
 hilook-ipc-t240hap-luf,HiLook,IPC-T240HAP-LUF/SL,turret,4 MP,4,"1/3"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,,true,,0
@@ -15209,11 +15241,14 @@ hilook-ipc-t249ha,HiLook,IPC-T249HA,turret,4 MP,4,"1/3"" Progressive Scan CMOS",
 hilook-ipc-t249ha-lu,HiLook,IPC-T249HA-LU,turret,4 MP,4,"1/3"" Progressive Scan CMOS",96 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-t249ha-luf,HiLook,IPC-T249HA-LUF,turret,4 MP,4,"1/3"" Progressive Scan CMOS",96 horizontal (2.8 mm) / 80 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-t249haa-lu,HiLook,IPC-T249HAA-LU,turret,4 MP,4,"1/3"" Progressive Scan CMOS",101.5 horizontal (2.8 mm) / 84.1 horizontal (4 mm),hybrid,IP67,,false,,0
+hilook-ipc-t249haa-luf-srb,HiLook,IPC-T249HAA-LUF/SRB,turret,4MP,4,"1/3"" Progressive Scan CMOS","101.5 horizontal (2.8mm), 84.1 horizontal (4mm)",hybrid,IP67,,true,,0
 hilook-ipc-t249haah-lu,HiLook,IPC-T249HAAH-LU,turret,4 MP,4,"1/1.8"" Progressive Scan CMOS",104 horizontal (2.8 mm) / 89.3 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-t250h,HiLook,IPC-T250H,turret,5 MP,5,"1/2.7"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 75.3 horizontal (4 mm),ir,IP67,,,,0
 hilook-ipc-t250h-mu,HiLook,IPC-T250H-MU,turret,5 MP,5,"1/2.7"" Progressive Scan CMOS",98 horizontal (2.8 mm) / 77 horizontal (4 mm),ir,IP67,,false,,0
 hilook-ipc-t260ha-lu,HiLook,IPC-T260HA-LU,turret,6 MP,6,"1/2.4"" Progressive Scan CMOS",113 horizontal (2.8 mm) / 90 horizontal (4 mm),hybrid,IP67,,false,,0
 hilook-ipc-t260ha-luf,HiLook,IPC-T260HA-LUF,turret,6 MP,6,"1/2.4"" Progressive Scan CMOS",105 horizontal,hybrid,IP67,,false,,0
+hilook-ipc-t260haa-luf-sx,HiLook,IPC-T260HAA-LUF/SX,turret,6MP,6,"1/2.4"" Progressive Scan CMOS",105 / 79 horizontal (2.8 mm / 4 mm),hybrid,IP67,,true,,0
+hilook-ipc-t260had-lu,HiLook,IPC-T260HAD-LU,panoramic,6MP (180 stitched),6,"1/2.5"" Progressive Scan CMOS",180 horizontal / 77 vertical,hybrid,IP67,,,,0
 hilook-ipc-t260had-luf,HiLook,IPC-T260HAD-LUF/S(L)(RB),turret,6 MP,6,"1/2.5"" Progressive Scan CMOS",180 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-t260hap-luf,HiLook,IPC-T260HAP-LUF/SL,turret,6 MP,6,"1/2.4"" Progressive Scan CMOS",105 horizontal (2.8 mm) / 78 horizontal (4 mm),hybrid,IP67,,true,,0
 hilook-ipc-t261h-mu,HiLook,IPC-T261H-MU,turret,6 MP,6,"1/2.8"" Progressive Scan CMOS",107 horizontal (2.8 mm) / 87 horizontal (4 mm),ir,IP67,,false,,0
@@ -15230,6 +15265,7 @@ hilook-ipc-t280h,HiLook,IPC-T280H,turret,4K UHD,8,"1/2.7"" CMOS",107 horizontal,
 hilook-ipc-t280h-uf,HiLook,IPC-T280H-UF,turret,8 MP,8,"1/2.5"" Progressive Scan CMOS",102 (2.8mm) / 83 (4mm),ir,IP67,,false,,0
 hilook-ipc-t280ha-lu,HiLook,IPC-T280HA-LU,turret,4K UHD,8,"1/2.7"" CMOS",107 horizontal,hybrid,IP67,IK10,false,2024,0
 hilook-ipc-t280ha-luf,HiLook,IPC-T280HA-LUF,turret,8 MP,8,"1/2.7"" Progressive Scan CMOS",113 horizontal,hybrid,IP67,,false,,0
+hilook-ipc-t280haa-luf-sx,HiLook,IPC-T280HAA-LUF/SX,turret,4K UHD,8,"1/2.7"" Progressive Scan CMOS",112 / 89 horizontal (2.8 mm / 4 mm),hybrid,IP67,,true,,0
 hilook-ipc-t280had-lu,HiLook,IPC-T280HAD-LU,turret,8 MP,8,"1/2.4"" Progressive Scan CMOS",180 horizontal,hybrid,IP67,,false,,0
 hilook-ipc-t280had-luf,HiLook,IPC-T280HAD-LUF/S(L)(RB),turret,8 MP,8,"1/2.4"" Progressive Scan CMOS",180 horizontal,hybrid,IP67,,true,,0
 hilook-ipc-t281h-mu,HiLook,IPC-T281H-MU,turret,8 MP,8,"1/2.8"" Progressive Scan CMOS",107 (2.8mm) / 87 (4mm),ir,IP67,,false,,0
@@ -15265,6 +15301,7 @@ hilook-ptz-n3404liu,HiLook,PTZ-N3404LIU/SL,ptz,4MP,4,"1/2.8"" Progressive Scan C
 hilook-ptz-n3404m-de,HiLook,PTZ-N3404M-DE,ptz,4MP,4,"1/2.8"" Progressive Scan CMOS",98 to 34.2 horizontal,hybrid,IP66,,true,,0
 hilook-ptz-n3804m-de,HiLook,PTZ-N3804M-DE,ptz,8MP,8,"1/2.8"" Progressive Scan CMOS",98 to 34.2 horizontal,hybrid,IP66,,true,,0
 hilook-ptz-n3d204m-de,HiLook,PTZ-N3D204M-DE/12,ptz,2MP+2MP TandemVu,2,"1/2.8"" Progressive Scan CMOS",92 to 33 (PTZ) / 104.9 (bullet),hybrid,IP66,,true,,0
+hilook-ptz-n3d404m-d-4g-14,HiLook,PTZ-N3D404M-D/4G/14,ptz,4MP+4MP TandemVu,4,"1/3"" Progressive Scan CMOS (bullet and PTZ channels)",98.2 (bullet) / 93.5 to 29.1 (PTZ) horizontal,hybrid,IP66,,true,,0
 hilook-ptz-n3d404m-de,HiLook,PTZ-N3D404M-DE/14,ptz,4MP+4MP TandemVu,4,"1/2.8"" Progressive Scan CMOS",98 to 34.2 (PTZ) / 114.9 (bullet),hybrid,IP66,,true,,0
 hilook-ptz-n3d410m-de,HiLook,PTZ-N3D410M-DE,ptz,4MP per channel,4,"1/2.8"" progressive scan CMOS",104.9 (bullet) / 50 to 7.5 (PT),hybrid,IP66,,false,,0
 hilook-ptz-n4215-de3,HiLook,PTZ-N4215-DE3(J),ptz,1080p,2,"1/2.8"" progressive scan CMOS",57.6 to 4.0 horizontal (wide to tele),,,,,,0
@@ -15276,6 +15313,8 @@ hilook-ptz-n5225i-a,HiLook,PTZ-N5225I-A,ptz,1080p,2,"1/2.8"" progressive scan CM
 hilook-ptz-n5225i-de,HiLook,PTZ-N5225I-DE(J),ptz,1080p,2,"1/2.8"" progressive scan CMOS",57.6 to 2.5 horizontal (wide to tele),ir,IP67,,,,0
 hilook-ptz-n5425i-de,HiLook,PTZ-N5425I-DE,ptz,4MP,4,"1/2.8"" progressive scan CMOS",57.6 to 2.5 horizontal (wide to tele),ir,IP66,,,,0
 hilook-ptz-nd4404,HiLook,PTZ-ND4404,ptz,4MP per channel,4,"1/2.8"" progressive scan CMOS",114.9 (bullet) / 98 to 34.2 (PT),hybrid,IP66,,false,,0
+hilook-ptz-t4215-d3,HiLook,PTZ-T4215-D3,ptz,1080p,2,"1/2.8"" Progressive Scan CMOS",53.8 to 4.0 horizontal (wide to tele),none,,,,,0
+hilook-ptz-t4215i-d,HiLook,PTZ-T4215I-D,ptz,1080p,2,"1/2.8"" Progressive Scan CMOS",53.8 to 4.0 horizontal (wide to tele),ir,IP66,,,,0
 hilook-ptz-t4225i-d,HiLook,PTZ-T4225I-D,ptz,1080p,2,"1/2.8"" progressive scan CMOS",57.6 to 2.5 horizontal (wide to tele),ir,IP66,,,,0
 hilook-ptz-t4425i-d,HiLook,PTZ-T4425I-D,ptz,4MP,4,"1/2.8"" progressive scan CMOS",57.6 to 2.5 horizontal (wide to tele),ir,IP66,,,,0
 hilook-thc-b110-p,HiLook,THC-B110-P,bullet,720p,1,1 MP CMOS,92 horizontal (2.8mm) / 70.9 (3.6mm) / 56.7 (6mm),ir,IP66,,,,0
@@ -15338,6 +15377,7 @@ hilook-thc-t129-ms,HiLook,THC-T129-MS,turret,1080p,2,2 MP CMOS,105 (2.8mm) / 84 
 hilook-thc-t129-p,HiLook,THC-T129-P,turret,1080p,2,2 MP CMOS,102 (2.8mm) / 80 (3.6mm),color,,,,,0
 hilook-thc-t129-ps,HiLook,THC-T129-PS,turret,1080p,2,2 MP CMOS,105 (2.8mm) / 84 (3.6mm),color,,,,,0
 hilook-thc-t140-p,HiLook,THC-T140-P,turret,4MP,4,4 MP CMOS,100.2 horizontal (2.8 mm) / 88 horizontal (3.6 mm) / 56.9 horizontal (6 mm),ir,,,,,0
+hilook-thc-t150-ms,HiLook,THC-T150-MS,turret,5MP,5,5 MP CMOS,"85 horizontal (2.8mm), 80 horizontal (3.6mm)",ir,IP67,,false,,0
 hilook-thc-t157-lms,HiLook,THC-T157-LMS,turret,3K,5,3K CMOS,104.9 horizontal (2.8 mm) / 81.3 horizontal (3.6 mm),hybrid,IP66,,,,0
 hilook-thc-t157-lps,HiLook,THC-T157-LPS,turret,3K,5,3K CMOS,104.9 horizontal (2.8 mm) / 81.3 horizontal (3.6 mm),hybrid,,,,,0
 hilook-thc-t157-ptlts,HiLook,THC-T157-PTLTS,turret,3K,5,3K CMOS,112 horizontal (2.8 mm) / 92 horizontal (3.6 mm),hybrid,,,true,,0
@@ -15355,6 +15395,7 @@ hilook-thc-t229-lts,HiLook,THC-T229-LTS,turret,1080p,2,2 MP CMOS,101 horizontal 
 hilook-thc-t229-m,HiLook,THC-T229-M,turret,1080p,2,2 MP CMOS,102 horizontal (2.8 mm) / 80 horizontal (3.6 mm),color,IP66,,,,0
 hilook-thc-t229-ms,HiLook,THC-T229-MS,turret,1080p,2,2 MP CMOS,105 horizontal (2.8 mm) / 84 horizontal (3.6 mm),color,IP66,,,,0
 hilook-thc-t250-m,HiLook,THC-T250-M,turret,5MP,5,5 MP CMOS,100.2 horizontal (2.8 mm) / 88 horizontal (3.6 mm),ir,IP66,,,,0
+hilook-thc-t250-ms,HiLook,THC-T250-MS,turret,5MP,5,5 MP CMOS,"85.5 horizontal (2.8mm), 80.1 horizontal (3.6mm)",ir,IP67,,false,,0
 hilook-thc-t257-lms,HiLook,THC-T257-LMS,turret,3K,5,3K CMOS,104.9 horizontal (2.8mm) / 81.3 (3.6mm),hybrid,IP66,,,,0
 hilook-thc-t257-lts,HiLook,THC-T257-LTS,turret,3K,5,3K CMOS,105 horizontal (2.8mm) / 80 (3.6mm),hybrid,IP67,,true,,0
 hilook-thc-t259-lpts,HiLook,THC-T259-LPTS,turret,3K,5,3K CMOS,105 horizontal (2.8mm) / 90 (3.6mm),hybrid,IP67,,true,,0
@@ -25423,17 +25464,22 @@ tiandy-tc-c32dp-w-e-y-4mm-v4-0,Tiandy,TC-C32DP W/E/Y/4mm/V4.0,bullet,2MP,2,"1/2.
 tiandy-tc-c32fp-w-e-y-2-8mm,Tiandy,TC-C32FP W/E/Y/2.8mm,turret,2MP,2,"1/2.8"" CMOS",H: 100.4,color,IP66,,,,0
 tiandy-tc-c32fp-w-e-y-2-8mm-v4-0,Tiandy,TC-C32FP W/E/Y/2.8mm/V4.0,turret,2MP,2,"1/2.8"" CMOS",H: 99.5,color,IP66,,,,0
 tiandy-tc-c32gn,Tiandy,TC-C32GN,bullet,1080p,2,"1/2.8"" CMOS",84 horizontal,ir,IP66,,false,2021,0
+tiandy-tc-c32gn-i5-e-c-4mm,Tiandy,TC-C32GN I5/E/C/4mm,bullet,2MP,2,"1/2.9"" CMOS",,ir,IP67,,,,0
 tiandy-tc-c32gn-i5-e-y-c-2-8mm-v4-2,Tiandy,TC-C32GN I5/E/Y/C/2.8mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1",ir,IP67,,,,0
 tiandy-tc-c32gn-i5-e-y-c-4mm-v4-2,Tiandy,TC-C32GN I5/E/Y/C/4mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 83.3, V: 46.8",ir,IP67,,,,0
 tiandy-tc-c32gp,Tiandy,TC-C32GP,bullet,1080p,2,"1/2.8"" Starlight CMOS",108 horizontal,ir,IP67,,false,2022,0
 tiandy-tc-c32gp-i5-e-c-3-6mm-v2-0,Tiandy,TC-C32GP I5/E/C/3.6mm/V2.0,bullet,2MP,2,"1/2.8"" Progressive Scan CMOS","H: 91, V: 55",ir,IP67,,,,0
+tiandy-tc-c32gp-i5-e-c-4mm,Tiandy,TC-C32GP I5/E/C/4mm,bullet,2MP,2,"1/2.8"" CMOS",,ir,IP67,,,,0
 tiandy-tc-c32gs-i5-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C32GS I5/E/Y/C/SD/2.8mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1",ir,IP67,,,,0
 tiandy-tc-c32gs-i5-e-y-c-sd-4mm-v4-2,Tiandy,TC-C32GS I5/E/Y/C/SD/4mm/V4.2,bullet,2MP,2,"1/2.8"" CMOS","H: 83.3, V: 46.8",ir,IP67,,,,0
+tiandy-tc-c32hm-i3-e-m-2-8mm,Tiandy,TC-C32HM I3/E/M/2.8mm,dome,2MP,2,"1/2.7"" CMOS",,ir,IP66,IK10,,,0
 tiandy-tc-c32hn-i3-e-c-2-8mm-v2-0,Tiandy,TC-C32HN I3/E/C/2.8mm/V2.0,turret,2MP,2,"1/2.8"" CMOS",H: 97.4,ir,IP66,,,,0
 tiandy-tc-c32hn-i3-e-y-c-2-8mm-v4-2,Tiandy,TC-C32HN I3/E/Y/C/2.8mm/V4.2,turret,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1",ir,IP66,,,,0
 tiandy-tc-c32hn-i3-e-y-c-sd-2-8mm-v4-1,Tiandy,TC-C32HN I3/E/Y/C/SD/2.8mm/V4.1,turret,2MP,2,"1/2.8"" CMOS","H: 99.7, V: 55.1, D: 113.9",ir,IP66,,,,0
+tiandy-tc-c32hp-i3-e-c-2-8mm,Tiandy,TC-C32HP I3/E/C/2.8mm,dome,2MP,2,"1/2.8"" CMOS",,ir,IP66,,,,0
 tiandy-tc-c32hp-i3-e-c-m-2-8mm,Tiandy,TC-C32HP I3/E/C/M/2.8mm,turret,2MP,2,"1/2.8"" CMOS",H: 107,ir,IP66,,,,0
 tiandy-tc-c32hs-i3-e-y-c-sd-2-8mm-v4-2,Tiandy,TC-C32HS I3/E/Y/C/SD/2.8mm/V4.2,turret,2MP,2,"1/2.8"" CMOS",H: 99.7,ir,IP66,,,,0
+tiandy-tc-c32jn-i5-e-c-4mm,Tiandy,TC-C32JN I5/E/C/4mm,bullet,2MP,2,"1/2.9"" CMOS",,ir,IP67,,,,0
 tiandy-tc-c32js-i5-e-4mm,Tiandy,TC-C32JS I5/E/4mm,bullet,2MP,2,"1/2.8"" CMOS",H: 87.6,ir,IP67,,,,0
 tiandy-tc-c32js-i5-e-m-n-4mm-v4-1,Tiandy,TC-C32JS I5/E/M/N/4mm/V4.1,bullet,2MP,2,"1/2.8"" CMOS","H: 85.2, V: 44.9",ir,IP67,,,,0
 tiandy-tc-c32kn-3era-28,Tiandy,TC-C32KN 3ERA-28,dome,2MP,2,"1/2.7"" CMOS","H: 102.4, V: 57.2, D: 117.3",hybrid,IP67,IK10,,,0
@@ -25733,13 +25779,18 @@ tiandy-tc-h322a-9da-4,Tiandy,TC-H322A 9DA-4,ptz,2MP,2,"1/3"" CMOS","H: 76.5, V: 
 tiandy-tc-h322n-9da-4,Tiandy,TC-H322N 9DA-4,ptz,2MP,2,"1/3"" CMOS","H: 75.1, V: 41.1, D: 87.3",hybrid,,,,,0
 tiandy-tc-h322n-9db-4,Tiandy,TC-H322N 9DB-4,ptz,2MP,2,"1/3"" CMOS","H: 76.5, V: 41.9, D: 89",hybrid,,,true,,0
 tiandy-tc-h323q-04x-i-e,Tiandy,TC-H323Q 04X/I/E,ptz,2MP,2,"1/2.8"" CMOS",H: 104-30,hybrid,IP40,,,,0
+tiandy-tc-h324s-23x-i-e-c-v3-0,Tiandy,TC-H324S 23X/I/E/C/V3.0,ptz,2MP,2,"1/2.8"" CMOS","H: 55.8-3.2, V: 32.2-1.8, D: 61-3.64",ir,IP66,,,,0
+tiandy-tc-h324s-23x-i-e-v3-0,Tiandy,TC-H324S 23X/I/E/V3.0,ptz,2MP,2,"1/2.8"" CMOS","H: 55.8-3.2, V: 32.2-1.8, D: 61-3.64",ir,IP66,,,,0
 tiandy-tc-h324s-25x-i-e,Tiandy,TC-H324S 25X/I/E,ptz,2MP,2,"1/2.8"" CMOS",,ir,IP66,,,,0
 tiandy-tc-h324s-25x-i-e-a-v-v3-0,Tiandy,TC-H324S 25X/I/E/A/V/V3.0,ptz,2MP,2,"1/2.8"" CMOS","H: 58.5-2.8, V: 33.2-1.5, D: 65.2-3.3",ir,IP66,,,,0
 tiandy-tc-h324s-25x-i-e-v-v3-0,Tiandy,TC-H324S 25X/I/E/V/V3.0,ptz,2MP,2,"1/2.8"" CMOS",,ir,IP66,,,,0
 tiandy-tc-h324s-323ia,Tiandy,TC-H324S 323IA,ptz,,2,,,ir,IP66,,,,0
 tiandy-tc-h326m,Tiandy,TC-H326M,ptz,1080p,2,"1/2.8"" Starlight CMOS",57.6-2.5 horizontal,ir,IP66,,false,2022,0
+tiandy-tc-h326m-44x-iw-a,Tiandy,TC-H326M 44X/IW/A,ptz,2MP,2,"1/1.8"" CMOS","H: 61.8-2.3, V: 36.3-1.3",hybrid,IP66,,,,0
 tiandy-tc-h326s-25x-i-e-c,Tiandy,TC-H326S 25X/I/E/C,ptz,2MP,2,"1/2.8"" CMOS",,ir,IP67,,,,0
 tiandy-tc-h326s-33x-i-e,Tiandy,TC-H326S 33X/I/E,ptz,2MP,2,"1/2.8"" CMOS",,ir,IP67,,,,0
+tiandy-tc-h326s-33x-i-e-a,Tiandy,TC-H326S 33X/I/E/A,ptz,2MP,2,"1/2.8"" CMOS",62.1-2.18,ir,IP66,,,,0
+tiandy-tc-h326s-33x-i-e-plus-a-v3-0,Tiandy,TC-H326S 33X/I/E+/A/V3.0,ptz,2MP,2,"1/2.8"" CMOS","H: 60-2.3, V: 34.4-1.5, D: 66.7-2.8",ir,IP66,,,,0
 tiandy-tc-h332a-9da-4,Tiandy,TC-H332A 9DA-4,ptz,3MP,3,"1/2.8"" CMOS","H: 84.6, V: 46.3, D: 98.1",hybrid,,,true,,0
 tiandy-tc-h332n-9da-4,Tiandy,TC-H332N 9DA-4,ptz,3MP,3,"1/3"" CMOS","H: 51, V: 26.3, D: 60.3",hybrid,,,,,0
 tiandy-tc-h332n-9db-4,Tiandy,TC-H332N 9DB-4,ptz,3MP,3,"1/2.8"" CMOS","H: 84.6, V: 46.3, D: 98.1",hybrid,,,true,,0
@@ -25753,6 +25804,8 @@ tiandy-tc-h343k-8da-4,Tiandy,TC-H343K 8DA-4,ptz,4MP,4,"1/3"" CMOS","H: 77.3, V: 
 tiandy-tc-h344s-25x-i-e-plus-a-v3-0,Tiandy,TC-H344S 25X/I/E+/A/V3.0,ptz,4MP,4,"1/2.7"" CMOS","H: 58-2.8, V: 33.9-1.7, D: 64.8-3.3",ir,IP66,,,,0
 tiandy-tc-h348m-63x-il-e-a,Tiandy,TC-H348M 63X/IL/E++/A,ptz,4MP,4,"1/1.8"" CMOS","H: 60-1.5, V: 35.5-0.87, D: 67.5-1.77",hybrid,IP66,,,,0
 tiandy-tc-h354s-423ia,Tiandy,TC-H354S 423IA,ptz,,5,,,ir,IP66,,,,0
+tiandy-tc-h356q-30x-iw-a,Tiandy,TC-H356Q 30X/IW/A,ptz,5MP,5,"1/2.8"" CMOS",69.5-2.7,hybrid,IP66,,,,0
+tiandy-tc-h356q-30x-iw-e-plus-plus-a-v3-0,Tiandy,TC-H356Q 30X/IW/E++/A/V3.0,ptz,5MP,5,"1/2.8"" CMOS","H: 61.9-2.5, V: 35.5-1.4, D: 69.1-2.9",hybrid,IP66,,,,0
 tiandy-tc-h356s-30x-i-e-plus-plus-a-v3-0,Tiandy,TC-H356S 30X/I/E++/A/V3.0,ptz,5MP,5,"1/2.7"" CMOS","H: 61.9-2.5, V: 35.5-1.4, D: 69.1-2.9",ir,IP66,,,,0
 tiandy-tc-h356s-430ia,Tiandy,TC-H356S 430IA,ptz,,5,,,ir,,,,,0
 tiandy-tc-h356v-444da,Tiandy,TC-H356V 444DA,ptz,5MP,5,"1/1.8"" CMOS","H: 59.2-2.5, V: 34.6-1.4, D: 66.7-2.9",hybrid,IP66,,,,0
@@ -25768,9 +25821,14 @@ tiandy-tc-h366v-425da,Tiandy,TC-H366V 425DA,ptz,6MP (dual: panorama 3840x1568 + 
 tiandy-tc-h366v-4mp-25x-iw-e-a-2-8mm,Tiandy,TC-H366V 4MP/25X/IW/E/A/2.8mm,panoramic,6MP,6,"Panorama: 1/1.8"" CMOS Detail: 1/2.7"" CMOS","Panorama H: 190, V: 75; Detail H: 58-2.8, V: 33.9-1.27, D: 64.8-3.3",hybrid,IP66,,,,0
 tiandy-tc-h388m,Tiandy,TC-H388M,ptz,4K UHD,8,"1/1.8"" Starlight CMOS",54-2.1 horizontal,ir,IP66,,false,2023,0
 tiandy-tc-h388m-44x-il-e-a,Tiandy,TC-H388M 44X/IL/E++/A,ptz,8MP 4K,8,"1/1.8"" CMOS","H: 60-2.31, V: 35.5-1.3, D: 67.5-2.65",hybrid,IP66,,,,0
+tiandy-tc-h389m-44x-lw-p-a,Tiandy,TC-H389M 44X/LW/P/A,panoramic,8MP,8,"1/1.8"" CMOS",H: 180 (panoramic) / 61.2-2 (PTZ),hybrid,IP66,,,,0
 tiandy-tc-nc1261,Tiandy,TC-NC1261,fisheye,12MP,12,"1/1.7"" CMOS",H: 180,hybrid,IP66,IK10,,,0
+tiandy-tc-nc44m,Tiandy,TC-NC44M,dome,4MP,4,"1/3"" CMOS",90.8-32.1,ir,IP66,IK10,,,0
 tiandy-tc-ncl514s,Tiandy,TC-NCL514S,bullet,5MP,5,"1/2.8"" CMOS",H: 81,ir,IP67,,,,0
 tiandy-tc-ncl522s,Tiandy,TC-NCL522S,turret,5MP,5,"1/2.8"" CMOS",H: 97.8,ir,IP66,,,,0
+tiandy-tc-nh6220ie-c,Tiandy,TC-NH6220IE-C,ptz,2MP,2,"1/2.8"" CMOS",55.8-3.2,ir,IP66,,,,0
+tiandy-tc-nh6220ie-cp,Tiandy,TC-NH6220IE-CP,ptz,2MP,2,"1/2.8"" CMOS",55.8-3.2,ir,IP66,,,,0
+tiandy-tc-nh6232isa-g,Tiandy,TC-NH6232ISA-G,ptz,2MP,2,"1/1.8"" CMOS",61.2-2.32,hybrid,IP66,,,,0
 tiandy-td-c659v-i2-wifi-se-u-4mm-v5-0,Tiandy,TD-C659V I2/WIFI/SE/U/4mm/V5.0,box,4MP,4,"1/3"" CMOS","H: 86.4, V: 48.6, D: 98",ir,,,true,,0
 tiandy-td-c65cn-i3w-wifi-u-2-8mm-et-v4-0,Tiandy,TD-C65CN I3W/WIFI/U/2.8mm/ET/V4.0,bullet,4MP,4,"1/2.8"" CMOS","H: 103.8, V: 56.8, D: 120.4",hybrid,IP65,,true,,0
 tiandy-td-c697n-i5w-wifi-sel-u-2-8mm-v5-0,Tiandy,TD-C697N I5W/WIFI/SEL/U/2.8mm/V5.0,bullet,4MP,4,"1/3"" CMOS","H: 94.5, V: 52.0, D: 108.9",hybrid,IP65,,true,,0

@@ -1,6 +1,6 @@
 # HiLook IPC-B469HAA-LU
 
-*Also known as: IPC-B469HAA-LU(F)(/SL)(/SRB)*
+*Also known as: IPC-B469HAA-LU(F)(/SL)(/SRB), IPC-B469HAA-LUF/SRB*
 
 | Field | Spec |
 |-------|------|

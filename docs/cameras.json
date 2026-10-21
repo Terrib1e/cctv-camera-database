@@ -1548494,6 +1548494,138 @@
     "substream_max_resolution": "640x480"
   },
   {
+    "id": "hilook-ipc-b120ha-lufc-sl",
+    "brand": "HiLook",
+    "model": "IPC-B120HA-LUFC/SL",
+    "aliases": [
+      "2 MP Smart Hybrid Light Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "sensor": "1/2.9\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F2.2",
+      "varifocal": false
+    },
+    "field_of_view_deg": "101 horizontal (2.8mm), 80 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 20,
+      "min_lux_color": 0.01
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "640x480",
+          "fps": 30
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 9,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "179 x 67.4 x 69.1",
+    "weight_g": 270,
+    "operating_temp_c": "-30 to 45",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "Smart Hybrid Light: IR up to 20 m, white light up to 15 m",
+      "human detection",
+      "Digital WDR",
+      "built-in two-way audio",
+      "white flashing light and audible warning (/SL)",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-B120HA-LUFC_SL_Datasheet_20260409.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000119322/IPC-B120HA-LUFC_SL_Datasheet_20260409.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 640,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "640x480"
+  },
+  {
     "id": "hilook-ipc-b120ha-uc",
     "brand": "HiLook",
     "model": "IPC-B120HA-UC",
@@ -1548767,6 +1548899,138 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ipc-b120haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B120HAA-LUF/SX",
+    "aliases": [
+      "HiLook 2 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "640x480",
+          "fps": 30
+        }
+      ]
+    },
+    "sensor": "1/2.9\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "103 / 82 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 10.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "Digital WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "69 x 66 x 185.9",
+    "weight_g": 310,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 640,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B120HAA-LUF_SX_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113466/IPC-B120HAA-LUF_SX_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3448,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
@@ -1551605,6 +1551869,139 @@
     "substream_max_resolution": null
   },
   {
+    "id": "hilook-ipc-b140ha-luf-sl",
+    "brand": "HiLook",
+    "model": "IPC-B140HA-LUF/SL",
+    "aliases": [
+      "IPC-B140HA-LUF/SL(2.8mm)CKD",
+      "4 MP Smart Hybrid Light MD 2.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "98 horizontal (2.8mm), 78 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.005
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 9,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "179 x 67.4 x 69.1",
+    "weight_g": 315,
+    "operating_temp_c": "-30 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "Smart Hybrid Light (IR + white light) up to 30 m",
+      "Motion Detection 2.0 (human/vehicle)",
+      "120 dB WDR",
+      "built-in two-way audio",
+      "white flashing light and audible warning (/SL)",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-B140HA-LUF_SL_Datasheet_20260409.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000077161/IPC-B140HA-LUF_SL_Datasheet_20260409.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b140ha-lufc",
     "brand": "HiLook",
     "model": "IPC-B140HA-LUFC",
@@ -1551728,6 +1552125,138 @@
     "sensor_size_inch": 0.3571,
     "substream_count": 0,
     "substream_max_resolution": null
+  },
+  {
+    "id": "hilook-ipc-b140ha-lufc-sl",
+    "brand": "HiLook",
+    "model": "IPC-B140HA-LUFC/SL",
+    "aliases": [
+      "4 MP Smart Hybrid Light Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "sensor": "1/2.8\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F2.2",
+      "varifocal": false
+    },
+    "field_of_view_deg": "104 horizontal (2.8mm), 82 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 20,
+      "min_lux_color": 0.01
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 9,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "179 x 67.4 x 69.1",
+    "weight_g": 270,
+    "operating_temp_c": "-30 to 45",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "Smart Hybrid Light (IR + white light) up to 20 m",
+      "human detection",
+      "Digital WDR",
+      "built-in two-way audio",
+      "white flashing light and audible warning (/SL)",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-B140HA-LUFC_SL_Datasheet_20260409.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000119330/IPC-B140HA-LUFC_SL_Datasheet_20260409.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
   },
   {
     "id": "hilook-ipc-b140haa-lu",
@@ -1551870,6 +1552399,138 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b140haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B140HAA-LUF/SX",
+    "aliases": [
+      "HiLook 4 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2688,
+      "max_height": 1520,
+      "label": "4MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 24,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2688x1520",
+          "fps": 24
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "103 / 83 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 10.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "69 x 66 x 185.9",
+    "weight_g": 310,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B140HAA-LUF_SX_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113436/IPC-B140HAA-LUF_SX_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b140hae-uc",
     "brand": "HiLook",
     "model": "IPC-B140HAE-UC",
@@ -1552002,6 +1552663,138 @@
     "cloud_dependency": "local",
     "added": "2026-09-04",
     "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
+    "id": "hilook-ipc-b140hap-luf-sl",
+    "brand": "HiLook",
+    "model": "IPC-B140HAP-LUF/SL",
+    "aliases": [
+      "4 MP Smart Hybrid Light MD 2.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "98 horizontal (2.8mm), 78 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.005
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 9.5,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "179 x 67.4 x 69.1",
+    "weight_g": 450,
+    "operating_temp_c": "-30 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "Smart Hybrid Light (IR + white light) up to 30 m",
+      "Motion Detection 2.0 (human/vehicle)",
+      "120 dB WDR",
+      "built-in two-way audio",
+      "red and blue flashing light with siren/audio alarm",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-B140HAP-LUF_SL_Datasheet_20260409.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000118722/IPC-B140HAP-LUF_SL_Datasheet_20260409.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
     "substream_count": 1,
     "substream_max_resolution": "1280x720"
   },
@@ -1554326,6 +1555119,138 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b160haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B160HAA-LUF/SX",
+    "aliases": [
+      "HiLook 6 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "105 / 79 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 10.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "69.1 x 66.9 x 179",
+    "weight_g": 320,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B160HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113445/IPC-B160HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b160hap-luf",
     "brand": "HiLook",
     "model": "IPC-B160HAP-LUF",
@@ -1555384,6 +1556309,138 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b180haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B180HAA-LUF/SX",
+    "aliases": [
+      "HiLook 8 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 3840,
+      "max_height": 2160,
+      "label": "4K UHD"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3840x2160",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.7\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "112 / 89 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 10.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "69.1 x 66.9 x 179",
+    "weight_g": 320,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B180HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113433/IPC-B180HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b189h-mu",
     "brand": "HiLook",
     "model": "IPC-B189H-MU",
@@ -1556216,6 +1557273,138 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ipc-b420haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B420HAA-LUF/SX",
+    "aliases": [
+      "HiLook 2 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "640x480",
+          "fps": 30
+        }
+      ]
+    },
+    "sensor": "1/2.9\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "103 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "Digital WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "83.7 x 81 x 211",
+    "weight_g": 460,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 640,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B420HAA-LUF_SX_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113456/IPC-B420HAA-LUF_SX_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3448,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
@@ -1557327,6 +1558516,138 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b440ha-luf-sl",
+    "brand": "HiLook",
+    "model": "IPC-B440HA-LUF/SL",
+    "aliases": [
+      "4 MP Smart Hybrid Light MD 2.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4/6",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "78 horizontal (4mm), 49 horizontal (6mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.005
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 10,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "83.7 x 80.7 x 221.1",
+    "weight_g": 580,
+    "operating_temp_c": "-30 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "Smart Hybrid Light (IR + white light) up to 50 m",
+      "Motion Detection 2.0 (human/vehicle)",
+      "120 dB WDR",
+      "built-in two-way audio",
+      "flashing light and audible warning (/SL)",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-B440HA-LUF_SL_Datasheet_20260410.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000077165/IPC-B440HA-LUF_SL_Datasheet_20260410.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b440haa-lu",
     "brand": "HiLook",
     "model": "IPC-B440HAA-LU",
@@ -1557463,6 +1558784,138 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
+    "id": "hilook-ipc-b440haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B440HAA-LUF/SX",
+    "aliases": [
+      "HiLook 4 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2688,
+      "max_height": 1520,
+      "label": "4MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 24,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2688x1520",
+          "fps": 24
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "103 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "83.7 x 81 x 211",
+    "weight_g": 460,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B440HAA-LUF_SX_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113442/IPC-B440HAA-LUF_SX_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3333,
     "substream_count": 1,
     "substream_max_resolution": "1280x720"
@@ -1558146,6 +1559599,140 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b449ha-luf-srb",
+    "brand": "HiLook",
+    "model": "IPC-B449HA-LUF/SRB",
+    "aliases": [
+      "IPC-B449HA-LUF/SL",
+      "4 MP ColorVu with Smart Hybrid Light Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F1.0",
+      "varifocal": false
+    },
+    "field_of_view_deg": "96 horizontal (2.8mm), 80 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.001
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 10.6,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "81 x 83.7 x 211",
+    "weight_g": 480,
+    "operating_temp_c": "-30 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "ColorVu 24/7 colour imaging (F1.0)",
+      "Smart Hybrid Light (IR + white light) up to 50 m",
+      "person/vehicle detection",
+      "120 dB WDR",
+      "built-in two-way audio",
+      "strobe light (/SRB red-blue, /SL white) alarm",
+      "ONVIF Profile S/G/T"
+    ],
+    "release_notes": "Per IPC-B449HA-LUF_SLRB_Datasheet_20260410.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000081010/IPC-B449HA-LUF_SLRB_Datasheet_20260410.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b449haa-lu",
     "brand": "HiLook",
     "model": "IPC-B449HAA-LU",
@@ -1558153,7 +1559740,8 @@
       "IPC-B449HAA-LU(F)(/SL)(/SRB)",
       "IPC-B449HAA-LU(2.8mm)",
       "IPC-B449HAA-LU(4mm)",
-      "HiLook 4 MP ColorVu 3.0 Fixed Bullet"
+      "HiLook 4 MP ColorVu 3.0 Fixed Bullet",
+      "IPC-B449HAA-LUF/SRB"
     ],
     "type": "bullet",
     "connectivity": [
@@ -1558294,7 +1559882,9 @@
       "IPC-B449HAAH-LU(F/SL)(F/SRB)",
       "IPC-B449HAAH-LU(2.8mm)",
       "IPC-B449HAAH-LU(4mm)",
-      "HiLook 4 MP ColorVu 3.0 Fixed Bullet"
+      "HiLook 4 MP ColorVu 3.0 Fixed Bullet",
+      "IPC-B449HAAH-LUF/SL",
+      "IPC-B449HAAH-LUF/SRB"
     ],
     "type": "bullet",
     "connectivity": [
@@ -1558971,6 +1560561,138 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b460haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B460HAA-LUF/SX",
+    "aliases": [
+      "HiLook 6 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "105 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 11.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "83.7 x 81 x 211",
+    "weight_g": 490,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B460HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113476/IPC-B460HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b460had-lu",
     "brand": "HiLook",
     "model": "IPC-B460HAD-LU",
@@ -1559241,6 +1560963,140 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.4,
+    "substream_count": 1,
+    "substream_max_resolution": "1200x536"
+  },
+  {
+    "id": "hilook-ipc-b460had-luf-srb",
+    "brand": "HiLook",
+    "model": "IPC-B460HAD-LUF/SRB",
+    "aliases": [
+      "IPC-B460HAD-LUF/SL",
+      "6 MP Smart Hybrid Light Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3632,
+      "max_height": 1632,
+      "label": "6MP"
+    },
+    "sensor": "1/2.5\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "180 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.005
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3632x1632",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1200x536",
+          "fps": 20
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 11.5,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "103.6 x 76 x 234.5",
+    "weight_g": 560,
+    "operating_temp_c": "-30 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "180 degree horizontal field of view",
+      "Smart Hybrid Light (IR + white light) up to 30 m",
+      "human/vehicle detection",
+      "120 dB WDR",
+      "built-in two-way audio",
+      "strobe light (/SRB red-blue, /SL white) and audio alarm",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-B460HAD-LUF_SLRB_Datasheet_20241108.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000084296/IPC-B460HAD-LUF_SLRB_Datasheet_20241108.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1200,
+          "height": 536,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
     "sensor_size_inch": 0.4,
     "substream_count": 1,
     "substream_max_resolution": "1200x536"
@@ -1559652,11 +1561508,146 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b469ha-luf-srb",
+    "brand": "HiLook",
+    "model": "IPC-B469HA-LUF/SRB",
+    "aliases": [
+      "IPC-B469HA-LUF/SL",
+      "6 MP ColorVu with Smart Hybrid Light Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F1.0",
+      "varifocal": false
+    },
+    "field_of_view_deg": "115 horizontal (2.8mm), 94 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.001
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 11.8,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "81 x 83.7 x 211",
+    "weight_g": 480,
+    "operating_temp_c": "-30 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "ColorVu 24/7 colour imaging (F1.0)",
+      "Smart Hybrid Light (IR + white light) up to 50 m",
+      "person/vehicle detection",
+      "120 dB WDR",
+      "built-in two-way audio",
+      "strobe light (/SRB red-blue, /SL white) alarm",
+      "ONVIF Profile S/G/T"
+    ],
+    "release_notes": "Per IPC-B469HA-LUF_SLRB_Datasheet_20260410.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000081014/IPC-B469HA-LUF_SLRB_Datasheet_20260410.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b469haa-lu",
     "brand": "HiLook",
     "model": "IPC-B469HAA-LU",
     "aliases": [
-      "IPC-B469HAA-LU(F)(/SL)(/SRB)"
+      "IPC-B469HAA-LU(F)(/SL)(/SRB)",
+      "IPC-B469HAA-LUF/SRB"
     ],
     "type": "bullet",
     "connectivity": [
@@ -1560433,6 +1562424,138 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
+    "id": "hilook-ipc-b480haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B480HAA-LUF/SX",
+    "aliases": [
+      "HiLook 8 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 3840,
+      "max_height": 2160,
+      "label": "4K UHD"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3840x2160",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.7\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "112 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 11.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "83.7 x 81 x 211",
+    "weight_g": 490,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B480HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113471/IPC-B480HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3704,
     "substream_count": 1,
     "substream_max_resolution": "1280x720"
@@ -1561966,6 +1564089,138 @@
     "substream_max_resolution": "640x480"
   },
   {
+    "id": "hilook-ipc-b540haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B540HAA-LUF/SX",
+    "aliases": [
+      "HiLook 4 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2688,
+      "max_height": 1520,
+      "label": "4MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 24,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2688x1520",
+          "fps": 24
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "103 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "285.8 x 88.1 x 83.4",
+    "weight_g": 710,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B540HAA-LUF_SX_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113469/IPC-B540HAA-LUF_SX_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b549ha-lu",
     "brand": "HiLook",
     "model": "IPC-B549HA-LU",
@@ -1562249,7 +1564504,8 @@
     "brand": "HiLook",
     "model": "IPC-B549HAA-LU",
     "aliases": [
-      "HiLook 4 MP ColorVu 3.0 Fixed Bullet"
+      "HiLook 4 MP ColorVu 3.0 Fixed Bullet",
+      "IPC-B549HAA-LUF/SL"
     ],
     "type": "bullet",
     "connectivity": [
@@ -1562521,6 +1564777,138 @@
     "substream_max_resolution": "768x432"
   },
   {
+    "id": "hilook-ipc-b560haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B560HAA-LUF/SX",
+    "aliases": [
+      "HiLook 6 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "105 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "285.8 x 88.1 x 83.4",
+    "weight_g": 730,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B560HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113448/IPC-B560HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b569haa-lu",
     "brand": "HiLook",
     "model": "IPC-B569HAA-LU",
@@ -1562663,6 +1565051,138 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b580haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-B580HAA-LUF/SX",
+    "aliases": [
+      "HiLook 8 MP Smart Hybrid Light 3.0 Fixed Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 3840,
+      "max_height": 2160,
+      "label": "4K UHD"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3840x2160",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.7\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "112 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "285.8 x 88.1 x 83.4",
+    "weight_g": 730,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B580HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113439/IPC-B580HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b620ha-lzu",
     "brand": "HiLook",
     "model": "IPC-B620HA-LZU",
@@ -1562799,6 +1565319,138 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ipc-b620ha-lzu-sl",
+    "brand": "HiLook",
+    "model": "IPC-B620HA-LZU/SL",
+    "aliases": [
+      "HiLook 2 MP Smart Hybrid Light Varifocal Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "640x480",
+          "fps": 30
+        }
+      ]
+    },
+    "sensor": "1/2.9\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 to 12 (motorized varifocal)",
+      "aperture": "F1.6",
+      "varifocal": true
+    },
+    "field_of_view_deg": "102.4 to 31.2 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.005
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.9,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light (IR + white light, up to 50 m)",
+      "human and vehicle detection",
+      "Digital WDR",
+      "flashing light + audible warning (active deterrence)",
+      "built-in two-way audio",
+      "2.8 to 12 mm motorized varifocal",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø105 x 285.8",
+    "weight_g": 705,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 640,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B620HA-LZU_SL_Datasheet_20230817.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000077172/IPC-B620HA-LZU_SL_Datasheet_20230817.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3448,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
@@ -1563344,6 +1565996,138 @@
     "substream_max_resolution": null
   },
   {
+    "id": "hilook-ipc-b640ha-lzu-sl",
+    "brand": "HiLook",
+    "model": "IPC-B640HA-LZU/SL",
+    "aliases": [
+      "HiLook 4 MP Smart Hybrid Light Varifocal Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 to 12 (motorized varifocal)",
+      "aperture": "F1.6",
+      "varifocal": true
+    },
+    "field_of_view_deg": "95.9 to 29.2 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.005
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.9,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light (IR + white light, up to 50 m)",
+      "human and vehicle detection",
+      "120 dB WDR",
+      "flashing light + audible warning (active deterrence)",
+      "built-in two-way audio",
+      "2.8 to 12 mm motorized varifocal",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø105 x 285.8",
+    "weight_g": 765,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B640HA-LZU_SL_Datasheet_20230817.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000077173/IPC-B640HA-LZU_SL_Datasheet_20230817.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b640ha-z",
     "brand": "HiLook",
     "model": "IPC-B640HA-Z",
@@ -1563482,6 +1566266,139 @@
     "sensor_size_inch": 0.3333,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ipc-b640haa-lzsu-sx",
+    "brand": "HiLook",
+    "model": "IPC-B640HAA-LZSU/SX",
+    "aliases": [
+      "HiLook 4 MP Smart Hybrid Light 3.0 Vari-Focal Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2688,
+      "max_height": 1520,
+      "label": "4MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 24,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2688x1520",
+          "fps": 24
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 to 12 (motorized varifocal)",
+      "aperture": "F1.6",
+      "varifocal": true
+    },
+    "field_of_view_deg": "99 to 30 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.9,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "1 audio in / 1 audio out, 1 alarm in / 1 alarm out",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "251 x 86.7 x 83.3",
+    "weight_g": 785,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B640HAA-LZSU_SX_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113460/IPC-B640HAA-LZSU_SX_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
   },
   {
     "id": "hilook-ipc-b640haa-lzu",
@@ -1563763,6 +1566680,139 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-b660haa-lzsu-sx",
+    "brand": "HiLook",
+    "model": "IPC-B660HAA-LZSU/SX",
+    "aliases": [
+      "HiLook 6 MP Smart Hybrid Light 3.0 Vari-Focal Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 to 12 (motorized varifocal)",
+      "aperture": "F1.6",
+      "varifocal": true
+    },
+    "field_of_view_deg": "93 to 28 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.9,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "1 audio in / 1 audio out, 1 alarm in / 1 alarm out",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "285.8 x 88.1 x 83.4",
+    "weight_g": 800,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B660HAA-LZSU_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113430/IPC-B660HAA-LZSU_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-b680h-mz",
     "brand": "HiLook",
     "model": "IPC-B680H-MZ",
@@ -1564036,6 +1567086,139 @@
     "substream_max_resolution": "640x480"
   },
   {
+    "id": "hilook-ipc-b680haa-lzsu-sx",
+    "brand": "HiLook",
+    "model": "IPC-B680HAA-LZSU/SX",
+    "aliases": [
+      "HiLook 8 MP Smart Hybrid Light 3.0 Vari-Focal Bullet Network Camera"
+    ],
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 3840,
+      "max_height": 2160,
+      "label": "4K UHD"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3840x2160",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.7\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 to 12 (motorized varifocal)",
+      "aperture": "F1.6",
+      "varifocal": true
+    },
+    "field_of_view_deg": "107 to 32 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 50,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12.9,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "1 audio in / 1 audio out, 1 alarm in / 1 alarm out",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "285.8 x 88.1 x 83.4",
+    "weight_g": 815,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-B680HAA-LZSU_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113453/IPC-B680HAA-LZSU_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-c320ha-d",
     "brand": "HiLook",
     "model": "IPC-C320HA-D",
@@ -1564271,7 +1567454,8 @@
     "aliases": [
       "IPC-CFSP4/4G",
       "IPC-CFSP4/4G-SIM#EU",
-      "HiLook 4 MP Solar 4G PT Camera"
+      "HiLook 4 MP Solar 4G PT Camera",
+      "IPC-CFSP4/4G-SIM(Cold Proof)#EU"
     ],
     "type": "ptz",
     "connectivity": [
@@ -1565907,6 +1569091,135 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ipc-d120haa-lu",
+    "brand": "HiLook",
+    "model": "IPC-D120HAA-LU",
+    "aliases": [
+      "HiLook 2 MP Smart Hybrid Light 3.0 Fixed Dome Network Camera"
+    ],
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "640x480",
+          "fps": 30
+        }
+      ]
+    },
+    "sensor": "1/2.9\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "103 / 82 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 7.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": false,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "ik_rating": "IK10",
+    "audio": {
+      "microphone": true,
+      "speaker": false,
+      "two_way": false
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "Digital WDR",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø121.5 x 97.6",
+    "weight_g": 480,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 640,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-D120HAA-LU_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000109389/IPC-D120HAA-LU_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3448,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
@@ -1569614,6 +1572927,136 @@
     "substream_max_resolution": null
   },
   {
+    "id": "hilook-ipc-d160haa-lu-sx",
+    "brand": "HiLook",
+    "model": "IPC-D160HAA-LU/SX",
+    "aliases": [
+      "HiLook 6 MP Smart Hybrid Light 3.0 Fixed Dome Network Camera"
+    ],
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "105 / 79 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 7.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": false,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "ik_rating": "IK10",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø121.5 x 97.6",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-D160HAA-LU_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113499/IPC-D160HAA-LU_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-d169ha",
     "brand": "HiLook",
     "model": "IPC-D169HA",
@@ -1570255,6 +1573698,136 @@
     "sensor_size_inch": 0.3704,
     "substream_count": 0,
     "substream_max_resolution": null
+  },
+  {
+    "id": "hilook-ipc-d180haa-lu-sx",
+    "brand": "HiLook",
+    "model": "IPC-D180HAA-LU/SX",
+    "aliases": [
+      "HiLook 8 MP Smart Hybrid Light 3.0 Fixed Dome Network Camera"
+    ],
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 3840,
+      "max_height": 2160,
+      "label": "4K UHD"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3840x2160",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.7\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "112 / 89 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 7.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": false,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "ik_rating": "IK10",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø121.5 x 97.6",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-D180HAA-LU_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113496/IPC-D180HAA-LU_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
   },
   {
     "id": "hilook-ipc-d261h-mu",
@@ -1571668,6 +1575241,140 @@
     "substream_max_resolution": "1280x720"
   },
   {
+    "id": "hilook-ipc-d660haa-lzsu-sx",
+    "brand": "HiLook",
+    "model": "IPC-D660HAA-LZSU/SX",
+    "aliases": [
+      "HiLook 6 MP Smart Hybrid Light 3.0 Vari-Focal Dome Network Camera"
+    ],
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 to 12 (motorized varifocal)",
+      "aperture": "F1.6",
+      "varifocal": true
+    },
+    "field_of_view_deg": "101 to 35 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "ik_rating": "IK10",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "1 audio in / 1 audio out, 1 alarm in / 1 alarm out",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø121.5 x 97.6",
+    "weight_g": 500,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-D660HAA-LZSU_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113487/IPC-D660HAA-LZSU_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-d680h-mz",
     "brand": "HiLook",
     "model": "IPC-D680H-MZ",
@@ -1571808,6 +1575515,140 @@
     "sensor_size_inch": 0.3571,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ipc-d680haa-lzsu-sx",
+    "brand": "HiLook",
+    "model": "IPC-D680HAA-LZSU/SX",
+    "aliases": [
+      "HiLook 8 MP Smart Hybrid Light 3.0 Vari-Focal Dome Network Camera"
+    ],
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 3840,
+      "max_height": 2160,
+      "label": "4K UHD"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3840x2160",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.7\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 to 12 (motorized varifocal)",
+      "aperture": "F1.6",
+      "varifocal": true
+    },
+    "field_of_view_deg": "107 to 32 horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 12,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "ik_rating": "IK10",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "1 audio in / 1 audio out, 1 alarm in / 1 alarm out",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø121.5 x 97.6",
+    "weight_g": 500,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-D680HAA-LZSU_SXBLACK_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113493/IPC-D680HAA-LZSU_SXBLACK_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
   },
   {
     "id": "hilook-ipc-p220-d",
@@ -1572742,6 +1576583,138 @@
     "substream_max_resolution": "640x480"
   },
   {
+    "id": "hilook-ipc-t220ha-lufc-sl",
+    "brand": "HiLook",
+    "model": "IPC-T220HA-LUFC/SL",
+    "aliases": [
+      "2 MP Smart Hybrid Light Fixed Turret Network Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "sensor": "1/2.9\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F2.2",
+      "varifocal": false
+    },
+    "field_of_view_deg": "101 horizontal (2.8mm), 80 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 20,
+      "min_lux_color": 0.01
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "640x480",
+          "fps": 30
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 9.5,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "110 x 102.7 (dia x H)",
+    "weight_g": 345,
+    "operating_temp_c": "-30 to 45",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "Smart Hybrid Light: IR up to 20 m, white light up to 15 m",
+      "human detection",
+      "Digital WDR",
+      "built-in two-way audio",
+      "white flashing light and audible warning (/SL)",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-T220HA-LUFC_SL_Datasheet_20260701.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000119323/IPC-T220HA-LUFC_SL_Datasheet_20260701.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 640,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "640x480"
+  },
+  {
     "id": "hilook-ipc-t220ha-uc",
     "brand": "HiLook",
     "model": "IPC-T220HA-UC",
@@ -1572874,6 +1576847,134 @@
     "release_notes": "HiLook 2 MP EXIR fixed turret with 30 m IR range, built-in microphone and human detection. Specs verified against the official HiLook datasheet IPC-T220HA-UC_Datasheet_20260701.",
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ipc-t220haa-lu",
+    "brand": "HiLook",
+    "model": "IPC-T220HAA-LU",
+    "aliases": [
+      "HiLook 2 MP Smart Hybrid Light 3.0 Fixed Turret Network Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "640x480",
+          "fps": 30
+        }
+      ]
+    },
+    "sensor": "1/2.9\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "103 / 82 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 7,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": false,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": false,
+      "two_way": false
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "Digital WDR",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø112 x 82",
+    "weight_g": 385,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 640,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-T220HAA-LU_Datasheet_20261013.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000109391/IPC-T220HAA-LU_Datasheet_20261013.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3448,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
@@ -1575439,6 +1579540,138 @@
     "substream_max_resolution": "640x480"
   },
   {
+    "id": "hilook-ipc-t240ha-lufc-sl",
+    "brand": "HiLook",
+    "model": "IPC-T240HA-LUFC/SL",
+    "aliases": [
+      "4 MP Smart Hybrid Light Fixed Turret Bullet Network Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "sensor": "1/2.8\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F2.2",
+      "varifocal": false
+    },
+    "field_of_view_deg": "104 horizontal (2.8mm), 82 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 20,
+      "min_lux_color": 0.01
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 9.5,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "110 x 102.7 (dia x H)",
+    "weight_g": 365,
+    "operating_temp_c": "-30 to 45",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "Smart Hybrid Light (IR + white light) up to 20 m",
+      "human detection",
+      "Digital WDR",
+      "built-in two-way audio",
+      "white flashing light and audible warning (/SL)",
+      "ONVIF Profile S/T/G"
+    ],
+    "release_notes": "Per IPC-T240HA-LUFC_SL_Datasheet_20260701.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000119331/IPC-T240HA-LUFC_SL_Datasheet_20260701.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-t240haa-luf",
     "brand": "HiLook",
     "model": "IPC-T240HAA-LUF",
@@ -1577046,6 +1581279,139 @@
     "substream_max_resolution": "640x480"
   },
   {
+    "id": "hilook-ipc-t249haa-luf-srb",
+    "brand": "HiLook",
+    "model": "IPC-T249HAA-LUF/SRB",
+    "aliases": [
+      "4 MP ColorVu 3.0 Fixed Turret Network Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2688,
+      "max_height": 1520,
+      "label": "4MP"
+    },
+    "sensor": "1/3\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/4",
+      "aperture": "F1.0",
+      "varifocal": false
+    },
+    "field_of_view_deg": "101.5 horizontal (2.8mm), 84.1 horizontal (4mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.0005
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 24,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2688x1520",
+          "fps": 24
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 24
+        }
+      ]
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "power": {
+      "method": "PoE (802.3af, Class 3) / 12 VDC",
+      "consumption_w": 7.8,
+      "voltage": "12 VDC",
+      "poe_class": 3
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "110 x 102.7 (dia x H)",
+    "weight_g": 400,
+    "operating_temp_c": "-30 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "ColorVu 3.0 with HikAI-ISP (F1.0)",
+      "Smart Hybrid Light (IR + white light) up to 30 m",
+      "Motion Detection 3.0 (human/vehicle)",
+      "120 dB WDR",
+      "built-in two-way audio",
+      "red and blue flashing light",
+      "ONVIF Profile S/G"
+    ],
+    "release_notes": "Per IPC-T249HAA-LUF_SRB_Datasheet_20260703.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000098827/IPC-T249HAA-LUF_SRB_Datasheet_20260703.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "two_way_audio": true
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
     "id": "hilook-ipc-t249haah-lu",
     "brand": "HiLook",
     "model": "IPC-T249HAAH-LU",
@@ -1577736,6 +1582102,266 @@
     "sensor_size_inch": 0.4167,
     "substream_count": 1,
     "substream_max_resolution": "640x360"
+  },
+  {
+    "id": "hilook-ipc-t260haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-T260HAA-LUF/SX",
+    "aliases": [
+      "HiLook 6 MP Smart Hybrid Light 3.0 Fixed Turret Network Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3200,
+      "max_height": 1800,
+      "label": "6MP"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3200x1800",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.4\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "105 / 79 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 10.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø110 x 102.7",
+    "weight_g": 410,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-T260HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113528/IPC-T260HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4167,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
+    "id": "hilook-ipc-t260had-lu",
+    "brand": "HiLook",
+    "model": "IPC-T260HAD-LU",
+    "aliases": [
+      "IPC-T260HAD-LUF",
+      "IPC-T260HAD-LU(F)",
+      "HiLook 6 MP Dual Lens Stitched Wide Angle Smart Hybrid Light Fixed Turret Network Camera"
+    ],
+    "type": "panoramic",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 6,
+      "max_width": 3632,
+      "max_height": 1632,
+      "label": "6MP (180 stitched)"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3632x1632",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1200x536",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.5\" Progressive Scan CMOS",
+    "lens": {
+      "count": 2,
+      "focal_length_mm": "2 x 2.8 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "180 horizontal / 77 vertical",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.005
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 8.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true
+    },
+    "features": [
+      "dual-lens stitched 180 panoramic view",
+      "Smart Hybrid Light (IR + white light)",
+      "person and vehicle detection",
+      "120 dB WDR",
+      "ONVIF Profile S/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø130.1 x 109.1",
+    "weight_g": 580,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1200,
+          "height": 536,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-T260HAD-LUF_Datasheet_20260930.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000084290/IPC-T260HAD-LUF_Datasheet_20260930.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.4,
+    "substream_count": 1,
+    "substream_max_resolution": "1200x536"
   },
   {
     "id": "hilook-ipc-t260had-luf",
@@ -1579852,6 +1584478,138 @@
     "ndaa_compliant": false,
     "cloud_dependency": "local",
     "added": "2026-09-04",
+    "sensor_size_inch": 0.3704,
+    "substream_count": 1,
+    "substream_max_resolution": "1280x720"
+  },
+  {
+    "id": "hilook-ipc-t280haa-luf-sx",
+    "brand": "HiLook",
+    "model": "IPC-T280HAA-LUF/SX",
+    "aliases": [
+      "HiLook 8 MP Smart Hybrid Light 3.0 Fixed Turret Network Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "ethernet"
+    ],
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 3840,
+      "max_height": 2160,
+      "label": "4K UHD"
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 20,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "3840x2160",
+          "fps": 20
+        },
+        {
+          "name": "sub",
+          "resolution": "1280x720",
+          "fps": 20
+        }
+      ]
+    },
+    "sensor": "1/2.7\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8 / 4 (fixed)",
+      "aperture": "F1.6",
+      "varifocal": false
+    },
+    "field_of_view_deg": "112 / 89 horizontal (2.8 mm / 4 mm)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 30,
+      "min_lux_color": 0.003
+    },
+    "power": {
+      "method": "PoE (802.3af) / DC 12V",
+      "consumption_w": 10.5,
+      "voltage": "12 VDC ± 25%",
+      "poe_class": 3
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "Smart Hybrid Light 3.0 (IR + white light, 3 supplemental lighting modes)",
+      "Motion Detection 3.0 (person/vehicle classification)",
+      "120 dB WDR",
+      "Live Guard: strobe light flashing (white / red-blue, configurable)",
+      "two-way audio (built-in speaker)",
+      "audible warning",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 60",
+    "dimensions_mm": "Ø112 x 82",
+    "weight_g": 425,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 1280,
+          "height": 720,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per IPC-T280HAA-LUF_SX_Datasheet_20261015.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000113519/IPC-T280HAA-LUF_SX_Datasheet_20261015.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
     "sensor_size_inch": 0.3704,
     "substream_count": 1,
     "substream_max_resolution": "1280x720"
@@ -1584568,6 +1589326,147 @@
     "substream_max_resolution": "640x480"
   },
   {
+    "id": "hilook-ptz-n3d404m-d-4g-14",
+    "brand": "HiLook",
+    "model": "PTZ-N3D404M-D/4G/14",
+    "aliases": [
+      "HiLook TandemVu 4MP+4MP 4X 4G PTZ Network Camera"
+    ],
+    "type": "ptz",
+    "connectivity": [
+      "ethernet",
+      "4g"
+    ],
+    "power_source": [
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP+4MP TandemVu"
+    },
+    "video": {
+      "codecs": [
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x480",
+          "fps": 30
+        },
+        {
+          "name": "third",
+          "resolution": "1920x1080",
+          "fps": 10
+        }
+      ]
+    },
+    "sensor": "1/3\" Progressive Scan CMOS (bullet and PTZ channels)",
+    "lens": {
+      "count": 2,
+      "focal_length_mm": "2.8 (bullet, fixed) / 2.8 to 12 (PTZ, 4x optical)",
+      "aperture": "F1.6 (bullet), F1.65 to F3.0 (PTZ)",
+      "varifocal": true
+    },
+    "field_of_view_deg": "98.2 (bullet) / 93.5 to 29.1 (PTZ) horizontal",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 40,
+      "min_lux_color": 0.01
+    },
+    "ptz": {
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "DC 12V",
+      "consumption_w": 19.5,
+      "voltage": "12 VDC"
+    },
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512,
+      "nvr_compatible": true
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP66",
+    "audio": {
+      "microphone": true,
+      "speaker": true,
+      "two_way": true
+    },
+    "features": [
+      "TandemVu dual-channel: fixed 2.8 mm bullet + 4x optical zoom PTZ",
+      "4G mobile connectivity",
+      "powered-by-DarkFighter low-light",
+      "Smart Supplement Light (IR up to 40 m / white light 30 m)",
+      "human and vehicle detection, intrusion / line crossing / region entrance-exit",
+      "face capture",
+      "300 presets, 8 patrols",
+      "white light flashing + audible warning",
+      "digital WDR, defog",
+      "glass demist heater",
+      "ONVIF Profile S/G/T"
+    ],
+    "operating_temp_c": "-30 to 50",
+    "dimensions_mm": "296.6 x 241.3 x 156",
+    "weight_g": 1500,
+    "environment": [
+      "outdoor"
+    ],
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "configs": {
+      "frigate": {
+        "detect": {
+          "width": 704,
+          "height": 480,
+          "fps": 5
+        },
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Uses Hikvision protocol. ONVIF integration works. Default port 80."
+      },
+      "blue_iris": {
+        "profile": "Hikvision",
+        "notes": "Select 'Hikvision' profile. HiLook uses Hikvision protocol."
+      }
+    },
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "markets": [
+      "global"
+    ],
+    "release_notes": "Per PTZ-N3D404M-D_4G_14_Datasheet_20260918.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/sm000119122/PTZ-N3D404M-D_4G_14_Datasheet_20260918.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 2,
+    "substream_max_resolution": "1920x1080"
+  },
+  {
     "id": "hilook-ptz-n3d404m-de",
     "brand": "HiLook",
     "model": "PTZ-N3D404M-DE/14",
@@ -1586002,6 +1590901,158 @@
     "sensor_size_inch": 0.3571,
     "substream_count": 1,
     "substream_max_resolution": "640x480"
+  },
+  {
+    "id": "hilook-ptz-t4215-d3",
+    "brand": "HiLook",
+    "model": "PTZ-T4215-D3",
+    "aliases": [
+      "PTZ-T4215-D3(F)",
+      "PTZ-T4215-D3(HiLookNEU)",
+      "PTZ-T4215-D3(C)",
+      "4-inch 2 MP 15X Powered by DarkFighter Analog Speed Dome"
+    ],
+    "type": "ptz",
+    "connectivity": [
+      "coax"
+    ],
+    "power_source": [
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "sensor": "1/2.8\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "5-75 (15x optical)",
+      "aperture": "F1.6-F3.5",
+      "varifocal": true
+    },
+    "field_of_view_deg": "53.8 to 4.0 horizontal (wide to tele)",
+    "night_vision": {
+      "type": "none",
+      "min_lux_color": 0.005
+    },
+    "video": {
+      "max_fps": 30
+    },
+    "power": {
+      "method": "12 VDC",
+      "consumption_w": 12,
+      "voltage": "12 VDC"
+    },
+    "dimensions_mm": "165 (dia) x 168",
+    "weight_g": 2000,
+    "operating_temp_c": "-10 to 50",
+    "ptz": {
+      "onvif_ptz": "none"
+    },
+    "features": [
+      "15x optical / 16x digital zoom",
+      "Powered by DarkFighter",
+      "120 dB true WDR",
+      "EIS (electronic image stabilization)",
+      "256 presets, 10 patrols, 5 patterns",
+      "RS-485 (HIKVISION/Pelco-P/Pelco-D) and UTC coaxial control",
+      "switchable TVI/AHD/CVI/CVBS output",
+      "360 endless pan, -5 to 90 tilt (auto flip)",
+      "2 alarm inputs, 1 alarm output"
+    ],
+    "release_notes": "Per PTZ-T4215-D3_Datasheet_20260917.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000005837/PTZ-T4215-D3_Datasheet_20260917.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571
+  },
+  {
+    "id": "hilook-ptz-t4215i-d",
+    "brand": "HiLook",
+    "model": "PTZ-T4215I-D",
+    "aliases": [
+      "PTZ-T4215I-D(F)",
+      "PTZ-T4215I-D(D)",
+      "PTZ-T4215I-D(C)",
+      "4-inch 2 MP 15X Powered by DarkFighter IR Analog Speed Dome"
+    ],
+    "type": "ptz",
+    "connectivity": [
+      "coax"
+    ],
+    "power_source": [
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "1080p"
+    },
+    "sensor": "1/2.8\" Progressive Scan CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "5-75 (15x optical)",
+      "aperture": "F1.6-F3.5",
+      "varifocal": true
+    },
+    "field_of_view_deg": "53.8 to 4.0 horizontal (wide to tele)",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 100,
+      "min_lux_color": 0.005
+    },
+    "video": {
+      "max_fps": 30
+    },
+    "power": {
+      "method": "12 VDC",
+      "consumption_w": 20,
+      "voltage": "12 VDC"
+    },
+    "ip_rating": "IP66",
+    "dimensions_mm": "165.9 (dia) x 290",
+    "weight_g": 2000,
+    "operating_temp_c": "-30 to 65",
+    "environment": [
+      "outdoor"
+    ],
+    "ptz": {
+      "onvif_ptz": "none"
+    },
+    "features": [
+      "IR up to 100 m",
+      "15x optical / 16x digital zoom",
+      "Powered by DarkFighter",
+      "120 dB true WDR",
+      "EIS (electronic image stabilization)",
+      "256 presets, 10 patrols, 5 patterns",
+      "RS-485 (HIKVISION/Pelco-P/Pelco-D) and UTC coaxial control",
+      "switchable TVI/AHD/CVI/CVBS output",
+      "360 endless pan, -15 to 90 tilt (auto flip)",
+      "TVS 4000 V lightning protection"
+    ],
+    "release_notes": "Per PTZ-T4215I-D_Datasheet_20260917.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000005839/PTZ-T4215I-D_Datasheet_20260917.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571
   },
   {
     "id": "hilook-ptz-t4225i-d",
@@ -1590311,6 +1595362,79 @@
     "added": "2026-09-04"
   },
   {
+    "id": "hilook-thc-t150-ms",
+    "brand": "HiLook",
+    "model": "THC-T150-MS",
+    "aliases": [
+      "THC-T150-MS(2.8mm)(Hilook UK)",
+      "THC-T150-MS(3.6mm)(Hilook UK)",
+      "5 MP Fixed Turret Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "coax"
+    ],
+    "power_source": [
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 5,
+      "max_width": 2560,
+      "max_height": 1944,
+      "label": "5MP"
+    },
+    "sensor": "5 MP CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/3.6",
+      "aperture": "F1.2",
+      "varifocal": false
+    },
+    "field_of_view_deg": "85 horizontal (2.8mm), 80 horizontal (3.6mm)",
+    "night_vision": {
+      "type": "ir",
+      "min_lux_color": 0.01
+    },
+    "video": {
+      "max_fps": 20
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": false,
+      "two_way": false
+    },
+    "power": {
+      "method": "12 VDC",
+      "consumption_w": 3.7,
+      "voltage": "12 VDC"
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "82.6 (dia) x 79.4",
+    "weight_g": 230,
+    "operating_temp_c": "-40 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "features": [
+      "5 MP 2560x1944 (TVI/AHD 20 fps)",
+      "Smart IR",
+      "Digital WDR",
+      "built-in mic, audio over coaxial cable",
+      "4-in-1 switchable TVI/AHD/CVI/CVBS output"
+    ],
+    "release_notes": "Per THC-T150-MS.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000063117/THC-T150-MS.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "uk"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "added": "2026-10-21"
+  },
+  {
     "id": "hilook-thc-t157-lms",
     "brand": "HiLook",
     "model": "THC-T157-LMS",
@@ -1591433,6 +1596557,80 @@
     ],
     "ndaa_compliant": false,
     "added": "2026-09-04"
+  },
+  {
+    "id": "hilook-thc-t250-ms",
+    "brand": "HiLook",
+    "model": "THC-T250-MS",
+    "aliases": [
+      "THC-T250-MS(2.8mm)(Hilook UK)",
+      "THC-T250-MS(3.6mm)(Hilook UK)",
+      "5 MP Fixed Turret Camera"
+    ],
+    "type": "turret",
+    "connectivity": [
+      "coax"
+    ],
+    "power_source": [
+      "dc"
+    ],
+    "resolution": {
+      "megapixels": 5,
+      "max_width": 2560,
+      "max_height": 1944,
+      "label": "5MP"
+    },
+    "sensor": "5 MP CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8/3.6",
+      "aperture": "F1.2",
+      "varifocal": false
+    },
+    "field_of_view_deg": "85.5 horizontal (2.8mm), 80.1 horizontal (3.6mm)",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 40,
+      "min_lux_color": 0.01
+    },
+    "video": {
+      "max_fps": 20
+    },
+    "audio": {
+      "microphone": true,
+      "speaker": false,
+      "two_way": false
+    },
+    "power": {
+      "method": "12 VDC",
+      "consumption_w": 3.7,
+      "voltage": "12 VDC"
+    },
+    "ip_rating": "IP67",
+    "dimensions_mm": "127.92 (dia) x 100.15",
+    "weight_g": 450,
+    "operating_temp_c": "-40 to 60",
+    "environment": [
+      "outdoor"
+    ],
+    "features": [
+      "5 MP 2560x1944 (TVI/AHD 20 fps)",
+      "Smart IR up to 40 m",
+      "Digital WDR",
+      "built-in mic, audio over coaxial cable",
+      "4-in-1 switchable TVI/AHD/CVI/CVBS output"
+    ],
+    "release_notes": "Per THC-T250-MS.pdf.",
+    "sources": [
+      "https://assets.hikvision.com/prd/normal/all/doc/m000063105/THC-T250-MS.pdf"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "uk"
+    ],
+    "ndaa_compliant": false,
+    "cloud_dependency": "local",
+    "added": "2026-10-21"
   },
   {
     "id": "hilook-thc-t257-lms",
@@ -2559312,6 +2564510,111 @@
     "sensor_size_inch": 0.3571
   },
   {
+    "id": "tiandy-tc-c32gn-i5-e-c-4mm",
+    "brand": "Tiandy",
+    "model": "TC-C32GN I5/E/C/4mm",
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.9\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4",
+      "varifocal": false
+    },
+    "night_vision": {
+      "type": "ir",
+      "range_m": 50,
+      "min_lux_color": 0.05
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "power": {
+      "method": "DC 12 V ± 25%, POE",
+      "consumption_w": 7.5,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-35 to 60",
+    "dimensions_mm": "208×82×81 mm",
+    "weight_g": 500,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP IR Bullet Camera",
+      "WDR: 100dB"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/29.html",
+      "https://web.archive.org/web/20190820190705/http://en.tiandy.com/index.php?s=/home/product/detail/id/29.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3448,
+    "substream_count": 1,
+    "substream_max_resolution": "704x576"
+  },
+  {
     "id": "tiandy-tc-c32gn-i5-e-y-c-2-8mm-v4-2",
     "brand": "Tiandy",
     "model": "TC-C32GN I5/E/Y/C/2.8mm/V4.2",
@@ -2559734,6 +2565037,112 @@
     "substream_max_resolution": "704x576"
   },
   {
+    "id": "tiandy-tc-c32gp-i5-e-c-4mm",
+    "brand": "Tiandy",
+    "model": "TC-C32GP I5/E/C/4mm",
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4",
+      "varifocal": false
+    },
+    "night_vision": {
+      "type": "ir",
+      "range_m": 50,
+      "min_lux_color": 0.0008
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "power": {
+      "method": "DC 12 V ± 25%, POE",
+      "consumption_w": 7.5,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-35 to 60",
+    "dimensions_mm": "208×82×81 mm",
+    "weight_g": 500,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP Super Starlight IR Bullet Camera",
+      "WDR: 120dB"
+    ],
+    "sources": [
+      "http://en.tiandy.com:80/index.php?s=/home/product/detail/id/31.html",
+      "https://web.archive.org/web/20190129090831/http://en.tiandy.com:80/index.php?s=/home/product/detail/id/31.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 1,
+    "substream_max_resolution": "704x576"
+  },
+  {
     "id": "tiandy-tc-c32gs-i5-e-y-c-sd-2-8mm-v4-2",
     "brand": "Tiandy",
     "model": "TC-C32GS I5/E/Y/C/SD/2.8mm/V4.2",
@@ -2559960,6 +2565369,113 @@
     },
     "added": "2026-10-20",
     "sensor_size_inch": 0.3571,
+    "substream_count": 1,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-c32hm-i3-e-m-2-8mm",
+    "brand": "Tiandy",
+    "model": "TC-C32HM I3/E/M/2.8mm",
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.7\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8",
+      "varifocal": false
+    },
+    "night_vision": {
+      "type": "ir",
+      "range_m": 20
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264+",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "power": {
+      "method": "DC 12 V ± 25%, POE (802.3af)",
+      "consumption_w": 7.5,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP66",
+    "ik_rating": "IK10",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-35 to 60",
+    "dimensions_mm": "Φ115×97 mm",
+    "weight_g": 900,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP IR Dome Camera with metal case",
+      "WDR: 100dB"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/91.html",
+      "https://web.archive.org/web/20190820182107/http://en.tiandy.com/index.php?s=/home/product/detail/id/91.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3704,
     "substream_count": 1,
     "substream_max_resolution": "704x576"
   },
@@ -2560298,6 +2565814,112 @@
     "substream_max_resolution": "704x576"
   },
   {
+    "id": "tiandy-tc-c32hp-i3-e-c-2-8mm",
+    "brand": "Tiandy",
+    "model": "TC-C32HP I3/E/C/2.8mm",
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8",
+      "varifocal": false
+    },
+    "night_vision": {
+      "type": "ir",
+      "range_m": 30,
+      "min_lux_color": 0.0008
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "power": {
+      "method": "DC 12 V ± 25%, POE",
+      "consumption_w": 7.5,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-35 to 60",
+    "dimensions_mm": "Φ115×97 mm",
+    "weight_g": 500,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP Super Starlight IR Dome Camera",
+      "WDR: 120dB"
+    ],
+    "sources": [
+      "http://en.tiandy.com:80/index.php?s=/home/product/detail/id/32.html",
+      "https://web.archive.org/web/20190129090836/http://en.tiandy.com:80/index.php?s=/home/product/detail/id/32.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 1,
+    "substream_max_resolution": "704x576"
+  },
+  {
     "id": "tiandy-tc-c32hp-i3-e-c-m-2-8mm",
     "brand": "Tiandy",
     "model": "TC-C32HP I3/E/C/M/2.8mm",
@@ -2560517,6 +2566139,112 @@
     },
     "added": "2026-10-20",
     "sensor_size_inch": 0.3571,
+    "substream_count": 1,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-c32jn-i5-e-c-4mm",
+    "brand": "Tiandy",
+    "model": "TC-C32JN I5/E/C/4mm",
+    "type": "bullet",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.9\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4",
+      "varifocal": false
+    },
+    "night_vision": {
+      "type": "ir",
+      "range_m": 50,
+      "min_lux_color": 0.05
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "power": {
+      "method": "DC 12 V ± 25%, POE",
+      "consumption_w": 7.5,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "ip_rating": "IP67",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-35 to 60",
+    "dimensions_mm": "189×73×70 mm",
+    "weight_g": 750,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP IR Bullet Camera",
+      "WDR: 100dB",
+      "Metal housing"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/33.html",
+      "https://web.archive.org/web/20190820192607/http://en.tiandy.com/index.php?s=/home/product/detail/id/33.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3448,
     "substream_count": 1,
     "substream_max_resolution": "704x576"
   },
@@ -2594676,6 +2600404,252 @@
     "substream_max_resolution": "704x576"
   },
   {
+    "id": "tiandy-tc-h324s-23x-i-e-c-v3-0",
+    "brand": "Tiandy",
+    "model": "TC-H324S 23X/I/E/C/V3.0",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "5-115",
+      "aperture": "F1.5-F3.0",
+      "varifocal": true
+    },
+    "field_of_view_deg": "H: 55.8-3.2, V: 32.2-1.8, D: 61-3.64",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 150,
+      "min_lux_color": 0.001
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "352x288",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "DC12V±10%/POE+(IEEE802.3 at)",
+      "consumption_w": 17.6,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-30 to 65",
+    "dimensions_mm": "Φ161×276 mm",
+    "weight_g": 2000,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP 23× Starlight IR PTZ Camera",
+      "WDR: True WDR",
+      "Optical zoom: 23x",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Heatmap, Video Abnormal"
+    ],
+    "sources": [
+      "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/512.html",
+      "https://web.archive.org/web/20230206093638/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/512.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-h324s-23x-i-e-v3-0",
+    "brand": "Tiandy",
+    "model": "TC-H324S 23X/I/E/V3.0",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "5-115",
+      "aperture": "F1.5-F3.0",
+      "varifocal": true
+    },
+    "field_of_view_deg": "H: 55.8-3.2, V: 32.2-1.8, D: 61-3.64",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 150,
+      "min_lux_color": 0.001
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "352x288",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "DC12V±10%/POE+(IEEE802.3 at)",
+      "consumption_w": 18.5,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-30 to 65",
+    "dimensions_mm": "Φ161×276 mm",
+    "weight_g": 2100,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP 23× Starlight IR PTZ Camera",
+      "WDR: True WDR",
+      "Optical zoom: 23x",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Heatmap, Video Abnormal, Audio Abnormal"
+    ],
+    "sources": [
+      "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/513.html",
+      "https://web.archive.org/web/20230206085808/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/513.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
     "id": "tiandy-tc-h324s-25x-i-e",
     "brand": "Tiandy",
     "model": "TC-H324S 25X/I/E",
@@ -2595194,6 +2601168,133 @@
     "sensor_size_inch": 0.3571
   },
   {
+    "id": "tiandy-tc-h326m-44x-iw-a",
+    "brand": "Tiandy",
+    "model": "TC-H326M 44X/IW/A",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/1.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "6-264",
+      "aperture": "F1.6-F5.3",
+      "varifocal": true
+    },
+    "field_of_view_deg": "H: 61.8-2.3, V: 36.3-1.3",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 180,
+      "min_lux_color": 0.0008
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 60,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 60
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "autotracking": true,
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "AC24V±15%",
+      "consumption_w": 43,
+      "voltage": "AC 24V"
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 256
+    },
+    "audio": {
+      "speaker": true
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-30 to 70",
+    "dimensions_mm": "Φ222×372 mm",
+    "weight_g": 5450,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP 44x Super Starlight IR AEW AI PTZ Camera",
+      "WDR: True WDR",
+      "Optical zoom: 44x",
+      "Digital zoom: 16x",
+      "Autotracking Early Warning (AEW)",
+      "Face capture",
+      "Wiper",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Loitering, Running, Parking, Heatmap, Crowd, People Counting, On Duty Detection, Safety Helmet Detection, Video Abnormal, Audio Abnormal"
+    ],
+    "sources": [
+      "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/509.html",
+      "https://web.archive.org/web/20230206094618/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/509.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.5556,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
     "id": "tiandy-tc-h326s-25x-i-e-c",
     "brand": "Tiandy",
     "model": "TC-H326S 25X/I/E/C",
@@ -2595402,6 +2601503,261 @@
     "sources": [
       "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/310.html",
       "https://web.archive.org/web/20211206092704/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/310.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-h326s-33x-i-e-a",
+    "brand": "Tiandy",
+    "model": "TC-H326S 33X/I/E/A",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4.6-152",
+      "aperture": "F1.5-F4.0",
+      "varifocal": true
+    },
+    "field_of_view_deg": "62.1-2.18",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 150,
+      "min_lux_color": 0.002
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 60,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 60
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "autotracking": true,
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "DC12V, POE+",
+      "consumption_w": 32.36,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 128
+    },
+    "audio": {
+      "microphone": true
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-40 to 70",
+    "dimensions_mm": "372x222x222 mm",
+    "weight_g": 4800,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP 33X Starlight IR Autotracking PTZ Camera",
+      "WDR: 140dB",
+      "Optical zoom: 33x",
+      "Digital zoom: 16x",
+      "Smart tracking: manual, panorama, tripwire, perimeter",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Crowd, Audio Abnormal Detection, Video Abnormal Detection"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/62.html",
+      "https://web.archive.org/web/20190722074956/http://en.tiandy.com/index.php?s=/home/product/detail/id/62.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-h326s-33x-i-e-plus-a-v3-0",
+    "brand": "Tiandy",
+    "model": "TC-H326S 33X/I/E+/A/V3.0",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4.6-152",
+      "aperture": "F1.5-F4.3",
+      "varifocal": true
+    },
+    "field_of_view_deg": "H: 60-2.3, V: 34.4-1.5, D: 66.7-2.8",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 200,
+      "min_lux_color": 0.001
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "autotracking": true,
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "DC12V±10%/POE+(IEEE802.3 at)",
+      "consumption_w": 24,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-40 to 70",
+    "dimensions_mm": "Φ222×372 mm",
+    "weight_g": 5300,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "2MP 33× Starlight IR PoE AI PTZ Camera",
+      "WDR: True WDR",
+      "Optical zoom: 33x",
+      "Digital zoom: 16x",
+      "Face capture",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Loitering, Running, Parking, Heatmap, Crowd, People Counting, On Duty Detection, Safety Helmet Detection, Video Abnormal, Audio Abnormal"
+    ],
+    "sources": [
+      "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/516.html",
+      "https://web.archive.org/web/20230930125601/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/516.html"
     ],
     "last_verified": "2026-10-21",
     "markets": [
@@ -2596836,6 +2603192,265 @@
       }
     },
     "added": "2026-09-28"
+  },
+  {
+    "id": "tiandy-tc-h356q-30x-iw-a",
+    "brand": "Tiandy",
+    "model": "TC-H356Q 30X/IW/A",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 5,
+      "max_width": 2592,
+      "max_height": 1944,
+      "label": "5MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4.7-141",
+      "aperture": "F1.5-F4.0",
+      "varifocal": true
+    },
+    "field_of_view_deg": "69.5-2.7",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 400,
+      "min_lux_color": 0.002
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2592x1944",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "autotracking": true,
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "AC24V 3A",
+      "consumption_w": 38.6,
+      "voltage": "AC 24V"
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 128
+    },
+    "audio": {
+      "speaker": false
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-40 to 70",
+    "dimensions_mm": "372x222x222 mm",
+    "weight_g": 5300,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "H.265 5MP 30x Starlight AEW IR PTZ",
+      "WDR: 120dB",
+      "Optical zoom: 30x",
+      "Digital zoom: 16x",
+      "Autotracking Early Warning (AEW)",
+      "IR LED + white light + green laser",
+      "Wiper",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Early Warning, Crowd, Audio Abnormal Detection, Video Abnormal Detection, Face Detection, People Counting, On duty Detection, Auto tracking, Parking Detection, Safety Helmet Detection",
+      "Built-in speaker optional"
+    ],
+    "sources": [
+      "http://en.tiandy.com:80/index.php?s=/home/product/detail/id/66.html",
+      "https://web.archive.org/web/20190129090855/http://en.tiandy.com:80/index.php?s=/home/product/detail/id/66.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-h356q-30x-iw-e-plus-plus-a-v3-0",
+    "brand": "Tiandy",
+    "model": "TC-H356Q 30X/IW/E++/A/V3.0",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 5,
+      "max_width": 2880,
+      "max_height": 1620,
+      "label": "5MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4.7-141",
+      "aperture": "F1.6-F4.3",
+      "varifocal": true
+    },
+    "field_of_view_deg": "H: 61.9-2.5, V: 35.5-1.4, D: 69.1-2.9",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 200,
+      "min_lux_color": 0.001
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2880x1620",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "autotracking": true,
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "AC24V±25%//POE++(IEEE802.3 bt)",
+      "consumption_w": 42,
+      "voltage": "AC 24V"
+    },
+    "power_source": [
+      "poe"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 512
+    },
+    "audio": {
+      "speaker": true
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-40 to 70",
+    "dimensions_mm": "Φ222×372 mm",
+    "weight_g": 5400,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "5MP 30x Starlight IR PoE AEW AI PTZ Camera",
+      "WDR: True WDR",
+      "Optical zoom: 30x",
+      "Digital zoom: 16x",
+      "Autotracking Early Warning (AEW)",
+      "Laser illuminator",
+      "Face capture",
+      "Wiper",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Loitering, Running, Parking, Heatmap, Crowd, People Counting, On Duty Detection, Safety Helmet Detection, Video Abnormal, Audio Abnormal"
+    ],
+    "sources": [
+      "https://en.tiandy.com/index.php?s=/Home/Product/detail/id/510.html",
+      "https://web.archive.org/web/20230206083349/https://en.tiandy.com/index.php?s=/Home/Product/detail/id/510.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
   },
   {
     "id": "tiandy-tc-h356s-30x-i-e-plus-plus-a-v3-0",
@@ -2598490,6 +2605105,134 @@
     "substream_max_resolution": null
   },
   {
+    "id": "tiandy-tc-h389m-44x-lw-p-a",
+    "brand": "Tiandy",
+    "model": "TC-H389M 44X/LW/P/A",
+    "type": "panoramic",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 8,
+      "max_width": 4096,
+      "max_height": 1800,
+      "label": "8MP"
+    },
+    "sensor": "1/1.8\" CMOS",
+    "lens": {
+      "count": 2,
+      "focal_length_mm": "5 (panoramic) / 6-264 (PTZ, 44x optical)",
+      "aperture": "F2.2 (panoramic) / F1.5-F4.8 (PTZ)",
+      "varifocal": true
+    },
+    "field_of_view_deg": "H: 180 (panoramic) / 61.2-2 (PTZ)",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 800,
+      "min_lux_color": 0.0008
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "4096x1800",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x320",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "1280x560",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "autotracking": true,
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "AC24V",
+      "consumption_w": 83,
+      "voltage": "AC 24V"
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 256
+    },
+    "audio": {
+      "speaker": true
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-40 to 70",
+    "dimensions_mm": "Φ358×568 mm",
+    "weight_g": 16000,
+    "network": {
+      "ethernet_speed_mbps": 1000,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "8MP 44X Super Starlight Laser AEW Panoramic PTZ Camera",
+      "180° panoramic camera (4096×1800) + 2MP 44x PTZ camera",
+      "WDR: 140dB",
+      "Optical zoom: 44x",
+      "Digital zoom: 16x",
+      "Autotracking Early Warning (AEW)",
+      "Laser illuminator up to 800m",
+      "White light up to 50m",
+      "Panoramic analytics: Area Intrusion, Cross Line, Enter, Leaving, Heat Map",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Early Warning, Crowd, People counting, Face detection, Audio Abnormal Detection, Video Abnormal Detection"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/67.html",
+      "https://web.archive.org/web/20190820191527/http://en.tiandy.com/index.php?s=/home/product/detail/id/67.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.5556,
+    "substream_count": 2,
+    "substream_max_resolution": "1280x560"
+  },
+  {
     "id": "tiandy-tc-nc1261",
     "brand": "Tiandy",
     "model": "TC-NC1261",
@@ -2598608,6 +2605351,128 @@
     "added": "2026-10-20",
     "sensor_size_inch": 0.5882,
     "substream_count": 1,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-nc44m",
+    "brand": "Tiandy",
+    "model": "TC-NC44M",
+    "type": "dome",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 4,
+      "max_width": 2560,
+      "max_height": 1440,
+      "label": "4MP"
+    },
+    "sensor": "1/3\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "2.8-12",
+      "varifocal": true
+    },
+    "field_of_view_deg": "90.8-32.1",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 30,
+      "min_lux_color": 0.05
+    },
+    "video": {
+      "codecs": [
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 25,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "2560x1440",
+          "fps": 25
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "352x288",
+          "fps": 25
+        }
+      ]
+    },
+    "power": {
+      "method": "DC 12 V ± 25%, POE",
+      "consumption_w": 12,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 128
+    },
+    "audio": {
+      "microphone": true
+    },
+    "ip_rating": "IP66",
+    "ik_rating": "IK10",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-35 to 60",
+    "dimensions_mm": "150×150×122 mm",
+    "weight_g": 1000,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "4MP Vandalproof Motorized IR Dome Camera",
+      "Motorized varifocal lens",
+      "WDR: 120dB",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Crowd, Audio Abnormal Detection, Video Abnormal Detection"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/49.html",
+      "https://web.archive.org/web/20190915203706/http://en.tiandy.com/index.php?s=/home/product/detail/id/49.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3333,
+    "substream_count": 2,
     "substream_max_resolution": "704x576"
   },
   {
@@ -2598826,6 +2605691,378 @@
     "added": "2026-10-21",
     "sensor_size_inch": 0.3571,
     "substream_count": 1,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-nh6220ie-c",
+    "brand": "Tiandy",
+    "model": "TC-NH6220IE-C",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4.7-94",
+      "aperture": "F1.5-F3.0",
+      "varifocal": true
+    },
+    "field_of_view_deg": "55.8-3.2",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 150,
+      "min_lux_color": 0.002
+    },
+    "video": {
+      "codecs": [
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "352x288",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "DC12V, POE+",
+      "consumption_w": 18,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-30 to 65",
+    "dimensions_mm": "372x222x222 mm",
+    "weight_g": 4300,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "H.265 2MP 20x Starlight PoE IR PTZ",
+      "WDR: 140dB",
+      "Optical zoom: 20x",
+      "Video analytics: Tripwire, Perimeter"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/60.html",
+      "https://web.archive.org/web/20190722074141/http://en.tiandy.com/index.php?s=/home/product/detail/id/60.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-nh6220ie-cp",
+    "brand": "Tiandy",
+    "model": "TC-NH6220IE-CP",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/2.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "4.7-94",
+      "aperture": "F1.5-F3.0",
+      "varifocal": true
+    },
+    "field_of_view_deg": "55.8-3.2",
+    "night_vision": {
+      "type": "ir",
+      "range_m": 150,
+      "min_lux_color": 0.002
+    },
+    "video": {
+      "codecs": [
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 30,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 30
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "352x288",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "DC12V, POE+",
+      "consumption_w": 21.18,
+      "voltage": "DC 12V"
+    },
+    "power_source": [
+      "poe",
+      "dc"
+    ],
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 128
+    },
+    "audio": {
+      "microphone": true
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-40 to 70",
+    "dimensions_mm": "372x222x222 mm",
+    "weight_g": 5000,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "H.265 2MP 20x Starlight PoE IR PTZ",
+      "WDR: 140dB",
+      "Optical zoom: 20x",
+      "Digital zoom: 16x",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Crowd, Audio Abnormal Detection, Video Abnormal Detection"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/61.html",
+      "https://web.archive.org/web/20190722074357/http://en.tiandy.com/index.php?s=/home/product/detail/id/61.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.3571,
+    "substream_count": 2,
+    "substream_max_resolution": "704x576"
+  },
+  {
+    "id": "tiandy-tc-nh6232isa-g",
+    "brand": "Tiandy",
+    "model": "TC-NH6232ISA-G",
+    "type": "ptz",
+    "connectivity": [
+      "ethernet"
+    ],
+    "resolution": {
+      "megapixels": 2,
+      "max_width": 1920,
+      "max_height": 1080,
+      "label": "2MP"
+    },
+    "sensor": "1/1.8\" CMOS",
+    "lens": {
+      "count": 1,
+      "focal_length_mm": "6-192",
+      "aperture": "F1.5-F4.3",
+      "varifocal": true
+    },
+    "field_of_view_deg": "61.2-2.32",
+    "night_vision": {
+      "type": "hybrid",
+      "range_m": 400,
+      "min_lux_color": 0.0004
+    },
+    "video": {
+      "codecs": [
+        "H.265+",
+        "H.265",
+        "H.264",
+        "MJPEG"
+      ],
+      "max_fps": 60,
+      "streams": [
+        {
+          "name": "main",
+          "resolution": "1920x1080",
+          "fps": 60
+        },
+        {
+          "name": "sub",
+          "resolution": "704x576",
+          "fps": 25
+        },
+        {
+          "name": "third",
+          "resolution": "704x576",
+          "fps": 25
+        }
+      ]
+    },
+    "ptz": {
+      "autotracking": true,
+      "onvif_ptz": "continuous"
+    },
+    "power": {
+      "method": "AC24V 3A",
+      "consumption_w": 40,
+      "voltage": "AC 24V"
+    },
+    "protocols": [
+      "onvif",
+      "rtsp",
+      "http",
+      "p2p"
+    ],
+    "storage": {
+      "onboard": true,
+      "max_microsd_gb": 128
+    },
+    "audio": {
+      "speaker": false
+    },
+    "ip_rating": "IP66",
+    "environment": [
+      "outdoor"
+    ],
+    "operating_temp_c": "-40 to 70",
+    "dimensions_mm": "372x222x222 mm",
+    "weight_g": 5450,
+    "network": {
+      "ethernet_speed_mbps": 100,
+      "ethernet_ports": 1
+    },
+    "features": [
+      "H.265 2MP 32x Super Starlight AEW IR PTZ",
+      "WDR: 140dB",
+      "Optical zoom: 32x",
+      "Digital zoom: 16x",
+      "Autotracking Early Warning (AEW)",
+      "IR LED + white light + green laser",
+      "Wiper",
+      "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Early Warning, Crowd, Audio Abnormal Detection, Video Abnormal Detection, Face Detection, People Counting, On duty Detection, Auto tracking, Parking Detection, Safety Helmet Detection",
+      "Built-in speaker optional"
+    ],
+    "sources": [
+      "http://en.tiandy.com/index.php?s=/home/product/detail/id/64.html",
+      "https://web.archive.org/web/20190722080211/http://en.tiandy.com/index.php?s=/home/product/detail/id/64.html"
+    ],
+    "last_verified": "2026-10-21",
+    "markets": [
+      "global"
+    ],
+    "cloud_dependency": "local",
+    "configs": {
+      "frigate": {
+        "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+        "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+        "onvif_port": 80,
+        "verified": false,
+        "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+      },
+      "home_assistant": {
+        "integration": "onvif",
+        "notes": "Use the ONVIF integration (Profile S)."
+      },
+      "blue_iris": {
+        "profile": "Generic/ONVIF",
+        "notes": "ONVIF Profile S supported."
+      }
+    },
+    "added": "2026-10-21",
+    "sensor_size_inch": 0.5556,
+    "substream_count": 2,
     "substream_max_resolution": "704x576"
   },
   {
