@@ -6,7 +6,20 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ---
 
-## [2.27.3] — Unreleased
+## [2.28.0] — Unreleased
+
+### Added
+- **100 Tiandy cameras** (49 bullet, 26 turret, 19 dome, 5 PTZ, 1 fisheye), Tiandy now has 296. Tiandy's current site is already fully covered, so these come from its retired official product pages, read through Wayback Machine snapshots; each record cites both the original Tiandy URL and the snapshot. Lens and metal-housing variants are separate records. RTSP uses the brand path the existing Tiandy records use, not yet verified.
+- **Reolink E331** (#408) — indoor WiFi 6 pan-tilt camera: 5MP at 20 fps (H.264 only), 355°/50° pan-tilt, IR to 12 m, two-way audio, microSD to 512 GB, RTSP and ONVIF. Specs from Reolink's product page and spec sheet; Frigate uses Reolink's documented `/Preview_01_main` path. Suggested by [mdorchain](https://github.com/mdorchain).
+- **Ubiquiti UniFi Protect G4 Doorbell Pro PoE Kit**, from Ubiquiti's tech specs.
+
+### Fixed
+- **Matrix SATATYA (114 cameras, #407)** — every Matrix camera carried an RTSP path (`/1/1`, `/1/2`) that no Matrix document gives, and an owner reported it does not work. Matrix publishes no RTSP path for its fixed cameras (installation guides, system manual, wiki), so those records now point to ONVIF, which discovers the stream URL. The PZCR50ML42CWP PTZ takes the `/main` and `/sub` paths its own system manual lists.
+- **Annke I91BK (#409, #410, #412)** — the Frigate config (main stream `/Streaming/Channels/101`, ONVIF PTZ on port 80) is now owner-verified on Frigate 0.18.2. Frigate autotracking is marked unsupported: the camera reports MoveStatus IDLE right after a move, and ONVIF zoom only reaches whole optical steps (community notes). Reported by [nikosch86](https://github.com/nikosch86).
+- **Amcrest IP4M-1098EW-AI (#411, #413)** — the main stream only answers with `&unicast=true&proto=Onvif` appended; the template now includes it and is owner-verified on Frigate 0.18.2. Frigate autotracking works with relative zooming once focus is set to Manual (community note on the autofocus delay). Reported by [nikosch86](https://github.com/nikosch86).
+- **Verkada CF83-E / CF83-E-F (#406)** — checked against Verkada's datasheets: 12.5MP label, 3520x3520 output resolution and main stream (3536x3536 is the sensor), network and power details; the government -F edition was described as 360-degree, the lens covers 180°. The IR range stays 20 m, as Verkada states.
+
+## [2.27.3] — 2026-10-08
 
 ### Added
 - **Revodata I706-P-HS** (new brand) — tiny indoor 5MP PoE camera with an adjustable 3.6 mm M12 lens and IR, suggested in discussion #402. RTSP `/stream1` (main) and `/stream2` on port 554 and ONVIF on port 80, from the maker's manual; community-tested in Frigate by [ElectronicBattle](https://github.com/ElectronicBattle) ([review](https://github.com/blakeblackshear/frigate/discussions/24489)).
