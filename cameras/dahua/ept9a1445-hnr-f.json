@@ -1,0 +1,144 @@
+{
+  "id": "dahua-ept9a1445-hnr-f",
+  "brand": "Dahua",
+  "model": "EPT9A1445-HNR-F",
+  "aliases": [
+    "DH-EPT9A1445-HNR-F"
+  ],
+  "type": "ptz",
+  "ptz": {
+    "onvif_ptz": "continuous"
+  },
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "ac-mains"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/2.8\" STARVIS CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "3.95-177.75",
+    "aperture": "F1.6-F4.95",
+    "varifocal": true
+  },
+  "field_of_view_deg": "H: 65.7-1.9; V: 39.4-1.1; D: 73.1-2.1",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 100,
+    "min_lux_color": 0.005,
+    "min_lux": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub2",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "100-240 VAC, 1 A, 50/60 Hz",
+    "voltage": "100-240 VAC",
+    "consumption_w": 60
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "rtmp"
+  ],
+  "ip_rating": "IP66/IP68",
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "334.1 x 303 x 426",
+  "weight_g": 23500,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "explosion-proof 4MP 45x Starlight IR pan-tilt camera",
+    "ATEX (EN 60079-0/-1/-31) and IECEx (IEC 60079-0/-1/-31) certified",
+    "SUS316L stainless steel housing",
+    "45x optical zoom (3.95-177.75 mm), 16x digital zoom",
+    "100 m IR (4 IR LEDs)",
+    "wiper",
+    "120 dB WDR",
+    "electronic image stabilization (EIS)",
+    "pan 0-360 endless, tilt -90 to +90; 300 presets, 8 tours, 5 patterns, 5 scans",
+    "IVS perimeter protection, face detection, video metadata, SMD 4.0, Quick Pick",
+    "sound warning (active deterrence)",
+    "100 M single-fiber optical port",
+    "ONVIF Profile S/G/T; DH-SD and Pelco-P/D PTZ protocols",
+    "audio 1 in / 1 out (line); alarm 2 in / 1 out; RS-485",
+    "TVS 6000 V lightning proof, surge and voltage transient protection"
+  ],
+  "status": "available",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/my/products/network-products/explosion-proof/optical-series/ept9a1445-hnr-f",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/82979/datasheet/DH-EPT9A1445-HNR-F_S0_datasheet_20250903.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local"
+}

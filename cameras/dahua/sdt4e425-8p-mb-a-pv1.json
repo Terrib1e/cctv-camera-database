@@ -1,0 +1,162 @@
+{
+  "id": "dahua-sdt4e425-8p-mb-a-pv1",
+  "brand": "Dahua",
+  "model": "SDT4E425-8P-MB-A-PV1",
+  "aliases": [
+    "DH-SDT4E425-8P-MB-A-PV1"
+  ],
+  "type": "ptz",
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "dc",
+    "poe"
+  ],
+  "resolution": {
+    "megapixels": 12,
+    "max_width": 4096,
+    "max_height": 1860,
+    "label": "8MP panorama + 4MP 25x PTZ"
+  },
+  "sensor": "1/2.7\" CMOS (panorama) + 1/2.8\" CMOS (PTZ)",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "2.8 (panorama) / 5-125 (PTZ)",
+    "aperture": "F1.4 (panorama) / F1.6-F3.6 (PTZ)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "Panorama H: 180, V: 86 (tilt 10-28 manual); PTZ H: 51.9-3.0; V: 39.7-2.2; D: 63.1-3.7",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 100,
+    "min_lux_color": 0.005,
+    "min_lux": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "4096x1860",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1024x448",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub2",
+        "resolution": "2048x928",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "ptz main",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "ptz sub",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "12 VDC / PoE+ (802.3at)",
+    "consumption_w": 25,
+    "voltage": "12 VDC"
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "rtmp",
+    "p2p"
+  ],
+  "ip_rating": "IP66",
+  "operating_temp_c": "-40 to 65",
+  "dimensions_mm": "194.2 x 160 x 311",
+  "weight_g": 3100,
+  "audio": {
+    "microphone": true,
+    "speaker": true,
+    "two_way": true
+  },
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "X-Spans dual-channel panoramic PTZ: 8MP 180-degree stitched panorama + 4MP 25x optical zoom PTZ detail channel",
+    "25x optical zoom (5-125 mm), 16x digital zoom",
+    "Smart Dual Light: panorama 30 m IR + 30 m white light; PTZ channel 100 m IR + 50 m warm light",
+    "WizTracking, linkage tracking and relay tracking (panorama links to PTZ)",
+    "Xinghan large-scale AI models; IVS perimeter protection (tripwire, intrusion, fast moving) with human/vehicle/animal classification",
+    "SMD 4.0, AcuPick, auto patrol",
+    "active deterrence: red-blue warning light and sound alarm",
+    "built-in dual microphones and speaker for two-way talk",
+    "detail channel pan 0-360 endless; 300 presets, 8 tours, 5 patterns, 5 scans",
+    "ONVIF Profile S/G/T/M",
+    "alarm 2 in / 1 out",
+    "TVS 6000 V lightning proof, surge and voltage transient protection",
+    "detail channel tilt -15 to +90, auto flip 180"
+  ],
+  "status": "available",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1024,
+        "height": 448,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/ptz-cameras/x-spans-series/distribution/sdt4e425-8p-mb-a-pv1",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/88339/datasheet/DH-SDT4E425-8P-MB-A-PV1_S0_datasheet_20260914_English.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local"
+}

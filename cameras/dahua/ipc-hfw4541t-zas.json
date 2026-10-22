@@ -1,0 +1,152 @@
+{
+  "id": "dahua-ipc-hfw4541t-zas",
+  "brand": "Dahua",
+  "model": "IPC-HFW4541T-ZAS",
+  "aliases": [
+    "DH-IPC-HFW4541T-ZAS"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2592,
+    "max_height": 1944,
+    "label": "5MP"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2592x1944",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7-13.5",
+    "aperture": "F1.5",
+    "varifocal": true
+  },
+  "field_of_view_deg": "99-28h",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 60,
+    "min_lux": 0.0005,
+    "min_lux_color": 0.005
+  },
+  "power": {
+    "method": "12 VDC / PoE (802.3af)",
+    "voltage": "12 VDC",
+    "consumption_w": 8.5
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": true
+  },
+  "features": [
+    "WizMind 4",
+    "motorized varifocal 2.7-13.5mm",
+    "60m IR",
+    "120 dB WDR",
+    "SMD 3.0",
+    "perimeter protection (intrusion/tripwire, human/vehicle classification)",
+    "face detection",
+    "EIS",
+    "AFSA anti-flicker",
+    "alarm 1 in / 1 out",
+    "audio 1 in / 1 out",
+    "built-in mic",
+    "ONVIF Profile S/G/T",
+    "Smart H.265+ / Smart H.264+",
+    "AI H.265 / AI H.264"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "244.1 x 79.0 x 75.9",
+  "weight_g": 820,
+  "environment": [
+    "outdoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "generation": "WizMind 4",
+  "release_notes": "5 MP IR Vari-focal Bullet WizMind Network Camera.",
+  "sources": [
+    "https://www.dahuasecurity.com/products/network-products/network-cameras/wizmind-4-series/ir/ipc-hfw4541t-zas",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/88208/datasheet/DH-IPC-HFW4541T-ZAS_S0_datasheet_20250324.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua ONVIF (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "cloud_dependency": "local",
+  "network": {
+    "ethernet_speed_mbps": 100
+  }
+}

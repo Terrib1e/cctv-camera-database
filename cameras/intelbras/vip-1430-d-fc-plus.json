@@ -46,7 +46,9 @@
   },
   "protocols": [
     "onvif",
-    "rtsp"
+    "rtsp",
+    "rtmp",
+    "http"
   ],
   "dimensions_mm": "110 x 101 x 110",
   "weight_g": 330,
@@ -75,7 +77,7 @@
   "sources": [
     "https://backend.intelbras.com/sites/default/files/2025-08/Datasheet%20VIP%201430%20BD%20FC%2B%20V5_0.pdf"
   ],
-  "last_verified": "2026-09-11",
+  "last_verified": "2026-10-21",
   "configs": {
     "frigate": {
       "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
@@ -92,5 +94,11 @@
   },
   "audio": {
     "microphone": true
+  },
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100
   }
 }

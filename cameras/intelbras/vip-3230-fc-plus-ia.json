@@ -42,7 +42,9 @@
   },
   "protocols": [
     "onvif",
-    "rtsp"
+    "rtsp",
+    "rtmp",
+    "http"
   ],
   "ip_rating": "IP67",
   "dimensions_mm": "70 x 70 x 166",
@@ -86,7 +88,7 @@
     "br",
     "latam"
   ],
-  "last_verified": "2026-09-11",
+  "last_verified": "2026-10-21",
   "sources": [
     "https://backend.intelbras.com/sites/default/files/2025-07/datasheet-vip-3230-fc%2B-ia-vip-3230-d-fc%2B-ia-pt.pdf"
   ],
@@ -96,5 +98,11 @@
   },
   "audio": {
     "microphone": true
+  },
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100
   }
 }

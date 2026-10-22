@@ -1,0 +1,143 @@
+{
+  "id": "hikvision-ds-2sf7c442mxg1-lm-elwy-14",
+  "brand": "Hikvision",
+  "model": "DS-2SF7C442MXG1/LM-EL(W)(Y)/14",
+  "aliases": [
+    "DeepInViewX TandemVu 7C Series 4 MP 42X DarkFighter Network Speed Dome",
+    "DS-2SF7C442MXG1/LM-EL/14",
+    "DS-2SF7C442MXG1/LM-ELW/14",
+    "DS-2SF7C442MXG1/LM-ELY/14",
+    "DS-2SF7C442MXG1/LM-ELWY/14"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "PTZ channel: 1/1.8\" Progressive Scan CMOS; bullet channel: 1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "PTZ 6-252 (42x zoom) / bullet 4 (fixed)",
+    "aperture": "F1.2 (PTZ) / F1.0 (bullet)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "PTZ 59.1 to 2 horizontal / bullet 89 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 300,
+    "min_lux_color": 0.0003
+  },
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3bt, 42.5-57 V, 1.76 A, max. 60 W incl. heaters and supplement lights)",
+    "consumption_w": 60,
+    "voltage": "PoE (802.3bt)"
+  },
+  "power_source": [
+    "poe"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "Ø260 x 382.9",
+  "weight_g": 7300,
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "TandemVu dual-channel: 4MP fixed bullet channel (24/7 color, 30 m white light) + 4MP PTZ channel",
+    "42 x optical / 16x digital zoom (PTZ channel), IR up to 300 m",
+    "DarkFighter 2.0 low-light",
+    "Dedicated large-scale AI model for perimeter protection",
+    "Smart tracking (auto-tracking)",
+    "Smart Pan-Tilt Correction",
+    "Bullet channel tilt adjustable 7 to 17 deg",
+    "EIS with built-in gyroscope",
+    "120 dB WDR (PTZ channel)",
+    "Wiper (W variants) and demist",
+    "7 alarm in / 2 alarm out, RS-485",
+    "Y variants: anti-corrosion"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000096469/DS-2SF7C442MXG1-LM-ELWY-14_Datasheet_20250908.pdf"
+  ],
+  "release_notes": "Per DS-2SF7C442MXG1-LM-ELWY-14_Datasheet_20250908.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

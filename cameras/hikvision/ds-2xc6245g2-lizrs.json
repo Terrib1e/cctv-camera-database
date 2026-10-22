@@ -1,0 +1,129 @@
+{
+  "id": "hikvision-ds-2xc6245g2-lizrs",
+  "brand": "Hikvision",
+  "model": "DS-2XC6245G2-LIZRS",
+  "aliases": [
+    "316L 4MP 50m Underwater Vari-focal Bullet"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP (2560x1440)"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8 to 12 (motorized)",
+    "aperture": "F1.4",
+    "varifocal": true
+  },
+  "field_of_view_deg": "74.6 to 29.7 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 1,
+    "min_lux_color": 0.0008
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 512
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (IEEE 802.3at, Class 4, max. 22 W) / 36 VDC ±20%, 0.54 A, max. 19 W",
+    "consumption_w": 22,
+    "voltage": "36 VDC / PoE+",
+    "poe_class": 4
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP68",
+  "dimensions_mm": "224.0 x 208.0 x 230.1",
+  "weight_g": 12000,
+  "operating_temp_c": "-10 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "Underwater use up to 50 m (IP68)",
+    "316L stainless steel anti-corrosion enclosure",
+    "DarkFighter low-light technology",
+    "IR and white light (up to 1 m underwater, turbidity-dependent)",
+    "AI Open Platform",
+    "120 dB WDR",
+    "Defog",
+    "RS-485 interface"
+  ],
+  "release_notes": "Per DS-2XC6245G2-LIZRS_Datasheet_20260923.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000186150/DS-2XC6245G2-LIZRS_Datasheet_20260923.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

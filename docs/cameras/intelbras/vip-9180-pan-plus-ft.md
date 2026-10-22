@@ -12,9 +12,11 @@
 | Field of view | 180 horizontal° |
 | Night vision | ir (30m), 0.001 lux color |
 | Power | PoE+ (802.3at) / 12 Vdc / 24 Vac |
+| Storage | microSD ≤ 256GB |
 | Protocols | onvif, rtsp |
 | IP rating | IP67 |
 | IK rating | IK10 |
+| Two-way audio | Yes |
 | Operating temp | -40 to 60°C |
 
 ## Streams
@@ -34,6 +36,13 @@
 - Alarm 2-in / 2-out
 - IK10 + IP67
 - micro SD up to 256GB
+- 180-degree panoramic view (4 sensors)
+- Motion detection with human/vehicle filter
+- Tripwire and virtual fence with human/vehicle filter
+- Object abandon/removal detection
+- Digital image stabilization (EIS)
+- Autofocus
+- IK10 anti-vandalism
 
 ## Sources
 

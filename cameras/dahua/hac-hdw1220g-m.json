@@ -1,0 +1,71 @@
+{
+  "id": "dahua-hac-hdw1220g-m",
+  "brand": "Dahua",
+  "model": "HAC-HDW1220G-M",
+  "aliases": [
+    "DH-HAC-HDW1220G-M",
+    "DH-HAC-HDW1220GP-M",
+    "DH-HAC-HDW1220GN-M"
+  ],
+  "type": "turret",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.9\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "3.6 (2.8 / 6 optional)",
+    "aperture": "F2.0 (F1.9 for 2.8 mm)",
+    "varifocal": false
+  },
+  "field_of_view_deg": "82.8 (96 with 2.8 mm, 51 with 6 mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 20,
+    "min_lux_color": 0.02
+  },
+  "power": {
+    "method": "12 VDC ±25% vehicle power (4-pin M12 aviation connector (power + video))",
+    "voltage": "12VDC",
+    "consumption_w": 2.9
+  },
+  "ip_rating": "IP67",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Mobile (vehicle) HDCVI IR eyeball camera",
+    "HDCVI output via 4-pin M12 aviation connector (power + video)",
+    "Shock-proof: EN50155 (EN50121-3-2, IEC61373)",
+    "Smart IR, DWDR, 2D NR",
+    "Built-in mic",
+    "CE, FCC, UL"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "Φ62 x 62",
+  "weight_g": 160,
+  "environment": [
+    "outdoor"
+  ],
+  "status": "discontinued",
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/mobile-&-traffic/hac-hdw1220g-m",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20190701/DH-HAC-HDW1220G-M.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

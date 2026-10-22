@@ -1,5 +1,7 @@
 # Sunell SN-IPC8045HAN-FT
 
+*Also known as: Sunell SN-IPC8045HAN-FT*
+
 | Field | Spec |
 |-------|------|
 | Brand | Sunell |
@@ -8,6 +10,7 @@
 | Connectivity | ethernet |
 | Resolution | 4MP (2592x1520) (4MP, 2592×1520) |
 | Sensor | 1/2.8” Progressive Scan CMOS |
+| Lens | C/CS mount (lens not included)mm |
 | Night vision | 0.008 lux, 0.03 lux color |
 | Power | 12 VDC / 24 VAC (-10% to +25%) / PoE (802.3af) |
 | Storage | microSD ≤ 1024GB, NVR |
@@ -28,6 +31,7 @@
 ## Sources
 
 - https://www.sunellsecurity.com/products/anpr-cameras/sn-ipc8045han-ft-4mp-lpr-camera.shtml
+- https://www.sunellsecurity.com/resources/file/SN-IPC8045HAN-FT_Datasheet_202607.pdf
 
 ---
 *Auto-generated from sunell-sn-ipc8045han-ft.json — do not edit by hand.*

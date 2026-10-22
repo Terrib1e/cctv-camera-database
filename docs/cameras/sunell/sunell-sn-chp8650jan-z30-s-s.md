@@ -1,5 +1,7 @@
 # Sunell SN-CHP8650JAN-Z30-S-S
 
+*Also known as: Sunell SN-CHP8650JAN-Z30-S-S*
+
 | Field | Spec |
 |-------|------|
 | Brand | Sunell |
@@ -8,13 +10,15 @@
 | Connectivity | ethernet |
 | Resolution | 5MP (2592x1944) (5MP, 2592×1944) |
 | Sensor | 1/2.8” Progressive Scan CMOS |
-| Lens | 5.3-159mm F1.6 |
+| Lens | 5.3-159 (30x optical zoom)mm F1.6 |
 | Field of view | H: 56.3 to 2.7, V: 42.4 to 2.0° |
 | Night vision | 0.02 lux, 0.07 lux color |
 | Power | 100 to 240VAC |
 | Storage | microSD ≤ 1024GB, NVR |
 | Protocols | onvif, rtsp, http |
 | IP rating | IP68 |
+| Two-way audio | No |
+| Operating temp | 0 to 250°C |
 
 ## Streams
 
@@ -30,6 +34,7 @@
 ## Sources
 
 - https://www.sunellsecurity.com/products/special-series/sn-chp8650jan-z30-s-s.shtml
+- https://www.sunellsecurity.com/
 
 ---
 *Auto-generated from sunell-sn-chp8650jan-z30-s-s.json — do not edit by hand.*

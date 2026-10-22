@@ -1,0 +1,121 @@
+{
+  "id": "dahua-itc214-ph5b-f3",
+  "brand": "Dahua",
+  "model": "ITC214-PH5B-F3",
+  "aliases": [
+    "DHI-ITC214-PH5B-F3",
+    "ITC214-PH5B-F3-POE",
+    "DHI-ITC214-PH5B-F3-POE",
+    "ITC214-PH5B-F6",
+    "DHI-ITC214-PH5B-F6",
+    "ITC214-PH5B-F6-POE",
+    "DHI-ITC214-PH5B-F6-POE"
+  ],
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p (1920x1080)"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 30
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "3.6 or 6 (fixed, by model)",
+    "varifocal": false
+  },
+  "power": {
+    "method": "12-48 VDC with 48 VDC power cascade (F3/F6); PoE+ / 12 VDC (-POE models)",
+    "consumption_w": 8.5
+  },
+  "protocols": [
+    "rtsp",
+    "http"
+  ],
+  "audio": {
+    "speaker": true
+  },
+  "ip_rating": "IP54",
+  "environment": [
+    "indoor"
+  ],
+  "operating_temp_c": "-20 to 50",
+  "dimensions_mm": "120 x 136 x 105",
+  "weight_g": 400,
+  "network": {
+    "ethernet_speed_mbps": 100
+  },
+  "features": [
+    "2MP parking space detection camera — monitors 2 parking spaces in real time (detection rate >99.5%)",
+    "lens options: F3 = 3.6 mm, F6 = 6 mm; -POE variants are PoE+ / 12 VDC powered with a single RJ-45 (0.5 kg), non-PoE variants take 12-48 VDC, power up to 6 cascaded devices over network cable and have 2x RJ-45 (0.4 kg)",
+    "recognizes vehicle model, logo, color and plate number; collects metadata for unlicensed vehicles (vehicle recognition >99.5%, plate recognition >99%)",
+    "illegal parking detection (vehicle across two spaces, non-allowlist vehicle, small vehicle in large space), line crossing, sound and light alarm with voice broadcast",
+    "built-in 7-color parking-space indicator; RS-485 for external indicators (one per space)",
+    "True WDR 100 dB, 3D NR, HLC, BLC, digital watermarking; for indoor and semi-enclosed parking",
+    "electrically adjustable lens depression angle 10-34 degrees; cable tray mount"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua parking space detector — ONVIF not listed in the datasheet; standard Dahua /cam/realmonitor RTSP path (unverified)."
+    },
+    "home_assistant": {
+      "integration": "generic",
+      "notes": "No ONVIF listed in the datasheet; add via Generic Camera with the Dahua RTSP URL."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Dahua RTSP."
+    }
+  },
+  "sources": [
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/indoor-parking/itc414-series-spot-detection-camera/itc214-ph5b-f3",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/46617/datasheet/ITC214-PH5B-F3_datasheet_20220510.pdf",
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/indoor-parking/itc414-series-spot-detection-camera/itc214-ph5b-f3-poe",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/46607/datasheet/ITC214-PH5B-F3-POE_datasheet_20220510.pdf",
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/indoor-parking/itc414-series-spot-detection-camera/itc214-ph5b-f6",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/108147/datasheet/ITC214-PH5B-F6_datasheet_20220510.pdf",
+    "https://www.dahuasecurity.com/products/intelligent-traffic/smart-parking-products/indoor-parking/itc414-series-spot-detection-camera/itc214-ph5b-f6-poe",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/46627/datasheet/ITC214-PH5B-F6-POE_datasheet_20220510.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
+}

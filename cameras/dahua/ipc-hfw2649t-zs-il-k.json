@@ -1,0 +1,129 @@
+{
+  "id": "dahua-ipc-hfw2649t-zs-il-k",
+  "brand": "Dahua",
+  "model": "IPC-HFW2649T-ZS-IL-K",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "audio": {
+    "microphone": false,
+    "speaker": false,
+    "two_way": false
+  },
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "environment": [
+    "outdoor"
+  ],
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration works (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "aliases": [
+    "DH-IPC-HFW2649T-ZS-IL-K"
+  ],
+  "type": "bullet",
+  "resolution": {
+    "megapixels": 6,
+    "max_width": 3288,
+    "max_height": 1850,
+    "label": "6MP"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.7-13.5 (motorized)",
+    "aperture": "F1.5",
+    "varifocal": true
+  },
+  "field_of_view_deg": "114-32h",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 60,
+    "min_lux_color": 0.007,
+    "min_lux": 0.0007
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 20,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "3288x1850",
+        "fps": 20,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "PoE / 12 VDC",
+    "consumption_w": 12.7
+  },
+  "ip_rating": "IP67",
+  "features": [
+    "WizSense 2 series 6MP Smart Dual Light vari-focal bullet (IR + warm light, 60 m)",
+    "Project-exclusive -K model; no built-in microphone/audio, max. 256 GB microSD",
+    "Perimeter protection (tripwire, intrusion) with human/vehicle classification; SMD Plus",
+    "Alarm 1 in / 1 out",
+    "IK10 optional"
+  ],
+  "operating_temp_c": "-30 to 60",
+  "dimensions_mm": "238.5 x 90.7 x 90.7",
+  "weight_g": 760,
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/dedicated-products/project-exclusive/network-cameras/ipc-hfw2649t-zs-il-k",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20250115/DH-IPC-HFW2649T-ZS-IL-K.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

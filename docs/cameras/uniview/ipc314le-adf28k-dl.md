@@ -6,10 +6,10 @@
 | Model | IPC314LE-ADF28K-DL |
 | Type | dome |
 | Connectivity | ethernet |
-| Resolution | 4MP (4MP) |
+| Resolution | 4MP (4MP, 2688×1520) |
 | Sensor | 1/3.0" CMOS |
 | Lens | 1× 2.8mm F1.6 |
-| Field of view | 100.5 horizontal, 58.4 vertical, 123.1 diagonal° |
+| Field of view | 100.5 horizontal, 58.4 vertical, 123.1 diagonal (2.8mm)° |
 | Night vision | hybrid (30m), 0.005 lux color |
 | Power | DC 12 V±25%, PoE (IEEE 802.3af) |
 | Storage | microSD ≤ 512GB, NVR |

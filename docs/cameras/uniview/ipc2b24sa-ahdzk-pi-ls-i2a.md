@@ -6,7 +6,7 @@
 | Model | IPC2B24SA-AHDZK-PI-LS-I2A |
 | Type | bullet |
 | Connectivity | ethernet |
-| Resolution | 4MP (4MP) |
+| Resolution | 4MP (4MP, 2688×1520) |
 | Sensor | 1/1.8" CMOS |
 | Lens | 1× 2.7-13.5mm F1.2 |
 | Field of view | 107.4 to 49.1 horizontal, 56.4 to 27.9 vertical, 128.8 to 60.4 diagonal° |
@@ -18,6 +18,13 @@
 | IK rating | IK10 |
 | Two-way audio | Yes |
 | Operating temp | -40 to 60°C |
+
+## Streams
+
+| Stream | Resolution | FPS | Codec |
+|--------|-----------|-----|-------|
+| main | 2688x1520 | 60 | — |
+| sub | 1920x1080 | 60 | — |
 
 ## Features
 

@@ -1,0 +1,73 @@
+{
+  "id": "hilook-thc-t250-ms",
+  "brand": "HiLook",
+  "model": "THC-T250-MS",
+  "aliases": [
+    "THC-T250-MS(2.8mm)(Hilook UK)",
+    "THC-T250-MS(3.6mm)(Hilook UK)",
+    "5 MP Fixed Turret Camera"
+  ],
+  "type": "turret",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 5,
+    "max_width": 2560,
+    "max_height": 1944,
+    "label": "5MP"
+  },
+  "sensor": "5 MP CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8/3.6",
+    "aperture": "F1.2",
+    "varifocal": false
+  },
+  "field_of_view_deg": "85.5 horizontal (2.8mm), 80.1 horizontal (3.6mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 40,
+    "min_lux_color": 0.01
+  },
+  "video": {
+    "max_fps": 20
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "power": {
+    "method": "12 VDC",
+    "consumption_w": 3.7,
+    "voltage": "12 VDC"
+  },
+  "ip_rating": "IP67",
+  "dimensions_mm": "127.92 (dia) x 100.15",
+  "weight_g": 450,
+  "operating_temp_c": "-40 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "5 MP 2560x1944 (TVI/AHD 20 fps)",
+    "Smart IR up to 40 m",
+    "Digital WDR",
+    "built-in mic, audio over coaxial cable",
+    "4-in-1 switchable TVI/AHD/CVI/CVBS output"
+  ],
+  "release_notes": "Per THC-T250-MS.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000063105/THC-T250-MS.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "uk"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

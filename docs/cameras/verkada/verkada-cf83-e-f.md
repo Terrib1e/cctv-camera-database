@@ -6,12 +6,12 @@
 | Model | CF83-E-F |
 | Type | fisheye |
 | Connectivity | ethernet |
-| Resolution | 12.5MP (12.5MP, 3536×3536) |
+| Resolution | 12.5MP (12.5MP, 3520×3520) |
 | Sensor | 1/1.6" progressive CMOS |
 | Lens | 1× 1.7mm F2.0 |
 | Field of view | 180 H / 180 V / 180 D° |
 | Night vision | ir (20m), 0.009 lux color |
-| Power | PoE+ (802.3at Type 2; 19.5W with IR) / (9.5W without IR) |
+| Power | PoE+ (802.3at Type 2; 19.5W with IR, 9.5W without IR, 24.8W extended temperature) |
 | Storage | microSD ≤ 3072GB |
 | Protocols | rtsp |
 | IP rating | IP67 |
@@ -23,11 +23,11 @@
 
 | Stream | Resolution | FPS | Codec |
 |--------|-----------|-----|-------|
-| main | 3536x3536 | 24 | H.265 |
+| main | 3520x3520 | 24 | — |
 
 ## Features
 
-- government-grade 360-degree fisheye (FIPS 140-2 validated, TAA and FY2019 NDAA compliant)
+- government-grade 180-degree fisheye (FIPS 140-2 validated, TAA and FY2019 NDAA compliant)
 - all-cloud no NVR (Verkada Command)
 - on-camera edge storage 512GB-3TB
 - 180-degree panoramic coverage
@@ -41,6 +41,7 @@
 
 - https://www.verkada.com/security-cameras/fisheye/cf83-e-f/
 - https://docs.verkada.com/docs/video-security-cf83-e-f-datasheet.pdf
+- https://help.verkada.com/verkada-cameras/video-streaming-and-sharing/live-streaming/low-latency-rtsp-streaming
 
 ---
 *Auto-generated from verkada-cf83-e-f.json — do not edit by hand.*

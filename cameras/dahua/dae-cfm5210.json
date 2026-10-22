@@ -1,0 +1,64 @@
+{
+  "id": "dahua-dae-cfm5210",
+  "brand": "Dahua",
+  "model": "DAE-CFM5210",
+  "aliases": [
+    "DHI-DAE-CFM5210",
+    "DHI-DAE-CFM5210-CYN",
+    "DHI-DAE-CFM5210-CYP"
+  ],
+  "type": "box",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "6",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "56h",
+  "night_vision": {
+    "type": "none",
+    "min_lux": 0.1
+  },
+  "power": {
+    "method": "9-16 VDC vehicle power",
+    "voltage": "9-16VDC",
+    "consumption_w": 2
+  },
+  "ip_rating": "IP54",
+  "features": [
+    "ADAS front-view monitoring camera: with a car-mount terminal gives forward collision, lane departure and headway monitoring warnings",
+    "100 dB WDR",
+    "BLC, HLC, 3D NR, headlight glare suppression",
+    "PAL (-CYP) and NTSC (-CYN) versions; windshield mount with double-sided adhesive tape",
+    "Certifications: CE, FCC"
+  ],
+  "operating_temp_c": "-30 to 70",
+  "dimensions_mm": "85.5 x 63.0 x 35.0",
+  "weight_g": 140.4,
+  "environment": [
+    "indoor"
+  ],
+  "status": "discontinued",
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/discontinued-products/mobile-&-traffic/dae-cfm5210",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/DHI-DAE-CFM5210_datasheet_20210420.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

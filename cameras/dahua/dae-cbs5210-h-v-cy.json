@@ -1,0 +1,68 @@
+{
+  "id": "dahua-dae-cbs5210-h-v-cy",
+  "brand": "Dahua",
+  "model": "DAE-CBS5210-H/V-CY",
+  "aliases": [
+    "DAE-CBS5210-HV-CY",
+    "DAE-CBS5210-H",
+    "DAE-CBS5210-V"
+  ],
+  "type": "box",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.0",
+    "aperture": "F1.9",
+    "varifocal": false
+  },
+  "field_of_view_deg": "143.2h",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 20,
+    "min_lux_color": 0.02
+  },
+  "power": {
+    "method": "9-16 VDC vehicle power (4-pin aviation connector)",
+    "voltage": "9-16VDC",
+    "consumption_w": 5
+  },
+  "ip_rating": "IP67",
+  "ik_rating": "IK08",
+  "features": [
+    "Blind Spot Detection (BSD) vehicle camera: detects pedestrians and vehicles in the blind spot and triggers warnings with a Dahua AI MXVR",
+    "143.2° horizontal field of view covering the driver blind area",
+    "Rear-view mirror installation",
+    "CVI/TVI/AHD/CVBS switchable output",
+    "Audio input",
+    "Rotation mode, DWDR, 3D NR, BLC, mirror",
+    "Smart Illumination IR",
+    "4-pin aviation power connector"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "90.0 x 110.6 x 65 (with bracket)",
+  "weight_g": 372,
+  "environment": [
+    "outdoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/mobile/mobile/mobile-analog-products/mobile-cameras/dae-cbs5210-h/v-cy",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/133417/datasheet/DAE-CBS5210-HV-CY_datasheet_20221228.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

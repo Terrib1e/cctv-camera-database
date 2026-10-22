@@ -1,0 +1,144 @@
+{
+  "id": "hikvision-ds-2cd3t43g3-2lisuy",
+  "brand": "Hikvision",
+  "model": "DS-2CD3T43G3-2LISUY",
+  "aliases": [
+    "4 MP Acusense Smart Hybrid Light Fixed Bullet Network Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/2.9\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.8, 4 and 6 (fixed, optional)",
+    "aperture": "F1.6",
+    "varifocal": false
+  },
+  "field_of_view_deg": "103.6 horizontal (2.8mm) / 83.5 horizontal (4mm) / 51.8 horizontal (6mm)",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 60,
+    "min_lux_color": 0.001
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 10,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 10,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3af, Class 3, max. 10.5 W) / DC 12V ±25%, 0.75 A, max. 9.0 W",
+    "consumption_w": 10.5,
+    "voltage": "12 VDC / PoE",
+    "poe_class": 3
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "dimensions_mm": "88.7 x 91.2 x 323.2",
+  "weight_g": 1200,
+  "operating_temp_c": "-30 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "AcuSense human and vehicle classification",
+    "Smart Hybrid Light (IR + white light, 3 modes)",
+    "HikAI-ISP noise reduction",
+    "130 dB WDR",
+    "Arrayed dual-microphone",
+    "1 alarm input / 1 alarm output",
+    "Audio line in / line out",
+    "Anti-corrosion design (NEMA 4X)"
+  ],
+  "release_notes": "Per DS-2CD3T43G3-2LISUYBlack_Datasheet_20260810.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/sm000117050/DS-2CD3T43G3-2LISUYBlack_Datasheet_20260810.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1280,
+        "height": 720,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

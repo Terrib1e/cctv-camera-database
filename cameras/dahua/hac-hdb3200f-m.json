@@ -1,0 +1,70 @@
+{
+  "id": "dahua-hac-hdb3200f-m",
+  "brand": "Dahua",
+  "model": "HAC-HDB3200F-M",
+  "aliases": [
+    "DH-HAC-HDB3200F-M",
+    "DH-HAC-HDB3200FP-M",
+    "DH-HAC-HDB3200FN-M"
+  ],
+  "type": "dome",
+  "connectivity": [
+    "coax"
+  ],
+  "power_source": [
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "1080p"
+  },
+  "sensor": "1/2.7\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "2.1",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "133h",
+  "night_vision": {
+    "type": "none",
+    "min_lux_color": 0.02
+  },
+  "power": {
+    "method": "12 VDC ±30% vehicle power (4-pin M12 aviation connector (power + video))",
+    "voltage": "12VDC",
+    "consumption_w": 1.1
+  },
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "audio": {
+    "microphone": true,
+    "speaker": false,
+    "two_way": false
+  },
+  "features": [
+    "Mobile (vehicle) HDCVI dome camera",
+    "CVI/CVBS/AHD/TVI switchable output via 4-pin M12 aviation connector (power + video)",
+    "Shock-proof (EN50155)",
+    "DWDR, BLC/HLC, 2D NR, 8 privacy masks",
+    "Built-in mic",
+    "CE, FCC"
+  ],
+  "operating_temp_c": "-40 to 60",
+  "dimensions_mm": "Φ106.0 x 50.3",
+  "weight_g": 330,
+  "environment": [
+    "outdoor"
+  ],
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/mobile/mobile/mobile-analog-products/mobile-cameras/hac-hdb3200f-m=s5",
+    "https://materialfile.dahuasecurity.com/uploads/soft/20201126/DH-HAC-HDB3200F-M_datasheet_20201126.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

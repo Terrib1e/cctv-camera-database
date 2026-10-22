@@ -1,6 +1,6 @@
 # HiLook IPC-B449HAAH-LU
 
-*Also known as: IPC-B449HAAH-LU(F/SL)(F/SRB), IPC-B449HAAH-LU(2.8mm), IPC-B449HAAH-LU(4mm), HiLook 4 MP ColorVu 3.0 Fixed Bullet*
+*Also known as: IPC-B449HAAH-LU(F/SL)(F/SRB), IPC-B449HAAH-LU(2.8mm), IPC-B449HAAH-LU(4mm), HiLook 4 MP ColorVu 3.0 Fixed Bullet, IPC-B449HAAH-LUF/SL, IPC-B449HAAH-LUF/SRB*
 
 | Field | Spec |
 |-------|------|

@@ -1,0 +1,152 @@
+{
+  "id": "hikvision-ids-2cd7046g0-e-ihsy",
+  "brand": "Hikvision",
+  "type": "box",
+  "connectivity": [
+    "ethernet"
+  ],
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "3.8-16 or 11-40 (varifocal, optional)",
+    "aperture": "F1.4",
+    "varifocal": true
+  },
+  "field_of_view_deg": "109.1 to 29.6 horizontal (3.8-16mm) / 39.1 to 12.1 horizontal (11-40mm)",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 120,
+    "min_lux_color": 0.0005
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "PoE (802.3bt, Type 3, Class 5, max. 24.6 W) / 24 VDC ±20%, 0.9 A, max. 21.6 W / 24 VAC ±20%, max. 22.1 W",
+    "consumption_w": 24.6,
+    "voltage": "24 VDC / 24 VAC / PoE",
+    "poe_class": 5
+  },
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "ip_rating": "IP66",
+  "ik_rating": "IK10",
+  "dimensions_mm": "465.3 x 169.2 x 164.7",
+  "weight_g": 3800,
+  "operating_temp_c": "-40 to 65",
+  "environment": [
+    "outdoor"
+  ],
+  "model": "iDS-2CD7046G0/E-IHSY",
+  "aliases": [
+    "4 MP Box Network Camera",
+    "iDS-2CD7046G0/E-IHSY(/F11)(R)",
+    "iDS-2CD7046G0/E-IHSY/F11",
+    "iDS-2CD7046G0/E-IHSYR"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fifth",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 1024,
+    "nvr_compatible": true
+  },
+  "features": [
+    "DeepinView box camera in IR housing with built-in heater",
+    "DeepinView AI Open Platform (up to 4 models)",
+    "140 dB WDR",
+    "4MP@30fps, 1440p/1080p up to 60 fps",
+    "5 streams",
+    "IR up to 120 m (11-40 mm)",
+    "Face capture and face comparison (up to 150,000 faces)",
+    "People counting, queue management, heat map, hard hat detection",
+    "TPM 2.0",
+    "/F11 variant: SFP fiber interface (20 km)",
+    "EIS",
+    "RS-485, 2 alarm in / 2 alarm out"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000019609/iDS-2CD7046G0_E-IHSY_F11R-C_Datasheet_20231121.pdf"
+  ],
+  "release_notes": "Per iDS-2CD7046G0_E-IHSY_F11R-C_Datasheet_20231121.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

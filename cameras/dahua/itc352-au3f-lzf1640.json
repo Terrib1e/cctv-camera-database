@@ -1,0 +1,121 @@
+{
+  "id": "dahua-itc352-au3f-lzf1640",
+  "brand": "Dahua",
+  "model": "ITC352-AU3F-LZF1640",
+  "aliases": [
+    "DHI-ITC352-AU3F-LZF1640"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "power_source": [
+    "ac-mains"
+  ],
+  "protocols": [
+    "onvif",
+    "http"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 256
+  },
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 65",
+  "resolution": {
+    "megapixels": 3,
+    "max_width": 2048,
+    "max_height": 1536,
+    "label": "3MP (2048x1536)"
+  },
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2048x1536",
+        "fps": 60
+      },
+      {
+        "name": "sub",
+        "resolution": "1600x1200",
+        "fps": 30
+      }
+    ]
+  },
+  "sensor": "2/3\" GS-CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "16-40",
+    "varifocal": true,
+    "aperture": "F1.5"
+  },
+  "field_of_view_deg": "12.8-30.28 H / 7.2-16.96 V / 13.2-30.9 D",
+  "night_vision": {
+    "type": "color",
+    "range_m": 30,
+    "min_lux": 0.001
+  },
+  "power": {
+    "method": "100-240 VAC (50/60 Hz)",
+    "consumption_w": 25
+  },
+  "ip_rating": "IP66",
+  "ik_rating": "IK10",
+  "dimensions_mm": "554.0 x 204.2 x 209.6",
+  "weight_g": 4600,
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 2
+  },
+  "features": [
+    "3MP professional traffic enforcement camera with 2/3\" GS-CMOS, 2048x1536 up to 60 fps",
+    "motorized vari-focal 16-40 mm lens, P-Iris",
+    "6 white-light illuminators (adjustable brightness) for full-color night images, illumination distance 23-30 m",
+    "lane coverage 2 lanes",
+    "speed detection range 0-300 km/h (video detection or radar trigger)",
+    "ANPR with vehicle type, color and brand/logo recognition; motor vehicle and motorcycle violation capture (ANPR and E-Police modes)",
+    "traffic flow statistics and traffic event detection (illegal stopping, congestion); video or radar trigger (external radar)",
+    "WDR 120 dB, 3D NR, HLC, BLC; single/double/three shutter modes; GPS positioning",
+    "1x audio in / 1x audio out (3.5 mm), 4 alarm in / 2 alarm out, RS-485, RS-232, 2x USB 3.0, 100-240 VAC with built-in lightning protection"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1600,
+        "height": 1200,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Dahua enforcement camera — ONVIF + Dahua /cam/realmonitor RTSP path; enable ONVIF and set a dedicated user."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "ONVIF (Dahua)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Dahua RTSP/ONVIF."
+    }
+  },
+  "sources": [
+    "https://www.dahuasecurity.com/products/intelligent-traffic/intelligent-traffic-products/itc/3mp/itc352-au3f-lzf1640",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/ITC352-AU3F-LZF1640_datasheet_20241016.pdf"
+  ],
+  "last_verified": "2026-10-21",
+  "ndaa_compliant": false,
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
+}

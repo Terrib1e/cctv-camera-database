@@ -1,9 +1,9 @@
 {
   "id": "zosi-c261-analog",
   "brand": "ZOSI",
-  "model": "C261",
+  "model": "C261 analog",
   "aliases": [
-    "C261 analog",
+    "C261",
     "ZG2612C"
   ],
   "type": "bullet",
@@ -48,7 +48,7 @@
   "sources": [
     "https://zositech.com/products/c261-1080p-4-in-1-120ft-ir-bullet-security-camera"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "status": "available",
   "markets": [
     "global"

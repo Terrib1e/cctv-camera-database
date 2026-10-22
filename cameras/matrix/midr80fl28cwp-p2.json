@@ -109,18 +109,12 @@
     "https://drive.google.com/uc?export=download&id=1kBaaGHZA_R788w8IDHYbjI7hbNvbJUrJ",
     "https://www.matrixcomsec.com"
   ],
-  "last_verified": "2026-09-08",
+  "last_verified": "2026-10-20",
   "configs": {
     "frigate": {
-      "detect": {
-        "width": 720,
-        "height": 576,
-        "fps": 5
-      },
-      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/1/1",
-      "best_substream": "rtsp://{user}:{pass}@{ip}:554/1/2",
       "onvif_port": 80,
-      "verified": false
+      "verified": false,
+      "notes": "Matrix does not publish an RTSP path for this camera (none in its installation guides, system manuals or wiki). Add it through ONVIF, which discovers the stream URL, or read the stream URL from the camera's web UI."
     },
     "home_assistant": {
       "integration": "onvif",
@@ -128,7 +122,7 @@
     },
     "blue_iris": {
       "profile": "Generic/ONVIF",
-      "notes": "Add as ONVIF/RTSP camera; main stream rtsp://{user}:{pass}@{ip}:554/1/1."
+      "notes": "Use the generic ONVIF profile; find/inspect fills in the stream URL."
     }
   },
   "cloud_dependency": "local",

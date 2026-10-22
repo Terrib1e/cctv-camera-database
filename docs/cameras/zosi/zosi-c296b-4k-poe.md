@@ -1,11 +1,11 @@
-# ZOSI C296B
+# ZOSI C296B 4K PTZ PoE
 
-*Also known as: C296B 4K PTZ PoE*
+*Also known as: C296B*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C296B |
+| Model | C296B 4K PTZ PoE |
 | Type | ptz |
 | Connectivity | ethernet |
 | Resolution | 4K (3840x2160) (8MP, 3840×2160) |

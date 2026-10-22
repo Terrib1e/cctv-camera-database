@@ -1,0 +1,135 @@
+{
+  "id": "hikvision-ds-2dp8a440ixg1-lef-832",
+  "brand": "Hikvision",
+  "model": "DS-2DP8A440IXG1-LEF/832(F0)",
+  "aliases": [
+    "PanoVu Camera with PTZ",
+    "DS-2DP8A440IXG1-LEF/832"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP x 8 panoramic channels + 4MP PTZ"
+  },
+  "lens": {
+    "count": 9,
+    "focal_length_mm": "panoramic 2 (8 fixed lenses) / PTZ 6-240 (40x zoom)",
+    "aperture": "F1.0 (panoramic) / F1.36 (PTZ)",
+    "varifocal": true
+  },
+  "field_of_view_deg": "panoramic 360 horizontal / PTZ 56.6 to 1.8 horizontal",
+  "video": {
+    "codecs": [
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x480",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "36 VDC ±20%, max. 135 W (incl. max. 12 W for IR); PoE (802.3bt) 42.5-57 V, 2.12 A",
+    "consumption_w": 135,
+    "voltage": "36 VDC / PoE"
+  },
+  "power_source": [
+    "dc",
+    "poe"
+  ],
+  "dimensions_mm": "Ø427.6 x 425.9",
+  "weight_g": 14600,
+  "features": [
+    "PanoVu: true 360 deg coverage with eight 4MP F1.0 channels + 40x PTZ (9 channels)",
+    "40x optical / 16x digital zoom (PTZ channel)",
+    "DarkFighter 2.0 low-light",
+    "IR up to 300 m",
+    "Congestion alarm",
+    "EIS with built-in gyroscope",
+    "120 dB WDR (PTZ channel)",
+    "Built-in fiber module (1000M, up to 20 km)",
+    "7 alarm in / 2 alarm out, RS-485"
+  ],
+  "sources": [
+    "https://assets.hikvision.com/prd/public/all/doc/m000170277/DS-2DP8A440IXG1-LEF_832F0_Datasheet_20250307.pdf"
+  ],
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "night_vision": {
+    "type": "ir",
+    "range_m": 300,
+    "min_lux_color": 0.0005
+  },
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK10",
+  "operating_temp_c": "-40 to 70",
+  "environment": [
+    "outdoor"
+  ],
+  "release_notes": "Per DS-2DP8A440IXG1-LEF_832F0_Datasheet_20250307.pdf.",
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 704,
+        "height": 480,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "network": {
+    "ethernet_speed_mbps": 1000,
+    "ethernet_ports": 1
+  },
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

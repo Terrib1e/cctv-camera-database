@@ -1,0 +1,134 @@
+{
+  "id": "dahua-ipc-hmw8441x-m-m12",
+  "brand": "Dahua",
+  "model": "IPC-HMW8441X-M/M12",
+  "aliases": [
+    "DH-IPC-HMW8441X-M/M12",
+    "IPC-HMW8441X-MM12"
+  ],
+  "type": "dual-lens",
+  "connectivity": [
+    "ethernet"
+  ],
+  "cloud_dependency": "local",
+  "power_source": [
+    "poe",
+    "dc"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2560,
+    "max_height": 1440,
+    "label": "4MP"
+  },
+  "sensor": "1/2.8\" CMOS",
+  "lens": {
+    "count": 2,
+    "focal_length_mm": "2.0",
+    "aperture": "F2.0",
+    "varifocal": false
+  },
+  "field_of_view_deg": "122h",
+  "night_vision": {
+    "type": "ir",
+    "range_m": 14,
+    "min_lux_color": 0.002,
+    "min_lux": 0.0002
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 30,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2560x1440",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "power": {
+    "method": "36 VDC / PoE (802.3af)",
+    "consumption_w": 4
+  },
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 512,
+    "nvr_compatible": true,
+    "cloud": false
+  },
+  "protocols": [
+    "rtsp",
+    "onvif"
+  ],
+  "ip_rating": "IP67",
+  "ik_rating": "IK08",
+  "features": [
+    "Mobile (bus) stereo-vision dual-lens passenger counting network camera",
+    "Deep-learning people counting (enter/leave) with mobile video recorder and Mobile Center platform (GPS/site reports)",
+    "Network port: RJ-45 or 4-pin D-type aviation connector",
+    "Embedded or bracket mounting",
+    "Starlight, 120 dB WDR, 3D NR, Smart H.265+/H.264+",
+    "1 audio in / 1 audio out (RCA), 2 alarm in / 2 alarm out, RS-485",
+    "Certifications: E-mark, EN50155, CE, FCC"
+  ],
+  "operating_temp_c": "-35 to 70",
+  "dimensions_mm": "230.0 x 100.0 x 49.4 (embedded); 197.7 x 71.0 x 72.1 (bracket)",
+  "weight_g": 760,
+  "environment": [
+    "outdoor"
+  ],
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1",
+      "verified": false,
+      "notes": "Dahua native RTSP path; enable RTSP in the web UI (default admin).",
+      "detect": {
+        "width": 704,
+        "height": 576,
+        "fps": 5
+      },
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Dahua; ONVIF integration works (default port 80)."
+    },
+    "blue_iris": {
+      "profile": "Dahua",
+      "notes": "Select the 'Dahua' profile."
+    }
+  },
+  "ndaa_compliant": false,
+  "markets": [
+    "global"
+  ],
+  "sources": [
+    "https://www.dahuasecurity.com/products/mobile/mobile/mobile-ip-products/mobile-ip-cameras/ipc-hmw8441x-m/m12",
+    "https://materialfile.dahuasecurity.com/uploads/cpq/132687/datasheet/IPC-HMW8441X-MM12_datasheet_20231110.pdf"
+  ],
+  "last_verified": "2026-10-21"
+}

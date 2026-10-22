@@ -1,11 +1,11 @@
-# ZOSI C261
+# ZOSI C261 analog
 
-*Also known as: C261 analog, ZG2612C*
+*Also known as: C261, ZG2612C*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C261 |
+| Model | C261 analog |
 | Type | bullet |
 | Connectivity | coax |
 | Resolution | 1080p (1920x1080) / 2MP (2MP, 1920×1080) |

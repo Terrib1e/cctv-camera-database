@@ -12,7 +12,9 @@
   ],
   "resolution": {
     "megapixels": 4,
-    "label": "4MP"
+    "label": "4MP",
+    "max_width": 2688,
+    "max_height": 1520
   },
   "sensor": "1/1.8\" CMOS",
   "field_of_view_deg": "107.4 to 49.1 horizontal, 56.4 to 27.9 vertical, 128.8 to 60.4 diagonal",
@@ -34,7 +36,19 @@
       "H.264",
       "MJPEG"
     ],
-    "max_fps": 60
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 60
+      },
+      {
+        "name": "sub",
+        "resolution": "1920x1080",
+        "fps": 60
+      }
+    ]
   },
   "power": {
     "method": "DC 12 V (±25%), PoE (IEEE 802.3af)",
@@ -54,7 +68,8 @@
   "ik_rating": "IK10",
   "audio": {
     "microphone": true,
-    "two_way": true
+    "two_way": true,
+    "speaker": false
   },
   "features": [
     "LightHunter low-light",
@@ -79,7 +94,7 @@
     "https://www.uniview.com/Products/Network_Cameras/Prime_Series/PRIMEIV_Series/IPC3234SA-AHDZK-PI-LS-I2A/",
     "https://ubox-eu.oss-eu-central-1.aliyuncs.com/datacenter/doc/c2ea96a5-d55d-4041-a7a5-b5074de6b46b/1f8e8b86-e68f-4d76-bfda-6602d6ca2cb7.pdf"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "configs": {
     "frigate": {
       "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/unicast/c1/s0/live",
@@ -99,5 +114,8 @@
     }
   },
   "ndaa_compliant": true,
-  "cloud_dependency": "local"
+  "cloud_dependency": "local",
+  "markets": [
+    "global"
+  ]
 }

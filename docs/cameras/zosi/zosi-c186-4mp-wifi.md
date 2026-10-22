@@ -1,11 +1,11 @@
-# ZOSI C186
+# ZOSI C186 4MP 2.5K WiFi
 
-*Also known as: C186 4MP 2.5K WiFi*
+*Also known as: C186*
 
 | Field | Spec |
 |-------|------|
 | Brand | ZOSI |
-| Model | C186 |
+| Model | C186 4MP 2.5K WiFi |
 | Type | bullet |
 | Connectivity | wifi |
 | Resolution | 4MP / 2.5K (4MP, 2560×1440) |

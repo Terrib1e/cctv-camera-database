@@ -1,0 +1,124 @@
+{
+  "id": "tiandy-tc-nh6232isa-g",
+  "brand": "Tiandy",
+  "model": "TC-NH6232ISA-G",
+  "type": "ptz",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 2,
+    "max_width": 1920,
+    "max_height": 1080,
+    "label": "2MP"
+  },
+  "sensor": "1/1.8\" CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "6-192",
+    "aperture": "F1.5-F4.3",
+    "varifocal": true
+  },
+  "field_of_view_deg": "61.2-2.32",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 400,
+    "min_lux_color": 0.0004
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "1920x1080",
+        "fps": 60
+      },
+      {
+        "name": "sub",
+        "resolution": "704x576",
+        "fps": 25
+      },
+      {
+        "name": "third",
+        "resolution": "704x576",
+        "fps": 25
+      }
+    ]
+  },
+  "ptz": {
+    "autotracking": true,
+    "onvif_ptz": "continuous"
+  },
+  "power": {
+    "method": "AC24V 3A",
+    "consumption_w": 40,
+    "voltage": "AC 24V"
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http",
+    "p2p"
+  ],
+  "storage": {
+    "onboard": true,
+    "max_microsd_gb": 128
+  },
+  "audio": {
+    "speaker": false
+  },
+  "ip_rating": "IP66",
+  "environment": [
+    "outdoor"
+  ],
+  "operating_temp_c": "-40 to 70",
+  "dimensions_mm": "372x222x222 mm",
+  "weight_g": 5450,
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "features": [
+    "H.265 2MP 32x Super Starlight AEW IR PTZ",
+    "WDR: 140dB",
+    "Optical zoom: 32x",
+    "Digital zoom: 16x",
+    "Autotracking Early Warning (AEW)",
+    "IR LED + white light + green laser",
+    "Wiper",
+    "Video analytics: Tripwire, Double Tripwire, Perimeter, Object Abandon, Object Lost, Running, Loitering, Parking, Early Warning, Crowd, Audio Abnormal Detection, Video Abnormal Detection, Face Detection, People Counting, On duty Detection, Auto tracking, Parking Detection, Safety Helmet Detection",
+    "Built-in speaker optional"
+  ],
+  "sources": [
+    "http://en.tiandy.com/index.php?s=/home/product/detail/id/64.html",
+    "https://web.archive.org/web/20190722080211/http://en.tiandy.com/index.php?s=/home/product/detail/id/64.html"
+  ],
+  "last_verified": "2026-10-21",
+  "markets": [
+    "global"
+  ],
+  "cloud_dependency": "local",
+  "configs": {
+    "frigate": {
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80,
+      "verified": false,
+      "notes": "Tiandy; /Streaming/Channels path, ONVIF."
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use the ONVIF integration (Profile S)."
+    },
+    "blue_iris": {
+      "profile": "Generic/ONVIF",
+      "notes": "ONVIF Profile S supported."
+    }
+  }
+}

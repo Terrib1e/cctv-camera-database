@@ -1,0 +1,150 @@
+{
+  "id": "hikvision-ids-2cd8a46g2-sa-xzhs",
+  "brand": "Hikvision",
+  "model": "iDS-2CD8A46G2/SA-XZHS",
+  "aliases": [
+    "4MP DeepinView Self-Cleaning Bullet Camera"
+  ],
+  "type": "bullet",
+  "connectivity": [
+    "ethernet"
+  ],
+  "resolution": {
+    "megapixels": 4,
+    "max_width": 2688,
+    "max_height": 1520,
+    "label": "4MP"
+  },
+  "sensor": "1/1.8\" Progressive Scan CMOS",
+  "lens": {
+    "count": 1,
+    "focal_length_mm": "10 to 50 (motorized varifocal)",
+    "aperture": "F1.38 to F1.56",
+    "varifocal": true
+  },
+  "field_of_view_deg": "39.4 to 8.8 horizontal",
+  "night_vision": {
+    "type": "hybrid",
+    "range_m": 250,
+    "min_lux_color": 0.0005
+  },
+  "video": {
+    "codecs": [
+      "H.265+",
+      "H.265",
+      "H.264+",
+      "H.264",
+      "MJPEG"
+    ],
+    "max_fps": 60,
+    "streams": [
+      {
+        "name": "main",
+        "resolution": "2688x1520",
+        "fps": 60,
+        "codec": "H.265"
+      },
+      {
+        "name": "sub",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "third",
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fourth",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      },
+      {
+        "name": "fifth",
+        "resolution": "1280x720",
+        "fps": 30,
+        "codec": "H.265"
+      }
+    ]
+  },
+  "storage": {
+    "onboard": true,
+    "nvr_compatible": true,
+    "max_microsd_gb": 1024
+  },
+  "protocols": [
+    "onvif",
+    "rtsp",
+    "http"
+  ],
+  "power": {
+    "method": "36 VDC ±20%, 1.6 A, max. 57.6 W / 24 VAC ±20%, 3.61 A, max. 57.1 W",
+    "consumption_w": 57.6,
+    "voltage": "36 VDC / 24 VAC"
+  },
+  "power_source": [
+    "dc"
+  ],
+  "ip_rating": "IP66",
+  "dimensions_mm": "211 x 172 x 347 (lamp arm retracted)",
+  "weight_g": 2980,
+  "operating_temp_c": "-40 to 60",
+  "environment": [
+    "outdoor"
+  ],
+  "features": [
+    "License plate recognition (124+ countries/regions, blocklist/allowlist up to 50,000)",
+    "Vehicle attribute detection",
+    "Built-in self-cleaning positive-pressure air curtain",
+    "Separated lamp and lens design",
+    "DarkFighter 2.0 low-light imaging",
+    "140 dB WDR",
+    "Heater",
+    "EIS",
+    "Face capture, perimeter protection, people counting, queue management, heat map, hard hat detection",
+    "Parking management",
+    "HEOP 2.0 open platform (2.5 TOPS)",
+    "TPM 2.0 (FIPS 140-2 level 2)",
+    "Guanlan AI encoding",
+    "RS-485 (Pelco-P/D)",
+    "Audio line in/out",
+    "Alarm I/O (1 in / 1 out)"
+  ],
+  "release_notes": "Per iDS-2CD8A46G2_SA-XZHS_Datasheet_20261012.pdf.",
+  "sources": [
+    "https://assets.hikvision.com/prd/normal/all/doc/m000181871/iDS-2CD8A46G2_SA-XZHS_Datasheet_20261012.pdf"
+  ],
+  "configs": {
+    "frigate": {
+      "detect": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 5
+      },
+      "rtsp_url_template": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101",
+      "best_substream": "rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102",
+      "onvif_port": 80
+    },
+    "home_assistant": {
+      "integration": "onvif",
+      "notes": "Use ONVIF integration."
+    },
+    "blue_iris": {
+      "profile": "Hikvision",
+      "notes": "Select 'Hikvision' profile. ONVIF supported."
+    }
+  },
+  "last_verified": "2026-10-21",
+  "network": {
+    "ethernet_speed_mbps": 100,
+    "ethernet_ports": 1
+  },
+  "markets": [
+    "global"
+  ],
+  "ndaa_compliant": false,
+  "cloud_dependency": "local"
+}

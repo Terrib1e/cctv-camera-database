@@ -1,9 +1,9 @@
 {
   "id": "zosi-c296b-5mp-poe",
   "brand": "ZOSI",
-  "model": "C296B",
+  "model": "C296B 5MP PTZ PoE",
   "aliases": [
-    "C296B 5MP PTZ PoE"
+    "C296B"
   ],
   "type": "ptz",
   "connectivity": [
@@ -57,7 +57,7 @@
   "sources": [
     "https://zositech.com/products/5mp-poe-camera-pan-tilt-human-vehicle-detection-c296"
   ],
-  "last_verified": "2026-09-22",
+  "last_verified": "2026-10-21",
   "status": "available",
   "markets": [
     "global"
